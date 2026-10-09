@@ -1,0 +1,3 @@
+# Routine - Tuesday BONDED Content Drafts
+Schedule proposal: Tuesday 10:07 Europe/Podgorica. Connect GitHub + Canva + Buffer.
+Read CLAUDE.md, locked campaign, designer brief, current production tracker and evidence of the first design checkpoint's approval. **If checkpoint has not been explicitly approved, prepare a status report only.** If approved, work only from specified next-week briefs and approved templates. Create drafts only, never schedule posts. If future weeks have no approved briefs, propose outline only. Never invent real BONDED UI, family footage or approval. Record real design/draft links, missing assets and changes in a PR.
