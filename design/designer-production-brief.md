@@ -33,3 +33,7 @@ Produce Instagram grid preview in newest-first posting order after usable real v
 
 ## Accuracy/QA
 No payment UI, transfers, bank cards, store badges, fabricated screens, invented testimonials or performance. Points for agreed optional extras only; ordinary time and attention must never be conditional. If text won't fit, scale only within approved range and flag unresolved overflow. Verify actual capabilities of Canva MCP for transparent PNG export and templates rather than claiming it did so.
+
+
+## Official identity + product screenshot addendum (must read)
+See `design/official-brand-source.md` and `design/screenshots-manifest.md`. Use path SVG lockup from source app repo; the previous typeset-logo fallback is superseded now that real mark is available. Before creating Day 2 and templates, show a reconciliation of the campaign provisional warm grey/green versus official Paper/Ink/Hearth. Preserve approved layout/headline typography while proposing official brand colors for human signoff at the first checkpoint. Do NOT recolor supplied real app screenshots. Product-specific missing states are documented; individual 1290×2796 PNGs exist in the user-supplied `bonded-millers-screens.zip`, but have NOT yet been synced to a Claude-accessible asset store. Image shots requiring unique verified states remain blockers. US-first localization is pending explicit approval and must not silently rewrite copy. 
