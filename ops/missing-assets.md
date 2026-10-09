@@ -17,3 +17,11 @@ These are **not yet provided or verified in this repository**, not proof they do
 | Landing page privacy notice/consent text and early access offer, if any | Subscriber form legal/content review | NEEDED |
 
 Never store API keys, raw customer data, child data or signed filming consent records in this repo. Record only asset references and sanitized statuses.
+
+
+## 9 October status update
+- OFFICIAL IDENTITY: PROVIDED and verified. Original path-based SVG logos live in the app GitHub repo `JFilip25/ciccho-Claude/assets/brand`. The owner-supplied PDF and ZIP are still conversation uploads, not synced to this marketing repo. See `design/official-brand-source.md`.
+- SCREENSHOT ARCHIVE: PROVIDED, 42 full-size images in light/dark plus 2 overview montages. Not yet remotely accessible to Claude/Canva. Missing specific Day 11/12 states are listed in `design/screenshots-manifest.md`.
+- CODE REPO: VERIFIED `JFilip25/ciccho-Claude`, current default branch `claude/family-responsibility-app-mvp-vchzt7`. Mobile app repo is NOT itself confirmed to contain the public waitlist website.
+- MARKET: CONFIRMED Tier 1 US; Tier 2 UK, English-speaking EU, Australia, NZ. Campaign language requires owner decision on US localization.
+- REMAINING: Real family footage/consents; brand/screen file transfer to Claude-accessible design location; true family calendar / approval note / reschedule / exact family experience screens; website live domain / site repo; social handles; sender setup / MailerLite authorization test; ManyChat fulfillment; date confirmation.
