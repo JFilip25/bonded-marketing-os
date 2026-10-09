@@ -1,0 +1,3 @@
+# 05 - Buffer draft preparation
+
+Only after the creative checkpoint is approved, read the campaign, `CLAUDE.md` and production status. Inspect correct connected Instagram/Facebook/TikTok identities. Create drafts only for posts with approved, authentic final media; maintain platform-specific locked captions. No captions added or rewritten, no added CTA on editorial posts. Posts whose video footage is absent stay BLOCKED. Preserve pinned Day 0 and correct day order. Verify Buffer asset format support; do not claim a TikTok/IG post is ready when upload is incomplete. Return real links/IDs for drafts. Never schedule, queue, post or pin live.
