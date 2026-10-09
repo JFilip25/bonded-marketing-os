@@ -35,6 +35,25 @@
 | Waitlist page | BONDED website | **No** | Repo, domain, privacy notice, form integration, UTM capture (D6) |
 | Analytics | Website analytics + platform insights | **No** | Analytics on the site; read access to insights |
 
-## Canva capability spike (Phase 3, step 1)
+## Canva capability spike (Phase 3, step 1), run 9 Oct 2026
 
-Results are recorded here once the spike runs.
+The test design is "ZZ TEST capability spike (safe to delete)", `DAHXi5aZVwo`. The Canva MCP has **no delete-design tool**, so remove it by hand in Canva.
+
+| Capability | Result | Evidence or workaround |
+|---|---|---|
+| 1080×1440 page | **Yes.** The "Instagram Post (Portrait)" format is exactly 1080×1440. | `read-design` reports 1080×1440 |
+| Custom page sizes (e.g. 1080×1920) | **Yes.** `add_page` takes width, height and background colour. | Page 2 of the test design |
+| Plus Jakarta Sans | **No, not reliably.** `create-design` asked for "Plus Jakarta Sans" but gave mixed font refs across text boxes (`YAFdJs2qTWQ`, `YAFdJsjyMsM`, `YAD1aU3sLnI`, `YACgEan-tYE`…). A one-page specimen used a single ref (`YAFdJqX996o`), but a side-by-side render against the real Jakarta TTF shows **a different typeface**. `add_text` uses Canva's default font, and there is **no font-family parameter**. | Exact proofs are rendered locally with the real font files (`design/checkpoint-01/`). The Canva options for the owner are in `design/checkpoint-01/README.md`. |
+| SemiBold (600) and letter spacing | **No** through MCP. Only normal and bold. Letter spacing can't be set; AI boxes come with about −0.03 em. | 600 becomes Regular or Bold, flagged. Headline fit is checked from the box heights reported. |
+| Text shadow | **No** through MCP | Video text styles are rendered locally as transparent PNGs, to spec |
+| Exact position, size, colour, alignment, line height | **Yes** (`position_element`, `resize_element`, `format_text`) | Positions verified with `read-design` |
+| Official SVG upload (`create-upload-url`, raw bytes) | **Yes.** `bonded-lockup-horizontal-color.svg` became media `MAHXi5gTVgA` and renders correctly. | After resizing, `crop_media` is needed to fit the image box |
+| Flat shapes in exact colours (SVG path) | **Yes** | AI page backgrounds are images and can contain ghost text, so a full-bleed Paper (`#F5F2EA`) rectangle is layered at the back |
+| Opaque PNG export | **Yes.** 1080×1440 RGB, background measured as (245,242,234) = `#F5F2EA`. | Exported file checked with PIL |
+| **Transparent PNG export** | **No: "Users on the Canva Free plan can not export PNGs with transparent background."** | Video overlays are rendered locally as transparent PNGs, or the owner upgrades to Canva Pro |
+| PDF upload | It uploads as a file (`fileId`), **not an editable design** | n/a |
+| Brand kit | None exists, and none can be created through MCP | The owner can create one in the Canva UI (a paid feature) |
+| AI image generation (`generate-image`) | **Quota exhausted** after 4 images: "You have exceeded your credit quota." | 2 Day 2 objects were made (trainers `MAHXjI1iFJ4`, bin `MAHXjEcPcBw`). 3 are still placeholders: laundry basket, dishwasher basket, fridge list. |
+| Background remover | **Paid plans only** | The objects are generated on a Paper-coloured background and blended to exact `#F5F2EA` locally |
+| Test designs left in Canva (no delete tool) | `DAHXi5aZVwo` "ZZ TEST capability spike"; `DAHXjGv0ut0` "ZZ TEST mixed-font AI draft"; `DAHXjOXwQqg` "ZZ TEST font specimen, not Plus Jakarta Sans" | Safe for the owner to delete |
+| Delete a design | **No tool** | Manual |

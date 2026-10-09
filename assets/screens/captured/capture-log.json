@@ -1,0 +1,240 @@
+{
+  "capturedAt": "2026-10-09T20:31:59.528Z",
+  "currency": "USD",
+  "timezone": "America/New_York",
+  "blockedRequests": [],
+  "shots": [
+    {
+      "file": "61-emma-today-before-light.png",
+      "who": "Emma",
+      "path": "/child/today",
+      "state": "today-before",
+      "scheme": "light",
+      "note": "Emma has two things today; Water the plants not done yet"
+    },
+    {
+      "file": "61-emma-today-before-dark.png",
+      "who": "Emma",
+      "path": "/child/today",
+      "state": "today-before",
+      "scheme": "dark",
+      "note": "Emma has two things today; Water the plants not done yet"
+    },
+    {
+      "file": "62-emma-water-plants-task-light.png",
+      "who": "Emma",
+      "path": "/responsibility/3de92553-ae8d-4fa0-8951-3b8a0a0dcce7",
+      "state": "water-plants-task",
+      "scheme": "light",
+      "note": "Task screen before ticking off"
+    },
+    {
+      "file": "62-emma-water-plants-task-dark.png",
+      "who": "Emma",
+      "path": "/responsibility/3de92553-ae8d-4fa0-8951-3b8a0a0dcce7",
+      "state": "water-plants-task",
+      "scheme": "dark",
+      "note": "Task screen before ticking off"
+    },
+    {
+      "file": "63-emma-today-after-light.png",
+      "who": "Emma",
+      "path": "/child/today",
+      "state": "today-after",
+      "scheme": "light",
+      "note": "Ticked off: waiting for a parent to check"
+    },
+    {
+      "file": "63-emma-today-after-dark.png",
+      "who": "Emma",
+      "path": "/child/today",
+      "state": "today-after",
+      "scheme": "dark",
+      "note": "Ticked off: waiting for a parent to check"
+    },
+    {
+      "file": "64-mom-home-recognition-light.png",
+      "who": "Mom",
+      "path": "/parent/home",
+      "state": "home-recognition",
+      "scheme": "light",
+      "note": "A little recognition: Emma, Noah, Sofia ready"
+    },
+    {
+      "file": "64-mom-home-recognition-dark.png",
+      "who": "Mom",
+      "path": "/parent/home",
+      "state": "home-recognition",
+      "scheme": "dark",
+      "note": "A little recognition: Emma, Noah, Sofia ready"
+    },
+    {
+      "file": "65-mom-review-note-light.png",
+      "who": "Mom",
+      "path": "/parent/home",
+      "state": "review-note",
+      "scheme": "light",
+      "note": "Review queue with a typed thank-you note"
+    },
+    {
+      "file": "65-mom-review-note-dark.png",
+      "who": "Mom",
+      "path": "/parent/home",
+      "state": "review-note",
+      "scheme": "dark",
+      "note": "Review queue with a typed thank-you note"
+    },
+    {
+      "file": "66-emma-noticed-light.png",
+      "who": "Emma",
+      "path": "/child/today",
+      "state": "noticed",
+      "scheme": "light",
+      "note": "Mom noticed card with the note"
+    },
+    {
+      "file": "66-emma-noticed-dark.png",
+      "who": "Emma",
+      "path": "/child/today",
+      "state": "noticed",
+      "scheme": "dark",
+      "note": "Mom noticed card with the note"
+    },
+    {
+      "file": "67-mom-family-climbing-light.png",
+      "who": "Mom",
+      "path": "/parent/family",
+      "state": "family-climbing",
+      "scheme": "light",
+      "note": "Climbing wall trip progress on the Family tab"
+    },
+    {
+      "file": "67-mom-family-climbing-dark.png",
+      "who": "Mom",
+      "path": "/parent/family",
+      "state": "family-climbing",
+      "scheme": "dark",
+      "note": "Climbing wall trip progress on the Family tab"
+    },
+    {
+      "file": "68-mom-rewards-light.png",
+      "who": "Mom",
+      "path": "/parent/rewards",
+      "state": "rewards",
+      "scheme": "light",
+      "note": "Rewards with experiences"
+    },
+    {
+      "file": "68-mom-rewards-dark.png",
+      "who": "Mom",
+      "path": "/parent/rewards",
+      "state": "rewards",
+      "scheme": "dark",
+      "note": "Rewards with experiences"
+    },
+    {
+      "file": "69-leo-today-light.png",
+      "who": "Leo",
+      "path": "/child/today",
+      "state": "today",
+      "scheme": "light",
+      "note": "Leo has three things today"
+    },
+    {
+      "file": "69-leo-today-dark.png",
+      "who": "Leo",
+      "path": "/child/today",
+      "state": "today",
+      "scheme": "dark",
+      "note": "Leo has three things today"
+    },
+    {
+      "file": "70-leo-reschedule-draft-light.png",
+      "who": "Leo",
+      "path": "/responsibility/c2527210-20b9-4ad2-a3aa-bc320ebcec56",
+      "state": "reschedule-draft",
+      "scheme": "light",
+      "note": "Leo choosing Reschedule with a note (before sending)"
+    },
+    {
+      "file": "70-leo-reschedule-draft-dark.png",
+      "who": "Leo",
+      "path": "/responsibility/c2527210-20b9-4ad2-a3aa-bc320ebcec56",
+      "state": "reschedule-draft",
+      "scheme": "dark",
+      "note": "Leo choosing Reschedule with a note (before sending)"
+    },
+    {
+      "file": "71-leo-reschedule-sent-light.png",
+      "who": "Leo",
+      "path": "/responsibility/c2527210-20b9-4ad2-a3aa-bc320ebcec56",
+      "state": "reschedule-sent",
+      "scheme": "light",
+      "note": "Request sent, waiting for a reply"
+    },
+    {
+      "file": "71-leo-reschedule-sent-dark.png",
+      "who": "Leo",
+      "path": "/responsibility/c2527210-20b9-4ad2-a3aa-bc320ebcec56",
+      "state": "reschedule-sent",
+      "scheme": "dark",
+      "note": "Request sent, waiting for a reply"
+    },
+    {
+      "file": "72-mom-change-of-plan-light.png",
+      "who": "Mom",
+      "path": "/parent/home",
+      "state": "change-of-plan",
+      "scheme": "light",
+      "note": "A change of plan: Leo asked for another day"
+    },
+    {
+      "file": "72-mom-change-of-plan-dark.png",
+      "who": "Mom",
+      "path": "/parent/home",
+      "state": "change-of-plan",
+      "scheme": "dark",
+      "note": "A change of plan: Leo asked for another day"
+    },
+    {
+      "file": "73-mom-request-detail-light.png",
+      "who": "Mom",
+      "path": "/responsibility/c2527210-20b9-4ad2-a3aa-bc320ebcec56",
+      "state": "request-detail",
+      "scheme": "light",
+      "note": "Parent view of the request with replies"
+    },
+    {
+      "file": "73-mom-request-detail-dark.png",
+      "who": "Mom",
+      "path": "/responsibility/c2527210-20b9-4ad2-a3aa-bc320ebcec56",
+      "state": "request-detail",
+      "scheme": "dark",
+      "note": "Parent view of the request with replies"
+    },
+    {
+      "file": "74-mom-upcoming-light.png",
+      "who": "Mom",
+      "path": "/parent/responsibilities",
+      "state": "upcoming",
+      "scheme": "light",
+      "note": "Responsibilities, Upcoming tab"
+    },
+    {
+      "file": "74-mom-upcoming-dark.png",
+      "who": "Mom",
+      "path": "/parent/responsibilities",
+      "state": "upcoming",
+      "scheme": "dark",
+      "note": "Responsibilities, Upcoming tab"
+    }
+  ],
+  "source": {
+    "repo": "JFilip25/ciccho-Claude",
+    "branch": "claude/bonded-family-ai",
+    "commit": "81b164b066aadc09344c5039230084af8d9c4149",
+    "database": "local Supabase stack (supabase@2.118.0), seeded by tools/capture/seed-millers.mjs",
+    "viewport": "430x932 @3x",
+    "production_contacted": false
+  }
+}

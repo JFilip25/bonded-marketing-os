@@ -59,7 +59,7 @@ Day 11 needs **no copy change**. "It counts toward Saturday, too." is true. The 
 
 ## C5. "Emma has two things on her list. Leo has three." (demo data)
 
-No copy change is proposed. The Phase 2 capture will give Emma exactly two jobs and Leo three, so the screen matches the locked line. If you'd rather use the existing screen 20 (Emma: 2 to do plus 1 waiting), this item needs a decision.
+No copy change needed. The Phase 2 captures show Emma with exactly two jobs (61) and Leo with three (69), so the screens match the locked line.
 
 ---
 
