@@ -37,3 +37,7 @@ After each action report actual URLs, IDs, tests, blockers and required approval
 Campaign ID `bonded_prelaunch_2026`. Track UTM source/medium/campaign/content and confirmed subscriber attribution where available; distinguish real confirmed signups from comment counts or visits.
 Use `ops/production-status.csv` for status. Record verified real service URLs only.
 Internal timezone Europe/Podgorica; audience market and publishing hours still need confirmation.
+
+
+## Verified official identity and screenshot inputs (9 Oct 2026)
+Read `design/official-brand-source.md`, `design/screenshots-manifest.md`, and `strategy/market-priority.md`. Authoritative logo is custom path SVG in app repo `JFilip25/ciccho-Claude/assets/brand/`; NEVER retype wordmark in Playfair. Official Paper #F5F2EA, Ink #222D33, Hearth #B94529 supersede provisional campaign palette **only after initial Canva system reconciliation and human approval**; preserve non-logo editorial font and layout concept. Target Tier 1 US; Tier 2 UK/EU/AU/NZ. The original social copy remains LOCKED; request approval for separate US-localized variant. Existing screenshot archive has more profiles than described four-person Millers and lacks campaign-specific screen states; never misrepresent the product. Asset ZIP and identity PDF remain external to GitHub until explicitly synced.
