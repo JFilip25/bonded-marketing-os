@@ -27,3 +27,7 @@ Pinned Day 0 Sunday 18 Oct 2026; Day 1 Monday 19 Oct 2026; Day 14 Sunday 1 Nov 2
 
 ## Note on deliverables
 This repo contains planning and instructions, **not** already-created Canva graphics, customer screenshots, real family video or connected MailerLite forms. Never report those as complete without verification.
+
+
+## New supplied sources (9 October 2026)
+Official source-brand and screenshot inventory available in `design/official-brand-source.md` and `design/screenshots-manifest.md`. Tier 1 US / Tier 2 UK, English-speaking EU, Australia and NZ targeting in `strategy/market-priority.md`. Source assets live in the linked BONDED app repo, while 42 full-resolution screenshots and the 37-page brand PDF still require a transfer to a Claude-accessible asset location (see `ops/assets-and-import.md`). All additions are being reviewed in a separate PR; approved social campaign is unchanged.
