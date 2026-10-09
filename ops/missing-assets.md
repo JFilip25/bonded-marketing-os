@@ -1,19 +1,22 @@
 # External inputs and launch blockers
 
-These are **not yet provided or verified in this repository**, not proof they do not exist elsewhere.
+**Status as of 9 Oct 2026, verified.** "Missing" means not provided and not found in any connected source. It does not prove the item doesn't exist elsewhere. Verification details are in `ops/mcp-audit.md`.
 
-| Input | Needed for | Status |
-|---|---|---|
-| Official BONDED identity source (logo mark/logotype, color and motion specs, approved visual guide) | Reconcile with provisional campaign design palette | NEEDED |
-| Authentic current BONDED home screen and Millers demo screenshots: calendar, Emma and Leo tasks, reschedule requests, approvals, experiences/progress, allowance if shown | Pinned Day 0, Days 5/11/12 Story/product screens | NEEDED |
-| Verified BONDED social handles and real social account identities | Replace @[handle] | NEEDED |
-| BONDED site URL and **website source repository** | Real MailerLite integration and UTM attribution | NEEDED |
-| MailerLite connected account, sender domain/branding and permission audit | Forms and safe email automation | VERIFY VIA MCP |
-| Canva brand kit/project and platform capabilities | Production templates, exports, brand consistency | VERIFY VIA MCP |
-| Buffer connected Instagram/Facebook/TikTok accounts | Draft publishing, platform restrictions | VERIFY VIA MCP |
-| ManyChat connected accounts or equivalent comment-to-DM fulfillment | Fulfill WAITLIST promise | NEEDED / VERIFY |
-| Approved real footage for Days 1,4,6,9,11,13, and written permissions/cover choices | Finish videos and final grid preview | NEEDED |
-| Target first audience market, confirmed Day 0/1 dates | Posting times, spelling and jurisdiction | NEEDED |
-| Landing page privacy notice/consent text and early access offer, if any | Subscriber form legal/content review | NEEDED |
+| Input | Needed for | Status | Evidence / next step |
+|---|---|---|---|
+| Official BONDED identity files (SVG marks, lockups, colours, motion) | All creative | **VERIFIED** | Product repo `assets/brand/` and `docs/bonded/identity.md`. Copies are in `assets/brand/`. |
+| Identity case study (37-page PDF) | Confirming items marked UNVERIFIED | **MISSING** | Not in either repo, Drive or this workspace. Owner to upload (D-2026-10-09-4). |
+| Real BONDED screenshots, Millers demo | Days 0, 5, 11, 12 | **PARTIAL** | 21+21 verified screens (`design/screenshots-manifest.md`). Missing states are being captured locally (Phase 2). |
+| Plus Jakarta Sans | All creative | **VERIFIED** | `assets/fonts/` (OFL) |
+| Social handles (IG, FB, TikTok) | Handle on every slide, bios, link in bio | **MISSING** | D10 |
+| Website / waitlist page, repo and domain | Every waitlist CTA, UTM attribution | **MISSING** | `bonded-family.vercel.app` is the app's link page only. D6. |
+| Privacy notice and consent text for the form | MailerLite form, website | **MISSING** | The product's privacy and support URLs are also not live yet |
+| MailerLite set-up | Waitlist and tips email | **ACCOUNT CONNECTED, EMPTY** | No groups, forms or automations. Sender domain to be verified in the UI. |
+| Buffer channels | Draft posts | **MISSING** | 0 channels connected (D8) |
+| ManyChat or equivalent | "Comment WAITLIST" | **MISSING** | D7 |
+| Real footage and written consents (Days 1, 4, 6, 9, 11, 13) | Six videos | **MISSING** | Filming is separate. Day 11 also needs the app on a phone with the demo family. |
+| Launch date confirmation | Scheduling | **NEEDS DECISION** | D5 |
+| Approval of the claim amendments | Day 0 s2, Day 7, Day 12 | **NEEDS DECISION** | D4, `proposals/claim-amendments.md` |
+| US localization decision | Final on-creative text | **NEEDS DECISION** | D3 |
 
-Never store API keys, raw customer data, child data or signed filming consent records in this repo. Record only asset references and sanitized statuses.
+Never store API keys, raw customer data, child data or signed filming consents in this repo. Record only asset references and sanitized statuses.

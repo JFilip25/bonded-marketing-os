@@ -1,3 +1,15 @@
-# Routine - Monday BONDED Growth Review
-Schedule proposal: Monday 09:07 Europe/Podgorica. Connect GitHub + MailerLite + Buffer + analytics when verified.
-Read CLAUDE.md, campaign, approved status and prior reporting period. Fetch REAL data: confirmed subscriber acquisition by platform if properly attributed, UTM visits, conversion rates where denominator exists, published post performance, approved email metrics. Do not invent data or pretend views are conversions. Produce evidence-linked Markdown performance report and PR, recommendations for future creative briefs, and missing-source list. Never modify live campaigns, subscriber data or posts.
+# Routine - Monday BONDED growth review
+Schedule proposal: Monday 09:07 Europe/Podgorica. Connectors: GitHub, Buffer, MailerLite, plus analytics once verified (`ops/mcp-audit.md`).
+
+[Safety header from routines/README.md]
+
+1. Read `CLAUDE.md`, the campaign, `ops/production-status.csv` and the previous report.
+2. Fetch REAL data:
+   - MailerLite **confirmed** (active) subscribers by group and by `utm_source` / `utm_content`
+   - unconfirmed counts, kept separate
+   - Buffer aggregated post metrics per channel
+   - site analytics, when available
+   - ManyChat DM counts, only if supplied
+3. Separate Tier 1 (US) from Tier 2 where the data allows. Compute conversion rates only where a real denominator exists. Never present views or comments as conversions.
+4. Write `reports/YYYY-MM-DD-growth.md` with evidence links, recommendations for future creative briefs and a list of missing sources. Open a PR.
+5. Never modify campaigns, subscribers or posts.

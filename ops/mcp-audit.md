@@ -1,0 +1,40 @@
+# MCP and service audit
+
+**Checked:** 9 Oct 2026, interactive Claude Code session. Every call was **read-only**; nothing was created, sent or changed.
+
+**Scope:** these are the connectors visible to *this* session. Claude Routines (cloud) get the connectors chosen when each Routine is created. Re-verify inside the first Routine run; never assume.
+
+## Connection matrix
+
+| Service | Connected | Account / scope seen | State found | Capabilities relevant to BONDED | Limits and risks |
+|---|---|---|---|---|---|
+| **GitHub** (MCP + git) | Yes | `JFilip25/bonded-marketing-os` and `JFilip25/ciccho-Claude`, both **private**, both pushable | Marketing repo `main` @ `bfdf2e5`. PR #1 open (draft, by ChatGPT). Product repo default @ `eecbc56`; newest `claude/bonded-family-ai` @ `81b164b`. | Branches, PRs, file reads, code search | Private repos: Canva can't import from raw GitHub URLs. The product repo is **read-only for marketing** (D-2026-10-09-5). |
+| **Canva** | Yes | The user's Canva account | **0 brand kits. 0 designs matching "bonded".** | Create a design from a brief. `edit-design`: add pages at custom px size; add and position text; size, colour, bold, italic and alignment; insert SVG-path shapes; insert uploaded images; crop and position. `create-upload-url`: raw-byte upload of PNG, SVG or PDF. Export PNG, JPG, PDF or MP4 at width/height, with transparent background. Brand templates and autofill. AI image generation. Comments. | No **font family** or letter-spacing parameter is visible in `edit-design` (capability spike in Phase 3). No brand-kit creation through MCP. URL import needs a **public** HTTPS URL. |
+| **MailerLite** | Yes, authenticated | Account `2698911`, environment `prod`, token valid to Oct 2027 | **0 groups. 0 embedded forms. 0 automations. 0 campaigns.** Only the 8 default fields. Subscriber total: 1. | Groups, fields, segments and forms (create, update, delete). Automations: create, step editing, triggers, `dry_run_automation`, `send_test_automation`. Campaigns: create, update, schedule. Webhooks. `validate_email_content`, `validate_subject_lines`. | No MCP tool to read **sender domains, sender identities or double opt-in settings**: check those in the MailerLite UI. `schedule_campaign` and automation enabling are **live actions** and need explicit approval. |
+| **Buffer** | Yes, authenticated | Organisation "My organization", timezone **Europe/Podgorica** | **0 channels connected.** Plan limits: **3 channels, 10 scheduled posts**, 100 ideas, 3 tags, 0 extra members. | Channels, posts (create, edit, delete), ideas, post templates, aggregated metrics, GraphQL queries and mutations | No Instagram, Facebook or TikTok channel exists yet, so no drafts can be made. The 10 scheduled-post cap is below the 45 platform posts in weeks 1–2 (D8). Buffer does not do comment-to-DM. |
+| **Vercel** | Yes (proxy credential) | Team "jfilip25's projects" | Project `bonded-family` → `bonded-family.vercel.app`: the app's **pair/join deep-link page** (noindex, "App Store / Google Play coming soon"). **No waitlist site.** | Projects, deployments, domains, env, logs | Never deploy production without approval. The link site lives in the app repo (`web/links/`), so leave it alone. |
+| **Google Drive** | Yes | n/a | No BONDED files found. The identity case-study PDF is **not** there. | Search, read, create | n/a |
+| **Supabase** (MCP) | Yes | Project `qcncnqwdokyrcxmjmrie`: the **production** app database | Not used | n/a | **Never use it for marketing.** Screens are captured on a local stack only. |
+| **Expo** | Yes | n/a | Not used | Builds, store submission | Out of marketing scope |
+| **Brevo** | Yes | n/a | Not used | n/a | The product uses Brevo only as the SMTP for login emails. MailerLite owns marketing email. Don't mix them. |
+| **Gmail / Google Calendar** | Yes | n/a | Not used | n/a | Never send from marketing workflows |
+| **ManyChat** | **No** | n/a | n/a | n/a | **Required** for "Comment WAITLIST" on Instagram and Facebook (D7). Set it up in its own UI. |
+| **HubSpot, Neon** | Need authorisation | n/a | n/a | n/a | Not needed |
+| **Analytics** (GA4, Meta Insights, TikTok Analytics) | **No** connectors | n/a | n/a | n/a | Reporting is limited to Buffer metrics and MailerLite stats until analytics exists on the waitlist site |
+| **Claude Routines** | Available (`create_trigger`) | n/a | No BONDED Routines created | Scheduled cloud sessions with chosen connectors | Created only after the manual workflows pass. **Draft-only** prompts. |
+
+## What this means for the intended architecture
+
+| Function | Intended tool | Ready? | Missing |
+|---|---|---|---|
+| Orchestration and planning | Claude Code + Routines | Partly | Routines not created (by design) |
+| Design production | Canva | Partly | Brand kit (UI), font check (spike), approved templates |
+| Social publishing | Buffer | **No** | Connected IG/FB/TikTok channels, plan limits |
+| Comment WAITLIST → DM | ManyChat | **No** | Account, Meta connection, keyword flow, test |
+| Email list, forms and automations | MailerLite | **No (empty)** | Groups, fields, form, sender domain and DKIM, welcome flow (inactive), test |
+| Waitlist page | BONDED website | **No** | Repo, domain, privacy notice, form integration, UTM capture (D6) |
+| Analytics | Website analytics + platform insights | **No** | Analytics on the site; read access to insights |
+
+## Canva capability spike (Phase 3, step 1)
+
+Results are recorded here once the spike runs.

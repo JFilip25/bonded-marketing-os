@@ -1,0 +1,136 @@
+# BONDED screenshot inventory and campaign mapping
+
+Status: VERIFIED 9 Oct 2026 by inspecting every file. This replaces the PR #1 draft manifest.
+
+## Provenance
+
+| Item | Verified fact |
+|---|---|
+| Source | `bonded-millers-screens.zip`, supplied by the owner on 9 Oct 2026. SHA-256 `0c210c5a0faebd6870de229cdde09075423f79242ae57c991368e767f987599c`. |
+| Contents | 21 screens in light mode, the same 21 in dark mode, and two overview montages. Every screen is 1290×2796 (8-bit RGB PNG). The montages are 2292×2112. |
+| How they were made | They come from the 4–9 Oct "bonded: family AI thesis and plan" session. That session ran the real web build of `JFilip25/ciccho-Claude` branch `claude/bonded-family-ai` (head `81b164b`) against a **local test database**, with the demo banner hidden. Its seed script stayed in that session's scratchpad and is not in any repo. |
+| UI match | The on-screen strings match the code on that branch, for example "All together." (`src/components/ParentDashboard.tsx`), "Common ground." (`app/parent/family/index.tsx`) and "Make space to talk." (`app/checkin.tsx`). "Talk to Bonded" in screen 05 exists only on that branch (`app/voice.tsx:26`). The default branch still says "Say it". |
+| Demo data | The Miller Family: Mom, Dad, Mia 5, Emma 8, Noah 11, Leo 13 and Sofia 17. The people, goals and amounts are fictional demo data from the local seed. No real family or child data is shown. |
+| Date on screen | "Friday 9 October" |
+| Currency | EUR (€) everywhere money is shown |
+| Copies in this repo | `assets/screens/{light,dark,overview}/`, byte-identical to the zip, with checksums in `assets/CHECKSUMS.sha256` |
+
+Rules:
+- Use these images unaltered.
+- Crop only; never repaint, recolour, retouch or re-letter UI.
+- Every use carries "Demo family" in small text.
+
+## Known product bugs visible in the screens
+
+These are app issues, not marketing edits. They are reported to the app team in `ops/product-team-notes.md`. Avoid crops that show them, or recapture once they are fixed.
+
+1. "Family contribution" is printed twice on family-contribution rows. Seen in screens 01, 02, 06 and 40.
+2. The section heading "pending" is lowercase on Leo's Today (40).
+3. "Mia · €0.00 to pay out" appears on the parent Rewards screen (03), although money is hidden for ages 4–6.
+
+## Screen by screen
+
+The light and dark files of each screen are identical in content. The age band is the app's own (`src/domain/age.ts`).
+
+| # | File stem | Profile / band | Tab | What is visible | € | Notes |
+|---|---|---|---|---|---|---|
+| 01 | `01-parent-home` | Mom (parent) | Home | "All together." The Miller Family. "A little recognition 3": Sofia "Cook dinner for the family" €5.00, Leo "Take bins out" €2.00, both "Ready for you". Blue "Review 3 completions". "Your part today": Saturday Reset, and Laundry "Completed without a reminder". "On the horizon" (cropped). | yes | Bug 1 on the Saturday Reset row |
+| 02 | `02-parent-responsibilities` | Mom | Tasks | "Responsibilities." "A shared plan, with room to change." Segments: Today / Upcoming / Completed. Rows: Clean bathroom (Leo), Empty the dishwasher (Noah, €1.00), Groceries (Dad), Pick up the groceries (Sofia, €3.00), Put laundry away (Emma), Saturday Reset (Leo). | yes | Bug 1. This is a task list, **not a calendar**. |
+| 03 | `03-parent-rewards` | Mom | Rewards | "Rewards." "Money, experiences and a simple thank you." "Money to settle" per child: Leo, Emma, Mia, Noah, Sofia. "Experiences": Movie Night (cropped). | yes | Bug 3 |
+| 04 | `04-parent-family` | Mom | Family | "Common ground." "Small contributions. More time together." Family avatar chain. Movie Night "100 / 100 family points", "Unlocked", "Tomorrow · 1d". "Make space to talk": Your weekly check-in. "Everyone's part": Leo, Clean bathroom. | no | Brand line visible in the UI |
+| 05 | `05-parent-add-menu` | Mom | Home + menu | The "+" menu open: Talk to Bonded, Responsibility, Family mission, Experience, Goal, Allowance, Family member. | behind | "Talk to Bonded" is an AI voice drafting feature. Do not feature it without approval. |
+| 06 | `06-parent-child-emma` | Mom, viewing Emma (7–9) | Member | "8 years · Ages 7–9 · account linked". Today: Put laundry away, Saturday Reset, Feed the dog €1.00 "Awaiting approval", Clean desk "Completed without a reminder +10 points". "Moderate · 55 min today". "Assign a responsibility". Progress: 150 points. Money (cropped). | yes | Bug 1 |
+| 07 | `07-parent-checkin` | Mom | Check-in | "Make space to talk." "What worked? What could change?" Filled answers, ending "The Weekend Adventure in the mountains." "Save check-in". | no | This is a check-in, **not** an approval note |
+| 10 | `10-mia-5-today` | Mia (4–6) | Today | "Hi, Mia." "A little help." A big plant picture, **"Water the plants"**, "I did it!", "Hear it". Movie Night card. | no | "Water the plants" belongs to Mia, not Emma |
+| 11 | `11-mia-5-wishes` | Mia (4–6) | Wishes | "Wishes." "Something worth working towards." A read-aloud "Wishes" button. A unicorn plush with progress and no numbers. Pancake breakfast (cropped). | no | |
+| 20 | `20-emma-8-today` | Emma (7–9) | Today | "Hey, Emma." "Little things add up." Art Set €11/€25, "€14 to go". Today: Put laundry away (+5 Family XP), Saturday Reset (+100 Family XP), Feed the dog €1.00 "A parent will check this soon". | yes | 2 to do + 1 waiting for approval |
+| 21 | `21-emma-8-wishes` | Emma (7–9) | Wishes | Art Set €11/€25. "Our goals": Movie Night. | yes | |
+| 30 | `30-noah-11-today` | Noah (10–12) | Today | "Today, Noah." "A clear plan. Something worth the effort." LEGO space station €22/€45, "about 32 days to go". Empty the dishwasher €1.00, Walk the dog €1.50, Pack your school bag "Completed without a reminder +10 XP". | yes | |
+| 31 | `31-noah-11-goals` | Noah (10–12) | Goals | LEGO space station €22/€45. "Something for you": **Climbing wall day** 220/400 XP, "180 to go". | yes | A personal goal, not a family experience |
+| 32 | `32-noah-11-rewards` | Noah (10–12) | Rewards | "My money", available €8.00, pending €0.00, set aside €22.00. Movie Night 100/100 family points "Unlocked". "Money history" (cropped). | yes | |
+| 40 | `40-leo-13-today` | Leo (13–15) | Today | "Your day." "The plan you agreed on. Room to adjust." €3.00 available. "1 of 3 done today". Clean bathroom +15 XP, Saturday Reset, and under "pending": Take bins out €2.00 "Awaiting approval". | yes | Bugs 1 and 2 |
+| 41 | `41-leo-13-goals` | Leo (13–15) | Goals | New headphones €9/€60. "Something for you": Gaming Night 320/400 XP. | yes | |
+| 42 | `42-leo-13-rewards` | Leo (13–15) | Rewards | €3.00 available, pending €2.00, set aside €9.00. "€5.00 allowance every Saturday". Movie Night "Unlocked". Transactions (cropped). | yes | |
+| 43 | `43-leo-13-progress` | Leo (13–15) | Progress | "Your progress." "Small contributions add up." 320 XP, 8 completed, 4 solo. **Messages:** "Bins out before I even asked. Thanks, Leo!", Mom · 2 days ago. | no | The child's view of a parent's thank-you note |
+| 50 | `50-sofia-17-overview` | Sofia (16–18) | Overview | "Overview." €26.00 available. "Agreed this week": Pick up the groceries €3.00, Do your own laundry. Pending: Cook dinner for the family €5.00. Concert tickets (cropped). | yes | |
+| 51 | `51-sofia-17-goals` | Sofia (16–18) | Goals | Concert tickets €54/€120. "Something for you": Driving lesson with Dad, 400/400 XP, "Available today". | yes | |
+| 52 | `52-sofia-17-progress` | Sofia (16–18) | Progress | 490 XP, 13 completed, 6 solo. Messages: "Best dinner this week. Thank you, Sofia!" and "Thanks for doing the shop on your way home." | no | |
+
+## Campaign mapping
+
+Days 0, 5, 11 and 12 are the posts that need product screens. The rows match the approved briefs in `campaign/weeks-01-02.md`.
+
+| Post / frame | Brief requires | Status | Screen(s) | Notes |
+|---|---|---|---|---|
+| Day 0 slide 1 | "a phone showing the Bonded home screen" | AVAILABLE | 01 | Crop above the Saturday Reset row (bug 1). The date shows "Friday 9 October". |
+| Day 0 slide 2 | "phone with the family calendar" | **CLAIM CONFLICT** | none | The product has no calendar. See `product/feature-claims.md` C1 and `proposals/claim-amendments.md`. |
+| Day 5 Story (behind the scenes) | "A screen of one child's list" | AVAILABLE | 20 (Emma) or 30 (Noah) | 40 also works if cropped above "pending" |
+| Day 11 video 4–8s | Emma ticks off "Water the plants" | MISSING | 10 is Mia's | Phase 2 capture: give Emma (7–9) the job, then tick it off ("Done!") |
+| Day 11 video 8–14s | Parent approves and types a note | MISSING | none | Phase 2 capture: the parent "Review N completions" queue with "A thank you (optional)" filled in |
+| Day 11 video 14–18s | Family progress toward "Climbing wall trip" moves up | MISSING | 04 shows Movie Night 100/100 | Phase 2 capture: a family experience "Climbing wall trip", partly filled |
+| Day 11 Story (behind the scenes) | "The approval screen with a note" | MISSING | 43 is the child's side only | Phase 2 capture |
+| Day 12 slide 1 | Home screen | AVAILABLE | 01 | As Day 0 slide 1 |
+| Day 12 slide 2 | Family calendar and the climbing wall experience being set up | **CLAIM CONFLICT** + MISSING | none | No calendar exists. The experience set-up screen needs a capture. |
+| Day 12 slide 3 | A child's list. Copy: "Emma has two things on her list. Leo has three." | PARTIAL | 40 (Leo: "1 of 3 done today") and 20 (Emma) | Emma's screen shows 2 to do plus 1 waiting, so "two things" is open to reading. See C5. |
+| Day 12 slide 4 | Leo's reschedule request | MISSING | none | Phase 2 capture: "Ask for another day" on Leo's side, and "A change of plan" on the parent's side |
+| Day 12 slide 5 | Progress "a little over half full" | MISSING + **CLAIM CONFLICT** | none | Needs a capture. The copy says approval adds points; the build credits points at tick-off (C2). |
+| Day 12 slides 6–8 | Type, diagram, CTA | n/a | none | No screen needed |
+
+Tier 1 is the US, so `decisions/pending.md` D2 covers whether US-facing posts use these EUR screens or USD captures. Currency can be set per family (`src/components/SettingsPanel.tsx`), so a USD capture is legitimate.
+
+Light or dark? Both exist for every screen. One consistent choice for Days 0, 5, 11 and 12 is `decisions/pending.md` D1.
+
+## Captured additions (Phase 2)
+
+Screens captured later from the local stack go in `assets/screens/captured/` and are listed here, each with the capture commit and method. None has been captured yet.
+
+## File checksums
+
+The SHA-256 prefix is shown. Full hashes are in `assets/CHECKSUMS.sha256`.
+
+| File | Size (px) | Bytes | SHA-256 (first 16) |
+|---|---|---|---|
+| `screens/light/01-parent-home-light.png` | 1290×2796 | 286 KB | `ec3c848287a04b51` |
+| `screens/light/02-parent-responsibilities-light.png` | 1290×2796 | 214 KB | `d7971f1b796ad02e` |
+| `screens/light/03-parent-rewards-light.png` | 1290×2796 | 192 KB | `a38f1f68647c124e` |
+| `screens/light/04-parent-family-light.png` | 1290×2796 | 529 KB | `a5fff21214e29d07` |
+| `screens/light/05-parent-add-menu-light.png` | 1290×2796 | 305 KB | `e2b7e55052cd236a` |
+| `screens/light/06-parent-child-emma-light.png` | 1290×2796 | 161 KB | `889be4231e369ba6` |
+| `screens/light/07-parent-checkin-light.png` | 1290×2796 | 161 KB | `dc07671a331def4e` |
+| `screens/light/10-mia-5-today-light.png` | 1290×2796 | 204 KB | `612233adbcb7c406` |
+| `screens/light/11-mia-5-wishes-light.png` | 1290×2796 | 164 KB | `d855e907f7372f8f` |
+| `screens/light/20-emma-8-today-light.png` | 1290×2796 | 479 KB | `c5195e1c1e4c59d8` |
+| `screens/light/21-emma-8-wishes-light.png` | 1290×2796 | 169 KB | `9b7ec0688d3a5343` |
+| `screens/light/30-noah-11-today-light.png` | 1290×2796 | 543 KB | `7cc9a5889a986f1c` |
+| `screens/light/31-noah-11-goals-light.png` | 1290×2796 | 180 KB | `611b16b67c04daae` |
+| `screens/light/32-noah-11-rewards-light.png` | 1290×2796 | 167 KB | `2d2c4338c73fec89` |
+| `screens/light/40-leo-13-today-light.png` | 1290×2796 | 198 KB | `11e4ed8cae9742eb` |
+| `screens/light/41-leo-13-goals-light.png` | 1290×2796 | 175 KB | `1ee3485914fb6619` |
+| `screens/light/42-leo-13-rewards-light.png` | 1290×2796 | 170 KB | `f6f89a8f6873cbf7` |
+| `screens/light/43-leo-13-progress-light.png` | 1290×2796 | 158 KB | `d895f9e4813b78d2` |
+| `screens/light/50-sofia-17-overview-light.png` | 1290×2796 | 182 KB | `3362184eb93b7042` |
+| `screens/light/51-sofia-17-goals-light.png` | 1290×2796 | 180 KB | `47d36b8ecf922c94` |
+| `screens/light/52-sofia-17-progress-light.png` | 1290×2796 | 147 KB | `73b836c2b9831c84` |
+| `screens/dark/01-parent-home-dark.png` | 1290×2796 | 260 KB | `61c05f1464e979aa` |
+| `screens/dark/02-parent-responsibilities-dark.png` | 1290×2796 | 207 KB | `203bb5523f501ac9` |
+| `screens/dark/03-parent-rewards-dark.png` | 1290×2796 | 186 KB | `5c157c44f1806b0c` |
+| `screens/dark/04-parent-family-dark.png` | 1290×2796 | 498 KB | `615bf00c6c3c7a09` |
+| `screens/dark/05-parent-add-menu-dark.png` | 1290×2796 | 272 KB | `1917daced790e505` |
+| `screens/dark/06-parent-child-emma-dark.png` | 1290×2796 | 146 KB | `9009da81b882f275` |
+| `screens/dark/07-parent-checkin-dark.png` | 1290×2796 | 152 KB | `80f0639b58aeb23e` |
+| `screens/dark/10-mia-5-today-dark.png` | 1290×2796 | 183 KB | `cd8f10dea446a134` |
+| `screens/dark/11-mia-5-wishes-dark.png` | 1290×2796 | 162 KB | `75d5c9a5ce88b5b8` |
+| `screens/dark/20-emma-8-today-dark.png` | 1290×2796 | 486 KB | `423d7adc2a4b1f5f` |
+| `screens/dark/21-emma-8-wishes-dark.png` | 1290×2796 | 166 KB | `b61d1a94dac27f6f` |
+| `screens/dark/30-noah-11-today-dark.png` | 1290×2796 | 554 KB | `26dccc1d65f15614` |
+| `screens/dark/31-noah-11-goals-dark.png` | 1290×2796 | 177 KB | `d619feff2629b556` |
+| `screens/dark/32-noah-11-rewards-dark.png` | 1290×2796 | 159 KB | `10f35f3c9638e590` |
+| `screens/dark/40-leo-13-today-dark.png` | 1290×2796 | 186 KB | `8de42c9249ccaf52` |
+| `screens/dark/41-leo-13-goals-dark.png` | 1290×2796 | 174 KB | `97b3a4eb868ffd60` |
+| `screens/dark/42-leo-13-rewards-dark.png` | 1290×2796 | 166 KB | `a569abf7e04b811f` |
+| `screens/dark/43-leo-13-progress-dark.png` | 1290×2796 | 121 KB | `9791e2929827d745` |
+| `screens/dark/50-sofia-17-overview-dark.png` | 1290×2796 | 181 KB | `31ce8b1520fbb8ae` |
+| `screens/dark/51-sofia-17-goals-dark.png` | 1290×2796 | 178 KB | `b8e812e1d9fe7bec` |
+| `screens/dark/52-sofia-17-progress-dark.png` | 1290×2796 | 146 KB | `19b1c25b27134268` |
+| `screens/overview/overview-dark.png` | 2292×2112 | 1307 KB | `da37e08977dda054` |
+| `screens/overview/overview-light.png` | 2292×2112 | 1305 KB | `3eefd68ee4b9d1f3` |
