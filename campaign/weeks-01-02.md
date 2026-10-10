@@ -30,9 +30,9 @@ Bonded runs a 3-month waitlist campaign on Instagram, Facebook and TikTok, posti
 
 | Pillar | The family moment behind it | Where Bonded fits |
 | --- | --- | --- |
-| One shared plan | Being the only person who knows what's happening this week | Shared calendar and responsibilities |
+| One shared plan | Being the only person who knows what's happening this week | Shared plan and responsibilities |
 | Effort gets noticed | Jobs nobody notices because nothing went wrong | Approvals with a note, points |
-| Money they understand | Pocket money nobody ever properly agreed on | Allowance and earnings tracking, savings goals |
+| Money they understand | An allowance nobody ever properly agreed on | Allowance and earnings tracking, savings goals |
 | Something to look forward to | Weekend plans that stay ideas | Family experiences everyone works toward |
 | Kids have a say | Kids who skip a job instead of asking to move it | Help, break and reschedule requests |
 
@@ -141,11 +141,11 @@ Six raw videos, five carousels and three single images, one a day, plus stories 
 | 3 Wed | Single image | Apparently, I'm the family calendar | Editorial only |
 | 4 Thu | Raw video | Their night to plan dinner | Editorial only |
 | 5 Fri | Carousel | What kids can actually handle, age by age | Natural connection |
-| 6 Sat | Raw video | A Saturday tidy that ends | Editorial only |
+| 6 Sat | Raw video | A Saturday cleanup that ends | Editorial only |
 | 7 Sun | Single image | Does everyone know what's happening this week? | Natural connection |
 | 8 Mon | Carousel | Splitting jobs between siblings | Editorial only |
 | 9 Tue | Raw video | Have a real job ready | Editorial only |
-| 10 Wed | Carousel | Should pocket money be linked to chores? | Natural connection |
+| 10 Wed | Carousel | Should allowance be linked to chores? | Natural connection |
 | 11 Thu | Raw video | Before anyone asked | Product demonstration |
 | 12 Fri | Carousel | One week with a shared family plan | Product demonstration |
 | 13 Sat | Raw video | Plan the weekend on Wednesday | Editorial only |
@@ -172,10 +172,10 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 **Slides:**
 
 1. **Layout B, cover.** Headline: "What Bonded is," (Playfair Regular 140px) over "and why we're building it." (Black Italic 150px, two lines). Subheadline: "A family app for running the week together." Image: a phone showing the Bonded home screen, with "Demo family" in small text.
-2. **Layout C.** Label "What it is". Headline: "One shared plan for the whole family." Subheadline: "The family calendar, who's doing what, and something to look forward to, in one place everyone can see." Image: phone with the family calendar, "Demo family" in small text.
-3. **Layout C.** Label "Who it's for". Headline: "Families with kids from about 4 to 18." Subheadline: "Parents set the plan. Kids see their own part, tick things off, and can ask for help, a break or a new time." No image.
+2. **Layout C.** Label "What it is". Headline: "One shared plan for the whole family." Subheadline: "The week's plan, who's doing what, and something to look forward to, in one place everyone can see." Image: phone with the Family screen ("Common ground."), "Demo family" in small text.
+3. **Layout C.** Label "Who it's for". Headline: "Families with kids from about 4 to 18." Subheadline: "Parents set the plan. Kids see their own part, tick things off, and can ask for help, a break or a new day." No image.
 4. **Layout C.** Label "Why we're building it". Headline: "The week shouldn't live in one person's head." Subheadline: "In most families, one parent remembers everything and asks for everything. We think the work, and the credit for it, should be shared." No image.
-5. **Layout C.** Label "How rewards work". Headline: "Points unlock extras the family agrees on." Subheadline: "A climbing wall trip, a film out, pocket money if you choose. Everyday time together is never on the line. Bonded keeps track of money; it doesn't move it." No image.
+5. **Layout C.** Label "How rewards work". Headline: "Points unlock extras the family agrees on." Subheadline: "A climbing wall trip, a movie night out, an allowance if you choose. Everyday time together is never on the line. Bonded keeps track of money; it doesn't move it." No image.
 6. **Layout E, CTA.** Headline: "Join the waitlist." Subheadline: "Bonded is coming to iPhone and Android." Pill "Link in bio".
 
 **Instagram caption:**
@@ -194,13 +194,13 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 > Hello from Bonded.
 >
-> We're building a family app for sharing the week: the calendar, who's doing what, and the occasional extra the family works toward together. It's for families with kids from about 4 to 18, where one parent has quietly become the person who remembers everything.
+> We're building a family app for sharing the week: the plan, who's doing what, and the occasional extra the family works toward together. It's for families with kids from about 4 to 18, where one parent has quietly become the person who remembers everything.
 >
 > This page will mostly be about family life rather than the app: practical ideas, honest questions and the odd thing that made us laugh. When Bonded launches on iPhone and Android, this is where we'll say so.
 >
 > If you'd like to try it when it opens, the waitlist is here: [link]
 
-**Product integration:** product introduction, outside the editorial schedule. Functions mentioned: shared family calendar, responsibilities per child, help, break and reschedule requests, points toward agreed family experiences, pocket money tracking. Check every claim on slides 2 to 5 against the current build.
+**Product integration:** product introduction, outside the editorial schedule. Functions mentioned: the shared weekly plan, responsibilities per child, help, break and reschedule requests, points toward agreed family experiences, allowance tracking. Check every claim on slides 2 to 5 against the current build.
 
 **Visual direction:** grey editorial slides. Phone cutouts on slides 1 and 2 only; slides 3 to 5 are type only, so the words carry them.
 
@@ -225,7 +225,7 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 **Script** (off-camera voiceover; on-screen text burned in, centred, 320px from the top):
 
 1. **0 to 3s.** Visual: a handwritten list on the fridge with four jobs: set the table, feed the dog, water the plants, sort the recycling. A girl of about 8 points at "set the table". Voiceover: "Try letting them choose their own job." On screen: "Let them choose."
-2. **3 to 9s.** Visual: she takes plates from the cupboard and sets the table, forks slightly crooked. Voiceover: "A short list of things that genuinely help. They pick one, and it's theirs for a month." On screen: "Theirs for a month."
+2. **3 to 9s.** Visual: she takes plates from the cabinet and sets the table, forks slightly crooked. Voiceover: "A short list of things that genuinely help. They pick one, and it's theirs for a month." On screen: "Theirs for a month."
 3. **9 to 14s.** Visual: a wide shot of the finished table. Voiceover: "Then ask how it's going. Keep it, swap it, or add one." On screen: "Keep it, swap it, or add one."
 4. **14 to 18s.** Visual: the family sits down and someone passes a dish. No voiceover, no text.
 
@@ -233,7 +233,7 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 > Setting the table takes two minutes. Deciding who sets it can take fifteen.
 >
-> One way round it: give the kids a short list of jobs that genuinely help, let each of them pick one, and agree it's theirs for a month. A job you chose is harder to argue about, and the end of the month is a natural moment to swap.
+> One way round it: give the kids a short list of jobs that genuinely help, let each of them pick one, and agree that it's theirs for a month. A job you chose is harder to argue about, and the end of the month is a natural moment to swap.
 >
 > #raisingkids #familyroutine
 
@@ -259,9 +259,9 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 7 slides.
 
-**Concept:** arguments about chores sound like they're about the dishwasher, but they usually start earlier: nobody agreed whose job it was or what "done" means. The post shows where the argument really starts and what to agree before the week begins.
+**Concept:** arguments about chores sound like they're about the dishwasher, but they usually start earlier: nobody agreed whose job it was or what "done" means. The post shows where the argument really starts and what to agree on before the week begins.
 
-**Audience value:** it reframes a daily fight and gives three specific things to agree, once, at the start of the week.
+**Audience value:** it reframes a daily fight and gives three specific things to agree on, once, at the start of the week.
 
 **Headline:** "Maybe the problem isn't the chores."
 
@@ -269,9 +269,9 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 **Slides:**
 
-1. **Layout B, cover.** Headline: "Maybe the problem isn't the chores." Subheadline: "It might be that nobody agreed on them." Image: a pair of kids' trainers dropped in the middle of the page.
-2. **Layout C.** Label "01". Headline: "Listen to where it starts." Subheadline: "Not at the bins. At 'I didn't know it was my turn.'" Image: a small kitchen bin.
-3. **Layout C.** Label "02". Headline: "Make 'done' specific." Subheadline: "'Tidy your room' means something different to everyone in the house. 'Clothes in the basket, bed made, floor clear' doesn't." Image: a laundry basket.
+1. **Layout B, cover.** Headline: "Maybe the problem isn't the chores." Subheadline: "It might be that nobody agreed on them." Image: a pair of kids' sneakers dropped in the middle of the page.
+2. **Layout C.** Label "01". Headline: "Listen to where it starts." Subheadline: "Not at the trash can. At 'I didn't know it was my turn.'" Image: a small kitchen trash can.
+3. **Layout C.** Label "02". Headline: "Make 'done' specific." Subheadline: "'Clean your room' means something different to everyone in the house. 'Clothes in the basket, bed made, floor clear' doesn't." Image: a laundry basket.
 4. **Layout D.** Headline: "Agree three things." Diagram: three circles joined by arrows, "What needs doing", "Whose it is", "What done looks like". Accent on "Whose it is".
 5. **Layout C.** Label "04". Headline: "Do it once, before the week starts." Subheadline: "Not at the sink on Tuesday, when everyone's tired and the dishwasher is already full." Image: a full dishwasher basket.
 6. **Layout C.** Label "05". Headline: "Write it where everyone looks." Subheadline: "The fridge, a whiteboard by the door, a shared app. Not one person's head." Image: a list held to a fridge by a magnet.
@@ -279,7 +279,7 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 **Instagram caption:**
 
-> Usually the argument isn't about whether the dishwasher needs emptying. It's about whose turn it was, and whether "emptied" includes the cutlery basket.
+> Usually the argument isn't about whether the dishwasher needs emptying. It's about whose turn it was, and whether "emptied" includes the silverware basket.
 >
 > Which is good news, really. You can't make anyone love the dishwasher. You can agree who's doing it before Tuesday night.
 >
@@ -293,7 +293,7 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 > Has anyone else noticed how rarely chore arguments are about not wanting to do the job?
 >
-> In most houses it's "I didn't know it was me", "I did it last time" or "you never said the cutlery counts". Which is almost reassuring. Those are arguments about an agreement nobody actually made, and that's a lot easier to sort out than a child who simply refuses.
+> In most houses it's "I didn't know it was me", "I did it last time" or "you never said the silverware counts". Which is almost reassuring. Those are arguments about an agreement nobody actually made, and that's a lot easier to sort out than a child who simply refuses.
 >
 > A quick chat at the start of the week, with one name on each job, tends to settle more of it than you'd expect. Curious whether that matches what happens in your house.
 >
@@ -301,7 +301,7 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 **Product integration:** natural connection. Function mentioned: shared responsibilities, each with an owner.
 
-**Visual direction:** the grey editorial slide style. The trainers on the cover should look kicked off, not placed. Slide 7 is type only.
+**Visual direction:** the grey editorial slide style. The sneakers on the cover should look kicked off, not placed. Slide 7 is type only.
 
 **CTA:** waitlist, in the caption only. The slides end without one.
 
@@ -311,13 +311,13 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 **Placement:** Instagram post, Facebook post, TikTok photo mode. Single image, 1080 × 1440.
 
-**Concept:** in most families one person becomes the household's memory without anyone deciding it. They know every pickup, kit day and birthday party, and everyone else knows to ask them.
+**Concept:** in most families one person becomes the household's memory without anyone deciding it. They know every pickup, gym day and birthday party, and everyone else knows to ask them.
 
 **Audience value:** instant recognition, and a post people send to their partner. It names a dynamic most families never talk about.
 
 **Headline:** "Apparently, I'm the family calendar."
 
-**Subheadline:** "Football is Tuesday. The dentist moved to Thursday. Nobody else knows either of those things."
+**Subheadline:** "Soccer is Tuesday. The dentist moved to Thursday. Nobody else knows either of those things."
 
 **On-creative copy** (Layout B):
 
@@ -333,7 +333,7 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 **Facebook caption:**
 
-> Every family seems to have one. The person who knows that football moved to Tuesday, that the PE kit needs washing by Thursday, and that Saturday's party starts at two, not three.
+> Every family seems to have one. The person who knows that soccer moved to Tuesday, that the gym clothes need washing by Thursday, and that Saturday's party starts at two, not three.
 >
 > Nobody votes for it. It just accumulates, one school email and one "can you remind me" at a time.
 >
@@ -351,7 +351,7 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 **Placement:** Instagram Reel, Facebook Reel, TikTok video. Raw video, 20 seconds.
 
-**Concept:** once a week, one child plans the family dinner. They pick the meal, write the shopping list, keep to an amount you agree, and cook it with an adult. A real decision that affects everyone, and a meal the family wouldn't otherwise have had.
+**Concept:** once a week, one child plans the family dinner. They pick the meal, write the shopping list, keep to an amount you agree on, and cook it with an adult. A real decision that affects everyone, and a meal the family wouldn't otherwise have had.
 
 **Audience value:** a positive, repeatable idea that covers planning, money and cooking in one go, and gives each child a night that's theirs.
 
@@ -362,15 +362,15 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 **Script** (off-camera voiceover; on-screen text burned in, centred, 320px from the top):
 
 1. **0 to 4s.** Visual: a boy of about 11 at the kitchen table writes "Tacos" at the top of a notepad. Voiceover: "Once a week, let one of the kids plan dinner." On screen: "Their night to plan dinner."
-2. **4 to 9s.** Visual: he writes the shopping list under an amount circled at the top. Voiceover: "They choose the meal and write the list. You agree the budget." On screen: "Their meal. Your budget."
-3. **9 to 15s.** Visual: in the supermarket, he checks the list, puts a pack back and takes a cheaper one. Voiceover: "Then they shop for it, with you." On screen: "Swapping to stay on budget."
-4. **15 to 20s.** Visual: he cooks with an adult beside him at the hob, then the family sits down and someone holds up a taco. Voiceover: "And everyone eats what they planned." No text.
+2. **4 to 9s.** Visual: he writes the shopping list under an amount circled at the top. Voiceover: "They choose the meal and write the list. You agree on the budget." On screen: "Their meal. Your budget."
+3. **9 to 15s.** Visual: in the grocery store, he checks the list, puts a pack back and takes a cheaper one. Voiceover: "Then they shop for it, with you." On screen: "Swapping to stay on budget."
+4. **15 to 20s.** Visual: he cooks with an adult beside him at the stove, then the family sits down and someone holds up a taco. Voiceover: "And everyone eats what they planned." No text.
 
 **Instagram caption:**
 
 > One night a week, one child is in charge of dinner. They pick the meal, write the shopping list, work to an amount you agree, and cook it with you.
 >
-> It covers more than it looks like: planning, a bit of maths, swapping things when the basket goes over budget, and the slightly terrifying experience of cooking for people who might complain.
+> It covers more than it looks like: planning, a bit of math, swapping things when the basket goes over budget, and the slightly terrifying experience of cooking for people who might complain.
 >
 > Younger kids can choose from three options you've already picked. Teenagers can do most of it on their own.
 >
@@ -388,7 +388,7 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 **Product integration:** editorial only.
 
-**Visual direction:** a real kitchen and a real supermarket aisle. An adult is at the hob whenever it's on. Keep the moment he puts something back to stay on budget; it's the heart of the video. Faces only with written consent.
+**Visual direction:** a real kitchen and a real grocery store aisle. An adult is at the stove whenever it's on. Keep the moment he puts something back to stay on budget; it's the heart of the video. Faces only with written consent.
 
 **CTA:** no CTA on Instagram or TikTok. Facebook ends on the question.
 
@@ -412,7 +412,7 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 2. **Layout C.** Label "4 to 6". Headline: "One thing at a time, next to you." Subheadline: "Toys into the basket, plate to the sink, shoes by the door. They can own it. You'll still be standing nearby." Image: a toy basket.
 3. **Layout C.** Label "7 to 9". Headline: "Small daily routines." Subheadline: "Make the bed, set the table, feed the pet. Expect to remind them for a while. That's normal." Image: a fork on a folded napkin.
 4. **Layout C.** Label "10 to 12". Headline: "Jobs that help other people." Subheadline: "Load the dishwasher, sort the recycling, make their own school lunch. This is where it stops being only about their own stuff." Image: a lunchbox.
-5. **Layout C.** Label "13 to 15". Headline: "Whole jobs, start to finish." Subheadline: "Their own laundry. One simple dinner a week. The bins on bin day." Image: a laundry basket.
+5. **Layout C.** Label "13 to 15". Headline: "Whole jobs, start to finish." Subheadline: "Their own laundry. One simple dinner a week. The trash on trash day." Image: a laundry basket.
 6. **Layout C.** Label "16 to 18". Headline: "Things adults actually do." Subheadline: "A grocery run with a list and a budget. Booking their own appointments. Cooking for everyone once a week." Image: a paper grocery bag with a list tucked in.
 7. **Layout D.** Headline: "How to hand something over." Diagram: four circles joined by arrows, "Do it together", "They do it, you watch", "They do it, you check", "It's theirs". Accent on "It's theirs".
 8. **Layout C.** Headline: "Start with two." Subheadline: "Add a third once the first two run without you." No image.
@@ -443,11 +443,11 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 **Stories:** Behind the scenes. A screen of one child's list in Bonded (demo family), with "Each kid gets a list of what's theirs today." underneath and the waitlist link sticker.
 
-### Day 6, Saturday. A Saturday tidy that ends
+### Day 6, Saturday. A Saturday cleanup that ends
 
 **Placement:** Instagram Reel, Facebook Reel, TikTok video. Raw video, 22 seconds. Post on Saturday between 8 and 9am.
 
-**Concept:** weekend tidying drags on because it has no end point. A timer and one room each gives it edges, and deciding in advance what comes afterwards gives everyone a reason to finish.
+**Concept:** weekend cleanup drags on because it has no end point. A timer and one room each gives it edges, and deciding in advance what comes afterwards gives everyone a reason to finish.
 
 **Audience value:** a method a family can try the same morning they see it.
 
@@ -458,19 +458,19 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 **Script** (off-camera voiceover; on-screen text burned in, centred, 320px from the top):
 
 1. **0 to 4s.** Visual: a phone timer set to 20:00, a thumb presses start. Voiceover: "Twenty minutes, one room each, everyone at once." On screen: "20 minutes. One room each."
-2. **4 to 10s.** Visual: a speaker switched on; a kid of about 10 hoovering the living room; a younger one putting cushions back on the sofa; a parent wiping the kitchen counter. Voiceover: "Music on. The littlest gets the smallest room. When the timer stops, you stop." On screen: "Stop when the timer stops."
-3. **10 to 16s.** Visual: quick cuts, someone dancing with the hoover. Voiceover: "Finished or not. No inspections." On screen: "No inspections."
+2. **4 to 10s.** Visual: a speaker switched on; a kid of about 10 vacuuming the living room; a younger one putting cushions back on the sofa; a parent wiping the kitchen counter. Voiceover: "Music on. The littlest gets the smallest room. When the timer stops, you stop." On screen: "Stop when the timer stops."
+3. **10 to 16s.** Visual: quick cuts, someone dancing with the vacuum. Voiceover: "Finished or not. No inspections." On screen: "No inspections."
 4. **16 to 22s.** Visual: the timer hits zero; cut to pancakes on the table and everyone sitting down. Voiceover: "Decide what happens after before you start. That's the part worth hurrying for." On screen: "Then something good."
 
 **Instagram caption:**
 
 > Pancakes are a legitimate incentive.
 
-**TikTok caption:** The rule is you stop when the timer stops. Even mid-hoover. #familyroutine #weekendwithkids
+**TikTok caption:** The rule is you stop when the timer stops. Even mid-vacuum. #familyroutine #weekendwithkids
 
 **Facebook caption:**
 
-> The simplest version of a Saturday tidy we know: a twenty-minute timer, everyone tidies one room at the same time, and you stop when it goes off, finished or not. Little ones take the smallest room or tag along with someone.
+> The simplest version of a Saturday cleanup we know: a twenty-minute timer, everyone cleans one room at the same time, and you stop when it goes off, finished or not. Little ones take the smallest room or tag along with someone.
 >
 > The stopping is the important part. It's what keeps it to twenty minutes instead of the whole morning.
 >
@@ -488,7 +488,7 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 **Placement:** Instagram post, Facebook post, TikTok photo mode. Single image, 1080 × 1440. Post on Sunday afternoon.
 
-**Concept:** most weeks go wrong in small, predictable ways: a pickup nobody arranged, a kit left at home. A ten-minute run-through on Sunday evening catches most of them. It's the practical answer to Wednesday's "family calendar" post.
+**Concept:** most weeks go wrong in small, predictable ways: a pickup nobody arranged, gym clothes left at home. A ten-minute run-through on Sunday evening catches most of them. It's the practical answer to Wednesday's "family calendar" post.
 
 **Audience value:** a short routine with four specific questions, ready to use that evening.
 
@@ -508,7 +508,7 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 >
 > Somebody will say "wait, that's this week?" at least once. That's the point.
 >
-> The other half is where the week lives afterwards. If it's only in your head, you'll still be answering every question by Wednesday. A whiteboard by the door works. So does a calendar the whole family can open, which is the part we're building into Bonded. Comment WAITLIST if you'd like the link.
+> The other half is where the week lives afterwards. If it's only in your head, you'll still be answering every question by Wednesday. A whiteboard by the door works. So does a shared plan the whole family can open, which is the part we're building into Bonded. Comment WAITLIST if you'd like the link.
 >
 > #familyroutine #mentalload
 
@@ -518,11 +518,11 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 > A Sunday evening habit worth trying: ten minutes with everyone, going through the week day by day. Who needs to be where and when, who's driving, what needs packing or paying for, and one thing to look forward to so it isn't all logistics.
 >
-> The conversation is only half of it. If the week lives in one parent's head afterwards, that parent is still the one everyone asks. Some families use a whiteboard by the door. We're building Bonded so the whole family can see the same calendar wherever they are, and if that sounds useful, the waitlist is here: [link]
+> The conversation is only half of it. If the week lives in one parent's head afterwards, that parent is still the one everyone asks. Some families use a whiteboard by the door. We're building Bonded so the whole family can see the same plan wherever they are, and if that sounds useful, the waitlist is here: [link]
 >
 > If you already do something like this, what makes it stick?
 
-**Product integration:** natural connection. Function mentioned: the shared family calendar.
+**Product integration:** natural connection. Function mentioned: the shared weekly plan of responsibilities.
 
 **Visual direction:** grey page, calm and uncluttered. A small cutout of a mug of tea next to an open notepad with the days of the week written down, bottom right between 1080 and 1240px.
 
@@ -548,8 +548,8 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 1. **Layout B, cover.** Headline: "How to split jobs between siblings" (Playfair Regular 120px) over "without a court case." (Black Italic 160px). Subheadline: "Five things that help when they're different ages." Image: two pairs of rain boots side by side, one small, one big.
 2. **Layout C.** Label "01". Headline: "Measure effort, not tasks." Subheadline: "Ten minutes of matching socks at 5 is a real contribution. So is twenty minutes of dishes at 12." Image: a pair of small socks.
-3. **Layout C.** Label "02". Headline: "Rotate the unpopular jobs between kids who can do them." Subheadline: "A 12-year-old and a 9-year-old can swap the bins and the recycling week by week. A 5-year-old gets a smaller job that still counts." Image: a roll of bin bags.
-4. **Layout D.** Headline: "A rota that fits their ages." Diagram: two circles, "Oldest" and "Middle", with arrows swapping "Bins" and "Recycling" between them each week. A third circle beside them, "Youngest", holds its own job, "Set the table". Accent on the swap arrows.
+3. **Layout C.** Label "02". Headline: "Rotate the unpopular jobs between kids who can do them." Subheadline: "A 12-year-old and a 9-year-old can swap the trash and the recycling week by week. A 5-year-old gets a smaller job that still counts." Image: a roll of trash bags.
+4. **Layout D.** Headline: "A rotation that fits their ages." Diagram: two circles, "Oldest" and "Middle", with arrows swapping "Trash" and "Recycling" between them each week. A third circle beside them, "Youngest", holds its own job, "Set the table". Accent on the swap arrows.
 5. **Layout C.** Label "04". Headline: "Let them help draw it up." Subheadline: "A split they had a say in is much harder to call unfair. Ask what feels fair to them before you decide." Image: a sticky note and a pencil.
 6. **Layout C.** Label "05". Headline: "Leave comparisons out of it." Subheadline: "'Your sister already did hers' has never once made anyone faster." Image: two paper stars of different sizes.
 7. **Layout C.** Headline: "Fair changes as they grow." Subheadline: "What's fair at 6 and 10 won't be fair at 8 and 12. The start of each school year is a good moment to rethink who does what." No image.
@@ -611,43 +611,43 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 > Five-year-olds offer to help constantly, usually right when dinner needs to happen. It's easier to have a real job ready than to keep saying "not now".
 >
-> A few that work at that age: washing vegetables, matching socks, watering plants, carrying cutlery to the table, putting the shopping in the right cupboard. Some kids would happily mop all day if you let them.
+> A few that work at that age: washing vegetables, matching socks, watering plants, carrying silverware to the table, putting the groceries in the right cabinet. Some kids would happily mop all day if you let them.
 >
 > What's the job your youngest always asks to do?
 
 **Product integration:** editorial only.
 
-**Visual direction:** a real kitchen, filmed at the child's height in natural light. An adult stays within arm's reach and partly in frame the whole time. Use a stable step stool or a learning tower, never a chair. The hob is off, and there are no knives, kettles or hot water in shot. Let the mess show; the wet sleeve is part of the story.
+**Visual direction:** a real kitchen, filmed at the child's height in natural light. An adult stays within arm's reach and partly in frame the whole time. Use a stable step stool or a learning tower, never a chair. The stove is off, and there are no knives, kettles or hot water in shot. Let the mess show; the wet sleeve is part of the story.
 
 **CTA:** no CTA on Instagram or TikTok. Facebook ends on the question.
 
-**Stories:** Idea. "Real jobs for under-6s." with "Washing vegetables, matching socks, watering plants, carrying cutlery to the table." underneath.
+**Stories:** Idea. "Real jobs for under-6s." with "Washing vegetables, matching socks, watering plants, carrying silverware to the table." underneath.
 
-### Day 10, Wednesday. Should pocket money be linked to chores?
+### Day 10, Wednesday. Should allowance be linked to chores?
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 7 slides.
 
-**Concept:** parents genuinely disagree on this. The post lays out both sides fairly, shows where many families land, and makes the one point that holds either way: agree it in advance.
+**Concept:** parents genuinely disagree on this. The post lays out both sides fairly, shows where many families land, and makes the one point that holds either way: agree on it in advance.
 
 **Audience value:** helps parents work out their own approach, and starts a discussion people actually want to join.
 
-**Headline:** "Should pocket money be linked to chores?"
+**Headline:** "Should allowance be linked to chores?"
 
 **Subheadline:** "Sensible parents land on both sides of this."
 
 **Slides:**
 
-1. **Layout B, cover.** Headline: "Should pocket money" (Playfair Regular 130px) over "be linked to chores?" (Black Italic 160px). Subheadline: "Sensible parents land on both sides of this." Image: a glass jar of coins with a handwritten label.
+1. **Layout B, cover.** Headline: "Should allowance" (Playfair Regular 130px) over "be linked to chores?" (Black Italic 160px). Subheadline: "Sensible parents land on both sides of this." Image: a glass jar of coins with a handwritten label.
 2. **Layout C.** Label "The case for". Headline: "Money follows effort." Subheadline: "Kids see the connection long before their first job. Saving up means more when they earned it." Image: a few coins stacked.
-3. **Layout C.** Label "The case against". Headline: "Some jobs just come with living here." Subheadline: "Pay for everything and you might start hearing 'how much?' every time you ask for help." Image: a plate and a tea towel.
+3. **Layout C.** Label "The case against". Headline: "Some jobs just come with living here." Subheadline: "Pay for everything and you might start hearing 'how much?' every time you ask for help." Image: a plate and a dish towel.
 4. **Layout D.** Headline: "Where a lot of families land." Diagram: two boxes side by side, "Everyday jobs: unpaid" (making beds, clearing plates) and "Extra jobs: paid" (washing the car, clearing the garage). Accent on "Extra jobs: paid".
-5. **Layout C.** Label "Whichever you choose". Headline: "Agree it before payday." Subheadline: "What's paid, how much, and which day. Most pocket money arguments come from an agreement nobody actually made." Image: a wall calendar with one day circled.
+5. **Layout C.** Label "Whichever you choose". Headline: "Agree on it before payday." Subheadline: "What's paid, how much, and which day. Most allowance arguments come from an agreement nobody actually made." Image: a wall calendar with one day circled.
 6. **Layout C.** Headline: "Keep 'earned' and 'paid' apart." Subheadline: "Write down what's been earned as it happens. Then payday is just handing it over." Image: a small notebook with a pencil.
 7. **Layout C.** Headline: "Which way does your house do it?" Subheadline: "Linked, separate, or somewhere in between." No image.
 
 **Instagram caption:**
 
-> Honestly, we lean towards a mix. Everyday things unpaid, because some jobs just come with living somewhere. A few bigger jobs paid, because connecting effort and money early seems worth doing.
+> Honestly, we lean toward a mix. Everyday things unpaid, because some jobs just come with living somewhere. A few bigger jobs paid, because connecting effort and money early seems worth doing.
 >
 > But parents argue hard for both ends of this, and their reasons are good. The only version that clearly doesn't work is the one where nobody agreed anything and payday turns into a negotiation.
 >
@@ -655,13 +655,13 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 >
 > Where do you land?
 >
-> #pocketmoney #allowance
+> #allowance
 
-**TikTok caption:** Should pocket money be linked to chores? The comments on this one are going to be something. #pocketmoney #parentsoftiktok
+**TikTok caption:** Should allowance be linked to chores? The comments on this one are going to be something. #allowance #parentsoftiktok
 
 **Facebook caption:**
 
-> Here's one that divides parents: should pocket money be linked to chores?
+> Here's one that divides parents: should allowance be linked to chores?
 >
 > The case for: it connects effort and money early, and saving for something means more when they earned it.
 >
@@ -677,7 +677,7 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 **CTA:** conversation, the question at the end of the caption. No waitlist.
 
-**Stories:** Question. "Pocket money: linked to jobs, separate, or a mix?" with "Reply and tell us" underneath. The results come back on Friday.
+**Stories:** Question. "Allowance: linked to jobs, separate, or a mix?" with "Reply and tell us" underneath. The results come back on Friday.
 
 ### Day 11, Thursday. Before anyone asked
 
@@ -731,9 +731,9 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 8 slides. Pin it on Instagram and TikTok, next to the introduction post. Facebook keeps the introduction as its pinned post.
 
-**Concept:** what Bonded is for, shown through one ordinary week with the demo family. On Sunday the plans go in and the family agrees one optional extra for the weekend. Through the week, approved jobs add points toward it, while everyday family time stays off the table.
+**Concept:** what Bonded is for, shown through one ordinary week with the demo family. On Sunday the plans go in and the family agrees on one optional extra for the weekend. Through the week, family jobs add points toward it, while everyday family time stays off the table.
 
-**Audience value:** the rhythm works for any family, app or not: plan on Sunday, agree one optional extra together, keep ordinary time together out of the deal. And it shows clearly what Bonded does.
+**Audience value:** the rhythm works for any family, app or not: plan on Sunday, agree on one optional extra together, keep ordinary time together out of the deal. And it shows clearly what Bonded does.
 
 **Headline:** "One week with a shared family plan."
 
@@ -742,19 +742,19 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 **Slides** (app screens inside a cutout phone, with "Demo family" in small text under each):
 
 1. **Layout B, cover.** Headline: "One week with" (Playfair Regular 140px) over "a shared family plan." (Black Italic 160px). Subheadline: "How the Millers, our demo family, use Bonded." Image: a phone showing the Bonded home screen.
-2. **Layout C.** Label "Sunday". Headline: "The week goes in, plus one extra to aim for." Subheadline: "Football on Tuesday, dentist on Thursday, who's doing what. Then the family agrees an optional extra for the weekend: a trip to the climbing wall." Image: phone with the family calendar and the climbing wall trip set up as a family experience.
-3. **Layout C.** Label "Monday". Headline: "Everyone sees their own part." Subheadline: "Emma has two things on her list. Leo has three. Nobody needs to ask who's driving to football." Image: phone with a child's list.
-4. **Layout C.** Label "Wednesday". Headline: "Leo needs to move something." Subheadline: "He has a mock exam, so he asks to swap bin night instead of quietly skipping it." Image: phone with the reschedule request.
-5. **Layout C.** Label "Thursday". Headline: "Approved jobs add up." Subheadline: "When a parent approves a finished job, its points go toward the climbing wall. Everyone can see how close they are." Image: phone with the progress a little over half full.
+2. **Layout C.** Label "Sunday". Headline: "The week goes in, plus one extra to aim for." Subheadline: "Trash on Tuesday, laundry on Thursday, who's doing what. Then the family agrees on an optional extra for the weekend: a trip to the climbing wall." Image: phone with the Upcoming responsibilities and the "Climbing wall trip" experience.
+3. **Layout C.** Label "Monday". Headline: "Everyone sees their own part." Subheadline: "Emma has two things on her list. Leo has three. Nobody needs to ask whose turn it is." Image: phone with a child's list.
+4. **Layout C.** Label "Wednesday". Headline: "Leo needs to move something." Subheadline: "He has a practice test, so he asks to swap trash night instead of quietly skipping it." Image: phone with the reschedule request.
+5. **Layout C.** Label "Thursday". Headline: "Family jobs add up." Subheadline: "Every family job that gets done adds points toward the climbing wall. Everyone can see how close they are." Image: phone with the progress a little over half full.
 6. **Layout C.** Label "Friday". Headline: "The ordinary stuff isn't on the line." Subheadline: "Dinners, walks, a parent's time: none of it depends on points. The points only unlock the extra." No image.
-7. **Layout D.** Label "Saturday". Headline: "Climbing wall unlocked." Diagram: one long progress bar in five segments, Monday to Friday, filling left to right as jobs are approved, ending in a circle, "Climbing wall", marked unlocked. Accent on the circle. Small text centred at 1230px: "Agreed together on Sunday."
+7. **Layout D.** Label "Saturday". Headline: "Climbing wall unlocked." Diagram: one long progress bar in five segments, Monday to Friday, filling left to right as family jobs get done, ending in a circle, "Climbing wall", marked unlocked. Accent on the circle. Small text centred at 1230px: "Agreed together on Sunday."
 8. **Layout E, CTA.** Headline: "Join the waitlist." Subheadline: "Bonded is coming to iPhone and Android." Pill "Link in bio".
 
 **Instagram caption:**
 
 > Bonded is a family app for getting the week into one shared place: plans, who's doing what, and the occasional extra worth working toward.
 >
-> Here's a week with our demo family, the Millers. On Sunday the plans go in, and the family agrees one optional extra for the weekend: a trip to the climbing wall. Everyone can see their own part. When Leo needs to move something, he asks. Each job a parent approves adds points toward the trip, so by Thursday they can see how close they are.
+> Here's a week with our demo family, the Millers. On Sunday the plans go in, and the family agrees on one optional extra for the weekend: a trip to the climbing wall. Everyone can see their own part. When Leo needs to move something, he asks. Each family job that gets done adds points toward the trip, so by Thursday they can see how close they are.
 >
 > Dinners, walks and time together aren't on the line. The points only ever go toward the extra.
 >
@@ -768,21 +768,21 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 > Bonded is the family app we're building, and the easiest way to explain it is a single week.
 >
-> On Sunday, the family's plans go in, along with who's doing what. The family also agrees one optional extra to work toward. For our demo family, the Millers, it's a trip to the climbing wall on Saturday.
+> On Sunday, the family's plans go in, along with who's doing what. The family also agrees on one optional extra to work toward. For our demo family, the Millers, it's a trip to the climbing wall on Saturday.
 >
-> During the week, everyone sees their own part. If something clashes, a child can ask to move it. Each job a parent approves adds points toward the trip, and the whole family can see how close they're getting.
+> During the week, everyone sees their own part. If something clashes, a child can ask to move it. Each family job that gets done adds points toward the trip, and the whole family can see how close they're getting.
 >
 > One thing we feel strongly about: everyday family time is never the reward. Dinners, walks and a parent's attention aren't things anyone should have to earn. The points are only for the extra.
 >
 > Bonded is coming to iPhone and Android. The waitlist is here: [link]
 
-**Product integration:** product demonstration. Functions shown: shared family calendar, responsibilities per child, reschedule requests, parent approvals, points toward an agreed family experience. Before designing, check three things in the current build and adjust slides 2, 5 and 7 if any differ: points are added when a parent approves a job, not when it's ticked off; a family experience collects points from every child; and who can set up an experience.
+**Product integration:** product demonstration. Functions shown: the shared weekly plan, responsibilities per child, reschedule requests, parent approvals, points toward an agreed family experience. Before designing, check three things in the current build and adjust slides 2, 5 and 7 if any differ: points are added when a parent approves a job, not when it's ticked off; a family experience collects points from every child; and who can set up an experience.
 
 **Visual direction:** grey editorial slides with one phone cutout per slide, bottom right; slide 6 is type only. Slides 5 and 7 carry the progress story: the same bar in the same position, half full and then full, so swiping between them reads as filling up.
 
 **CTA:** waitlist, on slide 8 and in the caption.
 
-**Stories:** Share-back. The results of Wednesday's pocket money question, with two or three of the best replies shared anonymously.
+**Stories:** Share-back. The results of Wednesday's allowance question, with two or three of the best replies shared anonymously.
 
 ### Day 13, Saturday. Plan the weekend on Wednesday
 

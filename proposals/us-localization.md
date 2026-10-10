@@ -1,6 +1,6 @@
 # Proposed US localization for campaign weeks 1–2
 
-**Status:** PROPOSED. **Not applied.** The approved campaign stays locked, word for word.
+**Status:** APPLIED on 10 Oct 2026. The owner chose option B, one US-English master, and approved every drafted line (D-2026-10-10-4). Applied as Amendment 1, line by line in `campaign/CHANGELOG.md`, with consistency follow-ons in brief notes only. Three more captions are proposed in `proposals/us-localization-addendum.md`.
 
 **Why.** Tier 1 is the United States. Tier 2 is the UK, English-speaking EU, Australia and New Zealand (`strategy/market-priority.md`). The approved copy is written in UK English.
 
@@ -16,7 +16,7 @@ The campaign file itself flags the choice: "First market. US, UK or EU decides p
 
 The product already says **"Allowance"** in its own UI (the add menu, screen 05). Option B also brings the campaign in line with the app.
 
-If you choose B, approve line by line (APPROVE / REJECT / EDIT). Approved lines are applied in a separate PR to the campaign file, after the claim amendments (`proposals/claim-amendments.md`).
+Option B was chosen. The claim amendments (`proposals/claim-amendments.md`) were applied first, and the US wording on top.
 
 ## Line inventory
 
@@ -84,5 +84,5 @@ These don't affect published text: "favourite" (l.676), "behaviour" (l.57), "col
 - "step stool"
 
 ## Effect on the first Canva checkpoint
-- Day 2 is built with the **locked UK copy**, word for word.
-- If you approve option B for l.273 and l.274, those two text frames are changed by text replacement before the post is finalised. No layout work is lost.
+- The checkpoint showed Day 2 in the original UK copy.
+- With option B approved, slides 2 and 3 are re-rendered with "trash can" and "Clean your room". No layout work is lost.

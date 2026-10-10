@@ -2,6 +2,17 @@
 
 Owner decisions taken in interactive, human-reviewed sessions. Newest first. Each entry records its scope and what it changes. A decision never silently rewrites the locked campaign copy.
 
+## 10 Oct 2026 (checkpoint review)
+
+| ID | Decision | Scope | Where applied |
+|---|---|---|---|
+| D-2026-10-10-1 | **G1 approved.** The first creative checkpoint is approved as presented: the visual system and design choices 1–7 in `design/checkpoint-01/README.md`. The optional cover lockup (choice 8) was not taken up, so slides carry the handle only (D9 option a). | All further creative production | `design/checkpoint-01/`. Templates and rules reused by `tools/proofs/`. |
+| D-2026-10-10-2 | **Canva route A: Canva Pro and a Brand Kit "BONDED"** (D11). The owner upgrades and sets up the Brand Kit; production then rebuilds the masters in Canva to match the proofs. | Canva production | `ops/mcp-audit.md`. The Phase 2 plan in PR #2. |
+| D-2026-10-10-3 | **Claim amendments approved as drafted** (D4): C1.1–C1.9, C2.1–C2.6 and the optional C6.1. The product alternatives (build a calendar, award points on approval) are not pursued for this campaign. | Days 0, 7 and 12, plus internal brief lines | Amendment 1 in `campaign/CHANGELOG.md`. `proposals/claim-amendments.md` (APPLIED). |
+| D-2026-10-10-4 | **One US-English master** (D3 option B), with every drafted line approved. Tier 2 markets see the same US wording. | All art, captions and video text | Amendment 1 in `campaign/CHANGELOG.md`. `proposals/us-localization.md` (APPLIED). Three further captions are proposed in `proposals/us-localization-addendum.md`. |
+| D-2026-10-10-5 | **Light app screens with USD** (D1 option a, D2 option b). App images use the light captures from the local stack, with the family currency set to USD and US wording in the demo data. | Days 0, 5, 11 and 12 | `design/screenshots-manifest.md`. `tools/capture/`. |
+| D-2026-10-10-6 | **Keep the dates: Day 0 on Sun 18 Oct, Day 1 on Mon 19 Oct 2026** (D5 option a). The launch blockers keep their due dates in `ops/production-status.csv`; any that slips is raised with the owner before the day it affects. | Scheduling | `CLAUDE.md`. `ops/production-status.csv`. |
+
 ## 9 Oct 2026 (Claude Code takeover session)
 
 | ID | Decision | Scope | Where applied |

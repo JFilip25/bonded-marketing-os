@@ -2,17 +2,13 @@
 
 Each entry gives the options and a recommendation. None is applied until the owner decides.
 
+Resolved on 10 Oct 2026 and moved to `decisions/log.md`: D1 and D2 (D-2026-10-10-5), D3 (D-2026-10-10-4), D4 (D-2026-10-10-3), D5 (D-2026-10-10-6), D9 and G1 (D-2026-10-10-1), D11 (D-2026-10-10-2).
+
 | ID | Decision | Options | Recommendation | Blocks |
 |---|---|---|---|---|
-| D1 | **Light or dark app screens** for Days 0, 5, 11 and 12 | (a) light, (b) dark, (c) mixed | **Light.** It sits naturally on Paper slides and matches the campaign's light editorial pages. Dark screens on a Paper page read as heavy cutouts. | Day 0/5/11/12 creative |
-| D2 | **Currency on US-facing screens** | (a) the supplied EUR screens, (b) USD captures of the same states (legitimate: currency is a per-family setting) | **(b) USD** for Tier 1 posts, captured in Phase 2. Use screens without currency where possible (04, 07, 43, 52). | Day 0/12 screens |
-| D3 | **US localization** of the locked copy | Options A, B and C in `proposals/us-localization.md` | **B:** one US-English master, approved line by line | Final text on Days 2, 3, 5, 8, 10 and 12 |
-| D4 | **Claim amendments** (calendar, points timing) | Approve, reject or edit each line in `proposals/claim-amendments.md`. Or keep the copy and change the product. | Approve the minimal copy amendments. The product alternatives aren't realistic before 18 Oct. | Day 0 s2, Day 7 captions, Day 12 s2/s3/s5 and captions |
-| D5 | **Launch date** | (a) keep Day 0 on 18 Oct and Day 1 on 19 Oct 2026, (b) move Day 1 to a later Monday | **(b), unless all the blockers below are cleared by about 15 Oct.** As of 9 Oct these are all missing: social handles; the waitlist page and domain; the ManyChat WAITLIST flow; connected Buffer channels; MailerLite forms and sender; footage and written consents for 6 videos; approved creative. The campaign itself says Day 1 starts "once the waitlist page is live". | Scheduling |
 | D6 | **Website repo and domain** for the waitlist page | (a) a new repo, e.g. `JFilip25/bonded-web`, deployed on Vercel, (b) add a waitlist page to the existing `bonded-family.vercel.app` link site (lives in the app repo, `web/links/`) | **(a) a new repo.** The app repo stays untouched (D-2026-10-09-5), and the link site is deliberately `noindex`. A domain is needed either way; the trademark check on "Bonded" is still pending. | Waitlist page, UTM, MailerLite form |
 | D7 | **Comment-to-DM provider** for "Comment WAITLIST" | (a) ManyChat (named in the campaign), (b) another Meta-approved tool | **(a) ManyChat.** No connector exists in this workspace, so set it up in its own UI and test it. | Every post with "Comment WAITLIST" (Days 0, 2, 5, 7, 11, 12) |
 | D8 | **Buffer plan.** The current organisation allows 3 channels and 10 scheduled posts. | (a) stay on free and keep only drafts or ideas in Buffer, (b) upgrade before scheduling | Decide before scheduling. Weeks 1 and 2 are 15 posts across 3 platforms. | Scheduling |
-| D9 | **Logo on campaign slides** | (a) as specified: handle only, no logo on slides, (b) add a small official lockup to covers | **(a)**, as approved. (b) is offered as an option at the Canva checkpoint. | none |
 | D10 | **Social handles** | Claim `@bonded…` handles on Instagram, Facebook and TikTok | Claim them now. Art keeps the `@[handle]` placeholder until then. | All art (handle at 200 px) |
-| D11 | **Canva route for production** (Free can't set fonts or export transparent PNGs, and its AI credits ran out) | (A) Canva Pro and a Brand Kit, (B) stay on Free and you set the font once per master, (C) the local exact renderer as the production source | **A** | Building the Canva masters after G1 |
-| G1 | **Approve the first creative checkpoint** | Approve, or request changes (`design/checkpoint-01/README.md`) | n/a | All further production |
+| D12 | **Three more US captions** ("agree" becomes "agree on") | Approve, reject or edit each line in `proposals/us-localization-addendum.md` | Approve. Each adds one word. | Day 4 and Day 10 captions (art unaffected) |
+| G2 | **Approve the production set** | After Phase 2: the Canva masters and exports for Day 0 and Days 1–14, checked against the proofs | n/a | Buffer drafts and scheduling |

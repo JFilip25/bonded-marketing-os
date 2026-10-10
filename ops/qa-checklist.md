@@ -1,7 +1,7 @@
 # BONDED prelaunch QA checklist
 
 ## Source and claims
-- [ ] `campaign/weeks-01-02.md` is unchanged: SHA-256 `b140a8452e01595e04ac21a3e0cbfa80ca8856f19fca824a67f0b69f28fac5fe` (9 Oct 2026). If it changes, the owner approved the change and the PR says which lines changed.
+- [ ] `campaign/weeks-01-02.md` matches the last approved amendment: SHA-256 `18d3160f194a0f835c9e929681b5b182a8d0c021535868cbdbc76a7a57a46214` (Amendment 1, 10 Oct 2026). The original locked file was `b140a8452e01595e04ac21a3e0cbfa80ca8856f19fca824a67f0b69f28fac5fe` (9 Oct 2026). Any other change needs owner approval and an entry in `campaign/CHANGELOG.md`.
 - [ ] Every product claim in an asset is VERIFIED in `product/feature-claims.md`, or covered by an approved amendment
 - [ ] On-creative text and captions match the locked source exactly (or approved amendments and localization)
 

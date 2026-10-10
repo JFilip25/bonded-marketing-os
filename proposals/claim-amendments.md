@@ -1,10 +1,10 @@
 # Proposed amendments: locked copy that the current build doesn't support
 
-**Status:** PROPOSED. **Not applied.** `campaign/weeks-01-02.md` stays locked and unchanged.
+**Status:** APPLIED on 10 Oct 2026. The owner approved every item as drafted, including the optional C6.1 (D-2026-10-10-3). Applied as Amendment 1, line by line in `campaign/CHANGELOG.md`. Where a line also had a US change, both were applied (for example C1.6 now reads "Trash on Tuesday"). C2.6 is on l.734, not l.736 as cited below.
 
 **Why this exists.** On 9 Oct 2026 the owner asked for minimal, line-referenced amendments to be drafted for approval (`decisions/log.md`, D-2026-10-09-3). The evidence for each item is in `product/feature-claims.md`.
 
-**How to approve.** Mark each item **APPROVE**, **REJECT** or **EDIT**. Approved items are then applied to the campaign file in a separate PR, which states exactly which lines changed. Until then, the affected frames stay flagged in `ops/production-status.csv`.
+**How it was approved.** The owner approved all items at once on 10 Oct 2026. They were applied in one dedicated commit on PR #2, and the changelog states exactly which lines changed.
 
 **Drafting rules:**
 - Change as few words as possible.
