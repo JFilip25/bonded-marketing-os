@@ -1,13 +1,13 @@
 {
   "summary": {
-    "renderedAt": "2026-10-10T05:36:37.153Z",
+    "renderedAt": "2026-10-10T06:16:48.280Z",
     "campaignSha256": "18d3160f194a0f835c9e929681b5b182a8d0c021535868cbdbc76a7a57a46214",
     "frames": 89,
     "feed": 46,
     "stories": 20,
     "videoOverlays": 23,
     "framesWithIssues": 0,
-    "framesWithPlaceholders": 22,
+    "framesWithPlaceholders": 0,
     "blocked": [
       "design/production/day06/day06_story_f1.png",
       "design/production/day06/day06_story_f2.png",
@@ -1424,7 +1424,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -1490,8 +1490,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER Laundry basket Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 598,
@@ -1500,13 +1500,13 @@
           "h": 400,
           "right": 1030,
           "bottom": 1260,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -1662,7 +1662,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -1728,8 +1728,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER Full dishwasher basket Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 598,
@@ -1738,13 +1738,13 @@
           "h": 400,
           "right": 1030,
           "bottom": 1260,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -1753,7 +1753,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -1819,8 +1819,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER List held to a fridge by a magnet Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 598,
@@ -1829,13 +1829,13 @@
           "h": 400,
           "right": 1030,
           "bottom": 1260,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -1968,7 +1968,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -2072,8 +2072,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER Well-used paper wall calendar with two sticky notes Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 240,
@@ -2082,13 +2082,13 @@
           "h": 260,
           "right": 840,
           "bottom": 1220,
-          "lines": 4,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -2297,7 +2297,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -2401,8 +2401,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER A child's sock next to an adult's sock Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 240,
@@ -2411,13 +2411,13 @@
           "h": 260,
           "right": 840,
           "bottom": 1220,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -2426,7 +2426,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -2492,8 +2492,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER Toy basket Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 771,
@@ -2502,13 +2502,13 @@
           "h": 240,
           "right": 1030,
           "bottom": 1260,
-          "lines": 4,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -2517,7 +2517,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -2583,8 +2583,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER Fork on a folded napkin Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 728,
@@ -2593,13 +2593,13 @@
           "h": 280,
           "right": 1030,
           "bottom": 1260,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -2608,7 +2608,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -2674,8 +2674,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER Lunchbox Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 684,
@@ -2684,13 +2684,13 @@
           "h": 320,
           "right": 1030,
           "bottom": 1260,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -2699,7 +2699,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -2765,8 +2765,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER Laundry basket Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 641,
@@ -2775,13 +2775,13 @@
           "h": 360,
           "right": 1030,
           "bottom": 1260,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -2790,7 +2790,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -2856,8 +2856,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER Paper grocery bag with a list tucked in Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 598,
@@ -2866,13 +2866,13 @@
           "h": 400,
           "right": 1030,
           "bottom": 1260,
-          "lines": 4,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -3575,7 +3575,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -3774,8 +3774,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER Mug of tea next to an open notepad with the days of the week Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 700,
@@ -3784,13 +3784,13 @@
           "h": 160,
           "right": 1030,
           "bottom": 1240,
-          "lines": 5,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -3851,7 +3851,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -3955,8 +3955,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER Two pairs of rain boots, one small, one big Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 240,
@@ -3965,13 +3965,13 @@
           "h": 260,
           "right": 840,
           "bottom": 1220,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -3980,7 +3980,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -4046,8 +4046,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER A pair of small socks Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 598,
@@ -4056,13 +4056,13 @@
           "h": 400,
           "right": 1030,
           "bottom": 1260,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -4071,7 +4071,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -4137,8 +4137,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER A roll of trash bags Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 598,
@@ -4147,13 +4147,13 @@
           "h": 400,
           "right": 1030,
           "bottom": 1260,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -4366,7 +4366,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -4432,8 +4432,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER A sticky note and a pencil Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 598,
@@ -4442,13 +4442,13 @@
           "h": 400,
           "right": 1030,
           "bottom": 1260,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -4457,7 +4457,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -4523,8 +4523,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER Two paper stars of different sizes Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 598,
@@ -4533,13 +4533,13 @@
           "h": 400,
           "right": 1030,
           "bottom": 1260,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -4832,7 +4832,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -4936,8 +4936,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER Glass jar of coins with a handwritten label Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 240,
@@ -4946,13 +4946,13 @@
           "h": 260,
           "right": 840,
           "bottom": 1220,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -4961,7 +4961,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -5027,8 +5027,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER A few coins stacked Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 598,
@@ -5037,13 +5037,13 @@
           "h": 400,
           "right": 1030,
           "bottom": 1260,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -5052,7 +5052,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -5118,8 +5118,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER A plate and a dish towel Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 598,
@@ -5128,13 +5128,13 @@
           "h": 400,
           "right": 1030,
           "bottom": 1260,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -5290,7 +5290,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -5356,8 +5356,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER Wall calendar with one day circled Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 598,
@@ -5366,13 +5366,13 @@
           "h": 400,
           "right": 1030,
           "bottom": 1260,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -5381,10 +5381,9 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
-        "600",
         "800"
       ],
       "issues": [],
@@ -5428,8 +5427,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER Small notebook with a pencil Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 598,
@@ -5438,13 +5437,13 @@
           "h": 400,
           "right": 1030,
           "bottom": 1260,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },
@@ -7149,7 +7148,7 @@
       "size": "1080x1440",
       "transparent": false,
       "status": "PROOF",
-      "placeholders": 1,
+      "placeholders": 0,
       "fontsLoaded": [
         "400",
         "600",
@@ -7253,8 +7252,8 @@
           "contrast": 12.59
         },
         {
-          "qa": "object-placeholder",
-          "text": "PLACEHOLDER Folded paper map with a corner bent back Phase 2 cutout, not final",
+          "qa": "object",
+          "text": "",
           "copy": null,
           "mode": null,
           "x": 240,
@@ -7263,13 +7262,13 @@
           "h": 260,
           "right": 840,
           "bottom": 1220,
-          "lines": 3,
+          "lines": null,
           "maxLines": null,
-          "fontSize": "22px",
-          "fontWeight": "600",
+          "fontSize": "16px",
+          "fontWeight": "400",
           "fontFamily": "J",
-          "color": "rgb(100, 106, 107)",
-          "contrast": 4.92
+          "color": "rgb(34, 45, 51)",
+          "contrast": null
         }
       ]
     },

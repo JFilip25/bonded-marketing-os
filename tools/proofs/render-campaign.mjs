@@ -208,6 +208,8 @@ const vid = (line, size) => txt(size === 72 ? 'headline' : 'subheadline', line, 
 
 // ---------- objects ----------
 const objects = { sneakers: img(join(OBJ, 'day02_trainers_paper.png')), trashCan: img(join(OBJ, 'day02_bin_paper.png')) };
+/** A cutout object from assets/objects (null, so a labelled placeholder, if the file is missing). */
+const O = (name) => img(join(OBJ, `${name}_paper.png`));
 
 // ---------- fitting (measured with the real fonts before any page is built) ----------
 const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH || undefined });
@@ -300,15 +302,15 @@ story('day01/day01_story_f1', storyQuestion('If your kids could pick one job, wh
 // Day 2 carousel (US master) + Idea story
 feed('day02/day02_carousel_s01', await B_('day02_carousel_s01', { setup: 'Maybe the problem', payoff: "isn't the chores.", setupSize: 120, payoffSize: 120, sub: 'It might be that nobody agreed on them.', object: objects.sneakers, objectLabel: PH("Kids' sneakers") }), true);
 feed('day02/day02_carousel_s02', await C_('day02_carousel_s02', { label: '01', headline: 'Listen to where it starts.', sub: "Not at the trash can. At 'I didn't know it was my turn.'", object: objects.trashCan, objectLabel: PH('Kitchen trash can') }));
-feed('day02/day02_carousel_s03', await C_('day02_carousel_s03', { label: '02', headline: "Make 'done' specific.", sub: "'Clean your room' means something different to everyone in the house. 'Clothes in the basket, bed made, floor clear' doesn't.", object: null, objectLabel: PH('Laundry basket') }));
+feed('day02/day02_carousel_s03', await C_('day02_carousel_s03', { label: '02', headline: "Make 'done' specific.", sub: "'Clean your room' means something different to everyone in the house. 'Clothes in the basket, bed made, floor clear' doesn't.", object: O('day02_laundry_basket'), objectLabel: PH('Laundry basket') }));
 feed('day02/day02_carousel_s04', layoutD({ headline: cp('Agree three things.'), steps: ['What needs doing', 'Whose it is', 'What done looks like'], accent: 1 }));
-feed('day02/day02_carousel_s05', await C_('day02_carousel_s05', { label: '04', headline: 'Do it once, before the week starts.', sub: "Not at the sink on Tuesday, when everyone's tired and the dishwasher is already full.", object: null, objectLabel: PH('Full dishwasher basket') }));
-feed('day02/day02_carousel_s06', await C_('day02_carousel_s06', { label: '05', headline: 'Write it where everyone looks.', sub: "The fridge, a whiteboard by the door, a shared app. Not one person's head.", object: null, objectLabel: PH('List held to a fridge by a magnet') }));
+feed('day02/day02_carousel_s05', await C_('day02_carousel_s05', { label: '04', headline: 'Do it once, before the week starts.', sub: "Not at the sink on Tuesday, when everyone's tired and the dishwasher is already full.", object: O('day02_dishwasher_basket'), objectLabel: PH('Full dishwasher basket') }));
+feed('day02/day02_carousel_s06', await C_('day02_carousel_s06', { label: '05', headline: 'Write it where everyone looks.', sub: "The fridge, a whiteboard by the door, a shared app. Not one person's head.", object: O('day02_fridge_list'), objectLabel: PH('List held to a fridge by a magnet') }));
 feed('day02/day02_carousel_s07', await C_('day02_carousel_s07', { label: '06', headline: 'Check in at the end of the week.', sub: "Five minutes: what worked, what didn't, what changes next week. The agreement should keep up with real life." }));
 story('day02/day02_story_f1', storyIdea("Agree what 'done' means.", "'Clothes in the basket, bed made, floor clear' is hard to argue with."));
 
 // Day 3 single + Question story
-feed('day03/day03_single', await B_('day03_single', { setup: 'Apparently,', payoff: "I'm the family calendar.", setupSize: 130, payoffSize: 150, sub: 'Soccer is Tuesday. The dentist moved to Thursday. Nobody else knows either of those things.', object: null, objectLabel: PH('Well-used paper wall calendar with two sticky notes') }), true);
+feed('day03/day03_single', await B_('day03_single', { setup: 'Apparently,', payoff: "I'm the family calendar.", setupSize: 130, payoffSize: 150, sub: 'Soccer is Tuesday. The dentist moved to Thursday. Nobody else knows either of those things.', object: O('day03_wall_calendar'), objectLabel: PH('Well-used paper wall calendar with two sticky notes') }), true);
 story('day03/day03_story_f1', storyQuestion("Who's the family calendar in your house?"));
 
 // Day 4 video + Question story
@@ -318,16 +320,17 @@ video('day04/day04_video_09s-15s', vid('Swapping to stay on budget.', 62));
 story('day04/day04_story_f1', storyQuestion('If your kids planned dinner, what would you be eating?'));
 
 // Day 5 carousel (objects grow slide to slide) + Behind the scenes story
-feed('day05/day05_carousel_s01', await B_('day05_carousel_s01', { setup: 'What kids can actually handle,', payoff: 'age by age.', setupSize: 130, payoffSize: 170, sub: 'A starting point for handing things over, not a rulebook.', object: null, objectLabel: PH("A child's sock next to an adult's sock") }), true);
+feed('day05/day05_carousel_s01', await B_('day05_carousel_s01', { setup: 'What kids can actually handle,', payoff: 'age by age.', setupSize: 130, payoffSize: 170, sub: 'A starting point for handing things over, not a rulebook.', object: O('day05_socks'), objectLabel: PH("A child's sock next to an adult's sock") }), true);
 const ages = [
-  ['4 to 6', 'One thing at a time, next to you.', "Toys into the basket, plate to the sink, shoes by the door. They can own it. You'll still be standing nearby.", 'Toy basket'],
-  ['7 to 9', 'Small daily routines.', "Make the bed, set the table, feed the pet. Expect to remind them for a while. That's normal.", 'Fork on a folded napkin'],
-  ['10 to 12', 'Jobs that help other people.', 'Load the dishwasher, sort the recycling, make their own school lunch. This is where it stops being only about their own stuff.', 'Lunchbox'],
-  ['13 to 15', 'Whole jobs, start to finish.', 'Their own laundry. One simple dinner a week. The trash on trash day.', 'Laundry basket'],
-  ['16 to 18', 'Things adults actually do.', 'A grocery run with a list and a budget. Booking their own appointments. Cooking for everyone once a week.', 'Paper grocery bag with a list tucked in'],
+  ['4 to 6', 'One thing at a time, next to you.', "Toys into the basket, plate to the sink, shoes by the door. They can own it. You'll still be standing nearby.", 'Toy basket', 'day05_toy_basket'],
+  ['7 to 9', 'Small daily routines.', "Make the bed, set the table, feed the pet. Expect to remind them for a while. That's normal.", 'Fork on a folded napkin', 'day05_fork_napkin'],
+  ['10 to 12', 'Jobs that help other people.', 'Load the dishwasher, sort the recycling, make their own school lunch. This is where it stops being only about their own stuff.', 'Lunchbox', 'day05_lunchbox'],
+  ['13 to 15', 'Whole jobs, start to finish.', 'Their own laundry. One simple dinner a week. The trash on trash day.', 'Laundry basket', 'day05_laundry_basket'],
+  ['16 to 18', 'Things adults actually do.', 'A grocery run with a list and a budget. Booking their own appointments. Cooking for everyone once a week.', 'Paper grocery bag with a list tucked in', 'day05_grocery_bag'],
 ];
-for (const [i, [label, headline, sub, what]] of ages.entries()) {
-  feed(`day05/day05_carousel_s0${i + 2}`, await C_(`day05_carousel_s0${i + 2}`, { label, headline, sub, object: null, objectLabel: PH(what), scale: 0.6 + i * 0.1 }));
+// "The cutout on each age slide gets a little bigger than the last": 60% to 100% of the Layout C object box.
+for (const [i, [label, headline, sub, what, file]] of ages.entries()) {
+  feed(`day05/day05_carousel_s0${i + 2}`, await C_(`day05_carousel_s0${i + 2}`, { label, headline, sub, object: O(file), objectLabel: PH(what), scale: 0.6 + i * 0.1 }));
 }
 feed('day05/day05_carousel_s07', layoutD({ headline: cp('How to hand something over.'), steps: ['Do it together', 'They do it, you watch', 'They do it, you check', "It's theirs"], accent: 3 }));
 feed('day05/day05_carousel_s08', await C_('day05_carousel_s08', { headline: 'Start with two.', sub: 'Add a third once the first two run without you.' }));
@@ -344,17 +347,17 @@ story('day06/day06_story_f2', storyShareback('If your kids planned dinner, what 
 // Day 7 single (Layout B adapted) + Idea story
 const checklist = ['Who needs to be where, and when', "Who's driving", 'What needs packing or paying for', 'One thing to look forward to'];
 const d07list = `<div class="abs" data-qa="checklist" style="left:50px;width:980px;top:780px;height:280px;display:flex;justify-content:center"><div style="display:flex;flex-direction:column;justify-content:space-around">${checklist.map((t) => `<div style="display:flex;align-items:center;gap:22px"><div style="width:30px;height:30px;border:3px solid ${C.ink};border-radius:6px;flex:none"></div>${txt('checklist-item', t, '', 'font-weight:400;font-size:36px;line-height:1.3')}</div>`).join('')}</div></div>
-  ${objectBox(null, PH('Mug of tea next to an open notepad with the days of the week'), { left: 1030 - 330, top: 1080, w: 330, h: 160 })}`;
+  ${objectBox(O('day07_mug_notepad'), PH('Mug of tea next to an open notepad with the days of the week'), { left: 1030 - 330, top: 1080, w: 330, h: 160 })}`;
 feed('day07/day07_single', await B_('day07_single', { setup: 'Does everyone know', payoff: "what's happening this week?", setupSize: 120, payoffSize: 130, sub: 'Ten minutes on Sunday evening, out loud.', zone: [280, 680], gap: 32, mode: 'literal', limit: 760, extra: d07list }), true);
 story('day07/day07_story_f1', storyIdea('Four questions for Sunday evening.', "Who's where? Who's driving? What needs packing? What's fun this week?"));
 
 // Day 8 carousel + Question story
-feed('day08/day08_carousel_s01', await B_('day08_carousel_s01', { setup: 'How to split jobs between siblings', payoff: 'without a court case.', setupSize: 120, payoffSize: 160, sub: "Five things that help when they're different ages.", object: null, objectLabel: PH('Two pairs of rain boots, one small, one big') }), true);
-feed('day08/day08_carousel_s02', await C_('day08_carousel_s02', { label: '01', headline: 'Measure effort, not tasks.', sub: 'Ten minutes of matching socks at 5 is a real contribution. So is twenty minutes of dishes at 12.', object: null, objectLabel: PH('A pair of small socks') }));
-feed('day08/day08_carousel_s03', await C_('day08_carousel_s03', { label: '02', headline: 'Rotate the unpopular jobs between kids who can do them.', sub: 'A 12-year-old and a 9-year-old can swap the trash and the recycling week by week. A 5-year-old gets a smaller job that still counts.', object: null, objectLabel: PH('A roll of trash bags') }));
+feed('day08/day08_carousel_s01', await B_('day08_carousel_s01', { setup: 'How to split jobs between siblings', payoff: 'without a court case.', setupSize: 120, payoffSize: 160, sub: "Five things that help when they're different ages.", object: O('day08_rain_boots'), objectLabel: PH('Two pairs of rain boots, one small, one big') }), true);
+feed('day08/day08_carousel_s02', await C_('day08_carousel_s02', { label: '01', headline: 'Measure effort, not tasks.', sub: 'Ten minutes of matching socks at 5 is a real contribution. So is twenty minutes of dishes at 12.', object: O('day08_small_socks'), objectLabel: PH('A pair of small socks') }));
+feed('day08/day08_carousel_s03', await C_('day08_carousel_s03', { label: '02', headline: 'Rotate the unpopular jobs between kids who can do them.', sub: 'A 12-year-old and a 9-year-old can swap the trash and the recycling week by week. A 5-year-old gets a smaller job that still counts.', object: O('day08_trash_bags'), objectLabel: PH('A roll of trash bags') }));
 feed('day08/day08_carousel_s04', `${labelAndHeadline(null, cp('A rotation that fits their ages.'), (await headlineSize('day08_carousel_s04', 'A rotation that fits their ages.')).hs)}${day08Rotation()}`);
-feed('day08/day08_carousel_s05', await C_('day08_carousel_s05', { label: '04', headline: 'Let them help draw it up.', sub: 'A split they had a say in is much harder to call unfair. Ask what feels fair to them before you decide.', object: null, objectLabel: PH('A sticky note and a pencil') }));
-feed('day08/day08_carousel_s06', await C_('day08_carousel_s06', { label: '05', headline: 'Leave comparisons out of it.', sub: "'Your sister already did hers' has never once made anyone faster.", object: null, objectLabel: PH('Two paper stars of different sizes') }));
+feed('day08/day08_carousel_s05', await C_('day08_carousel_s05', { label: '04', headline: 'Let them help draw it up.', sub: 'A split they had a say in is much harder to call unfair. Ask what feels fair to them before you decide.', object: O('day08_sticky_note'), objectLabel: PH('A sticky note and a pencil') }));
+feed('day08/day08_carousel_s06', await C_('day08_carousel_s06', { label: '05', headline: 'Leave comparisons out of it.', sub: "'Your sister already did hers' has never once made anyone faster.", object: O('day08_paper_stars'), objectLabel: PH('Two paper stars of different sizes') }));
 feed('day08/day08_carousel_s07', await C_('day08_carousel_s07', { headline: 'Fair changes as they grow.', sub: "What's fair at 6 and 10 won't be fair at 8 and 12. The start of each school year is a good moment to rethink who does what." }));
 story('day08/day08_story_f1', storyQuestion('Same jobs for everyone, or jobs by age?'));
 
@@ -366,10 +369,10 @@ video('day09/day09_video_15s-20s', vid('She washed them.', 62));
 story('day09/day09_story_f1', storyIdea('Real jobs for under-6s.', 'Washing vegetables, matching socks, watering plants, carrying silverware to the table.'));
 
 // Day 10 carousel (slides 2 and 3 mirror each other: same sizes) + Question story
-feed('day10/day10_carousel_s01', await B_('day10_carousel_s01', { setup: 'Should allowance', payoff: 'be linked to chores?', setupSize: 130, payoffSize: 160, sub: 'Sensible parents land on both sides of this.', object: null, objectLabel: PH('Glass jar of coins with a handwritten label') }), true);
+feed('day10/day10_carousel_s01', await B_('day10_carousel_s01', { setup: 'Should allowance', payoff: 'be linked to chores?', setupSize: 130, payoffSize: 160, sub: 'Sensible parents land on both sides of this.', object: O('day10_coin_jar'), objectLabel: PH('Glass jar of coins with a handwritten label') }), true);
 {
-  const a = { label: 'The case for', headline: 'Money follows effort.', sub: 'Kids see the connection long before their first job. Saving up means more when they earned it.', object: null, objectLabel: PH('A few coins stacked') };
-  const b = { label: 'The case against', headline: 'Some jobs just come with living here.', sub: "Pay for everything and you might start hearing 'how much?' every time you ask for help.", object: null, objectLabel: PH('A plate and a dish towel') };
+  const a = { label: 'The case for', headline: 'Money follows effort.', sub: 'Kids see the connection long before their first job. Saving up means more when they earned it.', object: O('day10_coins_stacked'), objectLabel: PH('A few coins stacked') };
+  const b = { label: 'The case against', headline: 'Some jobs just come with living here.', sub: "Pay for everything and you might start hearing 'how much?' every time you ask for help.", object: O('day10_plate_towel'), objectLabel: PH('A plate and a dish towel') };
   const hs = Math.min((await headlineSize('day10_carousel_s02', cp(a.headline))).hs, (await headlineSize('day10_carousel_s03', cp(b.headline))).hs);
   const ss = Math.min(await fit('day10_carousel_s02', 'subheadline', cp(a.sub), 'sub', 44, 34, 3), await fit('day10_carousel_s03', 'subheadline', cp(b.sub), 'sub', 44, 34, 3));
   if (hs !== 120) fits.push({ frame: 'day10_carousel_s02 + s03', role: 'headline (mirrored pair)', text: `${a.headline} / ${b.headline}`, spec: '120px, same size on both', used: `${hs}px` });
@@ -377,8 +380,8 @@ feed('day10/day10_carousel_s01', await B_('day10_carousel_s01', { setup: 'Should
   feed('day10/day10_carousel_s03', layoutC({ ...b, hs, ss }));
 }
 feed('day10/day10_carousel_s04', `${labelAndHeadline(null, cp('Where a lot of families land.'), (await headlineSize('day10_carousel_s04', 'Where a lot of families land.')).hs)}${day10Boxes()}`);
-feed('day10/day10_carousel_s05', await C_('day10_carousel_s05', { label: 'Whichever you choose', headline: 'Agree on it before payday.', sub: "What's paid, how much, and which day. Most allowance arguments come from an agreement nobody actually made.", object: null, objectLabel: PH('Wall calendar with one day circled') }));
-feed('day10/day10_carousel_s06', await C_('day10_carousel_s06', { headline: "Keep 'earned' and 'paid' apart.", sub: "Write down what's been earned as it happens. Then payday is just handing it over.", object: null, objectLabel: PH('Small notebook with a pencil') }));
+feed('day10/day10_carousel_s05', await C_('day10_carousel_s05', { label: 'Whichever you choose', headline: 'Agree on it before payday.', sub: "What's paid, how much, and which day. Most allowance arguments come from an agreement nobody actually made.", object: O('day10_calendar_circled'), objectLabel: PH('Wall calendar with one day circled') }));
+feed('day10/day10_carousel_s06', await C_('day10_carousel_s06', { headline: "Keep 'earned' and 'paid' apart.", sub: "Write down what's been earned as it happens. Then payday is just handing it over.", object: O('day10_notebook_pencil'), objectLabel: PH('Small notebook with a pencil') }));
 feed('day10/day10_carousel_s07', await C_('day10_carousel_s07', { headline: 'Which way does your house do it?', sub: 'Linked, separate, or somewhere in between.' }));
 story('day10/day10_story_f1', storyQuestion('Allowance: linked to jobs, separate, or a mix?'));
 
@@ -411,7 +414,7 @@ video('day13/day13_video_10s-16s', vid('What, when, and a rain plan.', 62));
 story('day13/day13_story_f1', storyQuestion("What's the plan for Saturday?"));
 
 // Day 14 single + Question story
-feed('day14/day14_single', await B_('day14_single', { setup: 'What has your family', payoff: 'been meaning to do for ages?', setupSize: 130, payoffSize: 140, sub: 'The hike, the trip, the place someone mentioned two summers ago.', object: null, objectLabel: PH('Folded paper map with a corner bent back') }), true);
+feed('day14/day14_single', await B_('day14_single', { setup: 'What has your family', payoff: 'been meaning to do for ages?', setupSize: 130, payoffSize: 140, sub: 'The hike, the trip, the place someone mentioned two summers ago.', object: O('day14_folded_map'), objectLabel: PH('Folded paper map with a corner bent back') }), true);
 story('day14/day14_story_f1', storyQuestion("What's been on your family's list for ages?"));
 
 await mctx.close();

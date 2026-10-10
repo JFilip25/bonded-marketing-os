@@ -87,3 +87,23 @@ The test design is "ZZ TEST capability spike (safe to delete)", `DAHXi5aZVwo`. T
 - whether a design generated with `brand_kit_id` gets the kit's fonts
 
 The results go here.
+
+## Phase 2 capability check, 10 Oct 2026 (after the owner's Canva Pro upgrade)
+
+| Capability | Result | Evidence |
+|---|---|---|
+| Account | Same Canva user and team as before | `get-assets` owner IDs unchanged. The 9 Oct "ZZ TEST" designs are gone (deleted by the owner, as suggested). |
+| Brand Kit visible to the connector | **No.** `list-brand-kits` still returns an empty list. | Canva's help answer: check whether the kit is a personal Brand Kit (private) or a team kit. It couldn't confirm how the Connect API chooses which kits to list. |
+| `brand_kit_id` generation spike | **Not possible** while no kit is visible | n/a |
+| AI image generation | **Works** | 23 objects generated (the 22 placeholders plus one extra) |
+| Transparent PNG export | **Works.** A page with a colour background exports as RGBA, 99.97% transparent. A page whose background is an *image* keeps it. | Working design `DAHXlb7RTko` "ZZ WORKING object exports (safe to delete)", page 2 |
+| Multi-page edits | `add_page` and `insert_fill` take several operations in one call, across pages | Same design, pages 3–24 |
+| Fonts, weight 600, letter spacing, text shadow through MCP | Unchanged from the Free plan: **not available** | No font-family, letter-spacing or shadow parameter in `edit-design` |
+
+**Brand kit zip.** The owner uploaded `BONDED-brand-kit.zip` (SHA-256 `8c568a42…a9fbde`). Its contents:
+- the logos in colour, ink, paper, night, black and white. Every one has the same path geometry as the official files, recoloured.
+- Plus Jakarta Sans TTFs
+- colour tokens matching the identity, plus two support colours (Clay wash `#F6D8C6`, Sun `#F8D36B`)
+- rules for a different slide system (1080×1350, 72 px headlines, a symbol on every slide, boxed video captions)
+
+The owner chose to keep the G1 system and use the kit for logo files, colours and fonts only.

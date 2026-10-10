@@ -1,7 +1,6 @@
 # Production proofs: Day 0 and Days 1–14 (for gate G2)
 
-**Status:** PROOFS FOR REVIEW. They are not the finished assets yet:
-- 22 feed frames still carry object placeholders.
+**Status:** PROOFS FOR REVIEW. Every cutout object is in place (10 Oct, Phase 2). They are not the finished assets yet:
 - 3 Story frames are BLOCKED.
 - The handle is still `@[handle]`.
 - Nothing has been scheduled or published.
@@ -96,19 +95,7 @@ All of these use the approved tokens, and each uses one accent at most.
 
 ## Blockers before these become final assets
 
-**1. Cutout objects (Phase 2, Canva Pro).** 22 frames show a labelled placeholder:
-
-| Post | Objects still needed |
-|---|---|
-| Day 2 | Slide 3: laundry basket. Slide 5: full dishwasher basket. Slide 6: list held to a fridge by a magnet. |
-| Day 3 | Well-used paper wall calendar with two sticky notes |
-| Day 5 | Slide 1: a child's sock next to an adult's sock. Slides 2–6: toy basket, fork on a folded napkin, lunchbox, laundry basket, paper grocery bag with a list. Each one grows a little from slide to slide. |
-| Day 7 | Mug of tea next to an open notepad with the days of the week |
-| Day 8 | Slide 1: two pairs of rain boots. Slides 2, 3, 5, 6: small socks, a roll of trash bags, a sticky note and pencil, two paper stars. |
-| Day 10 | Slide 1: glass coin jar with a label. Slides 2, 3, 5, 6: stacked coins, a plate and dish towel, a wall calendar with a day circled, a notebook and pencil. |
-| Day 14 | Folded paper map |
-
-Day 2's sneakers and trash can are Canva AI images already blended onto Paper (`assets/objects/`).
+**1. Cutout objects: done.** All 24 objects are Canva AI images, blended onto exact Paper. Files and provenance are in `assets/objects/`. On Day 5 each one grows a little from slide to slide (60% to 100% of the object box). Writing on calendars, lists and tags is illegible scribble by design.
 
 **2. Share-back Stories (BLOCKED).** Day 6 f1/f2 and Day 12 f1 show reply placeholders. They need genuine replies to the Day 1, Day 4 and Day 10 questions, shared anonymously or with permission. They are never to be invented.
 
