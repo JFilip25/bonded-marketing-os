@@ -23,3 +23,10 @@ Neither tool touches production, publishes anything, or changes the app reposito
 - the campaign's pixel positions
 
 It then measures every text box in Chromium and writes `design/checkpoint-01/qa.json`, covering safe zones, line limits, fonts and the 4:5 crop. Transparent PNGs are used for the video overlays and the end card.
+
+`render-campaign.mjs` renders the full Day 0 and Days 1–14 set into `design/production/` (feed, Stories, transparent video text) with the same approved layouts. It adds three safeguards:
+- **Copy guard.** Every on-creative string must appear word for word in `campaign/weeks-01-02.md`, or the render stops. QA also lists any art string in the campaign that was never placed.
+- **Fit rule.** A headline or subheadline that can't meet its line limit at the brief's size is set at the largest size that fits. Every case is logged in `qa.json` under `fits` for approval.
+- **QA.** Safe zones, line limits, the 4:5 cover crop, WCAG contrast, loaded font weights, and pictures overlapping text.
+
+Objects come from `assets/objects/`, or `OBJECTS=<dir>`. App screens are the light captures in `assets/screens/captured/light/`. `render-checkpoint.mjs` stays unchanged as the record of the G1 checkpoint.
