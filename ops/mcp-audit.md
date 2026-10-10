@@ -57,3 +57,33 @@ The test design is "ZZ TEST capability spike (safe to delete)", `DAHXi5aZVwo`. T
 | Background remover | **Paid plans only** | The objects are generated on a Paper-coloured background and blended to exact `#F5F2EA` locally |
 | Test designs left in Canva (no delete tool) | `DAHXi5aZVwo` "ZZ TEST capability spike"; `DAHXjGv0ut0` "ZZ TEST mixed-font AI draft"; `DAHXjOXwQqg` "ZZ TEST font specimen, not Plus Jakarta Sans" | Safe for the owner to delete |
 | Delete a design | **No tool** | Manual |
+
+## Canva route A: Brand Kit preparation, 10 Oct 2026
+
+**Decision:** Canva Pro with a Brand Kit (D-2026-10-10-2). On 10 Oct, `list-brand-kits` still returned no kits, so Pro and the Brand Kit are still to be set up by the owner.
+
+**Official logo files pre-uploaded to the owner's Canva Uploads.** Byte-identical to `assets/brand/`; each was checked with `get-assets`.
+
+| Media ID | File | Size |
+|---|---|---|
+| `MAHXlYAK_9s` | `bonded-lockup-horizontal-color.svg` | 830×140 |
+| `MAHXlYxCQCQ` | `bonded-lockup-horizontal-reversed.svg` (Paper, for dark grounds) | 830×140 |
+| `MAHXlWOLYfs` | `bonded-lockup-stacked-color.svg` | 662×421 |
+| `MAHXlT8NI1w` | `bonded-symbol-hearth.svg` | 300×300 |
+| `MAHXlSw4rTo` | `social-avatar-1080.png` | 1080×1080 |
+
+**Owner checklist.** In Canva: Brand → Create new Brand Kit "BONDED".
+
+| Section | Set up |
+|---|---|
+| Logos | Add the five uploads above from Uploads |
+| Colours | Paper `#F5F2EA`, Ink `#222D33`, Hearth `#B94529`, Muted `#646A6B`, Night `#171B1D`, Hearth light `#FF9F80` |
+| Fonts | Heading: Plus Jakarta Sans ExtraBold (800). Subheading: Plus Jakarta Sans SemiBold (600). Body: Plus Jakarta Sans Regular (400). |
+
+**After that, Phase 2 starts by checking:**
+- the kit is visible to `list-brand-kits`
+- a transparent PNG export works on the existing test design
+- AI credits are available
+- whether a design generated with `brand_kit_id` gets the kit's fonts
+
+The results go here.
