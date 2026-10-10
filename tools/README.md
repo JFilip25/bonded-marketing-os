@@ -1,6 +1,6 @@
 # Marketing tools (local only)
 
-Neither tool touches production, publishes anything, or changes the app repository.
+None of these tools touches production, publishes anything, or changes the app repository.
 
 ## `capture/`: real app screens from a local stack
 - **What it does:** runs the real BONDED app code (an exported copy of `JFilip25/ciccho-Claude` at a pinned commit) against a **local** Supabase stack. It seeds the Millers demo family through the app's own server operation (`ciccho_action`), performs real taps in the web build, and captures 1290×2796 PNGs in light and dark.
@@ -30,3 +30,15 @@ It then measures every text box in Chromium and writes `design/checkpoint-01/qa.
 - **QA.** Safe zones, line limits, the 4:5 cover crop, WCAG contrast, loaded font weights, and pictures overlapping text.
 
 Objects come from `assets/objects/`, or `OBJECTS=<dir>`. App screens are the light captures in `assets/screens/captured/light/`. `render-checkpoint.mjs` stays unchanged as the record of the G1 checkpoint.
+
+`SPEC=1` also writes `design/production/canva/spec.json`: every page's text boxes, pictures and SVG shapes, as measured in the browser. It also writes the phone-framed screens at 3× (`design/production/canva/phone_*.png`).
+
+## `canva/`: Canva masters from the proofs
+`build-ops.py` turns `spec.json` into operations for the Canva connector's `edit-design` tool. It doesn't call Canva itself; the operations are applied in an interactive session.
+- `designs` lists the masters and their pages.
+- `elements <master> '<page ids JSON>'` returns the operations that add the text boxes, pictures (by media ID from `media.json`) and shapes.
+- `format <master> <file>` returns the `format_text` operations. The file is the `design_content` JSON from `read-design`, or a compact list of `[locator_id, text]` per page. Text is matched to the spec by its words.
+
+See `design/production/canva/README.md` for the masters and the owner's font step.
+
+`objects/blend-to-paper.py` blends each generated object onto exact Paper (see `assets/objects/README.md`).

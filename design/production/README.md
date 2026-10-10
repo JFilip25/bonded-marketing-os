@@ -11,7 +11,8 @@
 - Logo: the official lockup SVG, on the end card only.
 - App images: the light USD captures (D-2026-10-10-5).
 - Positions and safe zones: the campaign's own.
-- The Canva Pro masters (Phase 2) are built to match these files, then checked against them.
+
+**Canva masters:** built on 10 Oct. All 11 designs (89 pages) were built from these proofs' measured boxes and are waiting for the owner's font step. See `canva/README.md`. After that step they're checked against these files.
 
 **Rebuild:** `node tools/proofs/render-campaign.mjs`, plus `CHROMIUM_PATH=...` if needed. The proofs are rebuilt from the repo alone.
 

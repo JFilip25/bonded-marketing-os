@@ -30,8 +30,11 @@ const C = { paper: '#F5F2EA', ink: '#222D33', hearth: '#B94529', muted: '#646A6B
 const dataUri = (path, type) => `data:${type};base64,${readFileSync(path).toString('base64')}`;
 const font = (w) => dataUri(join(ROOT, 'assets', 'fonts', `jakarta-${w}.ttf`), 'font/ttf');
 const svg = (name) => readFileSync(join(ROOT, 'assets', 'brand', 'svg', `${name}.svg`), 'utf8').replace(/<title>.*?<\/title>/, '');
-const img = (p) => (existsSync(p) ? dataUri(p, 'image/png') : null);
-const screen = (n) => dataUri(join(ROOT, 'assets', 'screens', 'captured', 'light', n), 'image/png');
+// Data URI -> file name, so the Canva spec can say which file each picture is.
+const NAMES = new Map();
+const named = (uri, name) => { NAMES.set(uri, name); return uri; };
+const img = (p) => (existsSync(p) ? named(dataUri(p, 'image/png'), p.split('/').pop()) : null);
+const screen = (n) => named(dataUri(join(ROOT, 'assets', 'screens', 'captured', 'light', n), 'image/png'), n);
 
 const BASE_CSS = `
 @font-face{font-family:J;font-weight:400;src:url(${font(400)})}
@@ -76,7 +79,7 @@ const txt = (qa, s, cls, style = '', extra = '') => `<div data-qa="${qa}" data-c
 const handle = () => `<div class="abs handle" data-qa="handle" style="top:200px;left:540px;transform:translateX(-50%);white-space:nowrap">@[handle]</div>`;
 const PH = (what) => `PLACEHOLDER<br>${what}<br><span style="font-weight:400">Phase 2 cutout, not final</span>`;
 const objectBox = (src, label, box) => src
-  ? `<img class="abs" data-qa="object" src="${src}" style="left:${box.left}px;top:${box.top}px;width:${box.w}px;height:${box.h}px;object-fit:contain;object-position:${box.pos ?? 'center bottom'}">`
+  ? `<img class="abs" data-qa="object" data-file="${NAMES.get(src) ?? ''}" src="${src}" style="left:${box.left}px;top:${box.top}px;width:${box.w}px;height:${box.h}px;object-fit:contain;object-position:${box.pos ?? 'center bottom'}">`
   : `<div class="abs ph" data-qa="object-placeholder" style="left:${box.left}px;top:${box.top}px;width:${box.w}px;height:${box.h}px"><div>${label}</div></div>`;
 const demoLabel = (left, width, top, size = 24, color = C.muted) => `<div class="abs" data-qa="demo-label" data-copy="Demo family" style="left:${left}px;width:${width}px;top:${top}px;text-align:center;font-weight:400;font-size:${size}px;line-height:1.35;color:${color}">${cp('Demo family')}</div>`;
 /** Ink phone frame around an unaltered screenshot; "Demo family" centred under it. */
@@ -84,7 +87,7 @@ function phoneFrame(src, { left, top, screenH, pad, labelGap = 10 }) {
   const sw = Math.round(screenH * 1290 / 2796);
   const ow = sw + 2 * pad, oh = screenH + 2 * pad;
   const r = Math.round(ow * 0.18), ri = Math.round(sw * 0.155);
-  return `<div class="abs" data-qa="phone" style="left:${left}px;top:${top}px;width:${ow}px;height:${oh}px;border-radius:${r}px;background:${C.ink};padding:${pad}px"><img src="${src}" style="width:${sw}px;height:${screenH}px;border-radius:${ri}px;display:block"></div>
+  return `<div class="abs" data-qa="phone" data-file="${NAMES.get(src) ?? ''}" style="left:${left}px;top:${top}px;width:${ow}px;height:${oh}px;border-radius:${r}px;background:${C.ink};padding:${pad}px"><img src="${src}" style="width:${sw}px;height:${screenH}px;border-radius:${ri}px;display:block"></div>
   ${demoLabel(left + ow / 2 - Math.max(ow, 200) / 2, Math.max(ow, 200), top + oh + labelGap)}`;
 }
 // Layout C phone: bottom right, inside the margins, clear of the text above it.
@@ -391,7 +394,7 @@ video('day11/day11_video_04s-08s', vid('Ticked off.', 62));
 video('day11/day11_video_08s-14s', vid("It doesn't need to be a speech.", 62));
 video('day11/day11_video_14s-18s', vid('It counts toward Saturday.', 62));
 video('day11/day11_endcard', `<div class="abs" style="inset:0;background:rgba(0,0,0,.40)"></div>
-  <div class="abs" data-qa="lockup" style="left:${540 - 220}px;top:${860 - 37}px;width:440px;height:74.4px">${svg('bonded-lockup-horizontal-reversed').replace('<svg ', '<svg width="440" height="74.4" ')}</div>
+  <div class="abs" data-qa="lockup" data-file="bonded-lockup-horizontal-reversed.svg" style="left:${540 - 220}px;top:${860 - 37}px;width:440px;height:74.4px">${svg('bonded-lockup-horizontal-reversed').replace('<svg ', '<svg width="440" height="74.4" ')}</div>
   <div class="abs" data-qa="headline" data-copy="${attr(cp('Join the waitlist'))}" style="left:150px;width:780px;top:${860 + 37 + 40}px;text-align:center;color:#fff;font-weight:800;font-size:110px;letter-spacing:-0.04em;line-height:1.0">Join the<br>waitlist</div>`);
 video('day11/day11_video_demo-family-label', `<div class="abs vid" data-qa="demo-label" data-copy="Demo family" style="left:150px;width:780px;top:1500px;font-size:32px">${cp('Demo family')}</div>`);
 story('day11/day11_story_f1', storyBTS('65-mom-review-note-light.png', 'Why approvals have room for a note: kids should hear when they got it right, too.'));
@@ -418,6 +421,104 @@ feed('day14/day14_single', await B_('day14_single', { setup: 'What has your fami
 story('day14/day14_story_f1', storyQuestion("What's been on your family's list for ages?"));
 
 await mctx.close();
+
+// ---------- Canva build spec (SPEC=1) ----------
+// Walks each rendered page in paint order and records what a Canva master needs: text boxes (words,
+// box, size, weight, colour, alignment, line height, letter spacing), pictures (file and rectangle),
+// and shapes (SVG paths with fill and stroke). Phones are saved as one transparent PNG each.
+const SPEC = process.env.SPEC === '1';
+const specs = [];
+const phonePngs = new Map();
+async function collectSpec(pg, p) {
+  const els = await pg.evaluate(() => {
+    const out = [];
+    const rgba = (c) => { const m = (c || '').match(/[\d.]+/g); if (!m || m.length < 3) return null; const [r, g, b, a = 1] = m.map(Number); return a === 0 ? null : { hex: '#' + [r, g, b].map((v) => Math.round(v).toString(16).padStart(2, '0')).join('').toUpperCase(), a }; };
+    const r2 = (v) => Math.round(v * 10) / 10;
+    const rect = (r) => ({ x: r2(r.left), y: r2(r.top), w: r2(r.width), h: r2(r.height) });
+    const q2c = (d) => d.replace(/M\s*([\d.-]+)[ ,]+([\d.-]+)\s*Q\s*([\d.-]+)[ ,]+([\d.-]+)\s+([\d.-]+)[ ,]+([\d.-]+)/g, (_, x0, y0, cx, cy, x, y) => {
+      [x0, y0, cx, cy, x, y] = [x0, y0, cx, cy, x, y].map(Number);
+      const c1 = [x0 + (2 / 3) * (cx - x0), y0 + (2 / 3) * (cy - y0)], c2 = [x + (2 / 3) * (cx - x), y + (2 / 3) * (cy - y)];
+      return `M${x0} ${y0} C${r2(c1[0])} ${r2(c1[1])} ${r2(c2[0])} ${r2(c2[1])} ${x} ${y}`;
+    });
+    const roundedPath = (w, h, [tl, tr, br, bl]) => `M${tl} 0 H${w - tr} ${tr ? `A${tr} ${tr} 0 0 1 ${w} ${tr}` : ''} V${h - br} ${br ? `A${br} ${br} 0 0 1 ${w - br} ${h}` : ''} H${bl} ${bl ? `A${bl} ${bl} 0 0 1 0 ${h - bl}` : ''} V${tl} ${tl ? `A${tl} ${tl} 0 0 1 ${tl} 0` : ''} Z`;
+    function walk(el) {
+      if (el.matches('[data-qa="phone"]')) { out.push({ kind: 'image', role: 'phone', file: el.dataset.file, ...rect(el.getBoundingClientRect()) }); return walkSiblingsDone; }
+      if (el.matches('[data-qa="lockup"]')) { out.push({ kind: 'image', role: 'lockup', file: el.dataset.file, ...rect(el.getBoundingClientRect()) }); return walkSiblingsDone; }
+      if (el.tagName === 'IMG') {
+        // object-fit: contain -> the rectangle the picture really occupies.
+        const r = el.getBoundingClientRect(), k = Math.min(r.width / el.naturalWidth, r.height / el.naturalHeight);
+        const w = el.naturalWidth * k, h = el.naturalHeight * k;
+        const [px, py] = getComputedStyle(el).objectPosition.split(' ').map((v) => parseFloat(v) / 100);
+        out.push({ kind: 'image', role: 'object', file: el.dataset.file, x: r2(r.left + (r.width - w) * px), y: r2(r.top + (r.height - h) * py), w: r2(w), h: r2(h) });
+        return walkSiblingsDone;
+      }
+      if (el.tagName.toLowerCase() === 'svg' && !el.closest('[data-qa="lockup"]')) {
+        const r = el.getBoundingClientRect();
+        for (const c of el.querySelectorAll('line,path,rect')) {
+          let d;
+          if (c.tagName === 'line') d = `M${c.getAttribute('x1')} ${c.getAttribute('y1')} L${c.getAttribute('x2')} ${c.getAttribute('y2')}`;
+          else if (c.tagName === 'rect') { const x = +c.getAttribute('x'), y = +c.getAttribute('y'), w = +c.getAttribute('width'), h = +c.getAttribute('height'), rx = +(c.getAttribute('rx') || 0); d = roundedPath(w, h, [rx, rx, rx, rx]).replace(/([MHVLA])([\d.-]+)/g, (m) => m); d = `M${x + rx} ${y} H${x + w - rx} A${rx} ${rx} 0 0 1 ${x + w} ${y + rx} V${y + h - rx} A${rx} ${rx} 0 0 1 ${x + w - rx} ${y + h} H${x + rx} A${rx} ${rx} 0 0 1 ${x} ${y + h - rx} V${y + rx} A${rx} ${rx} 0 0 1 ${x + rx} ${y} Z`; }
+          else d = q2c(c.getAttribute('d'));
+          const vb = el.viewBox.baseVal;
+          out.push({ kind: 'shape', role: 'stroke', path: d, vbw: vb.width || r.width, vbh: vb.height || r.height, x: r2(r.left), y: r2(r.top), w: r2(r.width), h: r2(r.height), fill: null, stroke: c.getAttribute('stroke'), strokeW: +(c.getAttribute('stroke-width') || 1) });
+        }
+        return walkSiblingsDone;
+      }
+      if (!el.classList.contains('page')) {
+        const cs = getComputedStyle(el), r = el.getBoundingClientRect();
+        const fill = rgba(cs.backgroundColor), bw = parseFloat(cs.borderTopWidth) || 0, stroke = bw ? rgba(cs.borderTopColor) : null;
+        if (fill || stroke) {
+          const radii = ['borderTopLeftRadius', 'borderTopRightRadius', 'borderBottomRightRadius', 'borderBottomLeftRadius'].map((k) => Math.min(parseFloat(cs[k]) || 0, r.width / 2, r.height / 2));
+          const ellipse = cs.borderTopLeftRadius.includes('%') || radii.every((v) => v >= Math.min(r.width, r.height) / 2 - 0.5) && Math.abs(r.width - r.height) < 1;
+          const w = r.width, h = r.height;
+          const path = ellipse ? `M0 ${h / 2} A${w / 2} ${h / 2} 0 1 0 ${w} ${h / 2} A${w / 2} ${h / 2} 0 1 0 0 ${h / 2} Z` : roundedPath(w, h, radii);
+          out.push({ kind: 'shape', role: ellipse ? 'ellipse' : 'box', path, vbw: r2(w), vbh: r2(h), x: r2(r.left), y: r2(r.top), w: r2(w), h: r2(h), fill: fill && fill.hex, opacity: fill ? fill.a : 1, stroke: stroke && stroke.hex, strokeW: bw, dashed: cs.borderTopStyle === 'dashed' });
+        }
+        const direct = [...el.childNodes].filter((n) => n.nodeType === 3 && n.textContent.trim());
+        if (direct.length) {
+          const range = document.createRange(); range.selectNodeContents(el);
+          const tr = range.getBoundingClientRect();
+          const inlineOnly = [...el.children].every((c) => ['BR', 'SPAN'].includes(c.tagName));
+          const text = (inlineOnly ? el.innerText : direct.map((n) => n.textContent).join(' ')).replace(/[ \t]+/g, ' ').trim();
+          const lh = cs.lineHeight === 'normal' ? 1.2 * parseFloat(cs.fontSize) : parseFloat(cs.lineHeight);
+          const ta = cs.textAlign === 'center' || cs.justifyContent === 'center' && cs.display.includes('flex') && !text.includes('\n') ? 'center' : cs.textAlign === 'right' || cs.textAlign === 'end' ? 'end' : 'start';
+          const pl = parseFloat(cs.paddingLeft) + parseFloat(cs.borderLeftWidth), pr = parseFloat(cs.paddingRight) + parseFloat(cs.borderRightWidth);
+          const cx = r.left + pl, cw = r.width - pl - pr;
+          const hug = Math.abs(cw - tr.width) < 3;
+          const lines = new Set([...range.getClientRects()].map((x) => Math.round(x.top))).size;
+          out.push({ kind: 'text', qa: el.dataset.qa || el.closest('[data-qa]')?.dataset.qa || null, text, x: r2(cx), y: r2(tr.top), w: r2(cw), h: r2(tr.height), hug, lines, cy: r2((tr.top + tr.bottom) / 2), textX: r2(tr.left), textW: r2(tr.width), fontSize: parseFloat(cs.fontSize), weight: +cs.fontWeight, color: rgba(cs.color).hex, align: ta, lineHeight: r2(lh / parseFloat(cs.fontSize) * 100) / 100, letterSpacingEm: r2((parseFloat(cs.letterSpacing) || 0) / parseFloat(cs.fontSize) * 1000) / 1000, shadow: cs.textShadow !== 'none' });
+        }
+      }
+      for (const c of el.children) walk(c);
+    }
+    const walkSiblingsDone = undefined;
+    walk(document.querySelector('.page'));
+    return out;
+  });
+  // Phones: one transparent PNG per screen and size, cut from the rendered page at 3x.
+  const phones = await pg.$$('[data-qa="phone"]');
+  for (const h of phones) {
+    const box = await h.boundingBox();
+    const file = await h.getAttribute('data-file');
+    const key = `phone_${file.replace('.png', '')}_${Math.round(box.width)}`;
+    if (!phonePngs.has(key)) {
+      const hi = await browser.newContext({ viewport: { width: p.w, height: p.h }, deviceScaleFactor: 3 });
+      const hp = await hi.newPage();
+      await hp.setContent(await pg.content(), { waitUntil: 'load' });
+      await hp.evaluate(() => document.fonts.ready);
+      await hp.evaluate(() => { document.querySelector('.page').style.background = 'transparent'; });
+      const el = (await hp.$$('[data-qa="phone"]'))[phones.indexOf(h)];
+      const out = join(OUT, 'canva', `${key}.png`);
+      mkdirSync(dirname(out), { recursive: true });
+      await el.screenshot({ path: out, omitBackground: true });
+      phonePngs.set(key, out);
+      await hi.close();
+    }
+    const e = els.find((x) => x.role === 'phone' && x.file === file && Math.abs(x.w - box.width) < 1 && !x.png);
+    if (e) e.png = `${key}.png`;
+  }
+  return els;
+}
 
 // ---------- render + QA ----------
 mkdirSync(OUT, { recursive: true });
@@ -494,6 +595,7 @@ for (const p of pages) {
   const file = join(OUT, `${p.name}.png`);
   mkdirSync(dirname(file), { recursive: true });
   await pg.screenshot({ path: file, omitBackground: p.transparent });
+  if (SPEC) specs.push({ name: p.name, w: p.w, h: p.h, bg: p.transparent ? null : p.bg, elements: await collectSpec(pg, p) });
   frames.push({ file: `design/production/${p.name}.png`, size: `${p.w}x${p.h}`, transparent: p.transparent, status: p.status, placeholders: boxes.filter((b) => b.qa === 'object-placeholder').length, fontsLoaded, issues, boxes });
   await ctx.close();
 }
@@ -533,6 +635,7 @@ const summary = {
   campaignStringsNotPlaced: uncovered.length,
 };
 writeFileSync(join(OUT, 'qa.json'), JSON.stringify({ summary, fits, uncovered, frames }, null, 2));
+if (SPEC) { mkdirSync(join(OUT, 'canva'), { recursive: true }); writeFileSync(join(OUT, 'canva', 'spec.json'), JSON.stringify(specs, null, 1)); console.log(`spec: ${specs.length} pages, ${specs.reduce((n, s) => n + s.elements.length, 0)} elements, ${phonePngs.size} phone PNGs`); }
 for (const f of frames) console.log(`${f.issues.length ? 'FLAG' : 'OK  '} ${f.status === 'BLOCKED' ? 'BLOCKED ' : ''}${f.placeholders ? `[${f.placeholders} placeholder] ` : ''}${f.file} ${f.issues.join('; ')}`);
 console.log(JSON.stringify(summary, null, 2));
 if (fits.length) console.log('FITS', JSON.stringify(fits, null, 2));

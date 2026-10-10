@@ -107,3 +107,23 @@ The results go here.
 - rules for a different slide system (1080×1350, 72 px headlines, a symbol on every slide, boxed video captions)
 
 The owner chose to keep the G1 system and use the kit for logo files, colours and fonts only.
+
+## Canva masters build, 10 Oct 2026
+
+All 11 masters (89 pages) were built through the connector and filed in the folder `FAHXlnLC_sA` "BONDED · Weeks 1–2". The list, links and owner steps are in `design/production/canva/README.md`.
+
+| Operation | Result |
+|---|---|
+| `create-design` (custom size), `add_page`, `update_title` | Works. Every page is 1080×1440 or 1080×1920, with its background colour set on the page. |
+| `edit-design` with many operations across pages | Works. Up to 80 operations in one call, with the operations addressed by page ID. |
+| `upload-asset` via `create-upload-url`, then `insert_fill` | Works. 32 media IDs (`design/production/canva/media.json`). |
+| `insert_shape` with arcs and curves (circles, pills, rounded boxes, arrows, the padlock) | Works |
+| `insert_shape` with a straight stroked path | **Doesn't render.** Built as thin filled bars instead. |
+| `format_text`: size, colour, normal/bold, alignment, line height | Works |
+| Font family, weight 600, letter spacing, text shadow | **Not available.** These are left to the owner's font step. |
+| `read-design` design content with `page_indices` | Works. It returns the text element IDs for the format pass. |
+| `copy-design` with page numbers | One page works. Repeating a page number fails ("design not found"). Not used for the masters. |
+| Delete a design | No tool exists. The owner deletes `DAHXlb7RTko` and `DAHXlqQsPJk` by hand. |
+| `list-folder-items`, `move-item-to-folder` | Work |
+
+Nothing was exported, scheduled or published. Buffer and MailerLite were not used.
