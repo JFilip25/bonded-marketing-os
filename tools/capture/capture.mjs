@@ -78,19 +78,25 @@ async function shot(who, path, state, note, prepare) {
   }
 }
 const A = SEED.assignments;
+// The "I did this without a reminder" label is plain text; the control is the switch beside it.
+async function withoutReminder(page) {
+  const sw = page.getByRole('switch').first();
+  await sw.click();
+  if (!(await sw.isChecked())) throw new Error('"Without a reminder" switch did not turn on');
+}
 
 // 1. Emma (8) before: two things on her list, "Water the plants" to do.
 await shot('Emma', '/child/today', 'today-before', 'Emma has two things today; Water the plants not done yet');
 // 2. Emma opens "Water the plants": the real task screen with the "without a reminder" toggle.
 await shot('Emma', `/responsibility/${A.emma_plants}`, 'water-plants-task', 'Task screen before ticking off', async (page) => {
-  await page.getByText('I did this without a reminder').click();
+  await withoutReminder(page);
 });
 // Emma ticks it off, for real, with "without a reminder".
 {
   const { page } = await session('Emma');
   await page.goto(`${BASE}/responsibility/${A.emma_plants}`);
   await page.waitForTimeout(3000);
-  await page.getByText('I did this without a reminder').click();
+  await withoutReminder(page);
   await page.getByRole('button', { name: /Done!/ }).first().click();
   await page.waitForTimeout(3000);
 }
@@ -131,27 +137,28 @@ await shot('Emma', '/child/today', 'noticed', 'Mom noticed card with the note', 
 // 5. Family experience progress after Emma's job (family points counted at tick-off).
 await shot('Mom', '/parent/family', 'family-climbing', 'Climbing wall trip progress on the Family tab');
 await shot('Mom', '/parent/rewards', 'rewards', 'Rewards with experiences');
-// 6. Leo (13) asks for another day for bin night.
+// 6. Leo (13) asks for another day for trash night (Day 12 slide 4, US copy).
+const LEO_NOTE = 'Practice test tomorrow. Trash on Thursday?';
 await shot('Leo', '/child/today', 'today', 'Leo has three things today');
 {
   const { page } = await session('Leo');
-  await page.goto(`${BASE}/responsibility/${A.leo_bins}`);
+  await page.goto(`${BASE}/responsibility/${A.leo_trash}`);
   await page.waitForTimeout(3000);
   await page.getByText('Reschedule', { exact: true }).click();
-  await page.getByPlaceholder('Add a note (optional)').fill('Mock exam tomorrow. Bins on Thursday?');
+  await page.getByPlaceholder('Add a note (optional)').fill(LEO_NOTE);
 }
-await shot('Leo', `/responsibility/${A.leo_bins}`, 'reschedule-draft', 'Leo choosing Reschedule with a note (before sending)', async (page) => {
+await shot('Leo', `/responsibility/${A.leo_trash}`, 'reschedule-draft', 'Leo choosing Reschedule with a note (before sending)', async (page) => {
   await page.getByText('Reschedule', { exact: true }).click();
-  await page.getByPlaceholder('Add a note (optional)').fill('Mock exam tomorrow. Bins on Thursday?');
+  await page.getByPlaceholder('Add a note (optional)').fill(LEO_NOTE);
 });
 {
   const { page } = await session('Leo');
   await page.getByRole('button', { name: /Send to my parents/ }).click();
   await page.waitForTimeout(3000);
 }
-await shot('Leo', `/responsibility/${A.leo_bins}`, 'reschedule-sent', 'Request sent, waiting for a reply');
+await shot('Leo', `/responsibility/${A.leo_trash}`, 'reschedule-sent', 'Request sent, waiting for a reply');
 await shot('Mom', '/parent/home', 'change-of-plan', 'A change of plan: Leo asked for another day');
-await shot('Mom', `/responsibility/${A.leo_bins}`, 'request-detail', 'Parent view of the request with replies');
+await shot('Mom', `/responsibility/${A.leo_trash}`, 'request-detail', 'Parent view of the request with replies');
 // 7. Parent Tasks > Upcoming.
 await shot('Mom', '/parent/responsibilities', 'upcoming', 'Responsibilities, Upcoming tab', async (page) => {
   await page.getByText('Upcoming', { exact: true }).click();

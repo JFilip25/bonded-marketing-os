@@ -6,7 +6,7 @@
 |---|---|---|---|
 | Official BONDED identity files (SVG marks, lockups, colours, motion) | All creative | **VERIFIED** | Product repo `assets/brand/` and `docs/bonded/identity.md`. Copies are in `assets/brand/`. |
 | Identity case study (37-page PDF) | Confirming items marked UNVERIFIED | **MISSING** | Not in either repo, Drive or this workspace. Owner to upload (D-2026-10-09-4). |
-| Real BONDED screenshots, Millers demo | Days 0, 5, 11, 12 | **CAPTURED, AWAITING REVIEW** | 21+21 supplied screens, plus 14+14 captured locally on 9 Oct (USD). See `design/screenshots-manifest.md`. Calendar screens can't exist (C1). |
+| Real BONDED screenshots, Millers demo | Days 0, 5, 11, 12 | **CAPTURED, APPROVED FOR USE** (light, USD; D-2026-10-10-5) | 14+14 states recaptured locally on 10 Oct with US wording, plus the 21+21 supplied EUR screens for reference. Frame-by-frame mapping in `design/screenshots-manifest.md`. Day 0 s2 and Day 12 s2 now show the Family and Upcoming screens (C1 amended). |
 | Plus Jakarta Sans | All creative | **VERIFIED** | `assets/fonts/` (OFL) |
 | Social handles (IG, FB, TikTok) | Handle on every slide, bios, link in bio | **MISSING** | D10 |
 | Website / waitlist page, repo and domain | Every waitlist CTA, UTM attribution | **MISSING** | `bonded-family.vercel.app` is the app's link page only. D6. |

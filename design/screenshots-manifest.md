@@ -58,68 +58,63 @@ The light and dark files of each screen are identical in content. The age band i
 
 ## Campaign mapping
 
-Days 0, 5, 11 and 12 are the posts that need product screens. The rows match the approved briefs in `campaign/weeks-01-02.md`.
+Days 0, 5, 11 and 12 are the posts that need product screens. The rows match the amended briefs in `campaign/weeks-01-02.md` (Amendment 1, `campaign/CHANGELOG.md`).
 
-| Post / frame | Brief requires | Status | Screen(s) | Notes |
+**Decided on 10 Oct 2026 (D-2026-10-10-5):** app images use the **light** captures with **USD** and US wording, listed under "Captured additions" below. The supplied EUR screens above stay as reference only.
+
+| Post / frame | Brief requires | Status | Screen | Notes |
 |---|---|---|---|---|
-| Day 0 slide 1 | "a phone showing the Bonded home screen" | AVAILABLE | 01 | Crop above the Saturday Reset row (bug 1). The date shows "Friday 9 October". |
-| Day 0 slide 2 | "phone with the family calendar" | **CLAIM CONFLICT** | none | The product has no calendar. See `product/feature-claims.md` C1 and `proposals/claim-amendments.md`. |
-| Day 5 Story (behind the scenes) | "A screen of one child's list" | AVAILABLE | 20 (Emma) or 30 (Noah) | 40 also works if cropped above "pending" |
-| Day 11 video 4–8s | Emma ticks off "Water the plants" | CAPTURED, awaiting review | 61, 62, 63 | Real tick-off with "without a reminder" |
-| Day 11 video 8–14s | Parent approves and types a note | CAPTURED, awaiting review | 65 (then 66 for the child's side) | Note text is the campaign's exact wording |
-| Day 11 video 14–18s | Family progress toward "Climbing wall trip" moves up | CAPTURED, awaiting review | 67, 66 | 110/200. Points arrive at tick-off (see C2). |
-| Day 11 Story (behind the scenes) | "The approval screen with a note" | CAPTURED, awaiting review | 65 | |
-| Day 12 slide 1 | Home screen | AVAILABLE | 01 | As Day 0 slide 1 |
-| Day 12 slide 2 | Family calendar and the climbing wall experience being set up | **CLAIM CONFLICT** + MISSING | none | No calendar exists. The experience set-up screen needs a capture. |
-| Day 12 slide 3 | A child's list. Copy: "Emma has two things on her list. Leo has three." | CAPTURED, awaiting review | 61 (Emma: exactly two), 69 (Leo: "0 of 3 done today") | Matches the locked copy (C5) |
-| Day 12 slide 4 | Leo's reschedule request | CAPTURED, awaiting review | 70, 71, 72, 73 | Real request with a note |
-| Day 12 slide 5 | Progress "a little over half full" | CAPTURED + **CLAIM CONFLICT** | 67 (110/200) | The copy says approval adds points; the build credits points at tick-off (C2) |
+| Day 0 slide 1 | "a phone showing the Bonded home screen" | CAPTURED | 64 | Parent Home with recognition and the Climbing wall trip. No known bug in view. |
+| Day 0 slide 2 | "phone with the Family screen (\"Common ground.\")" (C1.2) | CAPTURED | 67 | The family, "Next, together", the weekly check-in, "Everyone's part" |
+| Day 5 Story (behind the scenes) | "A screen of one child's list" | CAPTURED | 61 | Emma's two things |
+| Day 11 video 4–8s | Emma ticks off "Water the plants" | CAPTURED | 61, 62, 63 | Real tick-off with "without a reminder" switched on |
+| Day 11 video 8–14s | Parent approves and types a note | CAPTURED | 65 (then 66 for the child's side) | The note is the campaign's exact wording |
+| Day 11 video 14–18s | Family progress toward "Climbing wall trip" moves up | CAPTURED | 67, 66 | 110/200. Points arrive at tick-off (C2). |
+| Day 11 Story (behind the scenes) | "The approval screen with a note" | CAPTURED | 65 | |
+| Day 12 slide 1 | Home screen | CAPTURED | 64 | As Day 0 slide 1 |
+| Day 12 slide 2 | "phone with the Upcoming responsibilities and the 'Climbing wall trip' experience" (C1.7) | CAPTURED | 74 | Shows "Take out the trash" Tue and "Put laundry away" Thu. The build shows the experience on other screens, so it appears on slides 1 (64) and 5 (67). |
+| Day 12 slide 3 | "Emma has two things on her list. Leo has three." | CAPTURED | 61 (Emma: exactly two) | 69 (Leo: "0 of 3 done today") is the alternative |
+| Day 12 slide 4 | Leo's reschedule request | CAPTURED | 70 | 71, 72 and 73 show the rest of the flow |
+| Day 12 slide 5 | Progress "a little over half full" | CAPTURED | 67 (110/200) | Matches "Family jobs add up." (C2.1) |
 | Day 12 slides 6–8 | Type, diagram, CTA | n/a | none | No screen needed |
 
-Tier 1 is the US, so `decisions/pending.md` D2 covers whether US-facing posts use these EUR screens or USD captures. Currency can be set per family (`src/components/SettingsPanel.tsx`), so a USD capture is legitimate.
+**Known limit: the date on screen.** Screens 61, 63, 64, 65, 69 and 72 show the capture date, "Saturday, October 10". Day 12 slide 3 is labelled "Monday", and the Day 11 note says "before school". The server refuses to complete a job before its due date (`'Not due yet'`, action SQL l.367), so the date can't be changed in the browser alone. A weekday recapture is a re-run of the two scripts if wanted. Screens 67, 70 and 74 show no date.
 
-Light or dark? Both exist for every screen. One consistent choice for Days 0, 5, 11 and 12 is `decisions/pending.md` D1.
-
-## Captured additions (Phase 2), 9 Oct 2026
+## Captured additions, recaptured 10 Oct 2026 with US wording
 
 **How they were made:**
 - Real web build of `JFilip25/ciccho-Claude` @ `81b164b` (`claude/bonded-family-ai`), against a **throwaway local Supabase stack**.
 - The Millers were seeded through the app's own server operation (`tools/capture/seed-millers.mjs`), and every state was produced by real taps (`tools/capture/capture.mjs`).
-- Captured at 430×932 @3x = 1290×2796, light and dark, with currency **USD** (Tier 1).
+- Captured at 430×932 @3x = 1290×2796, light and dark, currency **USD**, timezone America/New_York.
 - **0 requests left localhost.** Production was never contacted (`assets/screens/captured/capture-log.json`).
 - Nothing was committed to the app repo.
 
-**Demo data:** the same 7-person Millers. Data is local only, and the accounts were destroyed with the local database.
+**What changed from the 9 Oct capture:**
+- Task names follow the US master: "Take out the trash" (was "Take bins out") and "Clean your desk" (was "Tidy your desk").
+- Leo's note is "Practice test tomorrow. Trash on Thursday?" (was "Mock exam tomorrow. Bins on Thursday?").
+- Upcoming shows "Take out the trash" (Noah, Tuesday) and "Put laundry away" (Emma, Thursday), matching Day 12 slide 2. The Climbing wall trip is available on the Saturday after.
+- The "without a reminder" switch is now really on. In the 9 Oct capture the script tapped the label, which doesn't toggle it, so Emma's tick-off was recorded without it.
 
-**Status:** **NOT YET APPROVED FOR POSTS.** The owner reviews these, then decides D1 (light or dark) and D2 (USD or EUR).
+**Demo data:** the same 7-person Millers. Data is local only, and the accounts exist only in the throwaway local database.
+
+**Status:** approved for use by D-2026-10-10-5 (light, USD). Screen 68 is excluded.
 
 | File stem | Who | Route | State shown | Size | SHA-256 (first 12, light) |
 |---|---|---|---|---|---|
-| `61-emma-today-before-{light,dark}.png` | Emma | `/child/today` | Emma (7-9) Today: exactly two things, Water the plants not yet done | 1290×2796 | `26cc2c4c4ddd` |
-| `62-emma-water-plants-task-{light,dark}.png` | Emma | `/responsibility/:id` | Real task screen: "I did this without a reminder" toggle and "Done!" | 1290×2796 | `132ff7505f49` |
-| `63-emma-today-after-{light,dark}.png` | Emma | `/child/today` | After tick-off: "A parent will check this soon" | 1290×2796 | `e7a7b26bdc99` |
-| `64-mom-home-recognition-{light,dark}.png` | Mom | `/parent/home` | Parent Home: A little recognition (Emma, Sofia, Noah ready), Review 3 completions | 1290×2796 | `1fb96020962b` |
-| `65-mom-review-note-{light,dark}.png` | Mom | `/parent/home` | Review queue with the typed note "saw you did the plants before school. thanks" | 1290×2796 | `27e7f5c86177` |
-| `66-emma-noticed-{light,dark}.png` | Emma | `/child/today` | Emma: "Mom noticed" card with the note; Our goals Climbing wall trip 110/200 | 1290×2796 | `2a221a092d2e` |
-| `67-mom-family-climbing-{light,dark}.png` | Mom | `/parent/family` | Family tab: Climbing wall trip 110/200 family points, 90 to go, Available Sat, Oct 17 | 1290×2796 | `776e22c5f3eb` |
-| `68-mom-rewards-{light,dark}.png` | Mom | `/parent/rewards` | Parent Rewards (shows known bug P3: Mia $0.00 to pay out; avoid) | 1290×2796 | `21b052010ba5` |
-| `69-leo-today-{light,dark}.png` | Leo | `/child/today` | Leo (13-15) Today: 0 of 3 done today, three things | 1290×2796 | `f46c8a230abf` |
-| `70-leo-reschedule-draft-{light,dark}.png` | Leo | `/responsibility/:id` | Leo chose Reschedule with note "Mock exam tomorrow. Bins on Thursday?" | 1290×2796 | `cda7610a4558` |
-| `71-leo-reschedule-sent-{light,dark}.png` | Leo | `/responsibility/:id` | Sent, waiting for a reply | 1290×2796 | `617dd1c86d6c` |
-| `72-mom-change-of-plan-{light,dark}.png` | Mom | `/parent/home` | Parent Home: "A change of plan" Leo asked for another day | 1290×2796 | `f0bde860f7e9` |
-| `73-mom-request-detail-{light,dark}.png` | Mom | `/responsibility/:id` | Parent task view: Approve / Move to tomorrow / Let's talk | 1290×2796 | `c722465042aa` |
-| `74-mom-upcoming-{light,dark}.png` | Mom | `/parent/responsibilities` | Parent Tasks > Upcoming: Sort the recycling (Tue), Set the table (Thu) | 1290×2796 | `694b20f83638` |
-
-**Mapping:**
-
-| Post | Screens |
-|---|---|
-| Day 11 video | 61 → 62 → 63 (tick-off, "before anyone asked"), 65 (approval with the typed note), 66 / 67 (progress toward the Climbing wall trip) |
-| Day 11 Story | 65, or 66 for the child's side |
-| Day 12 slide 2 | 74 (Upcoming) and 67 (experience), **if claim amendment C1 is approved** |
-| Day 12 slide 3 | 61 (Emma: two things) and 69 (Leo: three) |
-| Day 12 slide 4 | 70 / 71 (Leo) and 72 / 73 (parent) |
-| Day 12 slide 5 | 67 (110/200, "a little over half"). Subject to claim C2. |
+| `61-emma-today-before-{light,dark}.png` | Emma | `/child/today` | Emma (7-9) Today: exactly two things (Put laundry away, Water the plants), neither done. Level 1, 0 XP | 1290×2796 | `5b8ad24be04d` |
+| `62-emma-water-plants-task-{light,dark}.png` | Emma | `/responsibility/:id` | Real task screen: "I did this without a reminder" switched on, "Done!" | 1290×2796 | `12ad7ea3a5cf` |
+| `63-emma-today-after-{light,dark}.png` | Emma | `/child/today` | After the tick-off: "A parent will check this soon"; 5 XP from the independence bonus | 1290×2796 | `fb62c3930cc8` |
+| `64-mom-home-recognition-{light,dark}.png` | Mom | `/parent/home` | Parent Home: A little recognition (Emma, Sofia, Noah ready), Review 3 completions, Climbing wall trip 110/200 | 1290×2796 | `36969cb45de9` |
+| `65-mom-review-note-{light,dark}.png` | Mom | `/parent/home` | Review queue with the typed note "saw you did the plants before school. thanks" | 1290×2796 | `2115213e9cf0` |
+| `66-emma-noticed-{light,dark}.png` | Emma | `/child/today` | Emma: "Mom noticed" card with the note; Our goals: Climbing wall trip 110/200, 7 days to go | 1290×2796 | `4ffc8dce4809` |
+| `67-mom-family-climbing-{light,dark}.png` | Mom | `/parent/family` | Family tab "Common ground.": the family, Climbing wall trip 110/200 family points, 90 to go, Available Sat, Oct 17, weekly check-in, Everyone's part | 1290×2796 | `776e22c5f3eb` |
+| `68-mom-rewards-{light,dark}.png` | Mom | `/parent/rewards` | Parent Rewards (shows known bug P3, Mia $0.00 to pay out, and UK app copy "Recognise"; do not use) | 1290×2796 | `21b052010ba5` |
+| `69-leo-today-{light,dark}.png` | Leo | `/child/today` | Leo (13-15) Today: 0 of 3 done today: Clean bathroom, Clean your desk, Take out the trash $2.00 | 1290×2796 | `37c62ca614ec` |
+| `70-leo-reschedule-draft-{light,dark}.png` | Leo | `/responsibility/:id` | Take out the trash: Leo chose Reschedule with the note "Practice test tomorrow. Trash on Thursday?" | 1290×2796 | `010b9986b302` |
+| `71-leo-reschedule-sent-{light,dark}.png` | Leo | `/responsibility/:id` | Sent, waiting for a reply | 1290×2796 | `a91e83898d10` |
+| `72-mom-change-of-plan-{light,dark}.png` | Mom | `/parent/home` | Parent Home: "A change of plan", Leo asked for another day, with his note | 1290×2796 | `616954dfd243` |
+| `73-mom-request-detail-{light,dark}.png` | Mom | `/responsibility/:id` | Parent task view of the request: Approve / Move to tomorrow / Let's talk | 1290×2796 | `da2724fa684b` |
+| `74-mom-upcoming-{light,dark}.png` | Mom | `/parent/responsibilities` | Parent Tasks > Upcoming: Take out the trash (Noah, Tue, Oct 13), Put laundry away (Emma, Thu, Oct 15) | 1290×2796 | `d52375aad979` |
 
 ## File checksums
 

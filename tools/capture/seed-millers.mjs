@@ -49,6 +49,14 @@ const day = (offset = 0) => {
   d.setDate(d.getDate() + offset);
   return d.toISOString().slice(0, 10);
 };
+// The first date after today that falls on `weekday` (0 = Sunday), in the family's timezone.
+const next = (weekday, after = 0) => {
+  const d = new Date(new Date().toLocaleString('en-US', { timeZone: TZ }));
+  d.setDate(d.getDate() + after + 1);
+  while (d.getDay() !== weekday) d.setDate(d.getDate() + 1);
+  return d.toISOString().slice(0, 10);
+};
+const daysUntil = (iso) => Math.round((new Date(`${iso}T12:00:00Z`) - new Date(`${day(0)}T12:00:00Z`)) / 86_400_000);
 const dob = (years, days = 0) => {
   const d = new Date(new Date().toLocaleString('en-US', { timeZone: TZ }));
   d.setFullYear(d.getFullYear() - years);
@@ -85,12 +93,18 @@ for (const [name, role, birth] of people) {
 const { data: me } = await mom.client.from('members').select('id,name').eq('name', 'Mom').single();
 out.members.Mom = me.id;
 
+// The demo week (Day 12 s2, US copy): "Trash on Tuesday, laundry on Thursday", and the climbing
+// wall trip on the Saturday after that.
+const TUE = next(2);
+const THU = next(4);
+const SAT = next(6, daysUntil(THU));
+
 // Icons are names from the app's own picker (src/domain/icon-match.ts), as a parent would choose them.
 // The family experience the week works toward, created before any family points are earned.
 // Only family points earned after it exists count toward it (src/domain/derive.ts).
 const climb = await act(mom.client, 'experience', {
   title: 'Climbing wall trip', description: 'Saturday morning at the climbing wall.', icon: 'backpack', size: 'medium',
-  required_xp: 200, unlock_date: day(8), waiting_days: 0,
+  required_xp: 200, unlock_date: SAT, waiting_days: 0,
 });
 out.experiences.climbing = climb.id;
 
@@ -100,18 +114,18 @@ const M = out.members;
 // Emma (8): exactly two things today (Day 12 slide 3), one of them Day 11's "Water the plants".
 await task('emma_plants', { title: 'Water the plants', icon: 'sprout', category: 'Garden', members: [M.Emma], family_xp: 20, requires_approval: true, minutes: 5 });
 await task('emma_laundry', { title: 'Put laundry away', icon: 'shirt', category: 'Laundry', members: [M.Emma], family_xp: 10, requires_approval: false, minutes: 15 });
-// Leo (13): exactly three things today, including bin night (Day 12 slide 4).
-await task('leo_bins', { title: 'Take bins out', icon: 'bins', category: 'Outdoor', kind: 'bonus', members: [M.Leo], money: 200, requires_approval: true, recurrence: 'weekly' });
+// Leo (13): exactly three things today, including trash night (Day 12 slide 4).
+await task('leo_trash', { title: 'Take out the trash', icon: 'bins', category: 'Outdoor', kind: 'bonus', members: [M.Leo], money: 200, requires_approval: true, recurrence: 'weekly' });
 await task('leo_bathroom', { title: 'Clean bathroom', icon: 'sparkles', category: 'Cleaning', members: [M.Leo], xp: 15, requires_approval: true, minutes: 25 });
-await task('leo_desk', { title: 'Tidy your desk', icon: 'pencil', category: 'Cleaning', members: [M.Leo], xp: 10, requires_approval: false });
+await task('leo_desk', { title: 'Clean your desk', icon: 'pencil', category: 'Cleaning', members: [M.Leo], xp: 10, requires_approval: false });
 // Others, so the family looks like the supplied set.
 await task('mia_toys', { title: 'Toys in the basket', icon: 'home', category: 'Cleaning', members: [M.Mia], family_xp: 10, requires_approval: false, minutes: 5 });
 await task('noah_dog', { title: 'Walk the dog', icon: 'dog', category: 'Pets', members: [M.Noah], money: 150, family_xp: 40, requires_approval: true, minutes: 20 });
 await task('sofia_groceries', { title: 'Pick up the groceries', icon: 'cart', category: 'Kitchen', members: [M.Sofia], money: 300, family_xp: 50, requires_approval: true, minutes: 30 });
 await task('dad_groceries', { title: 'Plan the week\'s meals', icon: 'utensils', category: 'Kitchen', members: [M.Dad], requires_approval: false, minutes: 20 });
-// Upcoming one-off jobs later in the week (parent Tasks > Upcoming).
-await task('noah_recycling_tue', { title: 'Sort the recycling', icon: 'bins', category: 'Outdoor', members: [M.Noah], family_xp: 10, requires_approval: false, due_date: day(4) });
-await task('emma_table_thu', { title: 'Set the table', icon: 'utensils', category: 'Kitchen', members: [M.Emma], family_xp: 10, requires_approval: false, due_date: day(6) });
+// Upcoming one-off jobs later in the week (parent Tasks > Upcoming): trash on Tuesday, laundry on Thursday.
+await task('noah_trash_tue', { title: 'Take out the trash', icon: 'bins', category: 'Outdoor', members: [M.Noah], family_xp: 10, requires_approval: false, due_date: TUE });
+await task('emma_laundry_thu', { title: 'Put laundry away', icon: 'shirt', category: 'Laundry', members: [M.Emma], family_xp: 10, requires_approval: false, minutes: 15, due_date: THU });
 
 // Progress before Day 11's moment: Noah and Sofia finished their family jobs (90 / 200).
 async function assignment(responsibilityId, memberId) {
@@ -124,7 +138,8 @@ await act(clients.Sofia, 'complete', { id: await assignment(out.tasks.sofia_groc
 
 out.assignments = {
   emma_plants: await assignment(out.tasks.emma_plants, M.Emma),
-  leo_bins: await assignment(out.tasks.leo_bins, M.Leo),
+  leo_trash: await assignment(out.tasks.leo_trash, M.Leo),
 };
+out.week = { today: day(0), tuesday: TUE, thursday: THU, climbing: SAT };
 out.password = PASSWORD;
 console.log(JSON.stringify(out, null, 2));

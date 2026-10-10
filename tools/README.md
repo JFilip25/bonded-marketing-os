@@ -7,7 +7,7 @@ Neither tool touches production, publishes anything, or changes the app reposito
 - **Guards:**
   - `seed-millers.mjs` refuses any non-localhost API URL.
   - `capture.mjs` aborts every browser request that isn't localhost and logs it. The production project URL is baked into `app.json` as a fallback, and is blocked.
-  - The 9 Oct run logged **0 blocked requests**.
+  - The 9 Oct and 10 Oct runs each logged **0 blocked requests**.
 - **Steps:**
   1. `git -C <app repo> archive <commit> | tar -x -C <scratch>/app` (no worktree, no commits).
   2. `npm ci`, then `npx supabase@2.118.0 start -x realtime,storage-api,imgproxy,studio,edge-runtime,logflare,vector,supavisor,postgres-meta`.

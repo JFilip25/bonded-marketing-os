@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-10-09T20:31:59.528Z",
+  "capturedAt": "2026-10-10T05:20:12.854Z",
   "currency": "USD",
   "timezone": "America/New_York",
   "blockedRequests": [],
@@ -23,7 +23,7 @@
     {
       "file": "62-emma-water-plants-task-light.png",
       "who": "Emma",
-      "path": "/responsibility/3de92553-ae8d-4fa0-8951-3b8a0a0dcce7",
+      "path": "/responsibility/b3f7905d-d5a7-464c-ac6d-ca439ca5ee77",
       "state": "water-plants-task",
       "scheme": "light",
       "note": "Task screen before ticking off"
@@ -31,7 +31,7 @@
     {
       "file": "62-emma-water-plants-task-dark.png",
       "who": "Emma",
-      "path": "/responsibility/3de92553-ae8d-4fa0-8951-3b8a0a0dcce7",
+      "path": "/responsibility/b3f7905d-d5a7-464c-ac6d-ca439ca5ee77",
       "state": "water-plants-task",
       "scheme": "dark",
       "note": "Task screen before ticking off"
@@ -151,7 +151,7 @@
     {
       "file": "70-leo-reschedule-draft-light.png",
       "who": "Leo",
-      "path": "/responsibility/c2527210-20b9-4ad2-a3aa-bc320ebcec56",
+      "path": "/responsibility/7d8137d5-67dd-4f30-9feb-72709e12161f",
       "state": "reschedule-draft",
       "scheme": "light",
       "note": "Leo choosing Reschedule with a note (before sending)"
@@ -159,7 +159,7 @@
     {
       "file": "70-leo-reschedule-draft-dark.png",
       "who": "Leo",
-      "path": "/responsibility/c2527210-20b9-4ad2-a3aa-bc320ebcec56",
+      "path": "/responsibility/7d8137d5-67dd-4f30-9feb-72709e12161f",
       "state": "reschedule-draft",
       "scheme": "dark",
       "note": "Leo choosing Reschedule with a note (before sending)"
@@ -167,7 +167,7 @@
     {
       "file": "71-leo-reschedule-sent-light.png",
       "who": "Leo",
-      "path": "/responsibility/c2527210-20b9-4ad2-a3aa-bc320ebcec56",
+      "path": "/responsibility/7d8137d5-67dd-4f30-9feb-72709e12161f",
       "state": "reschedule-sent",
       "scheme": "light",
       "note": "Request sent, waiting for a reply"
@@ -175,7 +175,7 @@
     {
       "file": "71-leo-reschedule-sent-dark.png",
       "who": "Leo",
-      "path": "/responsibility/c2527210-20b9-4ad2-a3aa-bc320ebcec56",
+      "path": "/responsibility/7d8137d5-67dd-4f30-9feb-72709e12161f",
       "state": "reschedule-sent",
       "scheme": "dark",
       "note": "Request sent, waiting for a reply"
@@ -199,7 +199,7 @@
     {
       "file": "73-mom-request-detail-light.png",
       "who": "Mom",
-      "path": "/responsibility/c2527210-20b9-4ad2-a3aa-bc320ebcec56",
+      "path": "/responsibility/7d8137d5-67dd-4f30-9feb-72709e12161f",
       "state": "request-detail",
       "scheme": "light",
       "note": "Parent view of the request with replies"
@@ -207,7 +207,7 @@
     {
       "file": "73-mom-request-detail-dark.png",
       "who": "Mom",
-      "path": "/responsibility/c2527210-20b9-4ad2-a3aa-bc320ebcec56",
+      "path": "/responsibility/7d8137d5-67dd-4f30-9feb-72709e12161f",
       "state": "request-detail",
       "scheme": "dark",
       "note": "Parent view of the request with replies"
@@ -228,13 +228,5 @@
       "scheme": "dark",
       "note": "Responsibilities, Upcoming tab"
     }
-  ],
-  "source": {
-    "repo": "JFilip25/ciccho-Claude",
-    "branch": "claude/bonded-family-ai",
-    "commit": "81b164b066aadc09344c5039230084af8d9c4149",
-    "database": "local Supabase stack (supabase@2.118.0), seeded by tools/capture/seed-millers.mjs",
-    "viewport": "430x932 @3x",
-    "production_contacted": false
-  }
+  ]
 }
