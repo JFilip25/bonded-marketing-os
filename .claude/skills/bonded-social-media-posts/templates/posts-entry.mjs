@@ -1,6 +1,6 @@
 // Posts file for tools/proofs/render-v2.mjs. Copy it OUTSIDE the repository, fill it in, and render with
 //   POSTS=/path/to/this-file.mjs PHOTOS=<prepped stills> MEDIA=<original videos> OUT_DIR=<outside the repo> \
-//   HANDLE=@bonded512 node tools/proofs/render-v2.mjs        (then again with HANDLE=@bonded789)
+//   node tools/proofs/render-v2.mjs        (handle @bondedspace by default; one set for all three platforms)
 //
 // The file names below are PLACEHOLDERS. Use the owner's new files for the post; never the launch
 // campaign's (First_2W) photos or clips.

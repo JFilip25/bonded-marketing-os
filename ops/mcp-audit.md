@@ -18,7 +18,7 @@
 | **Expo** | Yes | n/a | Not used | Builds, store submission | Out of marketing scope |
 | **Brevo** | Yes | n/a | Not used | n/a | The product uses Brevo only as the SMTP for login emails. MailerLite owns marketing email. Don't mix them. |
 | **Gmail / Google Calendar** | Yes | n/a | Not used | n/a | Never send from marketing workflows |
-| **ManyChat** | **No** | n/a | n/a | n/a | **Required** for "Comment WAITLIST" on Instagram and Facebook (D7). Set it up in its own UI. |
+| **ManyChat** | **No** | n/a | n/a | n/a | **Required** for "Comment WAITLIST" on Instagram (D7). Set it up in its own UI from `ops/manychat-waitlist.md`. |
 | **HubSpot, Neon** | Need authorisation | n/a | n/a | n/a | Not needed |
 | **Analytics** (GA4, Meta Insights, TikTok Analytics) | **No** connectors | n/a | n/a | n/a | Reporting is limited to Buffer metrics and MailerLite stats until analytics exists on the waitlist site |
 | **Claude Routines** | Available (`create_trigger`) | n/a | No BONDED Routines created | Scheduled cloud sessions with chosen connectors | Created only after the manual workflows pass. **Draft-only** prompts. |

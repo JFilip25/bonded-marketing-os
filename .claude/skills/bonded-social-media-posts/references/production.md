@@ -31,15 +31,13 @@ Gate: every slide 4 or lower, every caption 5 or lower, no long words flagged (o
 
 Copy `templates/posts-entry.mjs` to a file **outside the repository** and fill it in: one entry per post, the slides in order, the waitlist slide last. `source` is the proposal's path relative to the repository root.
 
-Render each post twice, once per handle:
+Render once. Instagram and TikTok are both `@bondedspace` (D-2026-10-15-13), the renderer's default handle, so one set serves Instagram, Facebook and TikTok:
 
 ```
 cd /home/user/bonded-marketing-os
-for h in bonded512 bonded789; do
-  POSTS=/path/to/posts.mjs PHOTOS=/path/to/prepped MEDIA=/path/to/media \
-  OUT_DIR=/home/user/bonded-review/<campaign>/$h HANDLE=@$h \
-  node tools/proofs/render-v2.mjs
-done
+POSTS=/path/to/posts.mjs PHOTOS=/path/to/prepped MEDIA=/path/to/media \
+OUT_DIR=/home/user/bonded-review/<campaign> \
+node tools/proofs/render-v2.mjs
 ```
 
 - `ONLY=3,4` renders just those posts, but then `qa.json` covers only them; run the full set before the review.
@@ -48,7 +46,7 @@ done
 
 ### 5. Check
 
-Gates, all of them, on both handles:
+Gates, all of them:
 - `qa.json` summary: `framesWithIssues` 0, `postsFailingPhotoMix` 0, `lowestContrastOnPhotos` 4.5 or more.
 - No `FLAG` lines in the log. Look at the `fits` list: any text that dropped below its largest size is fine, but a headline at 3 lines usually means the words should be shorter.
 - **Look at every slide yourself**, at full size: faces clear of the text, the picture matches the words, nothing awkward in the frame, the handle clear of the words, the crop right on the 4:5 grid. Fix the crop (`pos`), the text position (`at`) or the picture, and render again.

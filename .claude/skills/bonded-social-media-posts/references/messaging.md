@@ -66,7 +66,7 @@ Advice in the "what to do" slides can mention lists, boards, the fridge or a wee
 
 Each platform gets its own caption. The fixed lines are word for word.
 
-### Instagram (@bonded512)
+### Instagram (@bondedspace)
 
 ```
 <The problem, in one or two short sentences. Usually the cover line plus its sub.>
@@ -99,7 +99,7 @@ The waitlist is here: [link]
 
 `[link]` is replaced with the real waitlist URL (with UTM tags from `architecture/marketing-os.md`) before posting.
 
-### TikTok (@bonded789)
+### TikTok (@bondedspace)
 
 One or two short sentences that hook, then the fixed close:
 

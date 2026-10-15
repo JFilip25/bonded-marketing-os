@@ -28,7 +28,7 @@ const OUT = resolve(process.env.OUT_DIR);
 if (!relative(ROOT, OUT).startsWith('..')) throw new Error('OUT_DIR must be outside the repository: the renders contain the owner\'s photos');
 const PHOTOS = resolve(process.env.PHOTOS);
 const MEDIA = process.env.MEDIA ? resolve(process.env.MEDIA) : null;
-const HANDLE = process.env.HANDLE ?? '@[handle]';
+const HANDLE = process.env.HANDLE ?? '@bondedspace'; // D-2026-10-15-13: one handle on Instagram, Facebook art and TikTok
 const ONLY = process.env.ONLY ? process.env.ONLY.split(',').map(Number) : null;
 // POSTS=<file> renders another post list (for tests); the default is tools/proofs/v2-posts.mjs.
 const { posts, WAITLIST } = await import(process.env.POSTS ? pathToFileURL(resolve(process.env.POSTS)).href : './v2-posts.mjs');

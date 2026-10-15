@@ -41,7 +41,7 @@ All text uses Plus Jakarta Sans. The OFL files are in `assets/fonts/`, and it is
 | Headline sizes 120–190 px | Unchanged, including the per-post sizes in each brief (e.g. Day 0 cover 140/150 px) | See the fit notes below |
 | Subheadline: Poppins Medium 44 px | **Jakarta 400, 44 px, Ink** | Mirrors the app: 800 titles over 400 supporting text |
 | Small text: Poppins Medium 28 px | **Jakarta 400, 28 px**, Ink or muted | |
-| Handle: 26 px | **Jakarta 600, 26 px, muted** | Stays the placeholder `@[handle]` until real handles exist (blocker) |
+| Handle: 26 px | **Jakarta 600, 26 px, muted** | `@bondedspace` on Instagram and TikTok (D-2026-10-15-13). On photo slides it is Paper on the Ink band (messaging v2). |
 | Labels ("01", age band): Poppins Medium | **Jakarta 600, 28 px**, muted, +0.08 em tracking | Mirrors the app's 600 labels with positive tracking |
 | Pills ("VS", "Swipe", "Link in bio") | **Jakarta 600, 28 px**, Paper on muted | |
 | Story "Idea": Playfair Black Italic 96 px centred at 860 px, one Poppins line below | **Jakarta 800 at 96 px**, centred at 860 px, plus one **Jakarta 400 44 px** line below | |

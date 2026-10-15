@@ -41,7 +41,7 @@ If you are working without the `bonded-marketing-os` repository (for example in 
 | 1. Brief | Pick one real parent problem and one useful idea. Check any claim against the build. | `references/messaging.md` |
 | 2. Words | Write the slides and the three captions on the arc. Score them. | `references/messaging.md`, `templates/post-brief.md` |
 | 3. Media | Ask the owner for new photos or clips that fit each slide. Screen every file. Choose crops and where the words sit. | `references/media-rules.md`, `scripts/media_check.py` |
-| 4. Build | With the repo: write a posts file and render both handles. Without it: hand a designer the post sheet and the visual spec. | `references/visual-spec.md`, `references/production.md`, `templates/posts-entry.mjs` |
+| 4. Build | With the repo: write a posts file and render it (one set for all three platforms). Without it: hand a designer the post sheet and the visual spec. | `references/visual-spec.md`, `references/production.md`, `templates/posts-entry.mjs` |
 | 5. Check | QA has to be clean, then look at every slide yourself. | `references/production.md` |
 | 6. Review | Show the owner the slides, words, captions and rights questions. Apply changes only after approval. | `references/production.md` |
 
@@ -62,7 +62,7 @@ If you are working without the `bonded-marketing-os` repository (for example in 
 - [ ] No em dashes, no emoji, nothing from the "Never write" list, no invented stories or testimonials.
 - [ ] Nothing claims a feature, and nothing says family time has to be earned.
 - [ ] Every photo or clip is new, matches its words, and has no face under the text.
-- [ ] Contrast 4.5:1 or better on every line; QA shows 0 issues on both handles.
+- [ ] Contrast 4.5:1 or better on every line; QA shows 0 issues.
 - [ ] Each file has a rights answer: cleared, needs an AI label, or blocked until the owner confirms.
 - [ ] Captions follow the three templates, with WAITLIST on Instagram and the real link (or `[link]`) on Facebook.
 - [ ] Nothing has been scheduled or published.

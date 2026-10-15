@@ -36,7 +36,7 @@
 - [ ] MailerLite sender domain verified (SPF/DKIM); double opt-in tested
 - [ ] Early access, family tips and starter pack kept as separate consents. Resource delivery is not marketing consent.
 - [ ] Website forms tested on mobile and desktop, with privacy notice, error states and UTM capture
-- [ ] "Comment WAITLIST" really sends the link (ManyChat test)
+- [ ] "Comment WAITLIST" really sends the link (ManyChat test, steps in `ops/manychat-waitlist.md`)
 
 ## Publishing safety
 - [ ] Buffer channels verified. Every post is a draft or idea; nothing is scheduled or published without approval.

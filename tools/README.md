@@ -32,7 +32,7 @@ It then measures every text box in Chromium and writes `design/checkpoint-01/qa.
 Objects come from `assets/objects/`, or `OBJECTS=<dir>`. App screens are the light captures in `assets/screens/captured/light/`. `render-checkpoint.mjs` stays unchanged as the record of the G1 checkpoint.
 
 **Options for review renders** (none of them changes the default output):
-- `HANDLE=@name` sets the handle, which is `@[handle]` by default.
+- `HANDLE=@name` sets the handle, which is `@[handle]` by default (this G2 script only; `render-v2.mjs` defaults to `@bondedspace`).
 - `ONLY=day02/day02_carousel,...` renders only the pages whose names start with one of those prefixes.
 - `OUT_DIR=<dir>` writes there instead of `design/production/`.
 
@@ -59,7 +59,7 @@ Renders the posts defined in `proofs/v2-posts.mjs`: the problem, the feeling, wh
 
 **Usage:**
 ```
-PHOTOS=<prepped stills> MEDIA=<original videos> OUT_DIR=<dir outside the repo> HANDLE=@bonded512 [ONLY=0,1] [POSTS=<posts file>] node tools/proofs/render-v2.mjs
+PHOTOS=<prepped stills> MEDIA=<original videos> OUT_DIR=<dir outside the repo> [HANDLE=@bondedspace] [ONLY=0,1] [POSTS=<posts file>] node tools/proofs/render-v2.mjs
 ```
 `OUT_DIR` must be outside the repository: the renders contain the owner's photos, which are never committed.
 

@@ -102,7 +102,7 @@ Anything that fails QA is marked BLOCKED with the reason.
   | `utm_source` | instagram, facebook, tiktok |
   | `utm_medium` | social_organic, bio, dm, story |
   | `utm_campaign` | bonded_prelaunch_2026 |
-  | `utm_content` | `d00`…`d14`, with a suffix such as `_cap` or `_story` |
+  | `utm_content` | `d00`…`d14`, with a suffix such as `_cap` or `_story`; `dm_comment` and `dm_keyword` for the ManyChat WAITLIST DM, which can't tell which post was commented on (`ops/manychat-waitlist.md`) |
 - **No personal data in URLs.**
 - **A conversion is a confirmed** (double opt-in) **subscriber** in `BONDED_EARLY_ACCESS`. Comments, DMs and clicks are funnel steps, not conversions.
 

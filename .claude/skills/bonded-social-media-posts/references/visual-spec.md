@@ -46,7 +46,7 @@ Every number here comes from `tools/proofs/render-v2.mjs`, the renderer that mad
   - Text at the top: the same, mirrored.
   - Slide 1 also gets a band behind the handle: Ink at 72% from the top to 260 px, fading to 0 at 440 px.
 - **No Hearth, no logo, no app screens on photo slides.** No borders, stickers, emoji, frames or extra graphics.
-- **Handle:** on slide 1 only, centred at the top (centre x 540, top y 200), Paper, 26 px, 600. When the slide's words are also at the top, the words start lower, at y 262, so they never touch the handle. Instagram and Facebook use `@bonded512`; TikTok uses `@bonded789`.
+- **Handle:** on slide 1 only, centred at the top (centre x 540, top y 200), Paper, 26 px, 600. When the slide's words are also at the top, the words start lower, at y 262, so they never touch the handle. The handle is `@bondedspace` on Instagram and TikTok (D-2026-10-15-13), and the same slide goes to Facebook.
 
 ## The waitlist slide (always last, always plain)
 
@@ -74,4 +74,4 @@ Hide the words, take the picture with the gradient as it will be posted, and loo
 
 ## File names
 
-`dayNN_carousel_sNN.png` (and `.mp4` for a moving slide), with NN zero-padded: `day05_carousel_s02.png`. Render each post twice: once with `@bonded512` (Instagram and Facebook) and once with `@bonded789` (TikTok); only slide 1 differs.
+`dayNN_carousel_sNN.png` (and `.mp4` for a moving slide), with NN zero-padded: `day05_carousel_s02.png`. One render serves Instagram, Facebook and TikTok, because the handle on slide 1 is the same everywhere.
