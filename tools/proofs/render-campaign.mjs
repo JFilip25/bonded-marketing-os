@@ -13,11 +13,11 @@
 //
 // Output: design/production/dayNN/*.png and design/production/qa.json.
 // Usage: node tools/proofs/render-campaign.mjs   (CHROMIUM_PATH=... if Playwright can't find Chromium)
-// Options: HANDLE=@name (default @[handle]); ONLY=day00/day00_carousel,... renders only pages whose name starts
-// with one of the prefixes; OUT_DIR=<dir> writes there instead of design/production; PHOTOS=<dir> builds the
-// Day 0 carousel in the photo-led Look B (an unapproved example) from d00_c01 ... d00_c06 in that folder.
-// PROPOSAL=messaging-v2 (with PHOTOS=<dir>) builds Day 0 from proposals/messaging-v2.md instead: its copy is
-// guarded against that file, and text on full photos must measure 4.5:1 against the real pixels behind it.
+// Options: HANDLE=@name (default @[handle]); ONLY=day01/day01_video,... renders only pages whose name starts
+// with one of the prefixes; OUT_DIR=<dir> writes there instead of design/production.
+//
+// Since Amendment 2 (15 Oct 2026) Day 0 follows messaging v2 and is rendered by tools/proofs/render-v2.mjs.
+// This script stays the record of the G2 proofs for Days 1-14, which change with Amendment 3.
 import { execSync } from 'node:child_process';
 import { createRequire } from 'node:module';
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
@@ -28,11 +28,6 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const OUT = process.env.OUT_DIR ? resolve(process.env.OUT_DIR) : join(ROOT, 'design', 'production');
 const HANDLE = process.env.HANDLE ?? '@[handle]';
 const ONLY = process.env.ONLY ? process.env.ONLY.split(',') : null;
-const PHOTOS = process.env.PHOTOS ? resolve(process.env.PHOTOS) : null;
-const PROPOSAL_FILES = { 'messaging-v2': 'proposals/messaging-v2.md' };
-const PROPOSAL = process.env.PROPOSAL ? PROPOSAL_FILES[process.env.PROPOSAL] : null;
-if (process.env.PROPOSAL && !PROPOSAL) throw new Error(`Unknown PROPOSAL ${process.env.PROPOSAL}`);
-if (PROPOSAL && !PHOTOS) throw new Error('PROPOSAL needs PHOTOS=<dir> with the owner\'s photos');
 const OBJ = process.env.OBJECTS ?? join(ROOT, 'assets', 'objects');
 const CAMPAIGN = readFileSync(join(ROOT, 'campaign', 'weeks-01-02.md'), 'utf8');
 const requireGlobal = createRequire(join(execSync('npm root -g', { encoding: 'utf8' }).trim(), 'noop.js'));
@@ -66,7 +61,6 @@ html,body{background:transparent}
 .pill{font-weight:600;font-size:28px;color:${C.paper};background:${C.muted};border-radius:999px;padding:12px 30px;line-height:1}
 .ph{border:3px dashed ${C.muted};border-radius:24px;color:${C.muted};font-weight:600;font-size:22px;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;line-height:1.35}
 .vid{color:#fff;font-weight:600;line-height:1.15;text-align:center;text-wrap:balance;text-shadow:0 2px 12px rgba(0,0,0,.35)}
-.qa-hide-text [data-copy],.qa-hide-text [data-qa="handle"]{visibility:hidden!important}
 `;
 
 // Safe zones (campaign "Sizes and safe zones")
@@ -76,18 +70,11 @@ const SAFE_REEL = { top: 250, bottom: 1920 - 350, left: 0, right: 1080 - 150 };
 
 // ---------- copy ----------
 const used = new Set();
-let COPY_SRC = { name: 'campaign/weeks-01-02.md', text: CAMPAIGN };
-/** Returns `s` if it appears word for word in the copy source (the campaign file); stops the render otherwise. */
+/** Returns `s` if it appears word for word in the campaign file; stops the render otherwise. */
 function cp(s) {
-  if (!COPY_SRC.text.includes(s)) throw new Error(`Not in ${COPY_SRC.name}: ${JSON.stringify(s)}`);
+  if (!CAMPAIGN.includes(s)) throw new Error(`Not in campaign/weeks-01-02.md: ${JSON.stringify(s)}`);
   used.add(s);
   return s;
-}
-/** Builds pages whose copy is guarded against a proposal file instead of the campaign. */
-async function withCopy(file, fn) {
-  const prev = COPY_SRC;
-  COPY_SRC = { name: file, text: readFileSync(join(ROOT, file), 'utf8') };
-  try { return await fn(); } finally { COPY_SRC = prev; }
 }
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const attr = (s) => esc(s).replace(/"/g, '&quot;');
@@ -103,12 +90,12 @@ const objectBox = (src, label, box) => src
   : `<div class="abs ph" data-qa="object-placeholder" style="left:${box.left}px;top:${box.top}px;width:${box.w}px;height:${box.h}px"><div>${label}</div></div>`;
 const demoLabel = (left, width, top, size = 24, color = C.muted) => `<div class="abs" data-qa="demo-label" data-copy="Demo family" style="left:${left}px;width:${width}px;top:${top}px;text-align:center;font-weight:400;font-size:${size}px;line-height:1.35;color:${color}">${cp('Demo family')}</div>`;
 /** Ink phone frame around an unaltered screenshot; "Demo family" centred under it. */
-function phoneFrame(src, { left, top, screenH, pad, labelGap = 10, label = true }) {
+function phoneFrame(src, { left, top, screenH, pad, labelGap = 10 }) {
   const sw = Math.round(screenH * 1290 / 2796);
   const ow = sw + 2 * pad, oh = screenH + 2 * pad;
   const r = Math.round(ow * 0.18), ri = Math.round(sw * 0.155);
   return `<div class="abs" data-qa="phone" data-file="${NAMES.get(src) ?? ''}" style="left:${left}px;top:${top}px;width:${ow}px;height:${oh}px;border-radius:${r}px;background:${C.ink};padding:${pad}px"><img src="${src}" style="width:${sw}px;height:${screenH}px;border-radius:${ri}px;display:block"></div>
-  ${label ? demoLabel(left + ow / 2 - Math.max(ow, 200) / 2, Math.max(ow, 200), top + oh + labelGap) : ''}`;
+  ${demoLabel(left + ow / 2 - Math.max(ow, 200) / 2, Math.max(ow, 200), top + oh + labelGap)}`;
 }
 // Layout C phone: bottom right, inside the margins, clear of the text above it.
 const PHONE_C = { screenH: 448, pad: 12 };
@@ -164,78 +151,6 @@ function layoutE({ headline, sub, pill }) {
     ${txt('headline', headline, 'h800', `font-size:120px;margin-top:${560 - 59}px`, 'data-center-y="560"')}
     ${txt('subheadline', sub, 'sub', 'margin-top:40px')}</div>
   <div class="abs" style="left:0;width:1080px;top:1200px;display:flex;justify-content:center">${txt('pill', pill, 'pill', 'transform:translateY(-50%)')}</div>`;
-}
-
-// ---------- Look B (PHOTOS=<dir>): photo-led example, not approved ----------
-// The photo fills a band at the top and never carries text; everything else sits on Paper below it.
-// Phones straddle the band's lower edge so "Demo family" lands on Paper.
-const BAND = 640;
-const photo = (file) => named(dataUri(join(PHOTOS, file), file.endsWith('.png') ? 'image/png' : 'image/jpeg'), file);
-const photoBand = (file, pos, h = BAND) => `<img class="abs" data-qa="photo" data-file="${file}" src="${photo(file)}" style="left:0;top:0;width:1080px;height:${h}px;object-fit:cover;object-position:${pos}">`;
-function coverB({ photoFile, pos, setup, payoff, setupSize, payoffSize, sub, zone, gap = 40, phone }) {
-  const screenH = 300, pad = 10, ow = Math.round(screenH * 1290 / 2796) + 2 * pad, oh = screenH + 2 * pad;
-  return `${photoBand(photoFile, pos)}
-  ${phoneFrame(phone, { left: 930 - ow / 2, top: BAND + 80 - oh, screenH, pad, labelGap: 8 })}
-  <div class="abs handle" data-qa="handle" style="top:${BAND + 28}px;left:540px;transform:translateX(-50%);white-space:nowrap">${HANDLE}</div>
-  <div class="abs" data-qa="cover-headline" data-bzone="${zone}" data-bgap="${gap}" data-bmode="auto" style="left:50px;width:980px;top:${zone[0]}px;text-align:center">
-    ${txt('headline-setup', setup, 'h400', `font-size:${setupSize}px`)}
-    ${txt('headline-payoff', payoff, 'h800', `font-size:${payoffSize}px`)}
-  </div>
-  ${txt('subheadline', sub, 'abs sub', `left:50px;width:980px;text-align:center;text-wrap:balance;top:${zone[1]}px`)}`;
-}
-function contentB({ photoFile, pos, label, headline, sub, hs, ss, headlineMax, phone }) {
-  return `${photoBand(photoFile, pos)}
-  ${phone ? phoneFrame(phone, { left: 1030 - (Math.round(448 * 1290 / 2796) + 24), top: BAND - 454, screenH: 448, pad: 12, labelGap: 8 }) : ''}
-  ${txt('label', label, 'abs label', `top:${BAND + 68}px;left:50px`)}
-  <div class="abs" style="top:${BAND + 128}px;left:50px;width:980px">
-    ${txt('headline', headline, 'h800', `font-size:${hs}px`, `data-maxlines="${headlineMax}"`)}
-    ${txt('subheadline', sub, 'sub', `margin-top:32px;font-size:${ss}px`, 'data-maxlines="3"')}
-  </div>`;
-}
-// The CTA has less to say, so its photo runs deeper.
-function ctaB({ photoFile, pos, headline, sub, pill }) {
-  return `${photoBand(photoFile, pos, 760)}
-  <div class="abs" style="left:50px;width:980px;top:880px;display:flex;flex-direction:column;align-items:center;text-align:center">
-    ${txt('headline', headline, 'h800', 'font-size:120px')}
-    ${txt('subheadline', sub, 'sub', 'margin-top:40px')}</div>
-  <div class="abs" style="left:0;width:1080px;top:1180px;display:flex;justify-content:center">${txt('pill', pill, 'pill', 'transform:translateY(-50%)')}</div>`;
-}
-
-// ---------- Messaging v2 (PROPOSAL=messaging-v2): full-photo slides and the waitlist slide ----------
-// Full photo: the photo fills the frame and an Ink gradient sits behind the words, which are Paper. The
-// gradient is sized to the text after layout (see the render loop). No Hearth on a photo.
-function fullBleed({ photoFile, pos, at = 'bottom', withHandle = false, setup, payoff, setupSize, payoffSize, headline, sub, hs, ss }) {
-  const ink = `color:${C.paper}`;
-  const words = setup
-    ? `${txt('headline-setup', setup, 'h400', `font-size:${setupSize}px;${ink}`, 'data-maxlines="2"')}${txt('headline-payoff', payoff, 'h800', `font-size:${payoffSize}px;${ink}`, 'data-maxlines="2"')}`
-    : txt('headline', headline, 'h800', `font-size:${hs}px;${ink}`, 'data-maxlines="2"');
-  const under = sub ? txt('subheadline', sub, 'sub', `margin-top:28px;font-size:${ss}px;text-wrap:balance;${ink}`, 'data-maxlines="3"') : '';
-  return `<img class="abs" data-qa="photo-full" data-file="${photoFile}" src="${photo(photoFile)}" style="left:0;top:0;width:1080px;height:1440px;object-fit:cover;object-position:${pos}">
-  <div class="abs scrim" data-scrim="${at}" data-handle="${withHandle ? 1 : 0}" style="inset:0"></div>
-  ${withHandle ? `<div class="abs handle" data-qa="handle" style="top:200px;left:540px;transform:translateX(-50%);white-space:nowrap;${ink}">${HANDLE}</div>` : ''}
-  <div class="abs fbtext" style="left:50px;width:980px;top:200px;bottom:200px;display:flex;flex-direction:column;justify-content:${at === 'top' ? 'flex-start' : 'flex-end'}">${words}${under}</div>`;
-}
-/** Paper type slide for v2: label, headline and subheadline centred as a group in the safe area. */
-function typeSlide({ label, headline, sub, hs, ss, headlineMax }) {
-  return `<div class="abs" style="left:50px;width:980px;top:180px;height:1080px;display:flex;flex-direction:column;justify-content:center">
-    ${label ? txt('label', label, 'label', 'margin-bottom:28px') : ''}
-    ${txt('headline', headline, 'h800', `font-size:${hs}px`, `data-maxlines="${headlineMax}"`)}
-    ${txt('subheadline', sub, 'sub', `margin-top:32px;font-size:${ss}px`, 'data-maxlines="3"')}
-  </div>`;
-}
-/** The waitlist slide: the official colour lockup and the ask on the left, a real app screen in a large phone on the
- *  right, without a "Demo family" caption (D-2026-10-15-3). */
-const WAIT_COL = 506;
-function waitlistSlide({ headline, sub, pill, phone, hs, ss }) {
-  const lw = 300, lh = Math.round(lw * 140.4 / 830 * 10) / 10;
-  const screenH = 880, pad = 14, ow = Math.round(screenH * 1290 / 2796) + 2 * pad, oh = screenH + 2 * pad;
-  return `<div class="abs" style="left:50px;width:${WAIT_COL}px;top:180px;height:1080px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start">
-    <div data-qa="lockup" data-file="bonded-lockup-horizontal-color.svg" style="width:${lw}px;height:${lh}px;margin-bottom:56px">${svg('bonded-lockup-horizontal-color').replace('<svg ', `<svg width="${lw}" height="${lh}" `)}</div>
-    ${txt('headline', headline, 'h800', `font-size:${hs}px`, 'data-maxlines="2"')}
-    ${txt('subheadline', sub, 'sub', `margin-top:28px;font-size:${ss}px`, 'data-maxlines="5"')}
-    <div style="margin-top:40px">${txt('pill', pill, 'pill')}</div>
-  </div>
-  ${phoneFrame(phone, { left: 1030 - ow, top: 720 - oh / 2, screenH, pad, label: false })}`;
 }
 
 // ---------- custom diagrams (Layout D variants named in the briefs) ----------
@@ -346,14 +261,14 @@ async function headlineSize(frame, s) {
   throw new Error(`${frame}: headline does not fit`);
 }
 /** Layout C with headline and subheadline fitted to their line limits. */
-async function C_(frame, o, layout = layoutC) {
+async function C_(frame, o) {
   const { hs, maxLines } = await headlineSize(frame, cp(o.headline));
   const ss = o.sub ? await fit(frame, 'subheadline', cp(o.sub), 'sub', 44, 34, 3) : 44;
-  return layout({ ...o, hs, ss, headlineMax: maxLines });
+  return layoutC({ ...o, hs, ss, headlineMax: maxLines });
 }
 /** Layout B with setup and payoff scaled together (2% steps) until the headline group fits its zone
  *  and the subheadline ends 20 px above what follows it (the object, or Day 7's checklist). */
-async function B_(frame, o, layout = layoutB) {
+async function B_(frame, o) {
   const zone = o.zone ?? [300, 860], gap = o.gap ?? 40, limit = o.limit ?? 940, zh = zone[1] - zone[0];
   const S = o.sub ? (await countLines(cp(o.sub), 'sub', 44, 980)) * 44 * 1.3 : 0;
   for (let k = 100; k >= 60; k -= 2) {
@@ -363,25 +278,10 @@ async function B_(frame, o, layout = layoutB) {
     const literalOk = H <= zh && zone[0] + (zh + H) / 2 + gap + S <= limit;
     if (groupOk || literalOk) {
       if (k < 100) fits.push({ frame, role: 'cover headline', text: `${o.setup} / ${o.payoff}`, spec: `${o.setupSize}px / ${o.payoffSize}px`, used: `${ss}px / ${ps}px (${k}%)` });
-      return layout({ ...o, setupSize: ss, payoffSize: ps });
+      return layoutB({ ...o, setupSize: ss, payoffSize: ps });
     }
   }
   throw new Error(`${frame}: cover headline does not fit`);
-}
-
-/** Full-photo slide with its type fitted: cover setup/payoff (2 lines each) or headline (2) and sub (3). */
-async function FB_(frame, o) {
-  const z = o.setup
-    ? { setupSize: await fit(frame, 'cover setup', cp(o.setup), 'h400', 100, 72, 2), payoffSize: await fit(frame, 'cover payoff', cp(o.payoff), 'h800', 112, 80, 2) }
-    : { hs: await fit(frame, 'headline', cp(o.headline), 'h800', 104, 80, 2) };
-  z.ss = o.sub ? await fit(frame, 'subheadline', cp(o.sub), 'sub', 44, 34, 3) : 44;
-  return fullBleed({ ...o, ...z });
-}
-/** Waitlist slide with the headline and subheadline fitted to the left column. */
-async function W_(frame, o) {
-  const hs = await fit(frame, 'headline', cp(o.headline), 'h800', 104, 80, 2, WAIT_COL);
-  const ss = await fit(frame, 'subheadline', cp(o.sub), 'sub', 40, 32, 5, WAIT_COL);
-  return waitlistSlide({ ...o, hs, ss });
 }
 
 // ---------- pages ----------
@@ -391,36 +291,7 @@ const feed = (name, body, crop45 = false, status) => add(name, 1080, 1440, body,
 const story = (name, body, status) => add(name, 1080, 1920, body, { safe: SAFE_STORY, status });
 const video = (name, body) => add(name, 1080, 1920, body, { transparent: true, safe: SAFE_REEL });
 
-// Day 0, pinned introduction (6 slides; slides 2-5 also as the "About" highlight)
-if (PROPOSAL) {
-  // Messaging v2 (proposals/messaging-v2.md): the problem, the feeling, what to do, then Bonded and the waitlist.
-  await withCopy(PROPOSAL, async () => {
-    const full = async (n, o) => add(`day00/day00_carousel_s0${n}`, 1080, 1440, await FB_(`day00_carousel_s0${n}`, o), { safe: SAFE_FEED, crop45: n === 1, status: 'PROPOSAL', bg: C.ink });
-    const paper = async (n, o) => feed(`day00/day00_carousel_s0${n}`, await C_(`day00_carousel_s0${n}`, o, typeSlide), false, 'PROPOSAL');
-    await full(1, { photoFile: 'd00_c01.jpg', pos: '45% 40%', withHandle: true, setup: 'In most homes,', payoff: 'one parent remembers everything.', sub: 'Lunches. Homework. Whose turn it is to feed the dog.' });
-    await full(2, { photoFile: 'd00_c02.jpg', pos: '40% 50%', headline: 'It gets tiring.', sub: 'Not because the jobs are hard. Because nobody else is keeping track.' });
-    await full(3, { photoFile: 'd00_c03.jpg', pos: '50% 50%', at: 'top', headline: "Give each kid a job that's theirs.", sub: 'Little kids can rinse cups or set the table. Big kids can cook dinner once a week.' });
-    await full(4, { photoFile: 'd00_c05.png', pos: '48% 30%', headline: 'Plan the week together on Sunday.', sub: 'Ten minutes is enough. Say who does what, and write it where everyone can see it.' });
-    await full(5, { photoFile: 'd00_c06.png', pos: '50% 59%', headline: "Now it's not all on one person.", sub: 'Everyone does a part. Everyone knows the plan.' });
-    await full(6, { photoFile: 'd00_c04.jpg', pos: '55% 50%', headline: 'And there\'s more time for fun.', sub: 'Like a Saturday at the beach, with nobody asking who forgot what.' });
-    feed('day00/day00_carousel_s07', await W_('day00_carousel_s07', { headline: 'Join the waitlist.', sub: "Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.", pill: 'Link in bio', phone: screen('67-mom-family-climbing-light.png') }), false, 'PROPOSAL');
-  });
-} else {
-  const d00 = [];
-  // Look B: the owner's photo for each slide (file name = slide number) and where to centre the crop.
-  // PHOTO_ORDER=1,5,3,2,4,6 puts photo 5 on slide 2, and so on (to compare orders; the default is the owner's).
-  const PHOTO_SET = { 1: ['d00_c01.jpg', '50% 35%'], 2: ['d00_c02.jpg', '50% 50%'], 3: ['d00_c03.jpg', '50% 71%'], 4: ['d00_c04.jpg', '50% 50%'], 5: ['d00_c05.png', '50% 20%'], 6: ['d00_c06.png', '50% 35%'] };
-  const pB = PHOTOS ? (process.env.PHOTO_ORDER ?? '1,2,3,4,5,6').split(',').map((n) => ({ photoFile: PHOTO_SET[n][0], pos: PHOTO_SET[n][1] })) : null;
-  d00.push(await B_('day00_carousel_s01', { setup: 'What Bonded is,', payoff: "and why we're building it.", setupSize: 140, payoffSize: 150, sub: 'A family app for running the week together.', phone: screen('64-mom-home-recognition-light.png'), ...(pB ? { ...pB[0], zone: [BAND + 140, 1250] } : {}) }, pB ? coverB : layoutB));
-  d00.push(await C_('day00_carousel_s02', { label: 'What it is', headline: 'One shared plan for the whole family.', sub: "The week's plan, who's doing what, and something to look forward to, in one place everyone can see.", phone: screen('67-mom-family-climbing-light.png'), ...pB?.[1] }, pB ? contentB : layoutC));
-  d00.push(await C_('day00_carousel_s03', { label: "Who it's for", headline: 'Families with kids from about 4 to 18.', sub: 'Parents set the plan. Kids see their own part, tick things off, and can ask for help, a break or a new day.', ...pB?.[2] }, pB ? contentB : layoutC));
-  d00.push(await C_('day00_carousel_s04', { label: "Why we're building it", headline: "The week shouldn't live in one person's head.", sub: 'In most families, one parent remembers everything and asks for everything. We think the work, and the credit for it, should be shared.', ...pB?.[3] }, pB ? contentB : layoutC));
-  d00.push(await C_('day00_carousel_s05', { label: 'How rewards work', headline: 'Points unlock extras the family agrees on.', sub: "A climbing wall trip, a movie night out, an allowance if you choose. Everyday time together is never on the line. Bonded keeps track of money; it doesn't move it.", ...pB?.[4] }, pB ? contentB : layoutC));
-  d00.push((pB ? ctaB : layoutE)({ headline: 'Join the waitlist.', sub: 'Bonded is coming to iPhone and Android.', pill: 'Link in bio', ...pB?.[5] }));
-  d00.forEach((b, i) => feed(`day00/day00_carousel_s0${i + 1}`, b, i === 0));
-  story('day00/day00_highlight_cover', `${txt('headline', 'About', 'abs h800', 'left:90px;width:900px;text-align:center;font-size:200px', 'data-anchor-cy="960"')}`);
-  for (let i = 1; i <= 4; i++) story(`day00/day00_highlight_s0${i + 1}`, `<div class="abs" style="left:0;top:240px;width:1080px;height:1440px">${d00[i]}</div>`);
-}
+// Day 0: rendered by tools/proofs/render-v2.mjs since Amendment 2.
 
 // Day 1 video + Question story
 video('day01/day01_video_00s-03s', vid('Let them choose.', 72));
@@ -661,17 +532,6 @@ for (const p of pages.filter((q) => !ONLY || ONLY.some((o) => q.name.startsWith(
       const ref = document.querySelector(`[data-qa="${el.dataset.below}"]`).getBoundingClientRect();
       el.style.top = `${ref.bottom + Number(el.dataset.gap ?? 0)}px`;
     }
-    // Full-photo slides: full-strength Ink behind the words, fading out 380 px beyond them; a lighter band for the handle.
-    for (const sc of document.querySelectorAll('.scrim')) {
-      const kids = [...document.querySelector('.fbtext').children].map((k) => k.getBoundingClientRect());
-      const top = Math.min(...kids.map((r) => r.top)), bottom = Math.max(...kids.map((r) => r.bottom));
-      const ink = 'rgba(34,45,51,';
-      const layers = sc.dataset.scrim === 'bottom'
-        ? [`linear-gradient(to bottom, ${ink}0) ${top - 440}px, ${ink}.80) ${top - 60}px, ${ink}.88) 1440px)`]
-        : [`linear-gradient(to top, ${ink}0) ${1440 - bottom - 440}px, ${ink}.80) ${1440 - bottom - 60}px, ${ink}.88) 1440px)`];
-      if (sc.dataset.handle === '1') layers.push(`linear-gradient(to bottom, ${ink}.72) 0px, ${ink}.72) 260px, ${ink}0) 440px)`);
-      sc.style.background = layers.join(',');
-    }
     for (const el of document.querySelectorAll('[data-bzone]')) {
       const [zt, zb] = el.dataset.bzone.split(',').map(Number);
       const gap = Number(el.dataset.bgap);
@@ -711,7 +571,7 @@ for (const p of pages.filter((q) => !ONLY || ONLY.some((o) => q.name.startsWith(
   const norm = (s) => s.replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, ' ').trim();
   const visual = new Set(['phone', 'object', 'object-placeholder']);
   for (const b of boxes) {
-    if (p.safe && !visual.has(b.qa) && b.qa !== 'blocked' && b.qa !== 'photo' && b.qa !== 'photo-full') { // photos bleed by design
+    if (p.safe && !visual.has(b.qa) && b.qa !== 'blocked') {
       if (b.y < p.safe.top || b.bottom > p.safe.bottom || b.x < p.safe.left || b.right > p.safe.right) issues.push(`${b.qa} outside safe zone (${b.x},${b.y})-(${b.right},${b.bottom})`);
     }
     if (p.safe && visual.has(b.qa) && (b.y < p.safe.top || b.bottom > p.safe.bottom || b.x < p.safe.left || b.right > p.safe.right)) issues.push(`${b.qa} outside safe zone (${b.x},${b.y})-(${b.right},${b.bottom})`);
@@ -729,50 +589,11 @@ for (const p of pages.filter((q) => !ONLY || ONLY.some((o) => q.name.startsWith(
   for (const v of boxes.filter((b) => visual.has(b.qa))) {
     for (const t of texts) if (v.x < t.right && t.x < v.right && v.y < t.bottom && t.y < v.bottom) issues.push(`${v.qa} overlaps ${t.qa} "${t.text.slice(0, 30)}"`);
   }
-  // Look B: no text of any kind on the photo, the handle and "Demo family" included.
-  for (const v of boxes.filter((b) => b.qa === 'photo')) {
-    for (const t of boxes.filter((b) => b.text)) if (v.x < t.right && t.x < v.right && v.y < t.bottom && t.y < v.bottom) issues.push(`text on photo: ${t.qa} "${t.text.slice(0, 30)}"`);
-  }
-  // Text on a full photo: hide the text, screenshot what is behind it, and measure each line of text against
-  // the lightest 5% of those pixels. Needs 4.5:1, stricter than WCAG's 3:1 for large text.
-  let photoContrast = null;
-  if (await pg.$('[data-qa="photo-full"]')) {
-    await pg.evaluate(() => document.body.classList.add('qa-hide-text'));
-    const behind = await pg.screenshot({ type: 'png' });
-    await pg.evaluate(() => document.body.classList.remove('qa-hide-text'));
-    photoContrast = await pg.evaluate(async (src) => {
-      const im = new Image(); im.src = src; await im.decode();
-      const cv = document.createElement('canvas'); cv.width = im.width; cv.height = im.height;
-      const cx = cv.getContext('2d'); cx.drawImage(im, 0, 0);
-      const lin = (v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; };
-      const lum = (r, g, b) => 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
-      const out = [];
-      for (const el of document.querySelectorAll('[data-copy], [data-qa="handle"]')) {
-        if (!el.innerText.trim()) continue;
-        const range = document.createRange(); range.selectNodeContents(el);
-        const ls = [];
-        for (const r of range.getClientRects()) {
-          const x0 = Math.max(0, Math.floor(r.left)), y0 = Math.max(0, Math.floor(r.top)), w = Math.min(cv.width - x0, Math.ceil(r.width)), h = Math.min(cv.height - y0, Math.ceil(r.height));
-          if (w < 1 || h < 1) continue;
-          const d = cx.getImageData(x0, y0, w, h).data;
-          for (let i = 0; i < d.length; i += 8) ls.push(lum(d[i], d[i + 1], d[i + 2]));
-        }
-        ls.sort((a, b) => a - b);
-        const bg = ls[Math.floor(0.95 * (ls.length - 1))];
-        const fg = (getComputedStyle(el).color.match(/[\d.]+/g) || []).slice(0, 3).map(Number);
-        const lf = lum(...fg);
-        const ratio = (Math.max(lf, bg) + 0.05) / (Math.min(lf, bg) + 0.05);
-        out.push({ qa: el.dataset.qa, text: el.innerText.trim().slice(0, 40), ratio: Math.round(ratio * 100) / 100, backgroundLuminanceP95: Math.round(bg * 1000) / 1000 });
-      }
-      return out;
-    }, `data:image/png;base64,${behind.toString('base64')}`);
-    for (const c of photoContrast) if (c.ratio < 4.5) issues.push(`${c.qa} on photo: ${c.ratio}:1 against the lightest 5% behind it (needs 4.5)`);
-  }
   const file = join(OUT, `${p.name}.png`);
   mkdirSync(dirname(file), { recursive: true });
   await pg.screenshot({ path: file, omitBackground: p.transparent });
   if (SPEC) specs.push({ name: p.name, w: p.w, h: p.h, bg: p.transparent ? null : p.bg, elements: await collectSpec(pg, p) });
-  frames.push({ file: `${relative(ROOT, OUT)}/${p.name}.png`, size: `${p.w}x${p.h}`, transparent: p.transparent, status: p.status, placeholders: boxes.filter((b) => b.qa === 'object-placeholder').length, fontsLoaded, issues, photoContrast, boxes });
+  frames.push({ file: `${relative(ROOT, OUT)}/${p.name}.png`, size: `${p.w}x${p.h}`, transparent: p.transparent, status: p.status, placeholders: boxes.filter((b) => b.qa === 'object-placeholder').length, fontsLoaded, issues, boxes });
   await ctx.close();
 }
 await browser.close();
@@ -794,26 +615,11 @@ function onCreative() {
 const usedList = [...used];
 const covered = (s) => used.has(s) || usedList.some((a) => usedList.some((b) => `${a} ${b}` === s));
 const LOCKUP = new Set(['Bonded']); // the end card name is the official lockup, never typeset
-const uncovered = ONLY || PROPOSAL ? [] : onCreative().filter((o) => !covered(o.text) && !LOCKUP.has(o.text));
-
-// Proposal posts: about 80% photo slides and at most 2 plain ones (D-2026-10-15-4).
-const mix = [];
-if (PROPOSAL) {
-  const posts = new Map();
-  for (const f of frames) {
-    const m = f.file.match(/(day\d\d)\/\1_carousel_s\d\d\.png$/);
-    if (m) posts.set(m[1], [...(posts.get(m[1]) ?? []), f]);
-  }
-  for (const [post, fs] of posts) {
-    const photos = fs.filter((f) => f.boxes.some((b) => b.qa === 'photo-full')).length, plain = fs.length - photos;
-    mix.push({ post, slides: fs.length, photos, plain, photoShare: Math.round((photos / fs.length) * 100), ok: photos / fs.length >= 0.8 && plain <= 2 });
-  }
-}
+const uncovered = ONLY ? [] : onCreative().filter((o) => !covered(o.text) && !LOCKUP.has(o.text));
 
 const summary = {
   renderedAt: new Date().toISOString(),
   campaignSha256: execSync(`sha256sum "${join(ROOT, 'campaign', 'weeks-01-02.md')}"`, { encoding: 'utf8' }).split(' ')[0],
-  ...(PROPOSAL ? { proposal: PROPOSAL, proposalSha256: execSync(`sha256sum "${join(ROOT, PROPOSAL)}"`, { encoding: 'utf8' }).split(' ')[0] } : {}),
   frames: frames.length,
   feed: frames.filter((f) => f.size === '1080x1440').length,
   stories: frames.filter((f) => f.size === '1080x1920' && !f.transparent).length,
@@ -824,7 +630,6 @@ const summary = {
   fits: fits.length,
   copyStringsPlaced: used.size,
   campaignStringsNotPlaced: uncovered.length,
-  ...(PROPOSAL ? { photoMix: mix, postsFailingPhotoMix: mix.filter((m) => !m.ok).length } : {}),
 };
 writeFileSync(join(OUT, 'qa.json'), JSON.stringify({ summary, fits, uncovered, frames }, null, 2));
 if (SPEC) { mkdirSync(join(OUT, 'canva'), { recursive: true }); writeFileSync(join(OUT, 'canva', 'spec.json'), JSON.stringify(specs, null, 1)); console.log(`spec: ${specs.length} pages, ${specs.reduce((n, s) => n + s.elements.length, 0)} elements, ${phonePngs.size} phone PNGs`); }

@@ -33,22 +33,35 @@ Objects come from `assets/objects/`, or `OBJECTS=<dir>`. App screens are the lig
 
 **Options for review renders** (none of them changes the default output):
 - `HANDLE=@name` sets the handle, which is `@[handle]` by default.
-- `ONLY=day00/day00_carousel,...` renders only the pages whose names start with one of those prefixes.
+- `ONLY=day02/day02_carousel,...` renders only the pages whose names start with one of those prefixes.
 - `OUT_DIR=<dir>` writes there instead of `design/production/`.
-- `PHOTOS=<dir>` builds the Day 0 carousel in **Look B**, a photo-led example that is **not approved**:
-  - The owner's `d00_c01`–`d00_c06` photos go in a band at the top of each slide.
-  - QA adds a check that no text sits on a photo.
-  - `PHOTO_ORDER=1,5,3,2,4,6` changes which photo goes on which slide.
-  - Photos are read from outside the repository and are never committed.
-- `PROPOSAL=messaging-v2` (with `PHOTOS=<dir>`) builds Day 0 from `proposals/messaging-v2.md`: the problem, the feeling, what to do, then Bonded and the waitlist.
-  - **Copy guard:** every word is checked against the proposal file instead of the campaign.
-  - **Full-photo slides:** the photo fills the frame, with an Ink gradient sized to the text and Paper type.
-  - **The waitlist slide:** the official lockup and a large real app screen.
-  - **Contrast check:** text on a photo is measured against the real pixels behind it (the lightest 5%) and must reach 4.5:1.
-  - **Photo mix check:** a post fails if fewer than 80% of its slides are photos or more than 2 are plain (D-2026-10-15-4). The result is in `qa.json` under `photoMix`.
-  - Not approved yet: it enters the campaign only as Amendment 2.
+
+**Since Amendment 2:**
+- Day 0 follows messaging v2 and is rendered by `render-v2.mjs` (below).
+- This script stays the record of the G2 proofs for Days 1–14. Its 78 frames are pixel-identical to `design/production/`.
 
 `SPEC=1` also writes `design/production/canva/spec.json`: every page's text boxes, pictures and SVG shapes, as measured in the browser. It also writes the phone-framed screens at 3× (`design/production/canva/phone_*.png`).
+
+## `proofs/render-v2.mjs`: messaging v2 carousels
+
+Renders the posts defined in `proofs/v2-posts.mjs`: the problem, the feeling, what to do, then Bonded and the waitlist (D-2026-10-15-1 to -8).
+
+**The slides:**
+- **Photo slides.** The photo fills the 1080×1440 frame. An Ink gradient, sized to the text, sits behind Paper type, and there is no Hearth on photos.
+- **Video slides.** A clip of the owner's video gets the same gradient and type, and is encoded as an MP4 with no audio, for Instagram and Facebook carousels. Its PNG, a frame from the middle of the clip, is the TikTok still.
+- **The plain waitlist slide.** The official lockup, the ask, and a large real app screen with no "Demo family" caption (D-2026-10-15-3).
+
+**The checks:**
+- **Copy guard:** every string must appear word for word in the post's `source`. That's the campaign file once a post is approved, and `proposals/messaging-v2.md` before that.
+- **Safe zones, line limits and the 4:5 crop of slide 1.**
+- **Contrast on photos:** text on a photo is measured against the real pixels behind it. The lightest 5% must give at least 4.5:1. For a video, the worst of 6 frames across the clip counts.
+- **Photo mix:** a post fails if under 80% of its slides are photos or video, if more than 2 are plain, or if it has fewer than 5 or more than 7 slides (D-2026-10-15-4).
+
+**Usage:**
+```
+PHOTOS=<prepped stills> MEDIA=<original videos> OUT_DIR=<dir outside the repo> HANDLE=@bonded512 [ONLY=0,1] node tools/proofs/render-v2.mjs
+```
+`OUT_DIR` must be outside the repository: the renders contain the owner's photos, which are never committed.
 
 ## `canva/`: Canva masters from the proofs
 `build-ops.py` turns `spec.json` into operations for the Canva connector's `edit-design` tool. It doesn't call Canva itself; the operations are applied in an interactive session.

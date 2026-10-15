@@ -157,56 +157,69 @@ Week 1 theme: It's all in my head. Week 2 theme: Fair, calm and together.
 
 Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all three platforms, so anyone landing on the profile knows what Bonded is.
 
-### Day 0. What Bonded is, and why we're building it
+### Day 0. Why Bonded exists
 
-**Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 6 slides. Pinned on all three platforms.
+**Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 7 slides. Pinned on all three platforms.
 
-**Concept:** a plain introduction: what Bonded is, who it's for, why we're building it, and how rewards work.
+**Concept:** in most homes, one parent remembers everything, and it gets tiring. Three simple things help: a job for each kid, a plan made together on Sunday, and the week written down where everyone can see it. Then Bonded, and the waitlist.
 
-**Audience value:** a clear answer to "what is this account?", and an honest line on rewards for parents wary of paying kids for everything.
+**Audience value:** a clear answer to "what is this account?", and three things a family can try this week.
 
-**Headline:** "What Bonded is, and why we're building it."
+**Headline:** "In most homes, one parent remembers everything."
 
-**Subheadline:** "A family app for running the week together."
+**Subheadline:** "Lunches. Homework. Whose turn it is to feed the dog."
 
-**Slides:**
+**Slides** (Amendment 2: 6 photo slides and 1 plain slide; the photos are the owner's `d00_c01` to `d00_c06`, kept outside the repository):
 
-1. **Layout B, cover.** Headline: "What Bonded is," (Playfair Regular 140px) over "and why we're building it." (Black Italic 150px, two lines). Subheadline: "A family app for running the week together." Image: a phone showing the Bonded home screen, with "Demo family" in small text.
-2. **Layout C.** Label "What it is". Headline: "One shared plan for the whole family." Subheadline: "The week's plan, who's doing what, and something to look forward to, in one place everyone can see." Image: phone with the Family screen ("Common ground."), "Demo family" in small text.
-3. **Layout C.** Label "Who it's for". Headline: "Families with kids from about 4 to 18." Subheadline: "Parents set the plan. Kids see their own part, tick things off, and can ask for help, a break or a new day." No image.
-4. **Layout C.** Label "Why we're building it". Headline: "The week shouldn't live in one person's head." Subheadline: "In most families, one parent remembers everything and asks for everything. We think the work, and the credit for it, should be shared." No image.
-5. **Layout C.** Label "How rewards work". Headline: "Points unlock extras the family agrees on." Subheadline: "A climbing wall trip, a movie night out, an allowance if you choose. Everyday time together is never on the line. Bonded keeps track of money; it doesn't move it." No image.
-6. **Layout E, CTA.** Headline: "Join the waitlist." Subheadline: "Bonded is coming to iPhone and Android." Pill "Link in bio".
+1. **Photo, the problem.** Photo `d00_c01`, text at the bottom, handle at the top. Setup: "In most homes," Payoff: "one parent remembers everything." Sub: "Lunches. Homework. Whose turn it is to feed the dog."
+2. **Photo, the feeling.** Photo `d00_c02`, text at the bottom. Headline: "It gets tiring." Sub: "Not because the jobs are hard. Because nobody else is keeping track."
+3. **Photo, what to do.** Photo `d00_c03`, text at the top. Headline: "Give each kid a job that's theirs." Sub: "Little kids can rinse cups or set the table. Big kids can cook dinner once a week."
+4. **Photo, what to do.** Photo `d00_c05`, text at the bottom. Headline: "Plan the week together on Sunday." Sub: "Ten minutes is enough. Say who does what, and write it where everyone can see it."
+5. **Photo, what to do.** Photo `d00_c06`, text at the bottom. Headline: "Now it's not all on one person." Sub: "Everyone does a part. Everyone knows the plan."
+6. **Photo, what to do.** Photo `d00_c04`, text at the bottom. Headline: "And there's more time for fun." Sub: "Like a Saturday at the beach, with nobody asking who forgot what."
+7. **Plain, the waitlist.** The official colour lockup, then the ask, then a phone with the real Family screen ("The Miller Family"), with no "Demo family" caption (D-2026-10-15-3). Headline: "Join the waitlist." Sub: "Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android." Pill: "Link in bio".
 
 **Instagram caption:**
 
-> We're building Bonded, a family app for sharing the week: plans, responsibilities, and the occasional extra worth working toward.
+> In most homes, one parent remembers everything. Lunches. Homework. Whose turn it is to feed the dog.
 >
-> It's for parents who are tired of being the only one who knows what's happening, and for kids who are ready to own a bit more of it.
+> It gets tiring. Not because the jobs are hard, but because nobody else is keeping track.
 >
-> Most of what we post here won't be about the app. It'll be about family life: who does what, how money works at home, and how to get the weekend plans to actually happen.
+> Here's what helps:
+> 1. Give each kid a job that's theirs.
+> 2. Plan the week together on Sunday. Ten minutes is enough.
+> 3. Write it where everyone can see it.
+>
+> We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
 >
 > Comment WAITLIST and we'll send you the link.
 
-**TikTok caption:** What Bonded is and why we're building it. Waitlist link in bio. #familyapp #parentsoftiktok
+**TikTok caption:** In most homes, one parent remembers everything. Here's how to share the jobs. Waitlist link in bio. #familyapp #parentsoftiktok
 
 **Facebook caption:**
 
-> Hello from Bonded.
+> In most homes, one parent remembers everything. Lunches. Homework. Whose turn it is to feed the dog.
 >
-> We're building a family app for sharing the week: the plan, who's doing what, and the occasional extra the family works toward together. It's for families with kids from about 4 to 18, where one parent has quietly become the person who remembers everything.
+> It gets tiring. Not because the jobs are hard, but because nobody else is keeping track.
 >
-> This page will mostly be about family life rather than the app: practical ideas, honest questions and the odd thing that made us laugh. When Bonded launches on iPhone and Android, this is where we'll say so.
+> Here's what helps:
+> 1. Give each kid a job that's theirs.
+> 2. Plan the week together on Sunday. Ten minutes is enough.
+> 3. Write it where everyone can see it.
 >
-> If you'd like to try it when it opens, the waitlist is here: [link]
+> We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
+>
+> The waitlist is here: [link]
 
-**Product integration:** product introduction, outside the editorial schedule. Functions mentioned: the shared weekly plan, responsibilities per child, help, break and reschedule requests, points toward agreed family experiences, allowance tracking. Check every claim on slides 2 to 5 against the current build.
+**Product integration:** the waitlist slide only (D-2026-10-15-1). No feature talk. The one line about Bonded is the positioning in plain words, which matches the build's shared, dated responsibilities with an owner each.
 
-**Visual direction:** grey editorial slides. Phone cutouts on slides 1 and 2 only; slides 3 to 5 are type only, so the words carry them.
+**Visual direction:** messaging v2 (D-2026-10-15-4): full photo backgrounds with an Ink gradient behind Paper type, no Hearth on photos, every line of text at least 4.5:1 against the pixels behind it. The waitlist slide is plain Paper.
 
-**CTA:** waitlist, on slide 6 and in the caption.
+**Before posting:** slide 3's photo shows a real child from a social media download and needs a licence and a parent's permission, or a different photo. Slides 1, 2, 4, 5 and 6 are AI images and need the platform's AI label.
 
-**Stories:** save slides 2 to 5 as an "About" highlight on Instagram.
+**CTA:** waitlist, on slide 7 and in the caption.
+
+**Stories:** save slides 1 to 6 as an "About" highlight on Instagram.
 
 ## Week 1: It's all in my head
 

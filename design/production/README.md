@@ -1,5 +1,7 @@
 # Production proofs: Day 0 and Days 1–14 (for gate G2)
 
+**Day 0 is superseded (Amendment 2, 15 Oct 2026).** The new Day 0 follows messaging v2 and is rendered by `tools/proofs/render-v2.mjs` from the owner's photos, outside the repository. The `day00/` files here and the Canva master `DAHXltEuaSg` show the old Day 0 and are kept only as the record.
+
 **Status:** PROOFS FOR REVIEW. Every cutout object is in place (10 Oct, Phase 2). They are not the finished assets yet:
 - 3 Story frames are BLOCKED.
 - The handle is still `@[handle]`.

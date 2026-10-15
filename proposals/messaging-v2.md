@@ -1,6 +1,8 @@
 # Messaging v2: the problem, the feeling, what to do, then Bonded
 
-**Status:** PROPOSED, 15 Oct 2026 (third draft). Not in the campaign yet. When the owner approves the Day 0 copy below, it enters `campaign/weeks-01-02.md` as Amendment 2, recorded in `campaign/CHANGELOG.md` the same way as Amendment 1. Days 1 to 14 follow in Stage 2.
+**Status:**
+- **Day 0: APPLIED.** The owner approved it on 15 Oct 2026 (D-2026-10-15-6), and it is in `campaign/weeks-01-02.md` as Amendment 2.
+- **Days 1 to 14: PROPOSED.** They enter the campaign as Amendment 3 once the owner approves them.
 
 **Why.** The owner reviewed Day 0 on 15 Oct and set these rules:
 - **First review:** the slides talked about features. Every post follows one arc, nothing talks about features, and some slides use a photo as the whole background.
@@ -49,7 +51,7 @@ The decisions are D-2026-10-15-1 to D-2026-10-15-5 in `decisions/log.md`.
   - It shows the in-app family name ("The Miller Family") with no "Demo family" caption.
   - No copy may say or suggest the Millers are real users.
 
-## Day 0: why Bonded exists (pinned)
+## Day 0: why Bonded exists (pinned), APPLIED as Amendment 2
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 7 slides, 1080 × 1440. Pinned on all three platforms. Sun 18 Oct.
 

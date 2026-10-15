@@ -2,6 +2,33 @@
 
 The campaign file stays locked. It changes only through owner-approved amendments, each listed here line by line.
 
+## Amendment 2 (15 Oct 2026): Day 0 rewritten (messaging v2)
+
+| | |
+|---|---|
+| Approved by | The owner, in an interactive session on 15 Oct 2026 ("approved"), after reviewing the third draft as rendered slides and captions |
+| Decisions | D-2026-10-15-6 (Day 0 approved). The draft followed D-2026-10-15-1 to -5: the arc, ending on the waitlist, the waitlist-slide phone, the photo share, and plain words. |
+| SHA-256 before | `18d3160f194a0f835c9e929681b5b182a8d0c021535868cbdbc76a7a57a46214` |
+| SHA-256 after | `49b42d8055e2d7168f94b28e58bc4fa7479ca83333f6ac272d4c735e81ea3dc2` |
+| Lines changed | The Day 0 section only: old l.160–210 (51 lines) replaced by new l.160–223 (64 lines). Everything before l.160 and from "## Week 1" on is byte-identical. |
+| Source | `proposals/messaging-v2.md`, Day 0 section (third draft), word for word. |
+
+**What changed in Day 0:**
+- **Title:** "What Bonded is, and why we're building it" became "Why Bonded exists".
+- **Slides:** the 6 slides (Layouts B, C and E, with feature wording) became 7 slides on the arc: 6 photo slides and 1 plain waitlist slide.
+- **Captions:** all three platform captions are new. Instagram still ends "Comment WAITLIST and we'll send you the link." Facebook still ends on "[link]".
+- **Concept, audience value, headline, subheadline, product integration, visual direction and CTA:** rewritten to match.
+
+**Follow-ons, not in the proposal text:**
+- **"Before posting" line:** added. It records the slide 3 rights question and the AI labels from the proposal's Photos note.
+- **"Stories" line:** the "About" highlight now uses slides 1 to 6 (it was slides 2 to 5 of the old version). The highlight covers haven't been rendered yet.
+
+**Unchanged:** posting date (Sun 18 Oct), placement on all three platforms, pinning, hashtags, and every other day. Days 1 to 14 change only with Amendment 3, after the owner approves them.
+
+**Production impact:**
+- **Old proofs:** the Day 0 proofs in `design/production/day00/` and the Canva master `DAHXltEuaSg` show the old Day 0 and are superseded.
+- **New render:** the new Day 0 is rendered by `tools/proofs/render-v2.mjs` from the owner's photos, outside the repository.
+
 ## Amendment 1 (10 Oct 2026): claim amendments and the US-English master
 
 | | |
