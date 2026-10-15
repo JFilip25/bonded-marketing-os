@@ -28,6 +28,8 @@ Audience: parents of children aged about 4–18. Do not market directly to child
 
 **Demo family:** the Millers. Mom, Dad, Mia (5), Emma (8), Noah (11), Leo (13), Sofia (17).
 - Screens must be real app screenshots from `design/screenshots-manifest.md`, visibly labelled "Demo family".
+  - **Exception (D-2026-10-15-3):** the phone on a post's waitlist slide shows the in-app family name without the caption.
+  - No copy may present the Millers as real users.
 - Never fabricate UI, customers, reviews or outcomes.
 
 **Current build for claims and screens:** `JFilip25/ciccho-Claude` branch `claude/bonded-family-ai` @ `81b164b` (the screenshots show this build). The default branch is `eecbc56`.
@@ -38,7 +40,11 @@ Audience: parents of children aged about 4–18. Do not market directly to child
 
 ## Editorial and creative
 - **Approved social copy is locked.** Do not rewrite or shorten it, append CTAs or add a download offer without separate, explicit approval. Proposed changes go in `proposals/` and are applied only after approval.
-- **The mix:** 8 editorial-only posts, 4 natural product connections and 2 product demonstrations, plus the pinned Day 0.
+- **The arc (D-2026-10-15-1 and D-2026-10-15-2):**
+  - Every post runs the parent's problem, the feeling, what to do, then Bonded and the waitlist at the end.
+  - No feature talk.
+  - The draft copy is in `proposals/messaging-v2.md`.
+  - Until Amendment 2 is applied, the locked campaign still carries the original mix: 8 editorial-only posts, 4 natural product connections and 2 product demonstrations, plus the pinned Day 0.
 - **Voice:** specific, grounded, warm, occasionally funny; never generic sales copy. No fictional first-person parenting claims. No em dashes and no emoji in campaign copy or art.
 - **Visual system (approved 9 Oct 2026, D-2026-10-09-1):**
   - colours: Paper `#F5F2EA`, Ink `#222D33`, Hearth `#B94529` (one accent per slide, never on Ink, Night or dark footage), muted `#646A6B`

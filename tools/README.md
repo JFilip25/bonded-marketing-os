@@ -40,6 +40,12 @@ Objects come from `assets/objects/`, or `OBJECTS=<dir>`. App screens are the lig
   - QA adds a check that no text sits on a photo.
   - `PHOTO_ORDER=1,5,3,2,4,6` changes which photo goes on which slide.
   - Photos are read from outside the repository and are never committed.
+- `PROPOSAL=messaging-v2` (with `PHOTOS=<dir>`) builds Day 0 from `proposals/messaging-v2.md`: the problem, the feeling, what to do, then Bonded and the waitlist.
+  - **Copy guard:** every word is checked against the proposal file instead of the campaign.
+  - **Full-photo slides:** the photo fills the frame, with an Ink gradient sized to the text and Paper type.
+  - **The waitlist slide:** the official lockup and a large real app screen.
+  - **Contrast check:** text on a photo is measured against the real pixels behind it (the lightest 5%) and must reach 4.5:1.
+  - Not approved yet: it enters the campaign only as Amendment 2.
 
 `SPEC=1` also writes `design/production/canva/spec.json`: every page's text boxes, pictures and SVG shapes, as measured in the browser. It also writes the phone-framed screens at 3× (`design/production/canva/phone_*.png`).
 

@@ -2,6 +2,14 @@
 
 Owner decisions taken in interactive, human-reviewed sessions. Newest first. Each entry records its scope and what it changes. A decision never silently rewrites the locked campaign copy.
 
+## 15 Oct 2026 (Day 0 review)
+
+| ID | Decision | Scope | Where applied |
+|---|---|---|---|
+| D-2026-10-15-1 | **Every post follows one arc:** the parent's problem, the feeling behind it, what to do, then Bonded and the waitlist. No feature talk. Some slides use a full photo background with text at clear contrast. The owner rejected the Day 0 messaging because it talked about features. | Every post in the campaign | `proposals/messaging-v2.md` (PROPOSED). The copy enters the campaign only as Amendment 2, after the owner approves it. |
+| D-2026-10-15-2 | **Every post ends with Bonded and the waitlist.** This replaces the mix of 8 editorial-only posts, 4 natural connections and 2 product demonstrations. | Every post | `CLAUDE.md` ("The arc"). `proposals/messaging-v2.md`. |
+| D-2026-10-15-3 | **The phone on the waitlist slide shows the in-app family name, without a "Demo family" caption.** It's still a real capture from `design/screenshots-manifest.md` (the seeded Miller Family). No copy may present the Millers as real users. Other app screens keep the label. | The waitlist slide of each post | `CLAUDE.md` ("Demo family"). `proposals/messaging-v2.md`. |
+
 ## 10 Oct 2026 (checkpoint review)
 
 | ID | Decision | Scope | Where applied |
