@@ -47,6 +47,7 @@ Audience: parents of children aged about 4–18. Do not market directly to child
   - **Plain words (D-2026-10-15-5):** write so an 8-year-old can understand it, but not like an 8-year-old.
   - The draft copy is in `proposals/messaging-v2.md`.
   - **Day 0** follows the arc since Amendment 2 (rendered by `tools/proofs/render-v2.mjs`).
+  - **New posts:** use the skill `.claude/skills/bonded-social-media-posts/` (look, voice, media rules, production steps). It reuses the look, never the launch campaign's photos.
   - **Days 1–14** in the locked campaign still carry the original mix (8 editorial-only posts, 4 natural product connections, 2 product demonstrations) until Amendment 3.
 - **Voice:** specific, grounded, warm, occasionally funny; never generic sales copy. No fictional first-person parenting claims. No em dashes and no emoji in campaign copy or art.
 - **Visual system (approved 9 Oct 2026, D-2026-10-09-1):**

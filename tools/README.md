@@ -59,9 +59,11 @@ Renders the posts defined in `proofs/v2-posts.mjs`: the problem, the feeling, wh
 
 **Usage:**
 ```
-PHOTOS=<prepped stills> MEDIA=<original videos> OUT_DIR=<dir outside the repo> HANDLE=@bonded512 [ONLY=0,1] node tools/proofs/render-v2.mjs
+PHOTOS=<prepped stills> MEDIA=<original videos> OUT_DIR=<dir outside the repo> HANDLE=@bonded512 [ONLY=0,1] [POSTS=<posts file>] node tools/proofs/render-v2.mjs
 ```
 `OUT_DIR` must be outside the repository: the renders contain the owner's photos, which are never committed.
+
+For new posts, start from the skill `.claude/skills/bonded-social-media-posts/`: `templates/posts-entry.mjs` is a posts file for `POSTS=`, `scripts/reading_grade.py` checks the plain-word rule, and `scripts/media_check.py` screens new photos and clips for rights markers.
 
 ## `canva/`: Canva masters from the proofs
 `build-ops.py` turns `spec.json` into operations for the Canva connector's `edit-design` tool. It doesn't call Canva itself; the operations are applied in an interactive session.
