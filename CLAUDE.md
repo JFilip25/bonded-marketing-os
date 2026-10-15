@@ -43,6 +43,8 @@ Audience: parents of children aged about 4–18. Do not market directly to child
 - **The arc (D-2026-10-15-1 and D-2026-10-15-2):**
   - Every post runs the parent's problem, the feeling, what to do, then Bonded and the waitlist at the end.
   - No feature talk.
+  - **Photos (D-2026-10-15-4):** about 80% of the slides are photos as the whole background. At most 2 per post are plain, and posts have 5 to 7 slides.
+  - **Plain words (D-2026-10-15-5):** write so an 8-year-old can understand it, but not like an 8-year-old.
   - The draft copy is in `proposals/messaging-v2.md`.
   - Until Amendment 2 is applied, the locked campaign still carries the original mix: 8 editorial-only posts, 4 natural product connections and 2 product demonstrations, plus the pinned Day 0.
 - **Voice:** specific, grounded, warm, occasionally funny; never generic sales copy. No fictional first-person parenting claims. No em dashes and no emoji in campaign copy or art.

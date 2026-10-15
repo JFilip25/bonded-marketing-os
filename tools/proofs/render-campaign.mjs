@@ -208,11 +208,12 @@ function fullBleed({ photoFile, pos, at = 'bottom', withHandle = false, setup, p
   const ink = `color:${C.paper}`;
   const words = setup
     ? `${txt('headline-setup', setup, 'h400', `font-size:${setupSize}px;${ink}`, 'data-maxlines="2"')}${txt('headline-payoff', payoff, 'h800', `font-size:${payoffSize}px;${ink}`, 'data-maxlines="2"')}`
-    : `${txt('headline', headline, 'h800', `font-size:${hs}px;${ink}`, 'data-maxlines="2"')}${sub ? txt('subheadline', sub, 'sub', `margin-top:28px;font-size:${ss}px;${ink}`, 'data-maxlines="3"') : ''}`;
+    : txt('headline', headline, 'h800', `font-size:${hs}px;${ink}`, 'data-maxlines="2"');
+  const under = sub ? txt('subheadline', sub, 'sub', `margin-top:28px;font-size:${ss}px;text-wrap:balance;${ink}`, 'data-maxlines="3"') : '';
   return `<img class="abs" data-qa="photo-full" data-file="${photoFile}" src="${photo(photoFile)}" style="left:0;top:0;width:1080px;height:1440px;object-fit:cover;object-position:${pos}">
   <div class="abs scrim" data-scrim="${at}" data-handle="${withHandle ? 1 : 0}" style="inset:0"></div>
   ${withHandle ? `<div class="abs handle" data-qa="handle" style="top:200px;left:540px;transform:translateX(-50%);white-space:nowrap;${ink}">${HANDLE}</div>` : ''}
-  <div class="abs fbtext" style="left:50px;width:980px;top:200px;bottom:200px;display:flex;flex-direction:column;justify-content:${at === 'top' ? 'flex-start' : 'flex-end'}">${words}</div>`;
+  <div class="abs fbtext" style="left:50px;width:980px;top:200px;bottom:200px;display:flex;flex-direction:column;justify-content:${at === 'top' ? 'flex-start' : 'flex-end'}">${words}${under}</div>`;
 }
 /** Paper type slide for v2: label, headline and subheadline centred as a group in the safe area. */
 function typeSlide({ label, headline, sub, hs, ss, headlineMax }) {
@@ -372,7 +373,8 @@ async function B_(frame, o, layout = layoutB) {
 async function FB_(frame, o) {
   const z = o.setup
     ? { setupSize: await fit(frame, 'cover setup', cp(o.setup), 'h400', 100, 72, 2), payoffSize: await fit(frame, 'cover payoff', cp(o.payoff), 'h800', 112, 80, 2) }
-    : { hs: await fit(frame, 'headline', cp(o.headline), 'h800', 104, 80, 2), ss: o.sub ? await fit(frame, 'subheadline', cp(o.sub), 'sub', 44, 34, 3) : 44 };
+    : { hs: await fit(frame, 'headline', cp(o.headline), 'h800', 104, 80, 2) };
+  z.ss = o.sub ? await fit(frame, 'subheadline', cp(o.sub), 'sub', 44, 34, 3) : 44;
   return fullBleed({ ...o, ...z });
 }
 /** Waitlist slide with the headline and subheadline fitted to the left column. */
@@ -395,13 +397,13 @@ if (PROPOSAL) {
   await withCopy(PROPOSAL, async () => {
     const full = async (n, o) => add(`day00/day00_carousel_s0${n}`, 1080, 1440, await FB_(`day00_carousel_s0${n}`, o), { safe: SAFE_FEED, crop45: n === 1, status: 'PROPOSAL', bg: C.ink });
     const paper = async (n, o) => feed(`day00/day00_carousel_s0${n}`, await C_(`day00_carousel_s0${n}`, o, typeSlide), false, 'PROPOSAL');
-    await full(1, { photoFile: 'd00_c01.jpg', pos: '45% 40%', withHandle: true, setup: 'In every house, one person knows', payoff: 'where the permission slip is.' });
-    await paper(2, { headline: "And when it's due. And who's driving.", sub: 'Which night is trash night. Whose turn it is. Who needs new sneakers before Saturday. It all lives in one head.' });
-    await full(3, { photoFile: 'd00_c02.jpg', pos: '40% 50%', headline: "It's not the jobs that wear you out.", sub: "It's being the only one keeping track. At dinner. In bed. On vacation." });
-    await paper(4, { label: 'What helps', headline: 'Get the week out of one head.', sub: "Write it down once, where everyone can see it: what's coming up, and who's doing what." });
-    await paper(5, { label: 'What helps', headline: "Give everyone a part that's theirs.", sub: 'Kids from about 4 can own something real. A job they picked is harder to argue with.' });
-    await full(6, { photoFile: 'd00_c04.jpg', pos: '55% 50%', headline: 'So Saturday can just be Saturday.', sub: 'Less of it spent chasing, reminding and keeping score.' });
-    feed('day00/day00_carousel_s07', await W_('day00_carousel_s07', { headline: 'Join the waitlist.', sub: "Bonded is a family app for running the week together. It's coming to iPhone and Android.", pill: 'Link in bio', phone: screen('67-mom-family-climbing-light.png') }), false, 'PROPOSAL');
+    await full(1, { photoFile: 'd00_c01.jpg', pos: '45% 40%', withHandle: true, setup: 'In most homes,', payoff: 'one parent remembers everything.', sub: 'Lunches. Homework. Whose turn it is to feed the dog.' });
+    await full(2, { photoFile: 'd00_c02.jpg', pos: '40% 50%', headline: 'It gets tiring.', sub: 'Not because the jobs are hard. Because nobody else is keeping track.' });
+    await full(3, { photoFile: 'd00_c03.jpg', pos: '50% 50%', at: 'top', headline: "Give each kid a job that's theirs.", sub: 'Little kids can rinse cups or set the table. Big kids can cook dinner once a week.' });
+    await full(4, { photoFile: 'd00_c05.png', pos: '48% 30%', headline: 'Plan the week together on Sunday.', sub: 'Ten minutes is enough. Say who does what, and write it where everyone can see it.' });
+    await full(5, { photoFile: 'd00_c06.png', pos: '50% 59%', headline: "Now it's not all on one person.", sub: 'Everyone does a part. Everyone knows the plan.' });
+    await full(6, { photoFile: 'd00_c04.jpg', pos: '55% 50%', headline: 'And there\'s more time for fun.', sub: 'Like a Saturday at the beach, with nobody asking who forgot what.' });
+    feed('day00/day00_carousel_s07', await W_('day00_carousel_s07', { headline: 'Join the waitlist.', sub: "Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.", pill: 'Link in bio', phone: screen('67-mom-family-climbing-light.png') }), false, 'PROPOSAL');
   });
 } else {
   const d00 = [];
@@ -794,6 +796,20 @@ const covered = (s) => used.has(s) || usedList.some((a) => usedList.some((b) => 
 const LOCKUP = new Set(['Bonded']); // the end card name is the official lockup, never typeset
 const uncovered = ONLY || PROPOSAL ? [] : onCreative().filter((o) => !covered(o.text) && !LOCKUP.has(o.text));
 
+// Proposal posts: about 80% photo slides and at most 2 plain ones (D-2026-10-15-4).
+const mix = [];
+if (PROPOSAL) {
+  const posts = new Map();
+  for (const f of frames) {
+    const m = f.file.match(/(day\d\d)\/\1_carousel_s\d\d\.png$/);
+    if (m) posts.set(m[1], [...(posts.get(m[1]) ?? []), f]);
+  }
+  for (const [post, fs] of posts) {
+    const photos = fs.filter((f) => f.boxes.some((b) => b.qa === 'photo-full')).length, plain = fs.length - photos;
+    mix.push({ post, slides: fs.length, photos, plain, photoShare: Math.round((photos / fs.length) * 100), ok: photos / fs.length >= 0.8 && plain <= 2 });
+  }
+}
+
 const summary = {
   renderedAt: new Date().toISOString(),
   campaignSha256: execSync(`sha256sum "${join(ROOT, 'campaign', 'weeks-01-02.md')}"`, { encoding: 'utf8' }).split(' ')[0],
@@ -808,6 +824,7 @@ const summary = {
   fits: fits.length,
   copyStringsPlaced: used.size,
   campaignStringsNotPlaced: uncovered.length,
+  ...(PROPOSAL ? { photoMix: mix, postsFailingPhotoMix: mix.filter((m) => !m.ok).length } : {}),
 };
 writeFileSync(join(OUT, 'qa.json'), JSON.stringify({ summary, fits, uncovered, frames }, null, 2));
 if (SPEC) { mkdirSync(join(OUT, 'canva'), { recursive: true }); writeFileSync(join(OUT, 'canva', 'spec.json'), JSON.stringify(specs, null, 1)); console.log(`spec: ${specs.length} pages, ${specs.reduce((n, s) => n + s.elements.length, 0)} elements, ${phonePngs.size} phone PNGs`); }

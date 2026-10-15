@@ -45,6 +45,7 @@ Objects come from `assets/objects/`, or `OBJECTS=<dir>`. App screens are the lig
   - **Full-photo slides:** the photo fills the frame, with an Ink gradient sized to the text and Paper type.
   - **The waitlist slide:** the official lockup and a large real app screen.
   - **Contrast check:** text on a photo is measured against the real pixels behind it (the lightest 5%) and must reach 4.5:1.
+  - **Photo mix check:** a post fails if fewer than 80% of its slides are photos or more than 2 are plain (D-2026-10-15-4). The result is in `qa.json` under `photoMix`.
   - Not approved yet: it enters the campaign only as Amendment 2.
 
 `SPEC=1` also writes `design/production/canva/spec.json`: every page's text boxes, pictures and SVG shapes, as measured in the browser. It also writes the phone-framed screens at 3× (`design/production/canva/phone_*.png`).
