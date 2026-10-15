@@ -9,7 +9,7 @@
 // QA per post: at least 80% photo or video slides, and at most 2 plain ones (D-2026-10-15-4).
 //
 // Usage:
-//   PHOTOS=<prepped stills> MEDIA=<original videos> OUT_DIR=<dir outside the repo> HANDLE=@name [ONLY=0,1] \
+//   PHOTOS=<prepped stills> MEDIA=<original videos> OUT_DIR=<dir outside the repo> HANDLE=@name [ONLY=0,1] [POSTS=<file>] \
 //     node tools/proofs/render-v2.mjs
 // The owner's photos stay outside the repository, so OUT_DIR is required and must not be inside it.
 // Output: <OUT_DIR>/dayNN/dayNN_carousel_sNN.png for every slide. A video slide also gets
@@ -19,9 +19,8 @@ import { execFileSync, execSync } from 'node:child_process';
 import { createRequire } from 'node:module';
 import { mkdirSync, readFileSync, writeFileSync, existsSync, mkdtempSync, rmSync } from 'node:fs';
 import { join, dirname, resolve, relative, extname } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { tmpdir } from 'node:os';
-import { posts, WAITLIST } from './v2-posts.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 if (!process.env.OUT_DIR || !process.env.PHOTOS) throw new Error('Set OUT_DIR and PHOTOS (both outside the repository)');
@@ -31,6 +30,8 @@ const PHOTOS = resolve(process.env.PHOTOS);
 const MEDIA = process.env.MEDIA ? resolve(process.env.MEDIA) : null;
 const HANDLE = process.env.HANDLE ?? '@[handle]';
 const ONLY = process.env.ONLY ? process.env.ONLY.split(',').map(Number) : null;
+// POSTS=<file> renders another post list (for tests); the default is tools/proofs/v2-posts.mjs.
+const { posts, WAITLIST } = await import(process.env.POSTS ? pathToFileURL(resolve(process.env.POSTS)).href : './v2-posts.mjs');
 const requireGlobal = createRequire(join(execSync('npm root -g', { encoding: 'utf8' }).trim(), 'noop.js'));
 const { chromium } = requireGlobal('playwright');
 
@@ -84,16 +85,16 @@ function phoneFrame(src, file, { left, top, screenH, pad }) {
 }
 /** Photo or video slide: the picture fills the frame, an Ink gradient sits behind the words (sized after
  *  layout), and the words are Paper. No Hearth on a photo. at: 'bottom' | 'top'. */
-function fullBleed({ src, file, pos, at = 'bottom', handle = false, setup, payoff, setupSize, payoffSize, headline, sub, hs, ss }) {
+function fullBleed({ src, file, pos, at = 'bottom', handle = false, setup, payoff, setupSize, payoffSize, headline, sub, hs, ss, headMax = 2 }) {
   const ink = `color:${C.paper}`;
   const words = setup
     ? `${txt('headline-setup', setup, 'h400', `font-size:${setupSize}px;${ink}`, 'data-maxlines="2"')}${txt('headline-payoff', payoff, 'h800', `font-size:${payoffSize}px;${ink}`, 'data-maxlines="2"')}`
-    : txt('headline', headline, 'h800', `font-size:${hs}px;${ink}`, 'data-maxlines="2"');
+    : txt('headline', headline, 'h800', `font-size:${hs}px;${ink}`, `data-maxlines="${headMax}"`);
   const under = sub ? txt('subheadline', sub, 'sub', `margin-top:28px;font-size:${ss}px;text-wrap:balance;${ink}`, 'data-maxlines="3"') : '';
   return `<img class="abs" data-qa="photo-full" data-file="${file}" src="${src}" style="left:0;top:0;width:${W}px;height:${H}px;object-fit:cover;object-position:${pos}">
   <div class="abs scrim" data-scrim="${at}" data-handle="${handle ? 1 : 0}" style="inset:0"></div>
   ${handle ? `<div class="abs handle" data-qa="handle" style="top:200px;left:540px;transform:translateX(-50%);white-space:nowrap;${ink}">${HANDLE}</div>` : ''}
-  <div class="abs fbtext" style="left:50px;width:980px;top:200px;bottom:200px;display:flex;flex-direction:column;justify-content:${at === 'top' ? 'flex-start' : 'flex-end'}">${words}${under}</div>`;
+  <div class="abs fbtext" style="left:50px;width:980px;top:${handle && at === 'top' ? 262 : 200}px;bottom:200px;display:flex;flex-direction:column;justify-content:${at === 'top' ? 'flex-start' : 'flex-end'}">${words}${under}</div>`;
 }
 /** The plain waitlist slide: the official colour lockup and the ask on the left, a real app screen on the right. */
 const WAIT_COL = 506;
@@ -132,6 +133,19 @@ async function fit(frame, role, s, cls, start, min, maxLines, width = 980) {
   throw new Error(`${frame} ${role}: does not fit in ${maxLines} lines at ${min}px`);
 }
 
+/** Headline: 2 lines at the largest size down to 80 px; failing that, 3 lines (down to 72 px). */
+async function headlineFit(frame, s) {
+  for (let size = 104; size >= 80; size -= 2) if ((await countLines(s, 'h800', size, 980)) <= 2) {
+    if (size !== 104) fits.push({ frame, role: 'headline', text: s, spec: '104px, 2 lines max', used: `${size}px` });
+    return { hs: size, headMax: 2 };
+  }
+  for (let size = 104; size >= 72; size -= 2) if ((await countLines(s, 'h800', size, 980)) <= 3) {
+    fits.push({ frame, role: 'headline', text: s, spec: '104px, 2 lines max', used: `${size}px, 3 lines` });
+    return { hs: size, headMax: 3 };
+  }
+  throw new Error(`${frame} headline: does not fit in 3 lines at 72px`);
+}
+
 // ---------- media ----------
 const tmp = mkdtempSync(join(tmpdir(), 'bonded-v2-'));
 const probe = (file) => JSON.parse(execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height:format=duration', '-of', 'json', file], { encoding: 'utf8' }));
@@ -164,7 +178,7 @@ for (const post of posts.filter((p) => !ONLY || ONLY.includes(p.day))) {
     } else {
       const z = s.setup
         ? { setupSize: await fit(frame, 'cover setup', cp(s.setup), 'h400', 100, 72, 2), payoffSize: await fit(frame, 'cover payoff', cp(s.payoff), 'h800', 112, 80, 2) }
-        : { hs: await fit(frame, 'headline', cp(s.headline), 'h800', 104, 80, 2) };
+        : await headlineFit(frame, cp(s.headline));
       z.ss = s.sub ? await fit(frame, 'subheadline', cp(s.sub), 'sub', 44, 34, 3) : 44;
       let src, file;
       if (s.video) {
@@ -273,6 +287,12 @@ for (const p of pages) {
     if (p.crop45 && /headline/.test(b.qa) && (b.y < 45 || b.bottom > 1395)) issues.push(`${b.qa} outside centre 1080x1350 crop`);
     if (b.copy !== null && norm(b.text) !== b.copy) issues.push(`copy mismatch in ${b.qa}: "${b.text}" vs "${b.copy}"`);
     if (p.kind === 'plain' && b.contrast !== null && b.contrast < (parseFloat(b.fontSize) >= 24 ? 3 : 4.5)) issues.push(`${b.qa} contrast ${b.contrast}:1`);
+  }
+  // No two pieces of text may touch (the handle included).
+  const texts = boxes.filter((b) => b.text && b.qa !== 'photo-full');
+  for (let i = 0; i < texts.length; i++) for (let j = i + 1; j < texts.length; j++) {
+    const a = texts[i], c = texts[j];
+    if (a.x < c.right && c.x < a.right && a.y < c.bottom && c.y < a.bottom) issues.push(`${a.qa} overlaps ${c.qa}`);
   }
   const phone = boxes.find((b) => b.qa === 'phone');
   if (phone) for (const t of boxes.filter((b) => b.text)) if (phone.x < t.right && t.x < phone.right && phone.y < t.bottom && t.y < phone.bottom) issues.push(`phone overlaps ${t.qa}`);
