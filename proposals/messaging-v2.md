@@ -2,7 +2,7 @@
 
 **Status:**
 - **Day 0: APPLIED.** The owner approved it on 15 Oct 2026 (D-2026-10-15-6), and it is in `campaign/weeks-01-02.md` as Amendment 2.
-- **Days 1 to 14: PROPOSED.** They enter the campaign as Amendment 3 once the owner approves them.
+- **Days 1 to 14: APPLIED.** The owner approved them on 15 Oct 2026 (D-2026-10-15-9), and they are in `campaign/weeks-01-02.md` as Amendment 3. The rights questions in their "Before posting" lines below were settled the same day (D-2026-10-15-10), and Day 0 slide 2 now uses `d01_c01` (D-2026-10-15-11). This file stays as the record of the drafts.
 
 **Why.** The owner reviewed Day 0 on 15 Oct and set these rules:
 - **First review:** the slides talked about features. Every post follows one arc, nothing talks about features, and some slides use a photo as the whole background.
@@ -126,7 +126,7 @@ The decisions are D-2026-10-15-1 to D-2026-10-15-5 in `decisions/log.md`.
 - **All three profiles:** the waitlist link must be in the bio.
 - **Timing:** the posting time on Sun 18 Oct is still open.
 
-## Days 1 to 14 (PROPOSED, Amendment 3 once approved)
+## Days 1 to 14 (APPLIED as Amendment 3, 15 Oct 2026)
 
 Every day is now a 5 to 7 slide carousel on the arc (D-2026-10-15-7). The photo and video slides use that day's files from `First_2W`. Gaps are filled from other folder photos (D-2026-10-15-8), and each fill is marked "fill" below. A video slide is a moving slide on Instagram and Facebook, and a still from the middle of the clip on TikTok. Every post ends on the plain waitlist slide, the same as Day 0. Topics and dates are unchanged.
 

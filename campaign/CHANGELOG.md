@@ -2,6 +2,60 @@
 
 The campaign file stays locked. It changes only through owner-approved amendments, each listed here line by line.
 
+## Amendment 3 (15 Oct 2026): Days 1 to 14 on the arc, rights confirmed, Day 0 slide 2 photo
+
+| | |
+|---|---|
+| Approved by | The owner, in an interactive session on 15 Oct 2026 ("ok all creatives are clear and ready to go, do not use watermarked images"), after reviewing every post as rendered slides and captions on the Weeks 1–2 review page. The owner then chose the replacement photo for Day 0 slide 2. |
+| Decisions | D-2026-10-15-9 (Days 1–14 approved), D-2026-10-15-10 (rights confirmed for every photo and clip; no watermarked images), D-2026-10-15-11 (Day 0 slide 2 uses `d01_c01`). The drafts followed D-2026-10-15-1 to -8. |
+| SHA-256 before | `49b42d8055e2d7168f94b28e58bc4fa7479ca83333f6ac272d4c735e81ea3dc2` |
+| SHA-256 after | `29bb75084bc272e79dc238860e0efe0e1aa0d066167f9f34b2c1e195abebf560` |
+| Lines changed | Days 1–14: old l.226–881 (656 lines) replaced by new l.228–1036 (809 lines). Day 0: 3 lines. Follow-ons: 16 lines, listed below. The file grows from 919 to 1074 lines. Everything else is byte-identical. |
+| Source | `proposals/messaging-v2.md`, Days 1–14 (commit `0c9a293`, with Day 5 slide 2 as re-rendered), word for word: every slide's words, the Placement line, and all three captions. Each day's **Stories** line is kept word for word from the old brief. |
+
+**What changed in Days 1 to 14:**
+- **Format:** every day is now a 5 to 7 slide carousel on the arc, with photo slides, moving slides from the owner's clips (Instagram and Facebook; a still on TikTok) and the plain waitlist slide last. The six Reels and three single images are gone (D-2026-10-15-7).
+- **Each day's brief** now has the Day 0 shape: Placement, Headline and Subheadline (slide 1), Slides (media file, crop position and words per slide), the three captions, Product integration and Visual direction (the same lines as Day 0), Before posting, CTA, Stories. The old Concept, Audience value, Script and Image notes are gone; the slides carry the idea.
+- **Titles:** five changed with the new posts: Day 1 "Let each kid pick their job", Day 3 "The family calendar", Day 5 "What kids can do, age by age", Day 8 "Splitting jobs between siblings", Day 12 "Plan the week, and one fun thing". The other nine are unchanged.
+- **Captions:** all new. Every Instagram caption ends "Comment WAITLIST and we'll send you the link." and two hashtags; every Facebook caption ends "The waitlist is here: [link]"; every TikTok caption ends "Waitlist link in bio." with `#parentsoftiktok`.
+- **Before posting:** records the rights confirmation (D-2026-10-15-10) and lists the AI slides that need the platform's AI label.
+- **Day 12** keeps its pin note (Instagram and TikTok, next to the introduction).
+
+**Day 0 (3 lines):**
+
+| Old l. | New l. | Change | Decision |
+|---|---|---|---|
+| 172 | 174 | Slides note: the photos are `d00_c01`, `d01_c01` and `d00_c03` to `d00_c06` | D-2026-10-15-11 |
+| 175 | 177 | Slide 2: Photo `d00_c02` becomes Photo `d01_c01`. The words are unchanged. | D-2026-10-15-11 |
+| 218 | 220 | Before posting: the slide 3 rights question is replaced by the owner's confirmation; slides 1, 2, 4, 5 and 6 still need the AI label | D-2026-10-15-10 |
+
+**Follow-ons (brief notes only, no published copy).** They keep the rest of the file consistent with D-2026-10-15-1, -2, -4, -7 and -9:
+
+| Old l. | New l. | Place | Now |
+|---|---|---|---|
+| 9 | 9 | Campaign overview, goal | "Bonded appears in some posts, not all" becomes "Every post ends with Bonded and the waitlist, and everything before it has to be worth reading on its own." |
+| 39 | 39 | Funnel stage | "Most posts give parents something useful with no product in them. Bonded shows up where it genuinely helps." becomes "Every post gives parents something useful first. Bonded comes once, at the end, with the waitlist." |
+| 51–53 | 51 | Voice, how Bonded shows up | The 8 / 4 / 2 mix becomes one line: every post runs the arc, no feature talk. |
+| (new) | 73 | Slide style | Lead note: weeks 1 and 2 feed posts use the messaging v2 look; the section stays for reference. |
+| (new) | 106 | Raw video style | Lead note: no raw videos in weeks 1 and 2 since Amendment 3; the section stays for later weeks. |
+| 120 | 122 | CTA, waitlist | "only on posts that mention or show Bonded" becomes "on every post"; Facebook "Join the waitlist: [link]" becomes "The waitlist is here: [link]", as in the approved captions. |
+| 122 | 124 | CTA, no CTA | "This is most posts" becomes "not used in weeks 1 and 2". |
+| 135 | 137 | Two-week calendar | "Six raw videos, five carousels and three single images" becomes "Fourteen carousels ... Six of them include moving slides (9 in all)". |
+| 139–152 | 141–154 | Two-week calendar rows | Format (carousel, slide count, moving slides), the approved titles, and "Waitlist slide" in the Bonded column. |
+| 905 | 1060 | Before Day 1 | "Families lined up for the six videos" becomes "[x] Rights and consent confirmed for every photo and clip (D-2026-10-15-10)". |
+| 906 | 1061 | Before Day 1 | "Slide templates built for Layouts A to E" becomes "[x] All 15 posts rendered as messaging v2 carousels and approved". |
+| 907 | 1062 | Before Day 1 | "App screens shown on Days 11 and 12 checked" becomes "[x] The app screen on the waitlist slide checked in the current build (capture 67)". |
+| 918 | 1073 | Before Day 1, risks | "Film all six videos and design all eight graphic posts before Day 1." becomes "All 15 posts are made before Day 1." |
+
+**Unchanged:** posting dates (18 October to 1 November), the order of the posts, the Stories line of every day, Day 0's words, the pinned introduction, success metrics, the other "Before Day 1" items, and the voice, sizes and claims rules. The provisional fonts and palette named in "Slide style" stay as written (D-2026-10-09-1 overrides them in production).
+
+**Verified:** every slide string and every caption of Days 1–14 is in the campaign word for word (the renderer's copy guard now reads the campaign file); the Stories lines before and after are identical; no em dashes or emoji.
+
+**Production impact:**
+- **Superseded:** the Days 1–14 feed proofs (carousels, single images and video text overlays) in `design/production/day01/` to `day14/`, their Canva masters, and the old Day 0 slide 2 (`d00_c02`). The Story proofs there (`dayNN_story_*.png`) still match their unchanged Stories lines. `tools/proofs/render-campaign.mjs` no longer matches the campaign; it reproduces the G2 proofs only from commit `23e30b4`.
+- **Current renders:** all 15 posts by `tools/proofs/render-v2.mjs` (`tools/proofs/v2-posts.mjs`, source: the campaign file), from the owner's files, outside the repository.
+- **D12 superseded:** the three Day 4 and Day 10 caption lines in `proposals/us-localization-addendum.md` no longer exist.
+
 ## Amendment 2 (15 Oct 2026): Day 0 rewritten (messaging v2)
 
 | | |

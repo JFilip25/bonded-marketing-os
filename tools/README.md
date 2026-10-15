@@ -36,9 +36,9 @@ Objects come from `assets/objects/`, or `OBJECTS=<dir>`. App screens are the lig
 - `ONLY=day02/day02_carousel,...` renders only the pages whose names start with one of those prefixes.
 - `OUT_DIR=<dir>` writes there instead of `design/production/`.
 
-**Since Amendment 2:**
-- Day 0 follows messaging v2 and is rendered by `render-v2.mjs` (below).
-- This script stays the record of the G2 proofs for Days 1–14. Its 78 frames are pixel-identical to `design/production/`.
+**Since Amendments 2 and 3:**
+- Day 0 and Days 1–14 follow messaging v2 and are rendered by `render-v2.mjs` (below).
+- This script no longer matches the campaign and stops with a message. It stays as the record of the G2 proofs: check out commit `23e30b4` to reproduce them (78 frames, pixel-identical to `design/production/`).
 
 `SPEC=1` also writes `design/production/canva/spec.json`: every page's text boxes, pictures and SVG shapes, as measured in the browser. It also writes the phone-framed screens at 3× (`design/production/canva/phone_*.png`).
 

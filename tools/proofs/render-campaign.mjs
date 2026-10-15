@@ -17,7 +17,8 @@
 // with one of the prefixes; OUT_DIR=<dir> writes there instead of design/production.
 //
 // Since Amendment 2 (15 Oct 2026) Day 0 follows messaging v2 and is rendered by tools/proofs/render-v2.mjs.
-// This script stays the record of the G2 proofs for Days 1-14, which change with Amendment 3.
+// Since Amendment 3 (15 Oct 2026) Days 1-14 do too, so this script no longer matches the campaign. It stays as
+// the record of the G2 proofs: to reproduce them, check out commit 23e30b4 (the last campaign it matches).
 import { execSync } from 'node:child_process';
 import { createRequire } from 'node:module';
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
@@ -30,6 +31,9 @@ const HANDLE = process.env.HANDLE ?? '@[handle]';
 const ONLY = process.env.ONLY ? process.env.ONLY.split(',') : null;
 const OBJ = process.env.OBJECTS ?? join(ROOT, 'assets', 'objects');
 const CAMPAIGN = readFileSync(join(ROOT, 'campaign', 'weeks-01-02.md'), 'utf8');
+if (!CAMPAIGN.includes('### Day 1, Monday. Let them pick their job')) {
+  throw new Error('Days 1-14 were superseded by Amendment 3: render the current posts with tools/proofs/render-v2.mjs, or check out 23e30b4 to reproduce the G2 proofs.');
+}
 const requireGlobal = createRequire(join(execSync('npm root -g', { encoding: 'utf8' }).trim(), 'noop.js'));
 const { chromium } = requireGlobal('playwright');
 

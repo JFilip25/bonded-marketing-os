@@ -2,6 +2,15 @@
 
 Owner decisions taken in interactive, human-reviewed sessions. Newest first. Each entry records its scope and what it changes. A decision never silently rewrites the locked campaign copy.
 
+## 15 Oct 2026 (Days 1–14 approval)
+
+| ID | Decision | Scope | Where applied |
+|---|---|---|---|
+| D-2026-10-15-12 | **Buffer waits** until the waitlist page link (D6) and the ManyChat WAITLIST reply (D7) are live, because every caption points to them. The owner chose to stop after the amendment. | Scheduling | `decisions/pending.md` (D6, D7, D8). Nothing is scheduled or published. |
+| D-2026-10-15-11 | **Day 0 slide 2 uses the owner's own photo `d01_c01`** (crop `25% 50%`) instead of `d00_c02`, which matches iStock 1216166868 with the child edited out. The words don't change. Resolves D13. | Day 0 slide 2 | Amendment 3. `tools/proofs/v2-posts.mjs`. |
+| D-2026-10-15-10 | **Every photo and clip used in Days 0–14 is cleared.** The owner confirmed it ("all creatives are clear and ready to go"), covering the day-marked `First_2W` files and the `social_images`, including the real children shown. **Watermarked images are never used** ("do not use watermarked images"); the owner notes the day-marked files carry none. AI images still get the platform's AI label. Resolves D15. | Days 0–14 media | Amendment 3 ("Before posting" lines). The skill's media rules already exclude watermarked and stock-preview files. |
+| D-2026-10-15-9 | **Days 1–14 approved** as rendered on the Weeks 1–2 review page ("all creatives are clear and ready to go"): the words, captions and media in `proposals/messaging-v2.md` (commit `0c9a293`, Day 5 slide 2 photo as re-rendered). Resolves D14 and G2: the v2 renders replace the Canva masters as the production set. | Days 1–14 | Amendment 3 in `campaign/CHANGELOG.md`. |
+
 ## 15 Oct 2026 (Day 0 review)
 
 | ID | Decision | Scope | Where applied |

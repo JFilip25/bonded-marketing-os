@@ -45,10 +45,9 @@ Audience: parents of children aged about 4–18. Do not market directly to child
   - No feature talk.
   - **Photos (D-2026-10-15-4):** about 80% of the slides are photos as the whole background. At most 2 per post are plain, and posts have 5 to 7 slides.
   - **Plain words (D-2026-10-15-5):** write so an 8-year-old can understand it, but not like an 8-year-old.
-  - The draft copy is in `proposals/messaging-v2.md`.
-  - **Day 0** follows the arc since Amendment 2 (rendered by `tools/proofs/render-v2.mjs`).
+  - The drafts are in `proposals/messaging-v2.md` (applied).
+  - **Day 0 and Days 1–14** follow the arc since Amendments 2 and 3 (rendered by `tools/proofs/render-v2.mjs`). The owner confirmed the rights to every photo and clip in them (D-2026-10-15-10). Never use watermarked images.
   - **New posts:** use the skill `.claude/skills/bonded-social-media-posts/` (look, voice, media rules, production steps). It reuses the look, never the launch campaign's photos.
-  - **Days 1–14** in the locked campaign still carry the original mix (8 editorial-only posts, 4 natural product connections, 2 product demonstrations) until Amendment 3.
 - **Voice:** specific, grounded, warm, occasionally funny; never generic sales copy. No fictional first-person parenting claims. No em dashes and no emoji in campaign copy or art.
 - **Visual system (approved 9 Oct 2026, D-2026-10-09-1):**
   - colours: Paper `#F5F2EA`, Ink `#222D33`, Hearth `#B94529` (one accent per slide, never on Ink, Night or dark footage), muted `#646A6B`

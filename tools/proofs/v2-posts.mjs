@@ -16,10 +16,10 @@ const waitlist = { waitlist: true };
 export const posts = [
   {
     day: 0,
-    source: 'campaign/weeks-01-02.md', // Amendment 2
+    source: 'campaign/weeks-01-02.md', // Amendment 2; slide 2's photo from Amendment 3 (D-2026-10-15-11)
     slides: [
       { photo: 'd00_c01.jpg', pos: '45% 40%', handle: true, setup: 'In most homes,', payoff: 'one parent remembers everything.', sub: 'Lunches. Homework. Whose turn it is to feed the dog.' },
-      { photo: 'd00_c02.jpg', pos: '40% 50%', headline: 'It gets tiring.', sub: 'Not because the jobs are hard. Because nobody else is keeping track.' },
+      { photo: 'd01_c01.png', pos: '25% 50%', headline: 'It gets tiring.', sub: 'Not because the jobs are hard. Because nobody else is keeping track.' },
       { photo: 'd00_c03.jpg', pos: '50% 50%', at: 'top', headline: "Give each kid a job that's theirs.", sub: 'Little kids can rinse cups or set the table. Big kids can cook dinner once a week.' },
       { photo: 'd00_c05.png', pos: '48% 30%', headline: 'Plan the week together on Sunday.', sub: 'Ten minutes is enough. Say who does what, and write it where everyone can see it.' },
       { photo: 'd00_c06.png', pos: '50% 59%', headline: "Now it's not all on one person.", sub: 'Everyone does a part. Everyone knows the plan.' },
@@ -28,10 +28,11 @@ export const posts = [
     ],
   },
 
-  // Days 1-14: proposed (proposals/messaging-v2.md), generated from the reviewed copy and media choices.
+  // Days 1-14: approved on 15 Oct 2026 and applied as Amendment 3 (D-2026-10-15-9). The words were drafted in
+  // proposals/messaging-v2.md; the copy guard now checks them against the campaign file.
   {
     day: 1,
-    source: 'proposals/messaging-v2.md',
+    source: 'campaign/weeks-01-02.md',
     slides: [
       {"photo": "Gemini_Generated_Image_d8ptxmd8ptxmd8pt.jpg", "pos": "55% 50%", "handle": true, "headline": "Every night, the same fight: whose job is it?", "sub": "Setting the table takes two minutes. Deciding who sets it takes fifteen."},
       {"photo": "d01_c07.png", "pos": "50% 25%", "headline": "You're tired of asking.", "sub": "And they're tired of being told."},
@@ -43,7 +44,7 @@ export const posts = [
   },
   {
     day: 2,
-    source: 'proposals/messaging-v2.md',
+    source: 'campaign/weeks-01-02.md',
     slides: [
       {"photo": "d02_hero_1.png", "pos": "50% 50%", "handle": true, "setup": "Maybe the problem", "payoff": "isn't the chores.", "sub": "Most fights start with 'I didn't know it was my turn.'"},
       {"photo": "d10_c02.png", "pos": "35% 50%", "headline": "So you end up as the referee.", "sub": "At dinner. Every night. Over the same dishwasher."},
@@ -56,7 +57,7 @@ export const posts = [
   },
   {
     day: 3,
-    source: 'proposals/messaging-v2.md',
+    source: 'campaign/weeks-01-02.md',
     slides: [
       {"photo": "social_images/s15.jpg", "pos": "50% 30%", "handle": true, "setup": "One person in your home", "payoff": "knows every date.", "sub": "Soccer is on Tuesday. The dentist moved. Nobody else knows."},
       {"photo": "social_images/s06.jpg", "pos": "50% 30%", "headline": "Nobody picked you for this job.", "sub": "It just happened, one 'can you remind me' at a time."},
@@ -68,7 +69,7 @@ export const posts = [
   },
   {
     day: 4,
-    source: 'proposals/messaging-v2.md',
+    source: 'campaign/weeks-01-02.md',
     slides: [
       {"photo": "d05_c03.png", "pos": "55% 50%", "handle": true, "setup": "Every night:", "payoff": "'What's for dinner?'", "sub": "And the same person has to answer."},
       {"photo": "social_images/s03.jpg", "pos": "50% 60%", "at": "top", "headline": "It's one more thing to think about.", "sub": "At 6pm, after a long day."},
@@ -80,7 +81,7 @@ export const posts = [
   },
   {
     day: 5,
-    source: 'proposals/messaging-v2.md',
+    source: 'campaign/weeks-01-02.md',
     slides: [
       {"photo": "social_images/s05.jpg", "pos": "50% 40%", "handle": true, "setup": "It's faster to do it yourself,", "payoff": "so you always do.", "sub": "But kids can do more than you think."},
       {"photo": "Blonde woman in a light blue jacket.png", "pos": "50% 65%", "headline": "Then you end up doing everything.", "sub": "And they never get the chance to learn."},
@@ -93,7 +94,7 @@ export const posts = [
   },
   {
     day: 6,
-    source: 'proposals/messaging-v2.md',
+    source: 'campaign/weeks-01-02.md',
     slides: [
       {"photo": "social_images/s01.jpg", "pos": "50% 50%", "handle": true, "headline": "The weekend cleanup takes all day.", "sub": "And nobody wants to start."},
       {"video": "d04_c02.mp4", "clip": [3, 8], "pos": "50% 50%", "headline": "Then the weekend is gone.", "sub": "You spent it asking people to pick things up."},
@@ -105,7 +106,7 @@ export const posts = [
   },
   {
     day: 7,
-    source: 'proposals/messaging-v2.md',
+    source: 'campaign/weeks-01-02.md',
     slides: [
       {"photo": "d08_c02.png", "pos": "50% 40%", "handle": true, "setup": "Does everyone know", "payoff": "what's happening this week?", "sub": "Or will you find out on Tuesday at 7am?"},
       {"photo": "social_images/s07.jpg", "pos": "50% 60%", "at": "top", "headline": "And it all lands on one person.", "sub": "No ride to practice. Gym clothes left at home. A form nobody signed."},
@@ -117,7 +118,7 @@ export const posts = [
   },
   {
     day: 8,
-    source: 'proposals/messaging-v2.md',
+    source: 'campaign/weeks-01-02.md',
     slides: [
       {"photo": "D10-04.png", "pos": "50% 30%", "handle": true, "headline": "'That's not fair!'", "sub": "Every day. About who does which job."},
       {"photo": "Gemini_Generated_Image_76n1ve76n1ve76n1.jpg", "pos": "50% 40%", "headline": "And you have to be the judge.", "sub": "Every single time."},
@@ -130,7 +131,7 @@ export const posts = [
   },
   {
     day: 9,
-    source: 'proposals/messaging-v2.md',
+    source: 'campaign/weeks-01-02.md',
     slides: [
       {"photo": "d09_c01.png", "pos": "50% 30%", "handle": true, "headline": "'Can I help?'", "sub": "Always right when you're busy."},
       {"photo": "d03_c01.png", "pos": "60% 40%", "headline": "Saying 'not now' feels bad.", "sub": "But saying yes makes it all take longer."},
@@ -142,7 +143,7 @@ export const posts = [
   },
   {
     day: 10,
-    source: 'proposals/messaging-v2.md',
+    source: 'campaign/weeks-01-02.md',
     slides: [
       {"photo": "d12_c02.png", "pos": "50% 50%", "at": "top", "handle": true, "setup": "Should allowance", "payoff": "be linked to chores?", "sub": "Good parents land on both sides."},
       {"photo": "d12_c03.png", "pos": "50% 50%", "headline": "Money talks turn into fights.", "sub": "Most of the time, nobody agreed on the rules."},
@@ -155,7 +156,7 @@ export const posts = [
   },
   {
     day: 11,
-    source: 'proposals/messaging-v2.md',
+    source: 'campaign/weeks-01-02.md',
     slides: [
       {"photo": "social_images/s08.jpg", "pos": "50% 60%", "at": "top", "handle": true, "headline": "Kids hear about it when they forget.", "sub": "Do they hear about it when they remember?"},
       {"photo": "d11_c07.png", "pos": "50% 40%", "headline": "Most of the time, they don't.", "sub": "Nothing went wrong, so nobody says anything."},
@@ -167,7 +168,7 @@ export const posts = [
   },
   {
     day: 12,
-    source: 'proposals/messaging-v2.md',
+    source: 'campaign/weeks-01-02.md',
     slides: [
       {"photo": "d09_hero3.png", "pos": "50% 40%", "handle": true, "headline": "The week is so busy, fun plans never happen.", "sub": "The zoo. The bike ride. 'Maybe next weekend.'"},
       {"photo": "d13_c07.png", "pos": "50% 40%", "headline": "Then it's Friday, and nothing fun happened.", "sub": "Just school, work and laundry."},
@@ -180,7 +181,7 @@ export const posts = [
   },
   {
     day: 13,
-    source: 'proposals/messaging-v2.md',
+    source: 'campaign/weeks-01-02.md',
     slides: [
       {"photo": "d06_c04.png", "pos": "50% 50%", "handle": true, "headline": "Do your weekend plans fall through?", "sub": "Not because nobody wants to go. Because nobody picked a plan."},
       {"photo": "d03_c07.png", "pos": "50% 60%", "at": "top", "headline": "And one more Saturday goes by.", "sub": "Everyone is tired, and nobody wants to pick."},
@@ -192,7 +193,7 @@ export const posts = [
   },
   {
     day: 14,
-    source: 'proposals/messaging-v2.md',
+    source: 'campaign/weeks-01-02.md',
     slides: [
       {"photo": "d14_c06.png", "pos": "50% 50%", "handle": true, "setup": "What has your family", "payoff": "been meaning to do for ages?", "sub": "The hike. The trip. The place someone talked about two summers ago."},
       {"photo": "d14_c03.png", "pos": "50% 40%", "headline": "'Someday' never comes.", "sub": "There's always a busy week in the way."},
