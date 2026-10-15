@@ -31,6 +31,16 @@ It then measures every text box in Chromium and writes `design/checkpoint-01/qa.
 
 Objects come from `assets/objects/`, or `OBJECTS=<dir>`. App screens are the light captures in `assets/screens/captured/light/`. `render-checkpoint.mjs` stays unchanged as the record of the G1 checkpoint.
 
+**Options for review renders** (none of them changes the default output):
+- `HANDLE=@name` sets the handle, which is `@[handle]` by default.
+- `ONLY=day00/day00_carousel,...` renders only the pages whose names start with one of those prefixes.
+- `OUT_DIR=<dir>` writes there instead of `design/production/`.
+- `PHOTOS=<dir>` builds the Day 0 carousel in **Look B**, a photo-led example that is **not approved**:
+  - The owner's `d00_c01`–`d00_c06` photos go in a band at the top of each slide.
+  - QA adds a check that no text sits on a photo.
+  - `PHOTO_ORDER=1,5,3,2,4,6` changes which photo goes on which slide.
+  - Photos are read from outside the repository and are never committed.
+
 `SPEC=1` also writes `design/production/canva/spec.json`: every page's text boxes, pictures and SVG shapes, as measured in the browser. It also writes the phone-framed screens at 3× (`design/production/canva/phone_*.png`).
 
 ## `canva/`: Canva masters from the proofs

@@ -13,14 +13,20 @@
 //
 // Output: design/production/dayNN/*.png and design/production/qa.json.
 // Usage: node tools/proofs/render-campaign.mjs   (CHROMIUM_PATH=... if Playwright can't find Chromium)
+// Options: HANDLE=@name (default @[handle]); ONLY=day00/day00_carousel,... renders only pages whose name starts
+// with one of the prefixes; OUT_DIR=<dir> writes there instead of design/production; PHOTOS=<dir> builds the
+// Day 0 carousel in the photo-led Look B (an unapproved example) from d00_c01 ... d00_c06 in that folder.
 import { execSync } from 'node:child_process';
 import { createRequire } from 'node:module';
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
-import { join, dirname } from 'node:path';
+import { join, dirname, resolve, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
-const OUT = join(ROOT, 'design', 'production');
+const OUT = process.env.OUT_DIR ? resolve(process.env.OUT_DIR) : join(ROOT, 'design', 'production');
+const HANDLE = process.env.HANDLE ?? '@[handle]';
+const ONLY = process.env.ONLY ? process.env.ONLY.split(',') : null;
+const PHOTOS = process.env.PHOTOS ? resolve(process.env.PHOTOS) : null;
 const OBJ = process.env.OBJECTS ?? join(ROOT, 'assets', 'objects');
 const CAMPAIGN = readFileSync(join(ROOT, 'campaign', 'weeks-01-02.md'), 'utf8');
 const requireGlobal = createRequire(join(execSync('npm root -g', { encoding: 'utf8' }).trim(), 'noop.js'));
@@ -76,7 +82,7 @@ const T = (s) => s.replace(/'/g, '’').replace(/(^|[\s(])’/g, '$1‘'); // ty
 const txt = (qa, s, cls, style = '', extra = '') => `<div data-qa="${qa}" data-copy="${attr(cp(s))}" class="${cls}" style="${style}" ${extra}>${T(esc(s))}</div>`;
 
 // ---------- shared pieces (as approved at G1) ----------
-const handle = () => `<div class="abs handle" data-qa="handle" style="top:200px;left:540px;transform:translateX(-50%);white-space:nowrap">@[handle]</div>`;
+const handle = () => `<div class="abs handle" data-qa="handle" style="top:200px;left:540px;transform:translateX(-50%);white-space:nowrap">${HANDLE}</div>`;
 const PH = (what) => `PLACEHOLDER<br>${what}<br><span style="font-weight:400">Phase 2 cutout, not final</span>`;
 const objectBox = (src, label, box) => src
   ? `<img class="abs" data-qa="object" data-file="${NAMES.get(src) ?? ''}" src="${src}" style="left:${box.left}px;top:${box.top}px;width:${box.w}px;height:${box.h}px;object-fit:contain;object-position:${box.pos ?? 'center bottom'}">`
@@ -144,6 +150,41 @@ function layoutE({ headline, sub, pill }) {
     ${txt('headline', headline, 'h800', `font-size:120px;margin-top:${560 - 59}px`, 'data-center-y="560"')}
     ${txt('subheadline', sub, 'sub', 'margin-top:40px')}</div>
   <div class="abs" style="left:0;width:1080px;top:1200px;display:flex;justify-content:center">${txt('pill', pill, 'pill', 'transform:translateY(-50%)')}</div>`;
+}
+
+// ---------- Look B (PHOTOS=<dir>): photo-led example, not approved ----------
+// The photo fills a band at the top and never carries text; everything else sits on Paper below it.
+// Phones straddle the band's lower edge so "Demo family" lands on Paper.
+const BAND = 640;
+const photo = (file) => named(dataUri(join(PHOTOS, file), file.endsWith('.png') ? 'image/png' : 'image/jpeg'), file);
+const photoBand = (file, pos, h = BAND) => `<img class="abs" data-qa="photo" data-file="${file}" src="${photo(file)}" style="left:0;top:0;width:1080px;height:${h}px;object-fit:cover;object-position:${pos}">`;
+function coverB({ photoFile, pos, setup, payoff, setupSize, payoffSize, sub, zone, gap = 40, phone }) {
+  const screenH = 300, pad = 10, ow = Math.round(screenH * 1290 / 2796) + 2 * pad, oh = screenH + 2 * pad;
+  return `${photoBand(photoFile, pos)}
+  ${phoneFrame(phone, { left: 930 - ow / 2, top: BAND + 80 - oh, screenH, pad, labelGap: 8 })}
+  <div class="abs handle" data-qa="handle" style="top:${BAND + 28}px;left:540px;transform:translateX(-50%);white-space:nowrap">${HANDLE}</div>
+  <div class="abs" data-qa="cover-headline" data-bzone="${zone}" data-bgap="${gap}" data-bmode="auto" style="left:50px;width:980px;top:${zone[0]}px;text-align:center">
+    ${txt('headline-setup', setup, 'h400', `font-size:${setupSize}px`)}
+    ${txt('headline-payoff', payoff, 'h800', `font-size:${payoffSize}px`)}
+  </div>
+  ${txt('subheadline', sub, 'abs sub', `left:50px;width:980px;text-align:center;text-wrap:balance;top:${zone[1]}px`)}`;
+}
+function contentB({ photoFile, pos, label, headline, sub, hs, ss, headlineMax, phone }) {
+  return `${photoBand(photoFile, pos)}
+  ${phone ? phoneFrame(phone, { left: 1030 - (Math.round(448 * 1290 / 2796) + 24), top: BAND - 454, screenH: 448, pad: 12, labelGap: 8 }) : ''}
+  ${txt('label', label, 'abs label', `top:${BAND + 68}px;left:50px`)}
+  <div class="abs" style="top:${BAND + 128}px;left:50px;width:980px">
+    ${txt('headline', headline, 'h800', `font-size:${hs}px`, `data-maxlines="${headlineMax}"`)}
+    ${txt('subheadline', sub, 'sub', `margin-top:32px;font-size:${ss}px`, 'data-maxlines="3"')}
+  </div>`;
+}
+// The CTA has less to say, so its photo runs deeper.
+function ctaB({ photoFile, pos, headline, sub, pill }) {
+  return `${photoBand(photoFile, pos, 760)}
+  <div class="abs" style="left:50px;width:980px;top:880px;display:flex;flex-direction:column;align-items:center;text-align:center">
+    ${txt('headline', headline, 'h800', 'font-size:120px')}
+    ${txt('subheadline', sub, 'sub', 'margin-top:40px')}</div>
+  <div class="abs" style="left:0;width:1080px;top:1180px;display:flex;justify-content:center">${txt('pill', pill, 'pill', 'transform:translateY(-50%)')}</div>`;
 }
 
 // ---------- custom diagrams (Layout D variants named in the briefs) ----------
@@ -254,14 +295,14 @@ async function headlineSize(frame, s) {
   throw new Error(`${frame}: headline does not fit`);
 }
 /** Layout C with headline and subheadline fitted to their line limits. */
-async function C_(frame, o) {
+async function C_(frame, o, layout = layoutC) {
   const { hs, maxLines } = await headlineSize(frame, cp(o.headline));
   const ss = o.sub ? await fit(frame, 'subheadline', cp(o.sub), 'sub', 44, 34, 3) : 44;
-  return layoutC({ ...o, hs, ss, headlineMax: maxLines });
+  return layout({ ...o, hs, ss, headlineMax: maxLines });
 }
 /** Layout B with setup and payoff scaled together (2% steps) until the headline group fits its zone
  *  and the subheadline ends 20 px above what follows it (the object, or Day 7's checklist). */
-async function B_(frame, o) {
+async function B_(frame, o, layout = layoutB) {
   const zone = o.zone ?? [300, 860], gap = o.gap ?? 40, limit = o.limit ?? 940, zh = zone[1] - zone[0];
   const S = o.sub ? (await countLines(cp(o.sub), 'sub', 44, 980)) * 44 * 1.3 : 0;
   for (let k = 100; k >= 60; k -= 2) {
@@ -271,7 +312,7 @@ async function B_(frame, o) {
     const literalOk = H <= zh && zone[0] + (zh + H) / 2 + gap + S <= limit;
     if (groupOk || literalOk) {
       if (k < 100) fits.push({ frame, role: 'cover headline', text: `${o.setup} / ${o.payoff}`, spec: `${o.setupSize}px / ${o.payoffSize}px`, used: `${ss}px / ${ps}px (${k}%)` });
-      return layoutB({ ...o, setupSize: ss, payoffSize: ps });
+      return layout({ ...o, setupSize: ss, payoffSize: ps });
     }
   }
   throw new Error(`${frame}: cover headline does not fit`);
@@ -286,12 +327,16 @@ const video = (name, body) => add(name, 1080, 1920, body, { transparent: true, s
 
 // Day 0, pinned introduction (6 slides; slides 2-5 also as the "About" highlight)
 const d00 = [];
-d00.push(await B_('day00_carousel_s01', { setup: 'What Bonded is,', payoff: "and why we're building it.", setupSize: 140, payoffSize: 150, sub: 'A family app for running the week together.', phone: screen('64-mom-home-recognition-light.png') }));
-d00.push(await C_('day00_carousel_s02', { label: 'What it is', headline: 'One shared plan for the whole family.', sub: "The week's plan, who's doing what, and something to look forward to, in one place everyone can see.", phone: screen('67-mom-family-climbing-light.png') }));
-d00.push(await C_('day00_carousel_s03', { label: "Who it's for", headline: 'Families with kids from about 4 to 18.', sub: 'Parents set the plan. Kids see their own part, tick things off, and can ask for help, a break or a new day.' }));
-d00.push(await C_('day00_carousel_s04', { label: "Why we're building it", headline: "The week shouldn't live in one person's head.", sub: 'In most families, one parent remembers everything and asks for everything. We think the work, and the credit for it, should be shared.' }));
-d00.push(await C_('day00_carousel_s05', { label: 'How rewards work', headline: 'Points unlock extras the family agrees on.', sub: "A climbing wall trip, a movie night out, an allowance if you choose. Everyday time together is never on the line. Bonded keeps track of money; it doesn't move it." }));
-d00.push(layoutE({ headline: 'Join the waitlist.', sub: 'Bonded is coming to iPhone and Android.', pill: 'Link in bio' }));
+// Look B: the owner's photo for each slide (file name = slide number) and where to centre the crop.
+// PHOTO_ORDER=1,5,3,2,4,6 puts photo 5 on slide 2, and so on (to compare orders; the default is the owner's).
+const PHOTO_SET = { 1: ['d00_c01.jpg', '50% 35%'], 2: ['d00_c02.jpg', '50% 50%'], 3: ['d00_c03.jpg', '50% 71%'], 4: ['d00_c04.jpg', '50% 50%'], 5: ['d00_c05.png', '50% 20%'], 6: ['d00_c06.png', '50% 35%'] };
+const pB = PHOTOS ? (process.env.PHOTO_ORDER ?? '1,2,3,4,5,6').split(',').map((n) => ({ photoFile: PHOTO_SET[n][0], pos: PHOTO_SET[n][1] })) : null;
+d00.push(await B_('day00_carousel_s01', { setup: 'What Bonded is,', payoff: "and why we're building it.", setupSize: 140, payoffSize: 150, sub: 'A family app for running the week together.', phone: screen('64-mom-home-recognition-light.png'), ...(pB ? { ...pB[0], zone: [BAND + 140, 1250] } : {}) }, pB ? coverB : layoutB));
+d00.push(await C_('day00_carousel_s02', { label: 'What it is', headline: 'One shared plan for the whole family.', sub: "The week's plan, who's doing what, and something to look forward to, in one place everyone can see.", phone: screen('67-mom-family-climbing-light.png'), ...pB?.[1] }, pB ? contentB : layoutC));
+d00.push(await C_('day00_carousel_s03', { label: "Who it's for", headline: 'Families with kids from about 4 to 18.', sub: 'Parents set the plan. Kids see their own part, tick things off, and can ask for help, a break or a new day.', ...pB?.[2] }, pB ? contentB : layoutC));
+d00.push(await C_('day00_carousel_s04', { label: "Why we're building it", headline: "The week shouldn't live in one person's head.", sub: 'In most families, one parent remembers everything and asks for everything. We think the work, and the credit for it, should be shared.', ...pB?.[3] }, pB ? contentB : layoutC));
+d00.push(await C_('day00_carousel_s05', { label: 'How rewards work', headline: 'Points unlock extras the family agrees on.', sub: "A climbing wall trip, a movie night out, an allowance if you choose. Everyday time together is never on the line. Bonded keeps track of money; it doesn't move it.", ...pB?.[4] }, pB ? contentB : layoutC));
+d00.push((pB ? ctaB : layoutE)({ headline: 'Join the waitlist.', sub: 'Bonded is coming to iPhone and Android.', pill: 'Link in bio', ...pB?.[5] }));
 d00.forEach((b, i) => feed(`day00/day00_carousel_s0${i + 1}`, b, i === 0));
 story('day00/day00_highlight_cover', `${txt('headline', 'About', 'abs h800', 'left:90px;width:900px;text-align:center;font-size:200px', 'data-anchor-cy="960"')}`);
 for (let i = 1; i <= 4; i++) story(`day00/day00_highlight_s0${i + 1}`, `<div class="abs" style="left:0;top:240px;width:1080px;height:1440px">${d00[i]}</div>`);
@@ -523,7 +568,7 @@ async function collectSpec(pg, p) {
 // ---------- render + QA ----------
 mkdirSync(OUT, { recursive: true });
 const frames = [];
-for (const p of pages) {
+for (const p of pages.filter((q) => !ONLY || ONLY.some((o) => q.name.startsWith(o)))) {
   const ctx = await browser.newContext({ viewport: { width: p.w, height: p.h }, deviceScaleFactor: 1 });
   const pg = await ctx.newPage();
   const bg = p.transparent ? 'transparent' : p.bg;
@@ -574,7 +619,7 @@ for (const p of pages) {
   const norm = (s) => s.replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, ' ').trim();
   const visual = new Set(['phone', 'object', 'object-placeholder']);
   for (const b of boxes) {
-    if (p.safe && !visual.has(b.qa) && b.qa !== 'blocked') {
+    if (p.safe && !visual.has(b.qa) && b.qa !== 'blocked' && b.qa !== 'photo') { // a Look B photo bleeds by design
       if (b.y < p.safe.top || b.bottom > p.safe.bottom || b.x < p.safe.left || b.right > p.safe.right) issues.push(`${b.qa} outside safe zone (${b.x},${b.y})-(${b.right},${b.bottom})`);
     }
     if (p.safe && visual.has(b.qa) && (b.y < p.safe.top || b.bottom > p.safe.bottom || b.x < p.safe.left || b.right > p.safe.right)) issues.push(`${b.qa} outside safe zone (${b.x},${b.y})-(${b.right},${b.bottom})`);
@@ -592,11 +637,15 @@ for (const p of pages) {
   for (const v of boxes.filter((b) => visual.has(b.qa))) {
     for (const t of texts) if (v.x < t.right && t.x < v.right && v.y < t.bottom && t.y < v.bottom) issues.push(`${v.qa} overlaps ${t.qa} "${t.text.slice(0, 30)}"`);
   }
+  // Look B: no text of any kind on the photo, the handle and "Demo family" included.
+  for (const v of boxes.filter((b) => b.qa === 'photo')) {
+    for (const t of boxes.filter((b) => b.text)) if (v.x < t.right && t.x < v.right && v.y < t.bottom && t.y < v.bottom) issues.push(`text on photo: ${t.qa} "${t.text.slice(0, 30)}"`);
+  }
   const file = join(OUT, `${p.name}.png`);
   mkdirSync(dirname(file), { recursive: true });
   await pg.screenshot({ path: file, omitBackground: p.transparent });
   if (SPEC) specs.push({ name: p.name, w: p.w, h: p.h, bg: p.transparent ? null : p.bg, elements: await collectSpec(pg, p) });
-  frames.push({ file: `design/production/${p.name}.png`, size: `${p.w}x${p.h}`, transparent: p.transparent, status: p.status, placeholders: boxes.filter((b) => b.qa === 'object-placeholder').length, fontsLoaded, issues, boxes });
+  frames.push({ file: `${relative(ROOT, OUT)}/${p.name}.png`, size: `${p.w}x${p.h}`, transparent: p.transparent, status: p.status, placeholders: boxes.filter((b) => b.qa === 'object-placeholder').length, fontsLoaded, issues, boxes });
   await ctx.close();
 }
 await browser.close();
@@ -618,7 +667,7 @@ function onCreative() {
 const usedList = [...used];
 const covered = (s) => used.has(s) || usedList.some((a) => usedList.some((b) => `${a} ${b}` === s));
 const LOCKUP = new Set(['Bonded']); // the end card name is the official lockup, never typeset
-const uncovered = onCreative().filter((o) => !covered(o.text) && !LOCKUP.has(o.text));
+const uncovered = ONLY ? [] : onCreative().filter((o) => !covered(o.text) && !LOCKUP.has(o.text));
 
 const summary = {
   renderedAt: new Date().toISOString(),
