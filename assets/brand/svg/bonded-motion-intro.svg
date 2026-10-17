@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-60 -60 420 420" role="img" aria-label="BONDED"><title>BONDED</title>
+<style>
+.c1{animation:c1 560ms cubic-bezier(.22,1,.36,1) both}
+.c2{animation:c2 560ms cubic-bezier(.22,1,.36,1) both}
+.win{transform-box:fill-box;transform-origin:center;animation:win 480ms cubic-bezier(.3,1.35,.55,1) 420ms both}
+@keyframes c1{from{transform:translate(-40px,40px)}to{transform:translate(0,0)}}
+@keyframes c2{from{transform:translate(40px,-40px)}to{transform:translate(0,0)}}
+@keyframes win{from{transform:scale(0)}to{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.c1,.c2,.win{animation:none}}
+</style>
+<defs><mask id="room" maskUnits="userSpaceOnUse" x="-60" y="-60" width="420" height="420"><rect x="-60" y="-60" width="420" height="420" fill="#fff"/><rect class="win" x="120" y="120" width="60" height="60" fill="#000"/></mask></defs>
+<g mask="url(#room)" fill="#B94529"><circle class="c1" cx="100" cy="200" r="100"/><circle class="c2" cx="200" cy="100" r="100"/></g></svg>

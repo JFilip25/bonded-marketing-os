@@ -33,3 +33,27 @@ Produce Instagram grid preview in newest-first posting order after usable real v
 
 ## Accuracy/QA
 No payment UI, transfers, bank cards, store badges, fabricated screens, invented testimonials or performance. Points for agreed optional extras only; ordinary time and attention must never be conditional. If text won't fit, scale only within approved range and flag unresolved overflow. Verify actual capabilities of Canva MCP for transparent PNG export and templates rather than claiming it did so.
+
+## Corrections (9 Oct 2026, Claude Code takeover; owner decisions in `decisions/log.md`)
+The body of this brief is unchanged above. Where it conflicts with these corrections, **the corrections win**.
+
+1. **Visual system (D-2026-10-09-1).** The provisional palette and fonts above are replaced:
+   - Warm grey `#E8E6E2` becomes **Paper `#F5F2EA`**.
+   - `#151515` becomes **Ink `#222D33`**.
+   - Grey `#6E6E6E` pills become **muted `#646A6B`** pills with Paper text.
+   - The green `#0F6B5C` accent becomes **Hearth `#B94529`**: one element per slide, never on dark grounds.
+   - Playfair Display + Poppins become **Plus Jakarta Sans 400/600/800**, with no italics.
+   
+   The element-by-element mapping is in `design/brand-reconciliation.md`. Sizes, positions and safe zones are unchanged.
+2. **Logo.** "Don't invent logo; use typeset 'Bonded' if missing" is superseded, because the real path logo exists. Use only the files in `assets/brand/svg/`:
+   - the colour lockup on Paper
+   - the reversed lockup on dark grounds or dimmed footage
+   
+   Never retype the name as a logo. The Day 11 end card uses `bonded-lockup-horizontal-reversed.svg` instead of typeset "Bonded".
+3. **Screens.** Real screenshots are in `assets/screens/` and are listed in `design/screenshots-manifest.md`.
+   - Missing states (Days 11 and 12) are being captured from the real build on a local stack.
+   - Calendar screens **cannot exist**, because the product has no calendar. See `proposals/claim-amendments.md`.
+4. **Claims.** Before designing any frame that names a product function, check `product/feature-claims.md`. Frames whose claim is CONFLICT stay BLOCKED until the owner approves an amendment.
+5. **Fit.** Layout C headlines are 120 px, two lines at most, with −0.04 em tracking.
+   - If the tool cannot apply tracking, use 110 px. That is below the 120 px floor, so flag it for approval.
+   - "Join the waitlist" on the Day 11 end card is set on two lines at 110 px to keep clear of the right-hand 150 px Reels zone.

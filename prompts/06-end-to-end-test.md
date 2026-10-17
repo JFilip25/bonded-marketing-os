@@ -1,3 +1,24 @@
 # 06 - End-to-end BONDED prelaunch QA
 
-Inspect campaign source, MailerLite forms/draft workflows, BONDED preview site, Canva designs, Buffer drafts and WAITLIST comment-to-DM integration. Test *only* with explicitly authorized test data. Verify email confirmation, resource delivery without newsletter opt-in, unsubscribe, separate early-access versus family-tips consent, no child data, real attributed UTM traffic, and documented privacy notice. Verify exact Day 2 approved design system, D00 and D11/D12 authentic demo screens, 46 static frames, 14 Story sets and six video overlay packages, unfinished actual videos blocked. Check visual safe zones, copies, account/channel identity and platform-specific caption exactness. Report PASS / FAIL / NEEDS_HUMAN_CHECK plus evidence URLs. No production deployment, live emails, live social activity or activation.
+Inspect:
+- the campaign source (check its checksum per `ops/qa-checklist.md`)
+- `product/feature-claims.md`
+- the MailerLite forms and draft workflows
+- the BONDED preview site
+- the Canva designs and Buffer drafts
+- the WAITLIST comment-to-DM flow
+
+Test **only** with explicitly authorised test data. Verify:
+- email confirmation (double opt-in)
+- resource delivery without newsletter opt-in
+- unsubscribe
+- separate early-access and family-tips consent
+- no child data
+- real, attributed UTM traffic
+- a documented privacy notice
+- the approved Day 2 design system
+- D00, D11 and D12 authentic demo screens, with every claim VERIFIED or approved-amended
+- 46 static frames, 14 Story sets and six video overlay packages, with unfinished videos blocked
+- visual safe zones, copy, account and channel identity, and platform-specific caption exactness
+
+Report PASS / FAIL / NEEDS_HUMAN_CHECK with evidence URLs. No production deployment, live emails, live social activity or activation.
