@@ -29,6 +29,7 @@ The bio links and the Facebook replies open the same page.
 | Page source | `site/bondedin/` in this repository | |
 | Vercel project | `bondedin-waitlist`, linked to this repository, root `site/bondedin`, only rebuilds when that folder changes | `prj_KpKkIXc9Q7FSonZPKkViGzJM0Tio` |
 | Live address | **https://go.bondedin.com** (custom domain public; other Vercel addresses behind the login) | production `dpl_EyyHfaueAw6CqviByNJJkUcbDPmi` |
+| Redirects | `bondedin.com` and `www.bondedin.com` → `go.bondedin.com` (308), added to the Vercel project on 17 Oct. They work once the owner adds the DNS records: A `@` 216.198.79.1 and 64.29.17.1, CNAME `www` f745141d17fb7fc0.vercel-dns-017.com | pending DNS |
 
 Nothing has been sent from MailerLite or turned on there.
 
