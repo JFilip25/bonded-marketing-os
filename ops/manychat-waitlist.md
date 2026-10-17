@@ -1,11 +1,11 @@
 # ManyChat: the WAITLIST automation
 
-**Status:** the spec is ready; nothing is built yet. ManyChat has no connector in this workspace, so the owner builds this in ManyChat's own UI. The words it sends are PROPOSED in `proposals/manychat-waitlist-copy.md` and need approval first.
+**Status, 17 Oct 2026:** the owner reports ManyChat set up. ManyChat has no connector in this workspace, so Claude can't check it. The button's link is the MailerLite waitlist page (D-2026-10-17-5, `ops/waitlist-mailerlite-setup.md`), which isn't published yet. The words it sends are PROPOSED in `proposals/manychat-waitlist-copy.md` and need approval first.
 
 **Why it's needed.** Every Instagram caption in weeks 1 and 2 ends "Comment WAITLIST and we'll send you the link." (Amendments 2 and 3). Without this automation, that promise is broken on every post. Buffer and MailerLite can't send Instagram DMs (`CLAUDE.md`).
 
 **Blocked by:**
-- **D6:** the waitlist page URL. The DM has nothing to link to until it exists.
+- **The waitlist page URL:** the MailerLite landing page (`ops/waitlist-mailerlite-setup.md`). The DM has nothing to link to until it's published.
 - **Approval of the proposed words.**
 
 ## Before you start
