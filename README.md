@@ -43,11 +43,11 @@ The architecture is in `architecture/marketing-os.md`.
 10. Create the cloud Routines from `routines/` only after the manual workflows pass.
 
 ## Planned calendar
-- Pinned Day 0: Sunday 18 Oct 2026.
-- Day 1: Monday 19 Oct 2026.
-- Day 14: Sunday 1 Nov 2026.
+- Day 0 ("Why Bonded exists") comes first. Its live status is recorded in `ops/production-status.csv` once confirmed in Meta Business Suite.
+- Day 1: Saturday 17 Oct 2026.
+- Day 14: Friday 30 Oct 2026.
 
-The launch date is still to be confirmed (D5). The campaign starts Day 1 "once the waitlist page is live".
+One post a day at 18:00 Montenegro time, on Instagram and Facebook through Meta Business Suite (D-2026-10-17-1, Amendment 4). TikTok and Stories are not scheduled yet.
 
 ## Note on deliverables
 This repo holds planning, instructions, verified brand files and real demo screenshots. It does **not** yet hold finished Canva graphics, real family video or connected MailerLite forms. Never report those as complete without verification.

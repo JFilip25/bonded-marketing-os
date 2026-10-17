@@ -85,7 +85,7 @@ Comment WAITLIST and we'll send you the link.
 <two hashtags>
 ```
 
-The WAITLIST promise needs the ManyChat (or equivalent) auto-reply live before the post goes out.
+The WAITLIST promise needs a reply to every comment: the ManyChat (or equivalent) auto-reply, or the owner by hand until it is live.
 
 ### Facebook (Get Bonded page)
 
@@ -94,10 +94,10 @@ Conversational and a little longer. It can add one concrete detail the slides di
 ```
 We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
 
-The waitlist is here: [link]
+Comment WAITLIST and we'll send you the link.
 ```
 
-`[link]` is replaced with the real waitlist URL (with UTM tags from `architecture/marketing-os.md`) before posting.
+Since 17 Oct 2026, Facebook uses the same WAITLIST line as Instagram (D-2026-10-17-2), and the replies are sent by hand until an automation covers them. Day 0 keeps the older ending, "The waitlist is here: [link]". Going back to a link needs the owner's approval and the real waitlist URL, with UTM tags from `architecture/marketing-os.md`.
 
 ### TikTok (@bondedspace)
 

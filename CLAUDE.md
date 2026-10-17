@@ -1,6 +1,6 @@
 # BONDED Marketing OS | Standing instructions
 
-Read `campaign/weeks-01-02.md` before any production work. It is the LOCKED, approved Day 0 and Days 1–14 campaign, running 18 October to 1 November 2026 (dates kept by the owner on 10 Oct 2026, D-2026-10-10-6). It is the single US-English master. Every approved amendment is listed in `campaign/CHANGELOG.md`.
+Read `campaign/weeks-01-02.md` before any production work. It is the LOCKED, approved Day 0 and Days 1–14 campaign. Days 1–14 run from 17 to 30 October 2026, one a day at 18:00 Montenegro time, on Instagram and Facebook through Meta Business Suite (D-2026-10-17-1, Amendment 4). It is the single US-English master. Every approved amendment is listed in `campaign/CHANGELOG.md`.
 
 Before any Canva work, read:
 - `design/designer-production-brief.md`, which governs staged creative approval

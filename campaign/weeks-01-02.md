@@ -18,7 +18,7 @@ Bonded runs a 3-month waitlist campaign on Instagram, Facebook and TikTok, posti
 
 **Weeks 1 and 2.** Week 1 is "It's all in my head": the mental load, and meeting Bonded. Week 2 is "Fair, calm and together": how Bonded works in a real week.
 
-**Start date.** Day 1 is a Monday, once the waitlist page is live. Starting Monday 19 October puts week 12 on 4 to 10 January, right on the New Year reset.
+**Start date.** Day 1 is Saturday 17 October 2026 and Day 14 is Friday 30 October: one post a day at 18:00 Montenegro time, on Instagram and Facebook through Meta Business Suite (D-2026-10-17-1). That puts week 12 on 2 to 8 January, on the New Year reset.
 
 **What changed.** This replaces the stealth, Instagram-only plan in the content engine doc. It is now public, daily, on three platforms, with a website waitlist. Positioning, pillars and claims rules stay the same.
 
@@ -119,7 +119,7 @@ Real family moments, filmed on a phone. An off-camera parent voiceover tells it,
 
 CTAs are a judgment call. Each brief names one, or says "No CTA".
 
-- **Waitlist,** on every post (D-2026-10-15-2). Instagram: "Comment WAITLIST and we'll send you the link." ManyChat sends it by DM, and the link is in the bio. Facebook: "The waitlist is here: [link]". TikTok: "Waitlist link in bio", or "Waitlist link on our Instagram" if the account can't show a bio link yet.
+- **Waitlist,** on every post (D-2026-10-15-2). Instagram: "Comment WAITLIST and we'll send you the link." ManyChat sends it by DM, and the link is in the bio. Facebook: "Comment WAITLIST and we'll send you the link." as on Instagram, answered by hand (D-2026-10-17-2). TikTok: "Waitlist link in bio", or "Waitlist link on our Instagram" if the account can't show a bio link yet.
 - **Conversation,** a real question, only when the answers would be worth reading.
 - **No CTA:** not used in weeks 1 and 2, since every post ends on the waitlist.
 
@@ -138,20 +138,20 @@ Fourteen carousels, one a day, plus stories every day (Amendment 3). Six of them
 
 | Day | Format | Post | Bonded in it |
 | --- | --- | --- | --- |
-| 1 Mon | Carousel, 6 slides | Let each kid pick their job | Waitlist slide |
-| 2 Tue | Carousel, 7 slides | Maybe the problem isn't the chores | Waitlist slide |
-| 3 Wed | Carousel, 6 slides | The family calendar | Waitlist slide |
-| 4 Thu | Carousel, 6 slides (1 moving) | Their night to plan dinner | Waitlist slide |
-| 5 Fri | Carousel, 7 slides (2 moving) | What kids can do, age by age | Waitlist slide |
-| 6 Sat | Carousel, 6 slides (2 moving) | A Saturday cleanup that ends | Waitlist slide |
-| 7 Sun | Carousel, 6 slides | Does everyone know what's happening this week? | Waitlist slide |
-| 8 Mon | Carousel, 7 slides | Splitting jobs between siblings | Waitlist slide |
-| 9 Tue | Carousel, 6 slides | Have a real job ready | Waitlist slide |
-| 10 Wed | Carousel, 7 slides | Should allowance be linked to chores? | Waitlist slide |
-| 11 Thu | Carousel, 6 slides (1 moving) | Before anyone asked | Waitlist slide |
-| 12 Fri | Carousel, 7 slides (2 moving) | Plan the week, and one fun thing | Waitlist slide |
-| 13 Sat | Carousel, 6 slides (1 moving) | Plan the weekend on Wednesday | Waitlist slide |
-| 14 Sun | Carousel, 6 slides | What has your family been meaning to do for ages? | Waitlist slide |
+| 1 Sat 17 Oct | Carousel, 6 slides | Let each kid pick their job | Waitlist slide |
+| 2 Sun 18 Oct | Carousel, 7 slides | Maybe the problem isn't the chores | Waitlist slide |
+| 3 Mon 19 Oct | Carousel, 6 slides | The family calendar | Waitlist slide |
+| 4 Tue 20 Oct | Carousel, 6 slides (1 moving) | Their night to plan dinner | Waitlist slide |
+| 5 Wed 21 Oct | Carousel, 7 slides (2 moving) | What kids can do, age by age | Waitlist slide |
+| 6 Thu 22 Oct | Carousel, 6 slides (2 moving) | A Saturday cleanup that ends | Waitlist slide |
+| 7 Fri 23 Oct | Carousel, 6 slides | Does everyone know what's happening this week? | Waitlist slide |
+| 8 Sat 24 Oct | Carousel, 7 slides | Splitting jobs between siblings | Waitlist slide |
+| 9 Sun 25 Oct | Carousel, 6 slides | Have a real job ready | Waitlist slide |
+| 10 Mon 26 Oct | Carousel, 7 slides | Should allowance be linked to chores? | Waitlist slide |
+| 11 Tue 27 Oct | Carousel, 6 slides (1 moving) | Before anyone asked | Waitlist slide |
+| 12 Wed 28 Oct | Carousel, 7 slides (2 moving) | Plan the week, and one fun thing | Waitlist slide |
+| 13 Thu 29 Oct | Carousel, 6 slides (1 moving) | Plan the weekend on Wednesday | Waitlist slide |
+| 14 Fri 30 Oct | Carousel, 6 slides | What has your family been meaning to do for ages? | Waitlist slide |
 
 Week 1 theme: It's all in my head. Week 2 theme: Fair, calm and together.
 
@@ -225,7 +225,7 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 ## Week 1: It's all in my head
 
-### Day 1, Monday. Let each kid pick their job
+### Day 1, Saturday 17 October. Let each kid pick their job
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 6 slides: 5 photo, 0 video, 1 plain.
 
@@ -271,19 +271,19 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 >
 > We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
 >
-> The waitlist is here: [link]
+> Comment WAITLIST and we'll send you the link.
 
 **Product integration:** the waitlist slide only (D-2026-10-15-1). No feature talk. The one line about Bonded is the positioning in plain words, which matches the build's shared, dated responsibilities with an owner each.
 
 **Visual direction:** messaging v2 (D-2026-10-15-4): full photo backgrounds with an Ink gradient behind Paper type, no Hearth on photos, every line of text at least 4.5:1 against the pixels behind it. The waitlist slide is plain Paper.
 
-**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1, 2 and 4 are AI images and need the platform's AI label.
+**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1, 2 and 4 are AI images. The owner chose to post them without the platform's AI label (D-2026-10-17-3).
 
 **CTA:** waitlist, on slide 6 and in the caption.
 
 **Stories:** Question. "If your kids could pick one job, which would they go for?" with "Reply and tell us" underneath.
 
-### Day 2, Tuesday. Maybe the problem isn't the chores
+### Day 2, Sunday 18 October. Maybe the problem isn't the chores
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 7 slides: 6 photo, 0 video, 1 plain.
 
@@ -331,19 +331,19 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 >
 > We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
 >
-> The waitlist is here: [link]
+> Comment WAITLIST and we'll send you the link.
 
 **Product integration:** the waitlist slide only (D-2026-10-15-1). No feature talk. The one line about Bonded is the positioning in plain words, which matches the build's shared, dated responsibilities with an owner each.
 
 **Visual direction:** messaging v2 (D-2026-10-15-4): full photo backgrounds with an Ink gradient behind Paper type, no Hearth on photos, every line of text at least 4.5:1 against the pixels behind it. The waitlist slide is plain Paper.
 
-**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 3 and 6 are AI images and need the platform's AI label.
+**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 3 and 6 are AI images. The owner chose to post them without the platform's AI label (D-2026-10-17-3).
 
 **CTA:** waitlist, on slide 7 and in the caption.
 
 **Stories:** Idea. "Agree what 'done' means." with "'Clothes in the basket, bed made, floor clear' is hard to argue with." underneath.
 
-### Day 3, Wednesday. The family calendar
+### Day 3, Monday 19 October. The family calendar
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 6 slides: 5 photo, 0 video, 1 plain.
 
@@ -387,19 +387,19 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 >
 > We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
 >
-> The waitlist is here: [link]
+> Comment WAITLIST and we'll send you the link.
 
 **Product integration:** the waitlist slide only (D-2026-10-15-1). No feature talk. The one line about Bonded is the positioning in plain words, which matches the build's shared, dated responsibilities with an owner each.
 
 **Visual direction:** messaging v2 (D-2026-10-15-4): full photo backgrounds with an Ink gradient behind Paper type, no Hearth on photos, every line of text at least 4.5:1 against the pixels behind it. The waitlist slide is plain Paper.
 
-**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slide 4 is an AI image and needs the platform's AI label.
+**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slide 4 is an AI image. The owner chose to post it without the platform's AI label (D-2026-10-17-3).
 
 **CTA:** waitlist, on slide 6 and in the caption.
 
 **Stories:** Question. "Who's the family calendar in your house?" with "Reply and tell us" underneath.
 
-### Day 4, Thursday. Their night to plan dinner
+### Day 4, Tuesday 20 October. Their night to plan dinner
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 6 slides: 4 photo, 1 video, 1 plain.
 
@@ -442,19 +442,19 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 >
 > We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
 >
-> The waitlist is here: [link]
+> Comment WAITLIST and we'll send you the link.
 
 **Product integration:** the waitlist slide only (D-2026-10-15-1). No feature talk. The one line about Bonded is the positioning in plain words, which matches the build's shared, dated responsibilities with an owner each.
 
 **Visual direction:** messaging v2 (D-2026-10-15-4): full photo backgrounds with an Ink gradient behind Paper type, no Hearth on photos, every line of text at least 4.5:1 against the pixels behind it. The waitlist slide is plain Paper.
 
-**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1 and 4 are AI images and need the platform's AI label.
+**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1 and 4 are AI images. The owner chose to post them without the platform's AI label (D-2026-10-17-3).
 
 **CTA:** waitlist, on slide 6 and in the caption.
 
 **Stories:** Question. "If your kids planned dinner, what would you be eating?" with "Reply and tell us" underneath.
 
-### Day 5, Friday. What kids can do, age by age
+### Day 5, Wednesday 21 October. What kids can do, age by age
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 7 slides: 4 photo, 2 video, 1 plain.
 
@@ -502,19 +502,19 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 >
 > We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
 >
-> The waitlist is here: [link]
+> Comment WAITLIST and we'll send you the link.
 
 **Product integration:** the waitlist slide only (D-2026-10-15-1). No feature talk. The one line about Bonded is the positioning in plain words, which matches the build's shared, dated responsibilities with an owner each.
 
 **Visual direction:** messaging v2 (D-2026-10-15-4): full photo backgrounds with an Ink gradient behind Paper type, no Hearth on photos, every line of text at least 4.5:1 against the pixels behind it. The waitlist slide is plain Paper.
 
-**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 2, 3 and 5 are AI images and need the platform's AI label.
+**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 2, 3 and 5 are AI images. The owner chose to post them without the platform's AI label (D-2026-10-17-3).
 
 **CTA:** waitlist, on slide 7 and in the caption.
 
 **Stories:** Behind the scenes. A screen of one child's list in Bonded (demo family), with "Each kid gets a list of what's theirs today." underneath and the waitlist link sticker.
 
-### Day 6, Saturday. A Saturday cleanup that ends
+### Day 6, Thursday 22 October. A Saturday cleanup that ends
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 6 slides: 3 photo, 2 video, 1 plain.
 
@@ -561,19 +561,19 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 >
 > We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
 >
-> The waitlist is here: [link]
+> Comment WAITLIST and we'll send you the link.
 
 **Product integration:** the waitlist slide only (D-2026-10-15-1). No feature talk. The one line about Bonded is the positioning in plain words, which matches the build's shared, dated responsibilities with an owner each.
 
 **Visual direction:** messaging v2 (D-2026-10-15-4): full photo backgrounds with an Ink gradient behind Paper type, no Hearth on photos, every line of text at least 4.5:1 against the pixels behind it. The waitlist slide is plain Paper.
 
-**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 3 and 4 are AI images and need the platform's AI label.
+**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 3 and 4 are AI images. The owner chose to post them without the platform's AI label (D-2026-10-17-3).
 
 **CTA:** waitlist, on slide 6 and in the caption.
 
 **Stories:** Share-back. The best replies to Monday's and Thursday's questions, the jobs kids picked and the dinners they'd plan, shared anonymously.
 
-### Day 7, Sunday. Does everyone know what's happening this week?
+### Day 7, Friday 23 October. Does everyone know what's happening this week?
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 6 slides: 5 photo, 0 video, 1 plain.
 
@@ -620,13 +620,13 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 >
 > We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
 >
-> The waitlist is here: [link]
+> Comment WAITLIST and we'll send you the link.
 
 **Product integration:** the waitlist slide only (D-2026-10-15-1). No feature talk. The one line about Bonded is the positioning in plain words, which matches the build's shared, dated responsibilities with an owner each.
 
 **Visual direction:** messaging v2 (D-2026-10-15-4): full photo backgrounds with an Ink gradient behind Paper type, no Hearth on photos, every line of text at least 4.5:1 against the pixels behind it. The waitlist slide is plain Paper.
 
-**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1 and 3 are AI images and need the platform's AI label.
+**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1 and 3 are AI images. The owner chose to post them without the platform's AI label (D-2026-10-17-3).
 
 **CTA:** waitlist, on slide 6 and in the caption.
 
@@ -634,7 +634,7 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 
 ## Week 2: Fair, calm and together
 
-### Day 8, Monday. Splitting jobs between siblings
+### Day 8, Saturday 24 October. Splitting jobs between siblings
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 7 slides: 6 photo, 0 video, 1 plain.
 
@@ -680,19 +680,19 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 >
 > We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
 >
-> The waitlist is here: [link]
+> Comment WAITLIST and we'll send you the link.
 
 **Product integration:** the waitlist slide only (D-2026-10-15-1). No feature talk. The one line about Bonded is the positioning in plain words, which matches the build's shared, dated responsibilities with an owner each.
 
 **Visual direction:** messaging v2 (D-2026-10-15-4): full photo backgrounds with an Ink gradient behind Paper type, no Hearth on photos, every line of text at least 4.5:1 against the pixels behind it. The waitlist slide is plain Paper.
 
-**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1, 2, 3, 5 and 6 are AI images and need the platform's AI label.
+**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1, 2, 3, 5 and 6 are AI images. The owner chose to post them without the platform's AI label (D-2026-10-17-3).
 
 **CTA:** waitlist, on slide 7 and in the caption.
 
 **Stories:** Question. "Same jobs for everyone, or jobs by age?" with "Reply and tell us" underneath.
 
-### Day 9, Tuesday. Have a real job ready
+### Day 9, Sunday 25 October. Have a real job ready
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 6 slides: 5 photo, 0 video, 1 plain.
 
@@ -739,19 +739,19 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 >
 > We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
 >
-> The waitlist is here: [link]
+> Comment WAITLIST and we'll send you the link.
 
 **Product integration:** the waitlist slide only (D-2026-10-15-1). No feature talk. The one line about Bonded is the positioning in plain words, which matches the build's shared, dated responsibilities with an owner each.
 
 **Visual direction:** messaging v2 (D-2026-10-15-4): full photo backgrounds with an Ink gradient behind Paper type, no Hearth on photos, every line of text at least 4.5:1 against the pixels behind it. The waitlist slide is plain Paper.
 
-**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1, 2 and 5 are AI images and need the platform's AI label.
+**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1, 2 and 5 are AI images. The owner chose to post them without the platform's AI label (D-2026-10-17-3).
 
 **CTA:** waitlist, on slide 6 and in the caption.
 
 **Stories:** Idea. "Real jobs for under-6s." with "Washing vegetables, matching socks, watering plants, carrying silverware to the table." underneath.
 
-### Day 10, Wednesday. Should allowance be linked to chores?
+### Day 10, Monday 26 October. Should allowance be linked to chores?
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 7 slides: 6 photo, 0 video, 1 plain.
 
@@ -795,19 +795,19 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 >
 > We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
 >
-> The waitlist is here: [link]
+> Comment WAITLIST and we'll send you the link.
 
 **Product integration:** the waitlist slide only (D-2026-10-15-1). No feature talk. The one line about Bonded is the positioning in plain words, which matches the build's shared, dated responsibilities with an owner each.
 
 **Visual direction:** messaging v2 (D-2026-10-15-4): full photo backgrounds with an Ink gradient behind Paper type, no Hearth on photos, every line of text at least 4.5:1 against the pixels behind it. The waitlist slide is plain Paper.
 
-**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1, 3, 4 and 6 are AI images and need the platform's AI label.
+**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1, 3, 4 and 6 are AI images. The owner chose to post them without the platform's AI label (D-2026-10-17-3).
 
 **CTA:** waitlist, on slide 7 and in the caption.
 
 **Stories:** Question. "Allowance: linked to jobs, separate, or a mix?" with "Reply and tell us" underneath. The results come back on Friday.
 
-### Day 11, Thursday. Before anyone asked
+### Day 11, Tuesday 27 October. Before anyone asked
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 6 slides: 4 photo, 1 video, 1 plain.
 
@@ -853,19 +853,19 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 >
 > We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
 >
-> The waitlist is here: [link]
+> Comment WAITLIST and we'll send you the link.
 
 **Product integration:** the waitlist slide only (D-2026-10-15-1). No feature talk. The one line about Bonded is the positioning in plain words, which matches the build's shared, dated responsibilities with an owner each.
 
 **Visual direction:** messaging v2 (D-2026-10-15-4): full photo backgrounds with an Ink gradient behind Paper type, no Hearth on photos, every line of text at least 4.5:1 against the pixels behind it. The waitlist slide is plain Paper.
 
-**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 2, 3 and 4 are AI images and need the platform's AI label.
+**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 2, 3 and 4 are AI images. The owner chose to post them without the platform's AI label (D-2026-10-17-3).
 
 **CTA:** waitlist, on slide 6 and in the caption.
 
 **Stories:** Behind the scenes. The approval screen with a note (demo family), and "Why approvals have room for a note: kids should hear when they got it right, too." underneath, with the waitlist link sticker.
 
-### Day 12, Friday. Plan the week, and one fun thing
+### Day 12, Wednesday 28 October. Plan the week, and one fun thing
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 7 slides: 4 photo, 2 video, 1 plain. Pin it on Instagram and TikTok, next to the introduction post. Facebook keeps the introduction as its pinned post.
 
@@ -913,19 +913,19 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 >
 > We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
 >
-> The waitlist is here: [link]
+> Comment WAITLIST and we'll send you the link.
 
 **Product integration:** the waitlist slide only (D-2026-10-15-1). No feature talk. The one line about Bonded is the positioning in plain words, which matches the build's shared, dated responsibilities with an owner each.
 
 **Visual direction:** messaging v2 (D-2026-10-15-4): full photo backgrounds with an Ink gradient behind Paper type, no Hearth on photos, every line of text at least 4.5:1 against the pixels behind it. The waitlist slide is plain Paper.
 
-**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1, 2 and 4 are AI images and need the platform's AI label.
+**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1, 2 and 4 are AI images. The owner chose to post them without the platform's AI label (D-2026-10-17-3).
 
 **CTA:** waitlist, on slide 7 and in the caption.
 
 **Stories:** Share-back. The results of Wednesday's allowance question, with two or three of the best replies shared anonymously.
 
-### Day 13, Saturday. Plan the weekend on Wednesday
+### Day 13, Thursday 29 October. Plan the weekend on Wednesday
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 6 slides: 4 photo, 1 video, 1 plain.
 
@@ -968,19 +968,19 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 >
 > We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
 >
-> The waitlist is here: [link]
+> Comment WAITLIST and we'll send you the link.
 
 **Product integration:** the waitlist slide only (D-2026-10-15-1). No feature talk. The one line about Bonded is the positioning in plain words, which matches the build's shared, dated responsibilities with an owner each.
 
 **Visual direction:** messaging v2 (D-2026-10-15-4): full photo backgrounds with an Ink gradient behind Paper type, no Hearth on photos, every line of text at least 4.5:1 against the pixels behind it. The waitlist slide is plain Paper.
 
-**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1, 2 and 5 are AI images and need the platform's AI label.
+**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1, 2 and 5 are AI images. The owner chose to post them without the platform's AI label (D-2026-10-17-3).
 
 **CTA:** waitlist, on slide 6 and in the caption.
 
 **Stories:** Question. "What's the plan for Saturday?" with "Reply and tell us" underneath.
 
-### Day 14, Sunday. What has your family been meaning to do for ages?
+### Day 14, Friday 30 October. What has your family been meaning to do for ages?
 
 **Placement:** Instagram carousel, Facebook multi-photo post, TikTok photo mode. 6 slides: 5 photo, 0 video, 1 plain.
 
@@ -1023,13 +1023,13 @@ Outside the 14-day schedule. Publish it the day before Day 1 and pin it on all t
 >
 > We're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.
 >
-> The waitlist is here: [link]
+> Comment WAITLIST and we'll send you the link.
 
 **Product integration:** the waitlist slide only (D-2026-10-15-1). No feature talk. The one line about Bonded is the positioning in plain words, which matches the build's shared, dated responsibilities with an owner each.
 
 **Visual direction:** messaging v2 (D-2026-10-15-4): full photo backgrounds with an Ink gradient behind Paper type, no Hearth on photos, every line of text at least 4.5:1 against the pixels behind it. The waitlist slide is plain Paper.
 
-**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1, 2, 3 and 5 are AI images and need the platform's AI label.
+**Before posting:** the owner confirmed the rights to every photo and clip on 15 Oct 2026 (D-2026-10-15-10). Slides 1, 2, 3 and 5 are AI images. The owner chose to post them without the platform's AI label (D-2026-10-17-3).
 
 **CTA:** waitlist, on slide 6 and in the caption.
 

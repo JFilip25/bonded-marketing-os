@@ -51,7 +51,7 @@ People often DM the word instead of commenting it.
 
 ## Optional
 
-- **Automation 3, Facebook comments.** The same comment trigger on the Get Bonded Page, with `utm_source=facebook`. The Facebook captions already link straight to the waitlist ("The waitlist is here: [link]"), so it's only a backup for people who comment anyway.
+- **Automation 3, Facebook comments.** The same comment trigger on the Get Bonded Page, with `utm_source=facebook`. Since Amendment 4 (D-2026-10-17-2) the Facebook captions of Days 1 to 14 also end "Comment WAITLIST and we'll send you the link.", so this is no longer only a backup: without it, the owner answers every Facebook comment by hand.
 - **TikTok:** nothing. Its captions say "Waitlist link in bio", so the bio link does the job.
 
 ## What ManyChat must not do

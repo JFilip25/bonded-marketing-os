@@ -2,6 +2,36 @@
 
 The campaign file stays locked. It changes only through owner-approved amendments, each listed here line by line.
 
+## Amendment 4 (17 Oct 2026): new dates, the Facebook WAITLIST ending, no AI label
+
+| | |
+|---|---|
+| Approved by | The owner, in an interactive session on 17 Oct 2026. They asked to catch up ("we are one day behind") and post the carousels on Instagram and Facebook through Meta Business Suite. They then chose "One a day, Day 1 today", "18:00 Montenegro", "Comment WAITLIST, like Instagram" for Facebook, and "Skip the label". |
+| Decisions | D-2026-10-17-1 (dates, time, Business Suite), D-2026-10-17-2 (Facebook ending), D-2026-10-17-3 (no AI label). |
+| SHA-256 before | `29bb75084bc272e79dc238860e0efe0e1aa0d066167f9f34b2c1e195abebf560` |
+| SHA-256 after | `5cbdb2cf46d2fa62c9017adf8eb178c72dabd7c1b75a9108c3741da93decc875` |
+| Lines changed | 58 lines changed in place. The file stays at 1,074 lines. Everything else is byte-identical. |
+
+**What changed:**
+
+| Line(s) | Place | Now | Decision |
+|---|---|---|---|
+| 21 | Campaign overview, start date | Day 1 is Saturday 17 October and Day 14 is Friday 30 October, one a day at 18:00 Montenegro time, on Instagram and Facebook through Meta Business Suite. Week 12 moves to 2 to 8 January. | D-2026-10-17-1 |
+| 122 | CTA, waitlist | Facebook: "Comment WAITLIST and we'll send you the link." as on Instagram, answered by hand. | D-2026-10-17-2 |
+| 141–154 | Two-week calendar | The day column gives the new weekday and date (1 Sat 17 Oct to 14 Fri 30 Oct). Format, titles and order unchanged. | D-2026-10-17-1 |
+| 14 headings (228 to 983) | Day 1 to Day 14 | "Day 1, Monday." becomes "Day 1, Saturday 17 October.", and so on. The titles are unchanged. | D-2026-10-17-1 |
+| 14 lines (274 to 1026) | Each Facebook caption, last line | "The waitlist is here: [link]" becomes "Comment WAITLIST and we'll send you the link." The rest of each caption is unchanged. | D-2026-10-17-2 |
+| 14 lines (280 to 1032) | Before posting | "Slides ... are AI images and need the platform's AI label." becomes "Slides ... are AI images. The owner chose to post them without the platform's AI label (D-2026-10-17-3)." | D-2026-10-17-3 |
+
+**Unchanged:**
+- Day 0, including its Facebook caption and its Before posting line. The owner reported Day 0 as already out when this was decided.
+- Every slide, every Instagram and TikTok caption, the Stories lines, the order of the posts, the pinned introduction and the rules.
+- The post text still names its days where the advice needs one ("Check in on Sunday", "Try it tonight"). Day 7's "Try it tonight" was written for a Sunday and now posts on a Friday.
+
+**Verified:** each Instagram and Facebook caption in the scheduling manifest (`full/manifest.json` on the review artifact, outside the repository) appears in the amended campaign word for word, for all 28 captions. The renderer's copy guard reads slide words only, so the renders are unchanged and still valid.
+
+**Production impact:** none on the creative. The scheduling sheet for Meta Business Suite is that manifest. The posts stay at 18:00 Montenegro time when the clocks change on 25 October: 16:00 UTC up to Day 8, 17:00 UTC from Day 9.
+
 ## Amendment 3 (15 Oct 2026): Days 1 to 14 on the arc, rights confirmed, Day 0 slide 2 photo
 
 | | |

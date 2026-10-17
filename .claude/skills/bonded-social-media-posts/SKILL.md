@@ -64,5 +64,5 @@ If you are working without the `bonded-marketing-os` repository (for example in 
 - [ ] Every photo or clip is new, matches its words, and has no face under the text.
 - [ ] Contrast 4.5:1 or better on every line; QA shows 0 issues.
 - [ ] Each file has a rights answer: cleared, needs an AI label, or blocked until the owner confirms.
-- [ ] Captions follow the three templates, with WAITLIST on Instagram and the real link (or `[link]`) on Facebook.
+- [ ] Captions follow the three templates, with the WAITLIST line on Instagram and Facebook.
 - [ ] Nothing has been scheduled or published.

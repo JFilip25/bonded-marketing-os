@@ -2,6 +2,14 @@
 
 Owner decisions taken in interactive, human-reviewed sessions. Newest first. Each entry records its scope and what it changes. A decision never silently rewrites the locked campaign copy.
 
+## 17 Oct 2026 (catching up on Meta Business Suite)
+
+| ID | Decision | Scope | Where applied |
+|---|---|---|---|
+| D-2026-10-17-1 | **Post Days 1–14 one a day, from Day 1 on Sat 17 Oct to Day 14 on Fri 30 Oct, at 18:00 Montenegro time.** They go on Instagram `@bondedspace` and the Facebook page Get Bonded, as carousels, through Meta Business Suite. Each platform gets its own caption. The scheduling is done by another Claude session that has the Business Suite open, and the owner confirms in that session's window. TikTok and Stories are not part of it. Overrides D-2026-10-10-6 (the old dates) and D-2026-10-15-12 (Buffer waits for D6 and D7). | Days 1–14 on Instagram and Facebook | Amendment 4 (calendar, day headings, start date). `CLAUDE.md`. `ops/production-status.csv`. |
+| D-2026-10-17-2 | **Facebook asks for a WAITLIST comment, like Instagram.** Every Facebook caption of Days 1–14 ends "Comment WAITLIST and we'll send you the link." instead of "The waitlist is here: [link]". The owner answers the comments by hand until an automation is live (D7). | Days 1–14, Facebook | Amendment 4. The skill's caption template (`.claude/skills/bonded-social-media-posts/references/messaging.md`). |
+| D-2026-10-17-3 | **No platform AI label.** The owner chose to post the AI images in Days 1–14 without the AI label. This replaces the label part of D-2026-10-15-10; the rights confirmation stands. | Days 1–14 | Amendment 4 ("Before posting" lines). `ops/production-status.csv`. |
+
 ## 15 Oct 2026 (Days 1–14 approval)
 
 | ID | Decision | Scope | Where applied |
