@@ -48,7 +48,7 @@
 
 ## 5. How we use your email (privacy notice)
 
-**For the owner to check, ideally with the lawyer named in the app's legal runbook.** This isn't legal advice. The app's privacy link (`ciccho.app/privacy`) is still a placeholder, so this short notice sits on the waitlist page itself. Fill in the two bracketed items before it goes live.
+**For the owner to check, ideally with the lawyer named in the app's legal runbook.** This isn't legal advice. The app's privacy link (`ciccho.app/privacy`) is still a placeholder, so this short notice sits on the waitlist page itself. The contact address is go@bondedin.com, and the last line is the owner's own (17 Oct, D-2026-10-17-8).
 
 > **How we use your email**
 >
@@ -56,9 +56,9 @@
 >
 > We use your email to tell you about Bonded, and to send family tips if you asked for them. Our email service, MailerLite, keeps your email for us. We never sell it or give it to anyone else.
 >
-> Every email has a link to leave. To have your email deleted, write to us at [contact email on the new domain]. We keep your email until you leave or ask us to delete it.
+> Every email has a link to leave. To have your email deleted, write to us at go@bondedin.com. We keep your email until you leave or ask us to delete it.
 >
-> Bonded is run by [business or owner name, and country].
+> © 2026 Bonded. All rights reserved. go@bondedin.com
 
 ## 6. Welcome email (optional, later)
 
