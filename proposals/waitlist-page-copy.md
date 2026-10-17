@@ -15,7 +15,9 @@
 
 **Headline:** Join the Bonded waitlist.
 
-**Sub:** Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Leave your email, and we'll tell you when it's ready.
+**Sub:** Bonded is a family organizer that helps you plan the chores and work toward the experiences your whole family picks together. It's coming to iPhone and Android. Leave your email, and we'll tell you when it's ready.
+
+(The owner's wording, 17 Oct, D-2026-10-17-9. The posts keep the campaign line, "an app that helps your whole family plan the week and share the jobs".)
 
 **Form:**
 - Email field, required. Label: "Your email"
