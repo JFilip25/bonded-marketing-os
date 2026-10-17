@@ -11,7 +11,7 @@
 | Social publishing | **Buffer** | Drafts and ideas per channel, later the queue | Queue, schedule, publish, pin |
 | Comment to DM | **ManyChat** (or a verified equivalent) | The "Comment WAITLIST" keyword DM with the waitlist link | Go live before an end-to-end test |
 | Email | **MailerLite** | List, groups, fields, forms, double opt-in, subscriber-triggered automations (native), newsletters | Activate automations, send or schedule campaigns, import or delete subscribers |
-| Acquisition | **MailerLite landing page** for now (D-2026-10-17-5); an own BONDED website later (D6) | Waitlist page, consent capture (double opt-in), UTM capture in hidden fields if MailerLite fills them from the link | Publishing the page (owner) |
+| Acquisition | **https://bondedin.com** on Vercel (project `bondedin-waitlist`, source `site/bondedin/`, D-2026-10-17-6), with the MailerLite embedded form | Waitlist page, consent capture (double opt-in), UTM capture into hidden fields from the link | Going live and DNS changes (owner) |
 | Source of truth | **This repo** | Locked campaign, brand, claims register, decisions, status and IDs | n/a |
 | Product facts | `JFilip25/ciccho-Claude`, **read-only** | Feature evidence, brand files, screenshots (via local capture) | Any commit, merge or deploy (D-2026-10-09-5) |
 
