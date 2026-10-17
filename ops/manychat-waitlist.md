@@ -1,11 +1,11 @@
 # ManyChat: the WAITLIST automation
 
-**Status, 17 Oct 2026:** the owner reports ManyChat set up. ManyChat has no connector in this workspace, so Claude can't check it. The button's link is https://bondedin.com with UTM tags (D-2026-10-17-6, `ops/waitlist-mailerlite-setup.md`, step 5). The page isn't live yet. The words it sends are PROPOSED in `proposals/manychat-waitlist-copy.md` and need approval first.
+**Status, 17 Oct 2026:** the owner reports ManyChat set up. ManyChat has no connector in this workspace, so Claude can't check it. The owner points every button at https://go.bondedin.com (D-2026-10-17-8), which is live. The UTM links are in `ops/waitlist-mailerlite-setup.md`, step 5. The words it sends are PROPOSED in `proposals/manychat-waitlist-copy.md` and need approval first.
 
 **Why it's needed.** Every Instagram caption in weeks 1 and 2 ends "Comment WAITLIST and we'll send you the link." (Amendments 2 and 3). Without this automation, that promise is broken on every post. Buffer and MailerLite can't send Instagram DMs (`CLAUDE.md`).
 
 **Blocked by:**
-- **The waitlist page:** https://bondedin.com (`ops/waitlist-mailerlite-setup.md`). The DM has nothing to link to until it's live.
+- **The waitlist page:** https://go.bondedin.com, live since 17 Oct (`ops/waitlist-mailerlite-setup.md`).
 - **Approval of the proposed words.**
 
 ## Before you start

@@ -1,18 +1,18 @@
 # Waitlist sign-up: bondedin.com and MailerLite
 
 **Status, 17 Oct 2026:**
-- **Done:** the domain, the sender, the MailerLite groups, fields and form, and the page (built, in Vercel, locked behind the Vercel login).
+- **Done:** the domain, the sender, the MailerLite groups, fields and form, and the page, **live at https://go.bondedin.com** since 17 Oct (D-2026-10-17-8). The owner's ManyChat buttons point there.
 - **Waiting on the owner:** the form's design and settings in MailerLite, then approval of the page.
-- **Not done yet:** the DNS for bondedin.com, and the test.
+- **Not done yet:** a real test sign-up. The form's submit address answers and allows the page to send (checked 17 Oct with an invalid email, which creates no subscriber).
 
 The words are PROPOSED in `proposals/waitlist-page-copy.md`.
 
 **How sign-up works (D-2026-10-17-5, -6):**
 1. Someone comments or DMs WAITLIST.
 2. ManyChat sends one DM with a "Join the waitlist" button (`ops/manychat-waitlist.md`).
-3. The button opens **https://bondedin.com**, our own page with the MailerLite form inside it. They type their email, and can tick "family tips". The page puts the link's `utm_*` values into hidden fields.
+3. The button opens **https://go.bondedin.com** (D-2026-10-17-8), our own page with the MailerLite form inside it. They type their email, and can tick "family tips". The page puts the link's `utm_*` values into hidden fields.
 4. MailerLite sends a "confirm your email" message from `go@bondedin.com` (double opt-in).
-5. They tap it and land on `https://bondedin.com/confirmed`. They're now **active** in `BONDED_EARLY_ACCESS`, which is a real sign-up.
+5. They tap it and land on `https://go.bondedin.com/confirmed`. They're now **active** in `BONDED_EARLY_ACCESS`, which is a real sign-up.
 
 The bio links and the Facebook replies open the same page.
 
@@ -28,9 +28,9 @@ The bio links and the Facebook replies open the same page.
 | Sender | `go@bondedin.com` (registered by the owner) | |
 | Page source | `site/bondedin/` in this repository | |
 | Vercel project | `bondedin-waitlist`, linked to this repository, root `site/bondedin`, only rebuilds when that folder changes | `prj_KpKkIXc9Q7FSonZPKkViGzJM0Tio` |
-| Vercel address | https://bondedin-waitlist.vercel.app, **behind the Vercel login** until go-live | |
+| Live address | **https://go.bondedin.com** (custom domain public; other Vercel addresses behind the login) | production `dpl_EyyHfaueAw6CqviByNJJkUcbDPmi` |
 
-Nothing has been sent or turned on, and bondedin.com doesn't point at the page yet.
+Nothing has been sent from MailerLite or turned on there.
 
 **Note on Vercel:**
 - The project's first build became a production deployment. `bondedin-waitlist.vercel.app` was public for about 6 minutes (about 16:10 to 16:16 UTC, 17 Oct) before Vercel Authentication was set to cover every deployment.
@@ -47,7 +47,7 @@ Forms → Embedded forms → **BONDED waitlist (bondedin.com)**. MailerLite rena
   - Four **hidden** fields: `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`.
 - [ ] **Double opt-in: on.**
   - The confirmation email is from `go@bondedin.com`, with section 3 of `proposals/waitlist-page-copy.md`.
-  - The page after confirming (redirect URL) is `https://bondedin.com/confirmed`.
+  - The page after confirming (redirect URL) is `https://go.bondedin.com/confirmed`.
 - [ ] **Save**, then open the form's embed screen, copy the **"HTML code"**, and paste it to Claude. It's public page code, not a secret. Claude matches the page to its submit address and field names.
 
 ### 2. Review the page
@@ -61,20 +61,19 @@ With an owner-approved test address, sign up through the Vercel address with `?u
 - [ ] Ticking the tips box also adds `BONDED_FAMILY_TIPS`, and not ticking it doesn't.
 - [ ] The test address is never written into this repository.
 
-### 4. Go live (your OK, then the DNS)
-- [ ] Claude turns the Vercel login off for the custom domain, adds `bondedin.com` and `www.bondedin.com` to the project, and reads the DNS records Vercel asks for.
-- [ ] You add those records in **Namecheap → Domain List → bondedin.com → Advanced DNS**, usually one A record for `@` and one CNAME for `www`. **Leave the MX, TXT (SPF and MailerLite) and DKIM records alone**, or email stops.
-- [ ] Claude checks that https://bondedin.com loads over HTTPS.
+### 4. Go live (done 17 Oct)
+- [x] The owner pointed `go.bondedin.com` at Vercel (CNAME at Namecheap) and attached it to the project. The MX, TXT and DKIM records are untouched.
+- [x] Claude deployed the page to production and made the custom domain public. https://go.bondedin.com and `/confirmed` answer 200 over HTTPS (D-2026-10-17-8).
 
 ### 5. Point everything at it
 
 | Where | Link |
 |---|---|
-| ManyChat, comment WAITLIST (Automation 1) | `https://bondedin.com/?utm_source=instagram&utm_medium=dm&utm_campaign=bonded_prelaunch_2026&utm_content=dm_comment` |
-| ManyChat, DM WAITLIST (Automation 2) | `https://bondedin.com/?utm_source=instagram&utm_medium=dm&utm_campaign=bonded_prelaunch_2026&utm_content=dm_keyword` |
-| Facebook replies by hand (or Automation 3) | `https://bondedin.com/?utm_source=facebook&utm_medium=dm&utm_campaign=bonded_prelaunch_2026&utm_content=dm_comment` |
-| Instagram bio | `https://bondedin.com/?utm_source=instagram&utm_medium=bio&utm_campaign=bonded_prelaunch_2026&utm_content=bio` |
-| TikTok bio | `https://bondedin.com/?utm_source=tiktok&utm_medium=bio&utm_campaign=bonded_prelaunch_2026&utm_content=bio` |
+| ManyChat, comment WAITLIST (Automation 1) | `https://go.bondedin.com/?utm_source=instagram&utm_medium=dm&utm_campaign=bonded_prelaunch_2026&utm_content=dm_comment` |
+| ManyChat, DM WAITLIST (Automation 2) | `https://go.bondedin.com/?utm_source=instagram&utm_medium=dm&utm_campaign=bonded_prelaunch_2026&utm_content=dm_keyword` |
+| Facebook replies by hand (or Automation 3) | `https://go.bondedin.com/?utm_source=facebook&utm_medium=dm&utm_campaign=bonded_prelaunch_2026&utm_content=dm_comment` |
+| Instagram bio | `https://go.bondedin.com/?utm_source=instagram&utm_medium=bio&utm_campaign=bonded_prelaunch_2026&utm_content=bio` |
+| TikTok bio | `https://go.bondedin.com/?utm_source=tiktok&utm_medium=bio&utm_campaign=bonded_prelaunch_2026&utm_content=bio` |
 
 These links only work once step 4 is done. Changing the bios is a public profile change, so it's your step. Then run the ManyChat test in `ops/manychat-waitlist.md` from a second Instagram account, and tick "Comment WAITLIST really sends the link" in `ops/qa-checklist.md` with the date and result.
 

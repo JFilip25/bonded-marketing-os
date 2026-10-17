@@ -1,6 +1,6 @@
 # BONDED Marketing OS | Standing instructions
 
-Read `campaign/weeks-01-02.md` before any production work. It is the LOCKED, approved Day 0 and Days 1–14 campaign. Days 1–14 run from 17 to 30 October 2026, one a day at 18:00 Montenegro time, on Instagram and Facebook through Meta Business Suite (D-2026-10-17-1, Amendment 4). It is the single US-English master. Every approved amendment is listed in `campaign/CHANGELOG.md`.
+Read `campaign/weeks-01-02.md` before any production work. It is the LOCKED, approved Day 0 and Days 1–14 campaign. Days 1–14 run from 17 to 30 October 2026, one a day at 18:00 Montenegro time (Day 1 at 20:00), on Instagram, Facebook and TikTok through Buffer (D-2026-10-17-1, -7, Amendment 4). It is the single US-English master. Every approved amendment is listed in `campaign/CHANGELOG.md`.
 
 Before any Canva work, read:
 - `design/designer-production-brief.md`, which governs staged creative approval
@@ -28,7 +28,7 @@ Audience: parents of children aged about 4–18. Do not market directly to child
 
 **Demo family:** the Millers. Mom, Dad, Mia (5), Emma (8), Noah (11), Leo (13), Sofia (17).
 - Screens must be real app screenshots from `design/screenshots-manifest.md`, visibly labelled "Demo family".
-  - **Exception (D-2026-10-15-3):** the phone on a post's waitlist slide shows the in-app family name without the caption.
+  - **Exception (D-2026-10-15-3, D-2026-10-17-8):** the phone on a post's waitlist slide and on the waitlist page (go.bondedin.com) shows the in-app family name without the caption.
   - No copy may present the Millers as real users.
 - Never fabricate UI, customers, reviews or outcomes.
 
@@ -72,6 +72,7 @@ Only real, supplied BONDED screens may be used. Clearly labelled placeholders ar
 ## External actions
 - Always identify the live MCP tools, accounts, permissions and supported operations first (see `ops/mcp-audit.md`). Never pretend a connected tool worked.
 - **Claude Routines are DRAFT ONLY.** No live sends, post scheduling, publishing, subscriber changes, workflow activation, production deployment, destructive actions or changes to product databases without explicit approval in an interactive, human-reviewed session.
+  - **Exception (D-2026-10-17-8):** the owner approved the daily Buffer routine (`trig_0128EkggR2h4HXRnyViFhkkb`). It may schedule the approved Days 4–14 posts exactly as written in `ops/buffer-queue.json`, and after Day 14 delete the temporary `buffer-media` branch and the `bonded-buffer-media` Vercel project. Nothing else.
 - **MailerLite** owns the email list, permissions, transactional resource delivery and subscriber-triggered workflows. Keep early-access and family-tips opt-ins separate. Resource fulfilment is not marketing consent.
 - **ManyChat**, or a verified equivalent, must fulfil the Instagram/Facebook "Comment WAITLIST" promise. Buffer and MailerLite alone do not.
 - **Never use the Supabase MCP** (it points at the production app database) **or production app accounts** for marketing.
