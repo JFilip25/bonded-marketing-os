@@ -27,6 +27,9 @@
 
 > **Almost done.** Check your email and tap the button to confirm. If you can't find it, look in your spam or promotions folder.
 
+**If sending fails** (shown under the button):
+> That didn't work. Please check your email address and try again.
+
 ## 3. The confirmation email (double opt-in)
 
 **Subject:** Please confirm your email
@@ -75,6 +78,7 @@ Scored with `.claude/skills/bonded-social-media-posts/scripts/reading_grade.py` 
 | Page headline and sub | 2.7 |
 | Form, checkbox, button, small print | 1.9 |
 | Thank-you message | 2.8 |
+| Error message | 1.6 |
 | Confirmation email | 0.9 |
 | Confirmed page | 3.7 |
 | Privacy notice | 3.8 |
