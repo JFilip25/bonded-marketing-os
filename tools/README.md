@@ -65,6 +65,37 @@ PHOTOS=<prepped stills> MEDIA=<original videos> OUT_DIR=<dir outside the repo> [
 
 For new posts, start from the skill `.claude/skills/bonded-social-media-posts/`: `templates/posts-entry.mjs` is a posts file for `POSTS=`, `scripts/reading_grade.py` checks the plain-word rule, and `scripts/media_check.py` screens new photos and clips for rights markers.
 
+## `proofs/render-reel.mjs`: standalone Reels (D-2026-10-21-1)
+
+Renders vertical 1080×1920 Reels from cleared clips:
+- The clips are cropped to fill the frame and played back to back.
+- Each beat's words appear in Paper on an Ink band for their part of the reel.
+- A 3-second plain waitlist end card follows, with the official lockup.
+- The video is H.264 at 30 fps with a silent AAC track, because some platforms expect audio.
+
+**The checks:**
+- the copy guard, as in `render-v2.mjs`
+- the Reel safe zones (250 px top, 350 px bottom, 150 px right, 60 px left)
+- the line limits
+- a total length of 15 to 25 s with the end card
+- contrast on the real pixels behind each beat: worst of 3 frames, at least 4.5:1
+
+**Usage:**
+```
+MEDIA=<cleared clips> OUT_DIR=<dir outside the repo> REELS=<reels file> [ONLY=r01,r02] node tools/proofs/render-reel.mjs
+```
+The reels file follows `.claude/skills/bonded-social-media-posts/templates/reels-entry.mjs`. Output goes to `<OUT_DIR>/reels/rNN.mp4`, a cover frame `rNN_cover.png`, and `<OUT_DIR>/reels-qa.json`.
+
+## `schedule/reel-slots.mjs`: Reel posting times (D-2026-10-21-2)
+
+```
+node tools/schedule/reel-slots.mjs --start YYYY-MM-DD [--count 20] [--seed bonded_prelaunch_2026]
+```
+- The first six Reels go out on day offsets round(k × 1.34), which is days 0, 1, 3, 4, 5 and 7. After that, one a day.
+- Times are seeded and look random. They fall between 15:00 and 21:00 Europe/Podgorica, never on :00 or :30, and never within an hour of the 18:00 carousel.
+- The same seed and start date always give the same times.
+- The slots go into `ops/schedule.json`, the one calendar that Buffer (carousels) and Publer (Reels) are both checked against.
+
 ## `canva/`: Canva masters from the proofs
 `build-ops.py` turns `spec.json` into operations for the Canva connector's `edit-design` tool. It doesn't call Canva itself; the operations are applied in an interactive session.
 - `designs` lists the masters and their pages.

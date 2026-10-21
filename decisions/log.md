@@ -2,6 +2,16 @@
 
 Owner decisions taken in interactive, human-reviewed sessions. Newest first. Each entry records its scope and what it changes. A decision never silently rewrites the locked campaign copy.
 
+## 21 Oct 2026 (more posts: Reels, Publer, weeks 3 and 4)
+
+| ID | Decision | Scope | Where applied |
+|---|---|---|---|
+| D-2026-10-21-1 | **Standalone Reels come back, next to the daily carousels.** The owner asked to "up the tempo" with Reels on Instagram, Facebook and TikTok. They follow the Reel format kept in `campaign/weeks-01-02.md` ("Raw video style", 1080×1920, words burned in, safe zones), muted, with a waitlist end card. Every Reel is a proposal until the owner approves it. The two weeks after Day 14 (Days 15–28, 31 Oct to 13 Nov) are drafted as well. | Reels, Days 15–28 | `proposals/weeks-03-04.md` (drafted, PROPOSED). `tools/proofs/render-reel.mjs` (planned). |
+| D-2026-10-21-2 | **Reel times look random but follow a fixed pattern.** The first six Reels go out about every 1.34 days (day offsets 0, 1, 3, 4, 5, 7), then one a day. Each time falls between 15:00 and 21:00 Montenegro time, never on :00 or :30, and never within an hour of the 18:00 carousel. It comes from a seeded generator, so the same start date always gives the same times. | Reel schedule | `tools/schedule/reel-slots.mjs` (seed `bonded_prelaunch_2026`). `ops/schedule.json`. |
+| D-2026-10-21-3 | **Publer schedules the Reels and Buffer keeps the carousels.** The owner chose Publer (through the Claude session `session_014eTskZbfVT8HfgyMHLsSU5`, which has Publer open) over upgrading Buffer's free plan, which holds 10 scheduled posts. One calendar keeps both in step: every slot, tool and post ID is in `ops/schedule.json`, and both tools are checked against it before anything is created, so nothing is posted twice. | Scheduling | `ops/schedule.json`. The daily routine `trig_0128EkggR2h4HXRnyViFhkkb` reads it (prompt updated 21 Oct). `ops/mcp-audit.md`. |
+| D-2026-10-21-4 | **Burned-in text comes off our own or licensed footage with Replicate.** The owner says the reels Cowork downloaded are **our own or licensed**. The text is removed with Replicate's `hjunior29/video-text-remover` (MIT licence, about $0.0075 per clip, paid per run). The owner's key stays on the owner's PC. Each file still needs its source in the rights sheet and must pass `media_check.py`. Another creator's post or reel is never cleaned or reposted (skill `references/media-rules.md`). | Reel footage | `ops/handover/windows-reels-cleaning.md`. |
+| D-2026-10-21-5 | **The temporary media host stays up past Day 14.** The `buffer-media` branch and the `bonded-buffer-media` Vercel project now also serve the Reels and Days 15–28, under the same private path. They're removed only after the last scheduled post has gone out, with the owner's go-ahead. This replaces the "after Day 14, delete" step of D-2026-10-17-8. | Media host | `CLAUDE.md`. The routine prompt (21 Oct). |
+
 ## 17 Oct 2026 (catching up on Meta Business Suite)
 
 | ID | Decision | Scope | Where applied |

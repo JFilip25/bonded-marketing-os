@@ -72,7 +72,13 @@ Only real, supplied BONDED screens may be used. Clearly labelled placeholders ar
 ## External actions
 - Always identify the live MCP tools, accounts, permissions and supported operations first (see `ops/mcp-audit.md`). Never pretend a connected tool worked.
 - **Claude Routines are DRAFT ONLY.** No live sends, post scheduling, publishing, subscriber changes, workflow activation, production deployment, destructive actions or changes to product databases without explicit approval in an interactive, human-reviewed session.
-  - **Exception (D-2026-10-17-8):** the owner approved the daily Buffer routine (`trig_0128EkggR2h4HXRnyViFhkkb`). It may schedule the approved Days 4–14 posts exactly as written in `ops/buffer-queue.json`, and after Day 14 delete the temporary `buffer-media` branch and the `bonded-buffer-media` Vercel project. Nothing else.
+  - **Exception (D-2026-10-17-8, D-2026-10-21-5):** the owner approved the daily Buffer routine (`trig_0128EkggR2h4HXRnyViFhkkb`). It may schedule approved posts exactly as written in `ops/buffer-queue.json`: Days 4–14, and later days only once the owner has approved them and they've been added there. It records each slot in `ops/schedule.json`. Nothing else.
+    - The temporary `buffer-media` branch and the `bonded-buffer-media` Vercel project stay up until the last scheduled post has gone out. They're deleted only with the owner's go-ahead.
+  - **Reels (D-2026-10-21-1 to -4):**
+    - Reels are scheduled in Publer, through the Claude session that has Publer open (`session_014eTskZbfVT8HfgyMHLsSU5`). Carousels stay in Buffer.
+    - Every slot is checked against `ops/schedule.json` first.
+    - Reel times come from `tools/schedule/reel-slots.mjs`.
+    - Burned-in text is removed only from footage the owner declares our own or licensed, with its source in the rights sheet (`ops/handover/windows-reels-cleaning.md`).
 - **MailerLite** owns the email list, permissions, transactional resource delivery and subscriber-triggered workflows. Keep early-access and family-tips opt-ins separate. Resource fulfilment is not marketing consent.
 - **ManyChat**, or a verified equivalent, must fulfil the Instagram/Facebook "Comment WAITLIST" promise. Buffer and MailerLite alone do not.
 - **Never use the Supabase MCP** (it points at the production app database) **or production app accounts** for marketing.
