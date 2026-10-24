@@ -1,3 +1,15 @@
 # 01 - Read-only connection audit
 
-Read `CLAUDE.md`, complete `campaign/weeks-01-02.md`, `design/designer-production-brief.md`, and `ops/missing-assets.md`. Confirm which GitHub, Canva, Buffer and MailerLite MCP actions are available in this Claude session and which are accessible in **Cloud Routines**. Check permissions, account IDs, branch capabilities, MailerLite form/automation/test support, Canva template/image/export operations, and Buffer channel/draft/reporting support. Identify the BONDED website repository and domain ONLY from verified sources, or list missing. Verify the intended October 18/19 campaign dates with the user before scheduling. Return a connection matrix and precise blockers. Read-only, no external mutations.
+**Last run:** 9 Oct 2026. The results are in `ops/mcp-audit.md`. Re-run whenever connectors, accounts or plans change, and before creating any Routine.
+
+Read `CLAUDE.md`, the complete `campaign/weeks-01-02.md`, `design/designer-production-brief.md`, `ops/missing-assets.md` and `ops/mcp-audit.md`. Then:
+
+1. Confirm which GitHub, Canva, Buffer and MailerLite MCP actions this session has. Confirm separately which ones a **Cloud Routine** would have; that depends on the connectors chosen when the Routine is created.
+2. Check permissions and account IDs for each.
+3. Check Canva support for custom page sizes, font family and letter spacing, uploads (`create-upload-url`) and transparent PNG export.
+4. Check MailerLite groups, fields, forms and automations, and the dry-run and test-send support.
+5. Check Buffer channels, plan limits, drafts, ideas and reporting.
+6. Identify the BONDED website repository and domain **only from verified sources**, otherwise mark them missing (D6).
+7. Verify the campaign dates with the owner before any scheduling (D5).
+
+Update `ops/mcp-audit.md` through a PR. This audit is read-only: no external changes.

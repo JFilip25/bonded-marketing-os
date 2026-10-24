@@ -1,3 +1,10 @@
-# Routine - Wednesday BONDED Newsletter Draft
-Schedule proposal: Wednesday 10:07 Europe/Podgorica. Connect GitHub + MailerLite.
-Read CLAUDE.md, approved source and verified MailerLite consent groups. Prepare one genuinely useful editorial email based on the current campaign topic, not a copied social caption. Appropriate segment `BONDED_FAMILY_TIPS` only. Verify unsubscribe/consent. Save a MailerLite campaign DRAFT if permitted and a Markdown file with real draft link. No send, schedule, live flow activation, newsletter addition for waitlist-only or resource-only requesters.
+# Routine - Wednesday BONDED newsletter draft
+Schedule proposal: Wednesday 10:07 Europe/Podgorica. Connectors: GitHub, MailerLite.
+
+[Safety header from routines/README.md]
+
+1. Read `CLAUDE.md`, the campaign theme for the week, `product/feature-claims.md` and the verified MailerLite groups.
+2. Write one genuinely useful editorial email on the week's topic. It must not be a copied social caption, and any product claim must be VERIFIED.
+3. Audience: segment or group `BONDED_FAMILY_TIPS` only. Never waitlist-only or resource-only subscribers.
+4. Run `validate_email_content` and `validate_subject_lines`. Save it as a MailerLite **draft** campaign if permitted, plus `newsletter/YYYY-MM-DD.md` with the real draft link. Open a PR.
+5. Never schedule or send. Never activate flows.

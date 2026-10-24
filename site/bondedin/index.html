@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join the Bonded waitlist</title>
+<meta name="description" content="Bonded is a family organizer that helps you plan the chores and work toward the experiences your whole family picks together. It's coming to iPhone and Android.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/jakarta-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="logo" src="img/bonded-lockup.svg" alt="Bonded" width="201" height="34">
+  </header>
+
+  <main class="hero">
+    <section>
+      <h1>Join the Bonded waitlist.</h1>
+      <p class="sub">Bonded is a family organizer that helps you plan the chores and work toward the experiences your whole family picks together. It’s coming to iPhone and Android. Leave your email, and we’ll tell you when it’s ready.</p>
+
+      <!-- MailerLite embedded form 201591973507761668 (account 2698911). Field names match the form's HTML embed code. -->
+      <form id="waitlist" action="https://assets.mailerlite.com/jsonp/2698911/forms/201591973507761668/subscribe" method="post" novalidate>
+        <label class="field" for="email">Your email</label>
+        <input id="email" type="email" name="fields[email]" autocomplete="email" inputmode="email" required>
+
+        <label class="check">
+          <input type="checkbox" name="groups[]" value="201589773903594738">
+          <span>Also send me family tips now and then. You can stop them any time.</span>
+        </label>
+
+        <input type="hidden" name="fields[utm_source]">
+        <input type="hidden" name="fields[utm_medium]">
+        <input type="hidden" name="fields[utm_campaign]">
+        <input type="hidden" name="fields[utm_content]">
+        <input type="hidden" name="ml-submit" value="1">
+        <input type="hidden" name="anticsrf" value="true">
+
+        <button type="submit">Join the waitlist</button>
+        <p class="error" id="error" role="alert" hidden>That didn’t work. Please check your email address and try again.</p>
+        <p class="small">We’ll only use your email to tell you about Bonded. Every email has a link to leave. <a href="#privacy">See how we use your email.</a></p>
+      </form>
+
+      <div class="done" id="done" role="status" tabindex="-1" hidden>
+        <h2>Almost done.</h2>
+        <p>Check your email and tap the button to confirm. If you can’t find it, look in your spam or promotions folder.</p>
+      </div>
+    </section>
+
+    <figure class="phone">
+      <div class="frame">
+        <img src="img/family-screen.webp" width="560" height="1214" alt="The Family screen of the Bonded app">
+      </div>
+    </figure>
+  </main>
+
+  <section class="privacy" id="privacy">
+    <h2>How we use your email</h2>
+    <p>We ask for your email address. If you tick the box, we also note that you want family tips. We only add you after you confirm by email.</p>
+    <p>We use your email to tell you about Bonded, and to send family tips if you asked for them. Our email service, MailerLite, keeps your email for us. We never sell it or give it to anyone else.</p>
+    <p>Every email has a link to leave. To have your email deleted, write to us at <a href="mailto:go@bondedin.com">go@bondedin.com</a>. We keep your email until you leave or ask us to delete it.</p>
+    <p>© 2026 Bonded. All rights reserved. <a href="mailto:go@bondedin.com">go@bondedin.com</a></p>
+  </section>
+</div>
+
+<script>
+(() => {
+  const form = document.getElementById('waitlist');
+  const email = document.getElementById('email');
+  const error = document.getElementById('error');
+  const done = document.getElementById('done');
+  const button = form.querySelector('button');
+
+  // Keep where the visitor came from (ManyChat DM, bio, Facebook): ops/waitlist-mailerlite-setup.md
+  const params = new URLSearchParams(location.search);
+  for (const key of ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content']) {
+    const value = params.get(key);
+    if (value) form.elements[`fields[${key}]`].value = value.slice(0, 100);
+  }
+
+  const fail = () => { error.hidden = false; button.disabled = false; };
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    error.hidden = true;
+    if (!email.checkValidity() || !email.value.trim()) { fail(); email.focus(); return; }
+    button.disabled = true;
+    try {
+      const response = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok || data.success === false) return fail();
+      form.hidden = true;
+      done.hidden = false;
+      done.focus?.();
+    } catch {
+      fail();
+    }
+  });
+})();
+</script>
+</body>
+</html>
