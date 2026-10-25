@@ -284,7 +284,7 @@
    "platform": "facebook",
    "dueAt": "2026-10-25T18:00:00+01:00",
    "tool": "buffer",
-   "status": "scheduled",
+   "status": "sent",
    "postId": "6adcb75a0b5343d07086f0f1"
   },
   {
@@ -294,7 +294,7 @@
    "platform": "instagram",
    "dueAt": "2026-10-25T18:00:00+01:00",
    "tool": "buffer",
-   "status": "scheduled",
+   "status": "sent",
    "postId": "6adcb7508b3d437ddcbfeb78"
   },
   {
@@ -304,7 +304,7 @@
    "platform": "tiktok",
    "dueAt": "2026-10-25T18:00:00+01:00",
    "tool": "buffer",
-   "status": "scheduled",
+   "status": "sent",
    "postId": "6adcb75c8b3d437ddcbfec39"
   },
   {
@@ -434,8 +434,8 @@
    "platform": "facebook",
    "dueAt": "2026-10-28T18:00:00+01:00",
    "tool": "buffer",
-   "status": "approved, not in Buffer yet",
-   "postId": null
+   "status": "scheduled",
+   "postId": "6ade655a8b3d437ddc27566e"
   },
   {
    "slot": "D12-IN",
@@ -444,8 +444,8 @@
    "platform": "instagram",
    "dueAt": "2026-10-28T18:00:00+01:00",
    "tool": "buffer",
-   "status": "approved, not in Buffer yet",
-   "postId": null
+   "status": "scheduled",
+   "postId": "6ade65530b5343d070ee05c5"
   },
   {
    "slot": "D12-TI",
@@ -454,8 +454,8 @@
    "platform": "tiktok",
    "dueAt": "2026-10-28T18:00:00+01:00",
    "tool": "buffer",
-   "status": "approved, not in Buffer yet",
-   "postId": null
+   "status": "scheduled",
+   "postId": "6ade6560e4be8a4d86c62631"
   },
   {
    "slot": "R04-FA",
