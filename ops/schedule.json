@@ -494,7 +494,7 @@
    "platform": "facebook",
    "dueAt": "2026-10-29T18:00:00+01:00",
    "tool": "buffer",
-   "status": "scheduled",
+   "status": "sent",
    "postId": "6adfb130d8cf9332778e5604"
   },
   {
@@ -504,8 +504,8 @@
    "platform": "instagram",
    "dueAt": "2026-10-29T18:00:00+01:00",
    "tool": "buffer",
-   "status": "scheduled",
-   "postId": "6adfb12ad8cf9332778e53db"
+   "status": "failed (spam flag twice: 6adfb12ad8cf9332778e53db, 6ae38b14b3aaeefe23212c1b)",
+   "postId": "6ae38b14b3aaeefe23212c1b"
   },
   {
    "slot": "D13-TI",
@@ -514,7 +514,7 @@
    "platform": "tiktok",
    "dueAt": "2026-10-29T18:00:00+01:00",
    "tool": "buffer",
-   "status": "scheduled",
+   "status": "sent",
    "postId": "6adfb136cb109ba5d2842084"
   },
   {
