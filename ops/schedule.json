@@ -554,7 +554,7 @@
    "platform": "facebook",
    "dueAt": "2026-10-30T18:00:00+01:00",
    "tool": "buffer",
-   "status": "scheduled",
+   "status": "sent",
    "postId": "6ae18d05a48463c2275806a5"
   },
   {
@@ -564,7 +564,7 @@
    "platform": "instagram",
    "dueAt": "2026-10-30T18:00:00+01:00",
    "tool": "buffer",
-   "status": "scheduled",
+   "status": "failed (spam flag)",
    "postId": "6ae18d01b1bf2d292db83981"
   },
   {
@@ -574,7 +574,7 @@
    "platform": "tiktok",
    "dueAt": "2026-10-30T18:00:00+01:00",
    "tool": "buffer",
-   "status": "scheduled",
+   "status": "sent",
    "postId": "6ae18d07b1bf2d292db83a6d"
   },
   {
