@@ -1,0 +1,1451 @@
+{
+ "_about": "One calendar for both scheduling tools (D-2026-10-21-3). Buffer carries the carousels, Publer carries the Reels. Before creating any post in either tool, match on platform and dueAt here so nothing is posted twice, then write the post ID back. Reel times come from tools/schedule/reel-slots.mjs (D-2026-10-21-2); they are provisional and are regenerated from the first approved reel's date.",
+ "timezone": "Europe/Podgorica",
+ "reelSlots": {
+  "generator": "tools/schedule/reel-slots.mjs",
+  "seed": "bonded_prelaunch_2026",
+  "provisionalStart": "2026-10-24"
+ },
+ "slots": [
+  {
+   "slot": "D01-FA",
+   "kind": "carousel",
+   "day": 1,
+   "platform": "facebook",
+   "dueAt": "2026-10-17T20:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad3a3f7938409f1d094b03c"
+  },
+  {
+   "slot": "D01-IN",
+   "kind": "carousel",
+   "day": 1,
+   "platform": "instagram",
+   "dueAt": "2026-10-17T20:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad3a386e272c4918f933415"
+  },
+  {
+   "slot": "D01-TI",
+   "kind": "carousel",
+   "day": 1,
+   "platform": "tiktok",
+   "dueAt": "2026-10-17T20:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad3a3fb769b45793487b0d8"
+  },
+  {
+   "slot": "D02-FA",
+   "kind": "carousel",
+   "day": 2,
+   "platform": "facebook",
+   "dueAt": "2026-10-18T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad3a4370b0d72757ae71f98"
+  },
+  {
+   "slot": "D02-IN",
+   "kind": "carousel",
+   "day": 2,
+   "platform": "instagram",
+   "dueAt": "2026-10-18T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad3a4300b0d72757ae71ba7"
+  },
+  {
+   "slot": "D02-TI",
+   "kind": "carousel",
+   "day": 2,
+   "platform": "tiktok",
+   "dueAt": "2026-10-18T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad3a43a0b0d72757ae7218c"
+  },
+  {
+   "slot": "D03-FA",
+   "kind": "carousel",
+   "day": 3,
+   "platform": "facebook",
+   "dueAt": "2026-10-19T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad3a4ccae173d6e00c5fefa"
+  },
+  {
+   "slot": "D03-IN",
+   "kind": "carousel",
+   "day": 3,
+   "platform": "instagram",
+   "dueAt": "2026-10-19T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad3a4c8e272c4918f936fe7"
+  },
+  {
+   "slot": "D03-TI",
+   "kind": "carousel",
+   "day": 3,
+   "platform": "tiktok",
+   "dueAt": "2026-10-19T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad3a4cf0b0d72757ae741fe"
+  },
+  {
+   "slot": "D04-FA",
+   "kind": "carousel",
+   "day": 4,
+   "platform": "facebook",
+   "dueAt": "2026-10-20T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad3c0e5e272c4918f9975e8"
+  },
+  {
+   "slot": "D04-IN",
+   "kind": "carousel",
+   "day": 4,
+   "platform": "instagram",
+   "dueAt": "2026-10-20T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad3c0d6ae173d6e00cc5092"
+  },
+  {
+   "slot": "D04-TI",
+   "kind": "carousel",
+   "day": 4,
+   "platform": "tiktok",
+   "dueAt": "2026-10-20T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad3c0da0a208cb323330458"
+  },
+  {
+   "slot": "D05-FA",
+   "kind": "carousel",
+   "day": 5,
+   "platform": "facebook",
+   "dueAt": "2026-10-21T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad516620a208cb3237a08e8"
+  },
+  {
+   "slot": "D05-IN",
+   "kind": "carousel",
+   "day": 5,
+   "platform": "instagram",
+   "dueAt": "2026-10-21T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad5165a0b0d72757a357b43"
+  },
+  {
+   "slot": "D05-TI",
+   "kind": "carousel",
+   "day": 5,
+   "platform": "tiktok",
+   "dueAt": "2026-10-21T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad51668ae173d6e00145365"
+  },
+  {
+   "slot": "D06-FA",
+   "kind": "carousel",
+   "day": 6,
+   "platform": "facebook",
+   "dueAt": "2026-10-22T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad664154e78a35785260bed"
+  },
+  {
+   "slot": "D06-IN",
+   "kind": "carousel",
+   "day": 6,
+   "platform": "instagram",
+   "dueAt": "2026-10-22T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad6640b1c2220995c38899c"
+  },
+  {
+   "slot": "D06-TI",
+   "kind": "carousel",
+   "day": 6,
+   "platform": "tiktok",
+   "dueAt": "2026-10-22T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad66417d4056f4ed6fb09cd"
+  },
+  {
+   "slot": "D07-FA",
+   "kind": "carousel",
+   "day": 7,
+   "platform": "facebook",
+   "dueAt": "2026-10-23T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad7bc92bdfe25c556eec96e"
+  },
+  {
+   "slot": "D07-IN",
+   "kind": "carousel",
+   "day": 7,
+   "platform": "instagram",
+   "dueAt": "2026-10-23T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad7bc8cbdfe25c556eec7fc"
+  },
+  {
+   "slot": "D07-TI",
+   "kind": "carousel",
+   "day": 7,
+   "platform": "tiktok",
+   "dueAt": "2026-10-23T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad7bc960ddd02d3bd133acd"
+  },
+  {
+   "slot": "D08-FA",
+   "kind": "carousel",
+   "day": 8,
+   "platform": "facebook",
+   "dueAt": "2026-10-24T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad908babffa7c22bb79d612"
+  },
+  {
+   "slot": "D08-IN",
+   "kind": "carousel",
+   "day": 8,
+   "platform": "instagram",
+   "dueAt": "2026-10-24T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad908b2c2fd6c7a0efc100e"
+  },
+  {
+   "slot": "D08-TI",
+   "kind": "carousel",
+   "day": 8,
+   "platform": "tiktok",
+   "dueAt": "2026-10-24T18:00:00+02:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ad908cb68c8c0a06178046a"
+  },
+  {
+   "slot": "R01-FA",
+   "kind": "reel",
+   "reel": 1,
+   "platform": "facebook",
+   "dueAt": "2026-10-24T19:03:00+02:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R01-IN",
+   "kind": "reel",
+   "reel": 1,
+   "platform": "instagram",
+   "dueAt": "2026-10-24T19:03:00+02:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R01-TI",
+   "kind": "reel",
+   "reel": 1,
+   "platform": "tiktok",
+   "dueAt": "2026-10-24T19:03:00+02:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D09-FA",
+   "kind": "carousel",
+   "day": 9,
+   "platform": "facebook",
+   "dueAt": "2026-10-25T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6adcb75a0b5343d07086f0f1"
+  },
+  {
+   "slot": "D09-IN",
+   "kind": "carousel",
+   "day": 9,
+   "platform": "instagram",
+   "dueAt": "2026-10-25T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6adcb7508b3d437ddcbfeb78"
+  },
+  {
+   "slot": "D09-TI",
+   "kind": "carousel",
+   "day": 9,
+   "platform": "tiktok",
+   "dueAt": "2026-10-25T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6adcb75c8b3d437ddcbfec39"
+  },
+  {
+   "slot": "R02-FA",
+   "kind": "reel",
+   "reel": 2,
+   "platform": "facebook",
+   "dueAt": "2026-10-25T20:28:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R02-IN",
+   "kind": "reel",
+   "reel": 2,
+   "platform": "instagram",
+   "dueAt": "2026-10-25T20:28:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R02-TI",
+   "kind": "reel",
+   "reel": 2,
+   "platform": "tiktok",
+   "dueAt": "2026-10-25T20:28:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D10-FA",
+   "kind": "carousel",
+   "day": 10,
+   "platform": "facebook",
+   "dueAt": "2026-10-26T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6adcb772e4be8a4d865fc8cc"
+  },
+  {
+   "slot": "D10-IN",
+   "kind": "carousel",
+   "day": 10,
+   "platform": "instagram",
+   "dueAt": "2026-10-26T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6adcb76a3d5b27036b88c875"
+  },
+  {
+   "slot": "D10-TI",
+   "kind": "carousel",
+   "day": 10,
+   "platform": "tiktok",
+   "dueAt": "2026-10-26T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6adcb77a8b3d437ddcbffc65"
+  },
+  {
+   "slot": "D11-FA",
+   "kind": "carousel",
+   "day": 11,
+   "platform": "facebook",
+   "dueAt": "2026-10-27T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6add0ea70b5343d0709dcf05"
+  },
+  {
+   "slot": "D11-IN",
+   "kind": "carousel",
+   "day": 11,
+   "platform": "instagram",
+   "dueAt": "2026-10-27T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6add0ea48b3d437ddcd707cd"
+  },
+  {
+   "slot": "D11-TI",
+   "kind": "carousel",
+   "day": 11,
+   "platform": "tiktok",
+   "dueAt": "2026-10-27T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6add0ea90b5343d0709dcf77"
+  },
+  {
+   "slot": "R03-FA",
+   "kind": "reel",
+   "reel": 3,
+   "platform": "facebook",
+   "dueAt": "2026-10-27T20:14:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R03-IN",
+   "kind": "reel",
+   "reel": 3,
+   "platform": "instagram",
+   "dueAt": "2026-10-27T20:14:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R03-TI",
+   "kind": "reel",
+   "reel": 3,
+   "platform": "tiktok",
+   "dueAt": "2026-10-27T20:14:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D12-FA",
+   "kind": "carousel",
+   "day": 12,
+   "platform": "facebook",
+   "dueAt": "2026-10-28T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ade655a8b3d437ddc27566e"
+  },
+  {
+   "slot": "D12-IN",
+   "kind": "carousel",
+   "day": 12,
+   "platform": "instagram",
+   "dueAt": "2026-10-28T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ae22e6ad0f69fcf47355f85"
+  },
+  {
+   "slot": "D12-TI",
+   "kind": "carousel",
+   "day": 12,
+   "platform": "tiktok",
+   "dueAt": "2026-10-28T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ade6560e4be8a4d86c62631"
+  },
+  {
+   "slot": "R04-FA",
+   "kind": "reel",
+   "reel": 4,
+   "platform": "facebook",
+   "dueAt": "2026-10-28T16:56:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R04-IN",
+   "kind": "reel",
+   "reel": 4,
+   "platform": "instagram",
+   "dueAt": "2026-10-28T16:56:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R04-TI",
+   "kind": "reel",
+   "reel": 4,
+   "platform": "tiktok",
+   "dueAt": "2026-10-28T16:56:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D13-FA",
+   "kind": "carousel",
+   "day": 13,
+   "platform": "facebook",
+   "dueAt": "2026-10-29T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6adfb130d8cf9332778e5604"
+  },
+  {
+   "slot": "D13-IN",
+   "kind": "carousel",
+   "day": 13,
+   "platform": "instagram",
+   "dueAt": "2026-10-29T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "failed (spam flag twice: 6adfb12ad8cf9332778e53db, 6ae38b14b3aaeefe23212c1b)",
+   "postId": "6ae38b14b3aaeefe23212c1b"
+  },
+  {
+   "slot": "D13-TI",
+   "kind": "carousel",
+   "day": 13,
+   "platform": "tiktok",
+   "dueAt": "2026-10-29T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6adfb136cb109ba5d2842084"
+  },
+  {
+   "slot": "R05-FA",
+   "kind": "reel",
+   "reel": 5,
+   "platform": "facebook",
+   "dueAt": "2026-10-29T15:46:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R05-IN",
+   "kind": "reel",
+   "reel": 5,
+   "platform": "instagram",
+   "dueAt": "2026-10-29T15:46:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R05-TI",
+   "kind": "reel",
+   "reel": 5,
+   "platform": "tiktok",
+   "dueAt": "2026-10-29T15:46:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D14-FA",
+   "kind": "carousel",
+   "day": 14,
+   "platform": "facebook",
+   "dueAt": "2026-10-30T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ae18d05a48463c2275806a5"
+  },
+  {
+   "slot": "D14-IN",
+   "kind": "carousel",
+   "day": 14,
+   "platform": "instagram",
+   "dueAt": "2026-10-30T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "failed (spam flag)",
+   "postId": "6ae18d01b1bf2d292db83981"
+  },
+  {
+   "slot": "D14-TI",
+   "kind": "carousel",
+   "day": 14,
+   "platform": "tiktok",
+   "dueAt": "2026-10-30T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "sent",
+   "postId": "6ae18d07b1bf2d292db83a6d"
+  },
+  {
+   "slot": "D15-FA",
+   "kind": "carousel",
+   "day": 15,
+   "platform": "facebook",
+   "dueAt": "2026-10-31T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D15-IN",
+   "kind": "carousel",
+   "day": 15,
+   "platform": "instagram",
+   "dueAt": "2026-10-31T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D15-TI",
+   "kind": "carousel",
+   "day": 15,
+   "platform": "tiktok",
+   "dueAt": "2026-10-31T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "R06-FA",
+   "kind": "reel",
+   "reel": 6,
+   "platform": "facebook",
+   "dueAt": "2026-10-31T19:24:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R06-IN",
+   "kind": "reel",
+   "reel": 6,
+   "platform": "instagram",
+   "dueAt": "2026-10-31T19:24:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R06-TI",
+   "kind": "reel",
+   "reel": 6,
+   "platform": "tiktok",
+   "dueAt": "2026-10-31T19:24:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D16-FA",
+   "kind": "carousel",
+   "day": 16,
+   "platform": "facebook",
+   "dueAt": "2026-11-01T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D16-IN",
+   "kind": "carousel",
+   "day": 16,
+   "platform": "instagram",
+   "dueAt": "2026-11-01T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D16-TI",
+   "kind": "carousel",
+   "day": 16,
+   "platform": "tiktok",
+   "dueAt": "2026-11-01T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "R07-FA",
+   "kind": "reel",
+   "reel": 7,
+   "platform": "facebook",
+   "dueAt": "2026-11-01T20:08:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R07-IN",
+   "kind": "reel",
+   "reel": 7,
+   "platform": "instagram",
+   "dueAt": "2026-11-01T20:08:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R07-TI",
+   "kind": "reel",
+   "reel": 7,
+   "platform": "tiktok",
+   "dueAt": "2026-11-01T20:08:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D17-FA",
+   "kind": "carousel",
+   "day": 17,
+   "platform": "facebook",
+   "dueAt": "2026-11-02T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D17-IN",
+   "kind": "carousel",
+   "day": 17,
+   "platform": "instagram",
+   "dueAt": "2026-11-02T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D17-TI",
+   "kind": "carousel",
+   "day": 17,
+   "platform": "tiktok",
+   "dueAt": "2026-11-02T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "R08-FA",
+   "kind": "reel",
+   "reel": 8,
+   "platform": "facebook",
+   "dueAt": "2026-11-02T15:29:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R08-IN",
+   "kind": "reel",
+   "reel": 8,
+   "platform": "instagram",
+   "dueAt": "2026-11-02T15:29:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R08-TI",
+   "kind": "reel",
+   "reel": 8,
+   "platform": "tiktok",
+   "dueAt": "2026-11-02T15:29:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D18-FA",
+   "kind": "carousel",
+   "day": 18,
+   "platform": "facebook",
+   "dueAt": "2026-11-03T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D18-IN",
+   "kind": "carousel",
+   "day": 18,
+   "platform": "instagram",
+   "dueAt": "2026-11-03T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D18-TI",
+   "kind": "carousel",
+   "day": 18,
+   "platform": "tiktok",
+   "dueAt": "2026-11-03T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "R09-FA",
+   "kind": "reel",
+   "reel": 9,
+   "platform": "facebook",
+   "dueAt": "2026-11-03T15:32:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R09-IN",
+   "kind": "reel",
+   "reel": 9,
+   "platform": "instagram",
+   "dueAt": "2026-11-03T15:32:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R09-TI",
+   "kind": "reel",
+   "reel": 9,
+   "platform": "tiktok",
+   "dueAt": "2026-11-03T15:32:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D19-FA",
+   "kind": "carousel",
+   "day": 19,
+   "platform": "facebook",
+   "dueAt": "2026-11-04T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D19-IN",
+   "kind": "carousel",
+   "day": 19,
+   "platform": "instagram",
+   "dueAt": "2026-11-04T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D19-TI",
+   "kind": "carousel",
+   "day": 19,
+   "platform": "tiktok",
+   "dueAt": "2026-11-04T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "R10-FA",
+   "kind": "reel",
+   "reel": 10,
+   "platform": "facebook",
+   "dueAt": "2026-11-04T19:56:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R10-IN",
+   "kind": "reel",
+   "reel": 10,
+   "platform": "instagram",
+   "dueAt": "2026-11-04T19:56:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R10-TI",
+   "kind": "reel",
+   "reel": 10,
+   "platform": "tiktok",
+   "dueAt": "2026-11-04T19:56:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D20-FA",
+   "kind": "carousel",
+   "day": 20,
+   "platform": "facebook",
+   "dueAt": "2026-11-05T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D20-IN",
+   "kind": "carousel",
+   "day": 20,
+   "platform": "instagram",
+   "dueAt": "2026-11-05T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D20-TI",
+   "kind": "carousel",
+   "day": 20,
+   "platform": "tiktok",
+   "dueAt": "2026-11-05T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "R11-FA",
+   "kind": "reel",
+   "reel": 11,
+   "platform": "facebook",
+   "dueAt": "2026-11-05T15:45:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R11-IN",
+   "kind": "reel",
+   "reel": 11,
+   "platform": "instagram",
+   "dueAt": "2026-11-05T15:45:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R11-TI",
+   "kind": "reel",
+   "reel": 11,
+   "platform": "tiktok",
+   "dueAt": "2026-11-05T15:45:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D21-FA",
+   "kind": "carousel",
+   "day": 21,
+   "platform": "facebook",
+   "dueAt": "2026-11-06T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D21-IN",
+   "kind": "carousel",
+   "day": 21,
+   "platform": "instagram",
+   "dueAt": "2026-11-06T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D21-TI",
+   "kind": "carousel",
+   "day": 21,
+   "platform": "tiktok",
+   "dueAt": "2026-11-06T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "R12-FA",
+   "kind": "reel",
+   "reel": 12,
+   "platform": "facebook",
+   "dueAt": "2026-11-06T16:59:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R12-IN",
+   "kind": "reel",
+   "reel": 12,
+   "platform": "instagram",
+   "dueAt": "2026-11-06T16:59:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R12-TI",
+   "kind": "reel",
+   "reel": 12,
+   "platform": "tiktok",
+   "dueAt": "2026-11-06T16:59:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D22-FA",
+   "kind": "carousel",
+   "day": 22,
+   "platform": "facebook",
+   "dueAt": "2026-11-07T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D22-IN",
+   "kind": "carousel",
+   "day": 22,
+   "platform": "instagram",
+   "dueAt": "2026-11-07T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D22-TI",
+   "kind": "carousel",
+   "day": 22,
+   "platform": "tiktok",
+   "dueAt": "2026-11-07T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "R13-FA",
+   "kind": "reel",
+   "reel": 13,
+   "platform": "facebook",
+   "dueAt": "2026-11-07T16:50:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R13-IN",
+   "kind": "reel",
+   "reel": 13,
+   "platform": "instagram",
+   "dueAt": "2026-11-07T16:50:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R13-TI",
+   "kind": "reel",
+   "reel": 13,
+   "platform": "tiktok",
+   "dueAt": "2026-11-07T16:50:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D23-FA",
+   "kind": "carousel",
+   "day": 23,
+   "platform": "facebook",
+   "dueAt": "2026-11-08T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D23-IN",
+   "kind": "carousel",
+   "day": 23,
+   "platform": "instagram",
+   "dueAt": "2026-11-08T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D23-TI",
+   "kind": "carousel",
+   "day": 23,
+   "platform": "tiktok",
+   "dueAt": "2026-11-08T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "R14-FA",
+   "kind": "reel",
+   "reel": 14,
+   "platform": "facebook",
+   "dueAt": "2026-11-08T15:06:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R14-IN",
+   "kind": "reel",
+   "reel": 14,
+   "platform": "instagram",
+   "dueAt": "2026-11-08T15:06:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R14-TI",
+   "kind": "reel",
+   "reel": 14,
+   "platform": "tiktok",
+   "dueAt": "2026-11-08T15:06:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D24-FA",
+   "kind": "carousel",
+   "day": 24,
+   "platform": "facebook",
+   "dueAt": "2026-11-09T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D24-IN",
+   "kind": "carousel",
+   "day": 24,
+   "platform": "instagram",
+   "dueAt": "2026-11-09T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D24-TI",
+   "kind": "carousel",
+   "day": 24,
+   "platform": "tiktok",
+   "dueAt": "2026-11-09T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "R15-FA",
+   "kind": "reel",
+   "reel": 15,
+   "platform": "facebook",
+   "dueAt": "2026-11-09T20:44:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R15-IN",
+   "kind": "reel",
+   "reel": 15,
+   "platform": "instagram",
+   "dueAt": "2026-11-09T20:44:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R15-TI",
+   "kind": "reel",
+   "reel": 15,
+   "platform": "tiktok",
+   "dueAt": "2026-11-09T20:44:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D25-FA",
+   "kind": "carousel",
+   "day": 25,
+   "platform": "facebook",
+   "dueAt": "2026-11-10T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D25-IN",
+   "kind": "carousel",
+   "day": 25,
+   "platform": "instagram",
+   "dueAt": "2026-11-10T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D25-TI",
+   "kind": "carousel",
+   "day": 25,
+   "platform": "tiktok",
+   "dueAt": "2026-11-10T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "R16-FA",
+   "kind": "reel",
+   "reel": 16,
+   "platform": "facebook",
+   "dueAt": "2026-11-10T19:42:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R16-IN",
+   "kind": "reel",
+   "reel": 16,
+   "platform": "instagram",
+   "dueAt": "2026-11-10T19:42:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R16-TI",
+   "kind": "reel",
+   "reel": 16,
+   "platform": "tiktok",
+   "dueAt": "2026-11-10T19:42:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D26-FA",
+   "kind": "carousel",
+   "day": 26,
+   "platform": "facebook",
+   "dueAt": "2026-11-11T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D26-IN",
+   "kind": "carousel",
+   "day": 26,
+   "platform": "instagram",
+   "dueAt": "2026-11-11T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D26-TI",
+   "kind": "carousel",
+   "day": 26,
+   "platform": "tiktok",
+   "dueAt": "2026-11-11T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "R17-FA",
+   "kind": "reel",
+   "reel": 17,
+   "platform": "facebook",
+   "dueAt": "2026-11-11T16:25:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R17-IN",
+   "kind": "reel",
+   "reel": 17,
+   "platform": "instagram",
+   "dueAt": "2026-11-11T16:25:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R17-TI",
+   "kind": "reel",
+   "reel": 17,
+   "platform": "tiktok",
+   "dueAt": "2026-11-11T16:25:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D27-FA",
+   "kind": "carousel",
+   "day": 27,
+   "platform": "facebook",
+   "dueAt": "2026-11-12T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D27-IN",
+   "kind": "carousel",
+   "day": 27,
+   "platform": "instagram",
+   "dueAt": "2026-11-12T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D27-TI",
+   "kind": "carousel",
+   "day": 27,
+   "platform": "tiktok",
+   "dueAt": "2026-11-12T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "R18-FA",
+   "kind": "reel",
+   "reel": 18,
+   "platform": "facebook",
+   "dueAt": "2026-11-12T15:39:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R18-IN",
+   "kind": "reel",
+   "reel": 18,
+   "platform": "instagram",
+   "dueAt": "2026-11-12T15:39:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R18-TI",
+   "kind": "reel",
+   "reel": 18,
+   "platform": "tiktok",
+   "dueAt": "2026-11-12T15:39:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "D28-FA",
+   "kind": "carousel",
+   "day": 28,
+   "platform": "facebook",
+   "dueAt": "2026-11-13T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D28-IN",
+   "kind": "carousel",
+   "day": 28,
+   "platform": "instagram",
+   "dueAt": "2026-11-13T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "D28-TI",
+   "kind": "carousel",
+   "day": 28,
+   "platform": "tiktok",
+   "dueAt": "2026-11-13T18:00:00+01:00",
+   "tool": "buffer",
+   "status": "proposed (proposals/weeks-03-04.md, not approved)",
+   "postId": null
+  },
+  {
+   "slot": "R19-FA",
+   "kind": "reel",
+   "reel": 19,
+   "platform": "facebook",
+   "dueAt": "2026-11-13T16:48:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R19-IN",
+   "kind": "reel",
+   "reel": 19,
+   "platform": "instagram",
+   "dueAt": "2026-11-13T16:48:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R19-TI",
+   "kind": "reel",
+   "reel": 19,
+   "platform": "tiktok",
+   "dueAt": "2026-11-13T16:48:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R20-FA",
+   "kind": "reel",
+   "reel": 20,
+   "platform": "facebook",
+   "dueAt": "2026-11-14T16:53:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R20-IN",
+   "kind": "reel",
+   "reel": 20,
+   "platform": "instagram",
+   "dueAt": "2026-11-14T16:53:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  },
+  {
+   "slot": "R20-TI",
+   "kind": "reel",
+   "reel": 20,
+   "platform": "tiktok",
+   "dueAt": "2026-11-14T16:53:00+01:00",
+   "tool": "publer",
+   "status": "provisional slot (no approved reel yet)",
+   "postId": null
+  }
+ ]
+}

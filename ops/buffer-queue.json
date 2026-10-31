@@ -1,0 +1,2410 @@
+{
+ "note": "Buffer queue for Days 4-14 (D-2026-10-17-7, -8). Captions are word for word from campaign/weeks-01-02.md (Facebook with the Amendment 4 ending). Media is on the temporary hidden host (branch buffer-media). The daily routine adds the next day not yet in Buffer. Facebook uses fallback_assets (PNG stills) only if Buffer refuses the video.",
+ "organizationId": "6ac9133e0ed969c7debd5cd3",
+ "posts": [
+  {
+   "day": 4,
+   "service": "instagram",
+   "channelId": "6ace3f4f778b240e2ff7f72f",
+   "dueAt": "2026-10-20T18:00:00+02:00",
+   "text": "'What's for dinner?' Every night, the same person has to answer.\n\nTry this: once a week, one kid plans dinner. They pick the meal, write the list, stay within a budget you agree on, and cook it with you.\n\nLittle kids can pick from three meals you choose. Teens can do most of it on their own.\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.\n\n#familydinner #raisingkids",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s01.png",
+      "metadata": {
+       "altText": "Every night: 'What's for dinner?' And the same person has to answer."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s02.png",
+      "metadata": {
+       "altText": "It's one more thing to think about. At 6pm, after a long day."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s03.png",
+      "metadata": {
+       "altText": "Once a week, a kid plans dinner. They pick the meal and write the shopping list."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s04.png",
+      "metadata": {
+       "altText": "You agree on the budget. If the cart costs too much, they swap something."
+      }
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s05.mp4"
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "post",
+     "shouldShareToFeed": true
+    }
+   },
+   "has_video": true
+  },
+  {
+   "day": 4,
+   "service": "facebook",
+   "channelId": "6acf569f778b240e2f0635b0",
+   "dueAt": "2026-10-20T18:00:00+02:00",
+   "text": "Does anyone else let the kids plan a family dinner?\n\nOne kid, one night a week. They pick the meal, write the list, stay within a budget you agree on, and cook it with an adult. Little ones pick from a few meals you choose. Teens can do most of it.\n\nIt's planning, a bit of math and cooking, and nobody else has to decide that night. What's the best meal your kids have picked?\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s01.png",
+      "metadata": {
+       "altText": "Every night: 'What's for dinner?' And the same person has to answer."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s02.png",
+      "metadata": {
+       "altText": "It's one more thing to think about. At 6pm, after a long day."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s03.png",
+      "metadata": {
+       "altText": "Once a week, a kid plans dinner. They pick the meal and write the shopping list."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s04.png",
+      "metadata": {
+       "altText": "You agree on the budget. If the cart costs too much, they swap something."
+      }
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s05.mp4"
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "facebook": {
+     "type": "post"
+    }
+   },
+   "has_video": true,
+   "fallback_assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s01.png",
+      "metadata": {
+       "altText": "Every night: 'What's for dinner?' And the same person has to answer."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s02.png",
+      "metadata": {
+       "altText": "It's one more thing to think about. At 6pm, after a long day."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s03.png",
+      "metadata": {
+       "altText": "Once a week, a kid plans dinner. They pick the meal and write the shopping list."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s04.png",
+      "metadata": {
+       "altText": "You agree on the budget. If the cart costs too much, they swap something."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s05.png",
+      "metadata": {
+       "altText": "Then they cook it with you. Little kids pick from three meals. Teens can do most of it alone."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "service": "tiktok",
+   "channelId": "6ace8910778b240e2ffc5bce",
+   "dueAt": "2026-10-20T18:00:00+02:00",
+   "text": "Once a week, the kids plan dinner. Budget included. Waitlist link in bio. #familydinner #raisingkids #parentsoftiktok",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s01.png",
+      "metadata": {
+       "altText": "Every night: 'What's for dinner?' And the same person has to answer."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s02.png",
+      "metadata": {
+       "altText": "It's one more thing to think about. At 6pm, after a long day."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s03.png",
+      "metadata": {
+       "altText": "Once a week, a kid plans dinner. They pick the meal and write the shopping list."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s04.png",
+      "metadata": {
+       "altText": "You agree on the budget. If the cart costs too much, they swap something."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s05.png",
+      "metadata": {
+       "altText": "Then they cook it with you. Little kids pick from three meals. Teens can do most of it alone."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day04/day04_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {},
+   "has_video": false
+  },
+  {
+   "day": 5,
+   "service": "instagram",
+   "channelId": "6ace3f4f778b240e2ff7f72f",
+   "dueAt": "2026-10-21T18:00:00+02:00",
+   "text": "It's faster to do it yourself. That's why you always do.\n\nThe ages are a rough guide. The more useful part is how you hand a job over:\n1. Do it together.\n2. They do it while you watch.\n3. They do it and you check.\n4. It's theirs.\n\nStart with one job. Give it a few weeks before you judge it.\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.\n\n#parentingtips #raisingkids",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s01.png",
+      "metadata": {
+       "altText": "It's faster to do it yourself, so you always do. But kids can do more than you think."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s02.png",
+      "metadata": {
+       "altText": "Then you end up doing everything. And they never get the chance to learn."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s03.png",
+      "metadata": {
+       "altText": "Ages 4 to 6: one job, next to you. Toys in the basket. Plate to the sink. Shoes by the door."
+      }
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s04.mp4"
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s05.png",
+      "metadata": {
+       "altText": "Ages 10 to 12: jobs that help everyone. Load the dishwasher. Sort the recycling. Make their own lunch."
+      }
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s06.mp4"
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s07.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "post",
+     "shouldShareToFeed": true
+    }
+   },
+   "has_video": true
+  },
+  {
+   "day": 5,
+   "service": "facebook",
+   "channelId": "6acf569f778b240e2f0635b0",
+   "dueAt": "2026-10-21T18:00:00+02:00",
+   "text": "We put together a rough guide to what kids can do at each age. Every child is different, so use it as a starting point.\n\nThe part to read twice is how to hand a job over: do it together first, then let them do it while you watch, then check, then step away. Skipping straight to the last step is usually why jobs get handed back.\n\nWhat was the first job your kids took over?\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s01.png",
+      "metadata": {
+       "altText": "It's faster to do it yourself, so you always do. But kids can do more than you think."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s02.png",
+      "metadata": {
+       "altText": "Then you end up doing everything. And they never get the chance to learn."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s03.png",
+      "metadata": {
+       "altText": "Ages 4 to 6: one job, next to you. Toys in the basket. Plate to the sink. Shoes by the door."
+      }
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s04.mp4"
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s05.png",
+      "metadata": {
+       "altText": "Ages 10 to 12: jobs that help everyone. Load the dishwasher. Sort the recycling. Make their own lunch."
+      }
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s06.mp4"
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s07.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "facebook": {
+     "type": "post"
+    }
+   },
+   "has_video": true,
+   "fallback_assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s01.png",
+      "metadata": {
+       "altText": "It's faster to do it yourself, so you always do. But kids can do more than you think."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s02.png",
+      "metadata": {
+       "altText": "Then you end up doing everything. And they never get the chance to learn."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s03.png",
+      "metadata": {
+       "altText": "Ages 4 to 6: one job, next to you. Toys in the basket. Plate to the sink. Shoes by the door."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s04.png",
+      "metadata": {
+       "altText": "Ages 7 to 9: small daily jobs. Make the bed. Set the table. Feed the pet. Expect to remind them for a while."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s05.png",
+      "metadata": {
+       "altText": "Ages 10 to 12: jobs that help everyone. Load the dishwasher. Sort the recycling. Make their own lunch."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s06.png",
+      "metadata": {
+       "altText": "Ages 13 to 18: whole jobs, start to finish. Their own laundry. One dinner a week. A grocery run with a list and a budget."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s07.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "service": "tiktok",
+   "channelId": "6ace8910778b240e2ffc5bce",
+   "dueAt": "2026-10-21T18:00:00+02:00",
+   "text": "Some 8-year-olds make their own breakfast. Some 15-year-olds have never used the washing machine. Both are normal. Waitlist link in bio. #parentingtips #raisingkids #parentsoftiktok",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s01.png",
+      "metadata": {
+       "altText": "It's faster to do it yourself, so you always do. But kids can do more than you think."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s02.png",
+      "metadata": {
+       "altText": "Then you end up doing everything. And they never get the chance to learn."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s03.png",
+      "metadata": {
+       "altText": "Ages 4 to 6: one job, next to you. Toys in the basket. Plate to the sink. Shoes by the door."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s04.png",
+      "metadata": {
+       "altText": "Ages 7 to 9: small daily jobs. Make the bed. Set the table. Feed the pet. Expect to remind them for a while."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s05.png",
+      "metadata": {
+       "altText": "Ages 10 to 12: jobs that help everyone. Load the dishwasher. Sort the recycling. Make their own lunch."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s06.png",
+      "metadata": {
+       "altText": "Ages 13 to 18: whole jobs, start to finish. Their own laundry. One dinner a week. A grocery run with a list and a budget."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day05/day05_carousel_s07.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {},
+   "has_video": false
+  },
+  {
+   "day": 6,
+   "service": "instagram",
+   "channelId": "6ace3f4f778b240e2ff7f72f",
+   "dueAt": "2026-10-22T18:00:00+02:00",
+   "text": "Saturday cleanup can eat the whole Saturday.\n\nTry this:\n1. Set a timer for 20 minutes.\n2. Everyone cleans one room at the same time.\n3. Stop when the timer stops, done or not.\n4. Then go do something fun together.\n\nPancakes count.\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.\n\n#familyroutine #weekendwithkids",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s01.png",
+      "metadata": {
+       "altText": "The weekend cleanup takes all day. And nobody wants to start."
+      }
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s02.mp4"
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s03.mp4"
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s04.png",
+      "metadata": {
+       "altText": "Stop when the timer stops. Done or not. No checking each room after."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s05.png",
+      "metadata": {
+       "altText": "Then go do something fun together. Pancakes, a walk, the park. Pick it before you start."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "post",
+     "shouldShareToFeed": true
+    }
+   },
+   "has_video": true
+  },
+  {
+   "day": 6,
+   "service": "facebook",
+   "channelId": "6acf569f778b240e2f0635b0",
+   "dueAt": "2026-10-22T18:00:00+02:00",
+   "text": "The simplest Saturday cleanup we know: a 20-minute timer, everyone cleans one room at the same time, and you stop when it goes off, done or not. Little ones take the smallest room or help someone.\n\nThe stopping is the important part. It keeps it to 20 minutes, not the whole morning.\n\nThen go do something fun together. What's yours?\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s01.png",
+      "metadata": {
+       "altText": "The weekend cleanup takes all day. And nobody wants to start."
+      }
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s02.mp4"
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s03.mp4"
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s04.png",
+      "metadata": {
+       "altText": "Stop when the timer stops. Done or not. No checking each room after."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s05.png",
+      "metadata": {
+       "altText": "Then go do something fun together. Pancakes, a walk, the park. Pick it before you start."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "facebook": {
+     "type": "post"
+    }
+   },
+   "has_video": true,
+   "fallback_assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s01.png",
+      "metadata": {
+       "altText": "The weekend cleanup takes all day. And nobody wants to start."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s02.png",
+      "metadata": {
+       "altText": "Then the weekend is gone. You spent it asking people to pick things up."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s03.png",
+      "metadata": {
+       "altText": "Set a timer for 20 minutes. Everyone cleans at the same time. One room each."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s04.png",
+      "metadata": {
+       "altText": "Stop when the timer stops. Done or not. No checking each room after."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s05.png",
+      "metadata": {
+       "altText": "Then go do something fun together. Pancakes, a walk, the park. Pick it before you start."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "service": "tiktok",
+   "channelId": "6ace8910778b240e2ffc5bce",
+   "dueAt": "2026-10-22T18:00:00+02:00",
+   "text": "The rule is you stop when the timer stops. Even mid-vacuum. Waitlist link in bio. #familyroutine #weekendwithkids #parentsoftiktok",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s01.png",
+      "metadata": {
+       "altText": "The weekend cleanup takes all day. And nobody wants to start."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s02.png",
+      "metadata": {
+       "altText": "Then the weekend is gone. You spent it asking people to pick things up."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s03.png",
+      "metadata": {
+       "altText": "Set a timer for 20 minutes. Everyone cleans at the same time. One room each."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s04.png",
+      "metadata": {
+       "altText": "Stop when the timer stops. Done or not. No checking each room after."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s05.png",
+      "metadata": {
+       "altText": "Then go do something fun together. Pancakes, a walk, the park. Pick it before you start."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day06/day06_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {},
+   "has_video": false
+  },
+  {
+   "day": 7,
+   "service": "instagram",
+   "channelId": "6ace3f4f778b240e2ff7f72f",
+   "dueAt": "2026-10-23T18:00:00+02:00",
+   "text": "Try it tonight: ten minutes, everyone at the table, the week out loud.\n\nAsk four questions:\n1. Who needs to be where?\n2. Who's driving?\n3. What needs packing?\n4. What's fun this week?\n\nSomeone will say 'wait, that's this week?' at least once. That's the point. Then write it where everyone can see it, so the questions don't all come to you.\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.\n\n#familyroutine #mentalload",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s01.png",
+      "metadata": {
+       "altText": "Does everyone know what's happening this week? Or will you find out on Tuesday at 7am?"
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s02.png",
+      "metadata": {
+       "altText": "And it all lands on one person. No ride to practice. Gym clothes left at home. A form nobody signed."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s03.png",
+      "metadata": {
+       "altText": "Take ten minutes on Sunday night. Everyone at the table. Go through the week, day by day."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s04.png",
+      "metadata": {
+       "altText": "Ask four questions. Who needs to be where? Who's driving? What needs packing? What's fun this week?"
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s05.png",
+      "metadata": {
+       "altText": "Then write it where everyone can see it. So nobody has to ask you on Wednesday."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "post",
+     "shouldShareToFeed": true
+    }
+   },
+   "has_video": false
+  },
+  {
+   "day": 7,
+   "service": "facebook",
+   "channelId": "6acf569f778b240e2f0635b0",
+   "dueAt": "2026-10-23T18:00:00+02:00",
+   "text": "A Sunday night habit worth trying: ten minutes with everyone, going through the week day by day. Who needs to be where, who's driving, what needs packing, and one fun thing to look forward to.\n\nThen write it where everyone can see it. If the week lives in one person's head, that person still gets every question.\n\nIf you already do something like this, what makes it stick?\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s01.png",
+      "metadata": {
+       "altText": "Does everyone know what's happening this week? Or will you find out on Tuesday at 7am?"
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s02.png",
+      "metadata": {
+       "altText": "And it all lands on one person. No ride to practice. Gym clothes left at home. A form nobody signed."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s03.png",
+      "metadata": {
+       "altText": "Take ten minutes on Sunday night. Everyone at the table. Go through the week, day by day."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s04.png",
+      "metadata": {
+       "altText": "Ask four questions. Who needs to be where? Who's driving? What needs packing? What's fun this week?"
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s05.png",
+      "metadata": {
+       "altText": "Then write it where everyone can see it. So nobody has to ask you on Wednesday."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "facebook": {
+     "type": "post"
+    }
+   },
+   "has_video": false
+  },
+  {
+   "day": 7,
+   "service": "tiktok",
+   "channelId": "6ace8910778b240e2ffc5bce",
+   "dueAt": "2026-10-23T18:00:00+02:00",
+   "text": "Ten minutes on Sunday, or a surprise at 7am on Thursday. Your call. Waitlist link in bio. #familyroutine #mentalload #parentsoftiktok",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s01.png",
+      "metadata": {
+       "altText": "Does everyone know what's happening this week? Or will you find out on Tuesday at 7am?"
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s02.png",
+      "metadata": {
+       "altText": "And it all lands on one person. No ride to practice. Gym clothes left at home. A form nobody signed."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s03.png",
+      "metadata": {
+       "altText": "Take ten minutes on Sunday night. Everyone at the table. Go through the week, day by day."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s04.png",
+      "metadata": {
+       "altText": "Ask four questions. Who needs to be where? Who's driving? What needs packing? What's fun this week?"
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s05.png",
+      "metadata": {
+       "altText": "Then write it where everyone can see it. So nobody has to ask you on Wednesday."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day07/day07_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {},
+   "has_video": false
+  },
+  {
+   "day": 8,
+   "service": "instagram",
+   "channelId": "6ace3f4f778b240e2ff7f72f",
+   "dueAt": "2026-10-24T18:00:00+02:00",
+   "text": "The same job for everyone sounds fair. It stops being fair when one kid is 12 and the other is 5.\n\nWhat helps:\n1. Give jobs that fit their age.\n2. Swap the jobs nobody likes between the kids who can do them.\n3. Let them help decide.\n4. Change it as they grow.\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.\n\n#siblings #parentingtips",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s01.png",
+      "metadata": {
+       "altText": "'That's not fair!' Every day. About who does which job."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s02.png",
+      "metadata": {
+       "altText": "And you have to be the judge. Every single time."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s03.png",
+      "metadata": {
+       "altText": "Give jobs that fit their age. Matching socks at 5 is a real job. So are dishes at 12."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s04.png",
+      "metadata": {
+       "altText": "Swap the jobs nobody likes. The older kids take turns with the trash and the recycling, week by week."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s05.png",
+      "metadata": {
+       "altText": "Let them help decide. Ask what feels fair to them first. It's harder to argue with a plan you helped make."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s06.png",
+      "metadata": {
+       "altText": "Change it as they grow. What's fair at 6 and 10 isn't fair at 8 and 12."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s07.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "post",
+     "shouldShareToFeed": true
+    }
+   },
+   "has_video": false
+  },
+  {
+   "day": 8,
+   "service": "facebook",
+   "channelId": "6acf569f778b240e2f0635b0",
+   "dueAt": "2026-10-24T18:00:00+02:00",
+   "text": "How do you split jobs between kids who are years apart?\n\nThe same jobs for everyone is the simple answer. But the same job is a very different amount of work at 5 and at 12.\n\nWhat tends to work better: jobs that fit each kid's age, swapping the jobs nobody likes, and asking the kids what feels fair before you decide. A good test: can each kid say why the split is fair?\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s01.png",
+      "metadata": {
+       "altText": "'That's not fair!' Every day. About who does which job."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s02.png",
+      "metadata": {
+       "altText": "And you have to be the judge. Every single time."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s03.png",
+      "metadata": {
+       "altText": "Give jobs that fit their age. Matching socks at 5 is a real job. So are dishes at 12."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s04.png",
+      "metadata": {
+       "altText": "Swap the jobs nobody likes. The older kids take turns with the trash and the recycling, week by week."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s05.png",
+      "metadata": {
+       "altText": "Let them help decide. Ask what feels fair to them first. It's harder to argue with a plan you helped make."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s06.png",
+      "metadata": {
+       "altText": "Change it as they grow. What's fair at 6 and 10 isn't fair at 8 and 12."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s07.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "facebook": {
+     "type": "post"
+    }
+   },
+   "has_video": false
+  },
+  {
+   "day": 8,
+   "service": "tiktok",
+   "channelId": "6ace8910778b240e2ffc5bce",
+   "dueAt": "2026-10-24T18:00:00+02:00",
+   "text": "The same job for a 5-year-old and a 12-year-old isn't fair to either of them. Waitlist link in bio. #siblings #parentingtips #parentsoftiktok",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s01.png",
+      "metadata": {
+       "altText": "'That's not fair!' Every day. About who does which job."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s02.png",
+      "metadata": {
+       "altText": "And you have to be the judge. Every single time."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s03.png",
+      "metadata": {
+       "altText": "Give jobs that fit their age. Matching socks at 5 is a real job. So are dishes at 12."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s04.png",
+      "metadata": {
+       "altText": "Swap the jobs nobody likes. The older kids take turns with the trash and the recycling, week by week."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s05.png",
+      "metadata": {
+       "altText": "Let them help decide. Ask what feels fair to them first. It's harder to argue with a plan you helped make."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s06.png",
+      "metadata": {
+       "altText": "Change it as they grow. What's fair at 6 and 10 isn't fair at 8 and 12."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day08/day08_carousel_s07.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {},
+   "has_video": false
+  },
+  {
+   "day": 9,
+   "service": "instagram",
+   "channelId": "6ace3f4f778b240e2ff7f72f",
+   "dueAt": "2026-10-25T18:00:00+01:00",
+   "text": "Little kids always offer to help at the exact moment it would be fastest to do it yourself.\n\nHaving one real job ready makes yes easier to say. Some ideas:\n1. Wash the vegetables.\n2. Match the socks.\n3. Water the plants.\n4. Carry forks to the table.\n\nIt will take longer. The vegetables will be very clean.\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.\n\n#raisingkids #parentsoftiktok",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s01.png",
+      "metadata": {
+       "altText": "'Can I help?' Always right when you're busy."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s02.png",
+      "metadata": {
+       "altText": "Saying 'not now' feels bad. But saying yes makes it all take longer."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s03.png",
+      "metadata": {
+       "altText": "Keep a real job ready. Not a pretend job. Something that needs doing."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s04.png",
+      "metadata": {
+       "altText": "Little kids can do a lot. Wash the vegetables. Match the socks. Water the plants. Carry forks to the table."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s05.png",
+      "metadata": {
+       "altText": "Yes, it will take longer. Something will get wet. But they did a real job, and it counted."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "post",
+     "shouldShareToFeed": true
+    }
+   },
+   "has_video": false
+  },
+  {
+   "day": 9,
+   "service": "facebook",
+   "channelId": "6acf569f778b240e2f0635b0",
+   "dueAt": "2026-10-25T18:00:00+01:00",
+   "text": "Little kids ask to help all the time. Most often right when you need to make dinner. It's easier to have a real job ready than to keep saying 'not now'.\n\nA few that work at that age: wash the vegetables, match the socks, water the plants, carry forks to the table, put the groceries away.\n\nWhat's the job your youngest always asks to do?\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s01.png",
+      "metadata": {
+       "altText": "'Can I help?' Always right when you're busy."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s02.png",
+      "metadata": {
+       "altText": "Saying 'not now' feels bad. But saying yes makes it all take longer."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s03.png",
+      "metadata": {
+       "altText": "Keep a real job ready. Not a pretend job. Something that needs doing."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s04.png",
+      "metadata": {
+       "altText": "Little kids can do a lot. Wash the vegetables. Match the socks. Water the plants. Carry forks to the table."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s05.png",
+      "metadata": {
+       "altText": "Yes, it will take longer. Something will get wet. But they did a real job, and it counted."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "facebook": {
+     "type": "post"
+    }
+   },
+   "has_video": false
+  },
+  {
+   "day": 9,
+   "service": "tiktok",
+   "channelId": "6ace8910778b240e2ffc5bce",
+   "dueAt": "2026-10-25T18:00:00+01:00",
+   "text": "When a little kid asks to help, dinner is late. But the potatoes are very clean. Waitlist link in bio. #raisingkids #parentsoftiktok",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s01.png",
+      "metadata": {
+       "altText": "'Can I help?' Always right when you're busy."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s02.png",
+      "metadata": {
+       "altText": "Saying 'not now' feels bad. But saying yes makes it all take longer."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s03.png",
+      "metadata": {
+       "altText": "Keep a real job ready. Not a pretend job. Something that needs doing."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s04.png",
+      "metadata": {
+       "altText": "Little kids can do a lot. Wash the vegetables. Match the socks. Water the plants. Carry forks to the table."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s05.png",
+      "metadata": {
+       "altText": "Yes, it will take longer. Something will get wet. But they did a real job, and it counted."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day09/day09_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {},
+   "has_video": false
+  },
+  {
+   "day": 10,
+   "service": "instagram",
+   "channelId": "6ace3f4f778b240e2ff7f72f",
+   "dueAt": "2026-10-26T18:00:00+01:00",
+   "text": "Should allowance be linked to chores? Good parents land on both sides, and their reasons are good.\n\nMany families end up in the middle: everyday jobs unpaid, a few bigger jobs paid.\n\nThe one version that doesn't work is the one where nobody agreed on anything and payday turns into a fight. Where do you land?\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.\n\n#allowance #parentingtips",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s01.png",
+      "metadata": {
+       "altText": "Should allowance be linked to chores? Good parents land on both sides."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s02.png",
+      "metadata": {
+       "altText": "Money talks turn into fights. Most of the time, nobody agreed on the rules."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s03.png",
+      "metadata": {
+       "altText": "One side: pay for jobs. Kids learn that work earns money. Saving means more when they earned it."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s04.png",
+      "metadata": {
+       "altText": "The other side: some jobs come with living here. Pay for everything, and you may hear 'how much?' every time you ask for help."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s05.png",
+      "metadata": {
+       "altText": "Many families do both. Daily jobs don't get paid. Big extra jobs, like washing the car, do."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s06.png",
+      "metadata": {
+       "altText": "Whatever you pick, agree before payday. What's paid, how much, and which day. Write it down."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s07.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "post",
+     "shouldShareToFeed": true
+    }
+   },
+   "has_video": false
+  },
+  {
+   "day": 10,
+   "service": "facebook",
+   "channelId": "6acf569f778b240e2f0635b0",
+   "dueAt": "2026-10-26T18:00:00+01:00",
+   "text": "Here's one that splits parents: should allowance be linked to chores?\n\nFor: kids learn that work earns money, and saving means more when they earned it. Against: some jobs come with living in a family, and paying for them can lead to 'how much?' every time you ask for help.\n\nMany families do both. Whichever way you go, agreeing on the rules before payday seems to matter most. Where do you land?\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s01.png",
+      "metadata": {
+       "altText": "Should allowance be linked to chores? Good parents land on both sides."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s02.png",
+      "metadata": {
+       "altText": "Money talks turn into fights. Most of the time, nobody agreed on the rules."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s03.png",
+      "metadata": {
+       "altText": "One side: pay for jobs. Kids learn that work earns money. Saving means more when they earned it."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s04.png",
+      "metadata": {
+       "altText": "The other side: some jobs come with living here. Pay for everything, and you may hear 'how much?' every time you ask for help."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s05.png",
+      "metadata": {
+       "altText": "Many families do both. Daily jobs don't get paid. Big extra jobs, like washing the car, do."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s06.png",
+      "metadata": {
+       "altText": "Whatever you pick, agree before payday. What's paid, how much, and which day. Write it down."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s07.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "facebook": {
+     "type": "post"
+    }
+   },
+   "has_video": false
+  },
+  {
+   "day": 10,
+   "service": "tiktok",
+   "channelId": "6ace8910778b240e2ffc5bce",
+   "dueAt": "2026-10-26T18:00:00+01:00",
+   "text": "Should allowance be linked to chores? The comments on this one will be something. Waitlist link in bio. #allowance #parentingtips #parentsoftiktok",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s01.png",
+      "metadata": {
+       "altText": "Should allowance be linked to chores? Good parents land on both sides."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s02.png",
+      "metadata": {
+       "altText": "Money talks turn into fights. Most of the time, nobody agreed on the rules."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s03.png",
+      "metadata": {
+       "altText": "One side: pay for jobs. Kids learn that work earns money. Saving means more when they earned it."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s04.png",
+      "metadata": {
+       "altText": "The other side: some jobs come with living here. Pay for everything, and you may hear 'how much?' every time you ask for help."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s05.png",
+      "metadata": {
+       "altText": "Many families do both. Daily jobs don't get paid. Big extra jobs, like washing the car, do."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s06.png",
+      "metadata": {
+       "altText": "Whatever you pick, agree before payday. What's paid, how much, and which day. Write it down."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day10/day10_carousel_s07.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {},
+   "has_video": false
+  },
+  {
+   "day": 11,
+   "service": "instagram",
+   "channelId": "6ace3f4f778b240e2ff7f72f",
+   "dueAt": "2026-10-27T18:00:00+01:00",
+   "text": "Kids hear about it fast when they forget something. When they do it before anyone asks, it usually gets silence, because nothing went wrong.\n\nTry this:\n1. Notice it out loud.\n2. Say it the same day.\n3. Say what they did, not just 'good job'.\n\nIt doesn't need to be a speech. 'You fed the dog before I asked. Thanks.' is plenty.\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.\n\n#raisingkids #familylife",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s01.png",
+      "metadata": {
+       "altText": "Kids hear about it when they forget. Do they hear about it when they remember?"
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s02.png",
+      "metadata": {
+       "altText": "Most of the time, they don't. Nothing went wrong, so nobody says anything."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s03.png",
+      "metadata": {
+       "altText": "Notice it out loud. 'You fed the dog before I asked. Thanks.' That's enough."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s04.png",
+      "metadata": {
+       "altText": "Say it the same day. A short note counts. It doesn't need to be a speech."
+      }
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s05.mp4"
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "post",
+     "shouldShareToFeed": true
+    }
+   },
+   "has_video": true
+  },
+  {
+   "day": 11,
+   "service": "facebook",
+   "channelId": "6acf569f778b240e2f0635b0",
+   "dueAt": "2026-10-27T18:00:00+01:00",
+   "text": "Kids hear about it straight away when they forget something, and almost never when they remember without being asked.\n\nIt's worth noticing out loud, the same day, and naming the thing they did. It doesn't need to be a speech. 'You fed the dog before I asked. Thanks.' is plenty.\n\nWhat's something your kids did lately without being asked?\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s01.png",
+      "metadata": {
+       "altText": "Kids hear about it when they forget. Do they hear about it when they remember?"
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s02.png",
+      "metadata": {
+       "altText": "Most of the time, they don't. Nothing went wrong, so nobody says anything."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s03.png",
+      "metadata": {
+       "altText": "Notice it out loud. 'You fed the dog before I asked. Thanks.' That's enough."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s04.png",
+      "metadata": {
+       "altText": "Say it the same day. A short note counts. It doesn't need to be a speech."
+      }
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s05.mp4"
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "facebook": {
+     "type": "post"
+    }
+   },
+   "has_video": true,
+   "fallback_assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s01.png",
+      "metadata": {
+       "altText": "Kids hear about it when they forget. Do they hear about it when they remember?"
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s02.png",
+      "metadata": {
+       "altText": "Most of the time, they don't. Nothing went wrong, so nobody says anything."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s03.png",
+      "metadata": {
+       "altText": "Notice it out loud. 'You fed the dog before I asked. Thanks.' That's enough."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s04.png",
+      "metadata": {
+       "altText": "Say it the same day. A short note counts. It doesn't need to be a speech."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s05.png",
+      "metadata": {
+       "altText": "Say what they did. Not just 'good job'. Name the thing, so they know you saw it."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ]
+  },
+  {
+   "day": 11,
+   "service": "tiktok",
+   "channelId": "6ace8910778b240e2ffc5bce",
+   "dueAt": "2026-10-27T18:00:00+01:00",
+   "text": "Doing it before anyone asks deserves more than silence. Waitlist link in bio. #raisingkids #familylife #parentsoftiktok",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s01.png",
+      "metadata": {
+       "altText": "Kids hear about it when they forget. Do they hear about it when they remember?"
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s02.png",
+      "metadata": {
+       "altText": "Most of the time, they don't. Nothing went wrong, so nobody says anything."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s03.png",
+      "metadata": {
+       "altText": "Notice it out loud. 'You fed the dog before I asked. Thanks.' That's enough."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s04.png",
+      "metadata": {
+       "altText": "Say it the same day. A short note counts. It doesn't need to be a speech."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s05.png",
+      "metadata": {
+       "altText": "Say what they did. Not just 'good job'. Name the thing, so they know you saw it."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day11/day11_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {},
+   "has_video": false
+  },
+  {
+   "day": 12,
+   "service": "instagram",
+   "channelId": "6ace3f4f778b240e2ff7f72f",
+   "dueAt": "2026-10-28T18:00:00+01:00",
+   "text": "Fun plans get pushed back when the week is full. The zoo, the bike ride, 'maybe next weekend'.\n\nTry this:\n1. On Sunday, plan the week together.\n2. Pick one fun thing to look forward to.\n3. Share the jobs during the week.\n4. On Saturday, go do the fun thing.\n\nDinners, walks and time together never depend on the jobs. The fun thing is just easier to fit in when nobody is stuck with all of it.\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.\n\n#familytime #familyroutine",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s01.png",
+      "metadata": {
+       "altText": "The week is so busy, fun plans never happen. The zoo. The bike ride. 'Maybe next weekend.'"
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s02.png",
+      "metadata": {
+       "altText": "Then it's Friday, and nothing fun happened. Just school, work and laundry."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s03.png",
+      "metadata": {
+       "altText": "On Sunday, plan the week together. Who does which jobs, and on which days."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s04.png",
+      "metadata": {
+       "altText": "Pick one fun thing to look forward to. A climbing wall trip. A movie night. Everyone agrees on it."
+      }
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s05.mp4"
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s06.mp4"
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s07.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "post",
+     "shouldShareToFeed": true
+    }
+   },
+   "has_video": true
+  },
+  {
+   "day": 12,
+   "service": "facebook",
+   "channelId": "6acf569f778b240e2f0635b0",
+   "dueAt": "2026-10-28T18:00:00+01:00",
+   "text": "How often does the fun plan get pushed to 'next weekend'?\n\nOne thing that helps: plan the week together on Sunday, and pick one fun thing to look forward to while you're at it. Share the jobs through the week so nobody is stuck with all of it. Then on Saturday, go.\n\nWhat's the fun thing on your list this weekend?\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s01.png",
+      "metadata": {
+       "altText": "The week is so busy, fun plans never happen. The zoo. The bike ride. 'Maybe next weekend.'"
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s02.png",
+      "metadata": {
+       "altText": "Then it's Friday, and nothing fun happened. Just school, work and laundry."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s03.png",
+      "metadata": {
+       "altText": "On Sunday, plan the week together. Who does which jobs, and on which days."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s04.png",
+      "metadata": {
+       "altText": "Pick one fun thing to look forward to. A climbing wall trip. A movie night. Everyone agrees on it."
+      }
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s05.mp4"
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s06.mp4"
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s07.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "facebook": {
+     "type": "post"
+    }
+   },
+   "has_video": true,
+   "fallback_assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s01.png",
+      "metadata": {
+       "altText": "The week is so busy, fun plans never happen. The zoo. The bike ride. 'Maybe next weekend.'"
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s02.png",
+      "metadata": {
+       "altText": "Then it's Friday, and nothing fun happened. Just school, work and laundry."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s03.png",
+      "metadata": {
+       "altText": "On Sunday, plan the week together. Who does which jobs, and on which days."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s04.png",
+      "metadata": {
+       "altText": "Pick one fun thing to look forward to. A climbing wall trip. A movie night. Everyone agrees on it."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s05.png",
+      "metadata": {
+       "altText": "Share the jobs during the week. Everyone does their part, so nobody is stuck with all of it."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s06.png",
+      "metadata": {
+       "altText": "On Saturday, go do the fun thing. It was on the plan all week."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s07.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ]
+  },
+  {
+   "day": 12,
+   "service": "tiktok",
+   "channelId": "6ace8910778b240e2ffc5bce",
+   "dueAt": "2026-10-28T18:00:00+01:00",
+   "text": "Plan the week on Sunday. Pick one fun thing. Go do it on Saturday. Waitlist link in bio. #familytime #familyroutine #parentsoftiktok",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s01.png",
+      "metadata": {
+       "altText": "The week is so busy, fun plans never happen. The zoo. The bike ride. 'Maybe next weekend.'"
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s02.png",
+      "metadata": {
+       "altText": "Then it's Friday, and nothing fun happened. Just school, work and laundry."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s03.png",
+      "metadata": {
+       "altText": "On Sunday, plan the week together. Who does which jobs, and on which days."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s04.png",
+      "metadata": {
+       "altText": "Pick one fun thing to look forward to. A climbing wall trip. A movie night. Everyone agrees on it."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s05.png",
+      "metadata": {
+       "altText": "Share the jobs during the week. Everyone does their part, so nobody is stuck with all of it."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s06.png",
+      "metadata": {
+       "altText": "On Saturday, go do the fun thing. It was on the plan all week."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day12/day12_carousel_s07.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {},
+   "has_video": false
+  },
+  {
+   "day": 13,
+   "service": "instagram",
+   "channelId": "6ace3f4f778b240e2ff7f72f",
+   "dueAt": "2026-10-29T18:00:00+01:00",
+   "text": "Saturday morning is the worst time to make a decision in any family.\n\nTry this: decide on Wednesday. Pick what you'll do, when you'll leave, and what to do if it rains. Then tell everyone.\n\nNow it's a plan, not just an idea.\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.\n\n#familytime #weekendwithkids",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s01.png",
+      "metadata": {
+       "altText": "Do your weekend plans fall through? Not because nobody wants to go. Because nobody picked a plan."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s02.png",
+      "metadata": {
+       "altText": "And one more Saturday goes by. Everyone is tired, and nobody wants to pick."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s03.png",
+      "metadata": {
+       "altText": "Decide on Wednesday. Not on the day. By then it is too late."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s04.png",
+      "metadata": {
+       "altText": "Pick three things. What you'll do. When you'll leave. What to do if it rains."
+      }
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s05.mp4"
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "post",
+     "shouldShareToFeed": true
+    }
+   },
+   "has_video": true
+  },
+  {
+   "day": 13,
+   "service": "facebook",
+   "channelId": "6acf569f778b240e2f0635b0",
+   "dueAt": "2026-10-29T18:00:00+01:00",
+   "text": "Weekend plans seem to live or die by Wednesday.\n\nLeave it to Saturday morning and everyone is tired, nobody wants to pick, and it turns into 'maybe next weekend'. Decide midweek, with a rain plan, and it becomes real.\n\nWhere are you heading this weekend? Always happy to steal a good idea.\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s01.png",
+      "metadata": {
+       "altText": "Do your weekend plans fall through? Not because nobody wants to go. Because nobody picked a plan."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s02.png",
+      "metadata": {
+       "altText": "And one more Saturday goes by. Everyone is tired, and nobody wants to pick."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s03.png",
+      "metadata": {
+       "altText": "Decide on Wednesday. Not on the day. By then it is too late."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s04.png",
+      "metadata": {
+       "altText": "Pick three things. What you'll do. When you'll leave. What to do if it rains."
+      }
+     }
+    },
+    {
+     "video": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s05.mp4"
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "facebook": {
+     "type": "post"
+    }
+   },
+   "has_video": true,
+   "fallback_assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s01.png",
+      "metadata": {
+       "altText": "Do your weekend plans fall through? Not because nobody wants to go. Because nobody picked a plan."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s02.png",
+      "metadata": {
+       "altText": "And one more Saturday goes by. Everyone is tired, and nobody wants to pick."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s03.png",
+      "metadata": {
+       "altText": "Decide on Wednesday. Not on the day. By then it is too late."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s04.png",
+      "metadata": {
+       "altText": "Pick three things. What you'll do. When you'll leave. What to do if it rains."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s05.png",
+      "metadata": {
+       "altText": "Tell everyone. Now it's a plan, not just an idea."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ]
+  },
+  {
+   "day": 13,
+   "service": "tiktok",
+   "channelId": "6ace8910778b240e2ffc5bce",
+   "dueAt": "2026-10-29T18:00:00+01:00",
+   "text": "The plan was made on Wednesday. That's the whole trick. Waitlist link in bio. #familytime #weekendwithkids #parentsoftiktok",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s01.png",
+      "metadata": {
+       "altText": "Do your weekend plans fall through? Not because nobody wants to go. Because nobody picked a plan."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s02.png",
+      "metadata": {
+       "altText": "And one more Saturday goes by. Everyone is tired, and nobody wants to pick."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s03.png",
+      "metadata": {
+       "altText": "Decide on Wednesday. Not on the day. By then it is too late."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s04.png",
+      "metadata": {
+       "altText": "Pick three things. What you'll do. When you'll leave. What to do if it rains."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s05.png",
+      "metadata": {
+       "altText": "Tell everyone. Now it's a plan, not just an idea."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day13/day13_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {},
+   "has_video": false
+  },
+  {
+   "day": 14,
+   "service": "instagram",
+   "channelId": "6ace3f4f778b240e2ff7f72f",
+   "dueAt": "2026-10-30T18:00:00+01:00",
+   "text": "Every family has a list of things they keep meaning to do. The hike. The trip. The place someone talked about two summers ago.\n\nPick one. Put a date on it. Write it where everyone can see it.\n\nThen tell us yours. This could turn into a very good list.\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.\n\n#familytime #familylife",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s01.png",
+      "metadata": {
+       "altText": "What has your family been meaning to do for ages? The hike. The trip. The place someone talked about two summers ago."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s02.png",
+      "metadata": {
+       "altText": "'Someday' never comes. There's always a busy week in the way."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s03.png",
+      "metadata": {
+       "altText": "Pick one thing from the list. Just one. The easiest one."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s04.png",
+      "metadata": {
+       "altText": "Put a date on it. Write it down where everyone can see it."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s05.png",
+      "metadata": {
+       "altText": "Then tell us yours. Reply with your family's list. We'll share the best ideas, with permission."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "post",
+     "shouldShareToFeed": true
+    }
+   },
+   "has_video": false
+  },
+  {
+   "day": 14,
+   "service": "facebook",
+   "channelId": "6acf569f778b240e2f0635b0",
+   "dueAt": "2026-10-30T18:00:00+01:00",
+   "text": "Every family seems to have a list of things they keep meaning to do. The hike everyone talks about. The beach a friend told you about. The pancake place someone found two summers ago.\n\nPick one, put a date on it, and write it where everyone can see it.\n\nWhat's on your list? If enough people share, we'll put the best ideas into one list for everyone, with permission.\n\nWe're building Bonded, an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android.\n\nComment WAITLIST and we'll send you the link.",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s01.png",
+      "metadata": {
+       "altText": "What has your family been meaning to do for ages? The hike. The trip. The place someone talked about two summers ago."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s02.png",
+      "metadata": {
+       "altText": "'Someday' never comes. There's always a busy week in the way."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s03.png",
+      "metadata": {
+       "altText": "Pick one thing from the list. Just one. The easiest one."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s04.png",
+      "metadata": {
+       "altText": "Put a date on it. Write it down where everyone can see it."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s05.png",
+      "metadata": {
+       "altText": "Then tell us yours. Reply with your family's list. We'll share the best ideas, with permission."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "facebook": {
+     "type": "post"
+    }
+   },
+   "has_video": false
+  },
+  {
+   "day": 14,
+   "service": "tiktok",
+   "channelId": "6ace8910778b240e2ffc5bce",
+   "dueAt": "2026-10-30T18:00:00+01:00",
+   "text": "What has your family been meaning to do for ages? Ideas welcome. Waitlist link in bio. #familytime #familylife #parentsoftiktok",
+   "assets": [
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s01.png",
+      "metadata": {
+       "altText": "What has your family been meaning to do for ages? The hike. The trip. The place someone talked about two summers ago."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s02.png",
+      "metadata": {
+       "altText": "'Someday' never comes. There's always a busy week in the way."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s03.png",
+      "metadata": {
+       "altText": "Pick one thing from the list. Just one. The easiest one."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s04.png",
+      "metadata": {
+       "altText": "Put a date on it. Write it down where everyone can see it."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s05.png",
+      "metadata": {
+       "altText": "Then tell us yours. Reply with your family's list. We'll share the best ideas, with permission."
+      }
+     }
+    },
+    {
+     "image": {
+      "url": "https://bonded-buffer-media-jfilip25s-projects.vercel.app/65bf2405fa5b503c/day14/day14_carousel_s06.png",
+      "metadata": {
+       "altText": "Join the waitlist. Bonded is an app that helps your whole family plan the week and share the jobs. It's coming to iPhone and Android. Link in bio."
+      }
+     }
+    }
+   ],
+   "metadata": {},
+   "has_video": false
+  }
+ ]
+}
